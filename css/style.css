@@ -20,7 +20,7 @@ footer {
 .mantenimiento .inicio {
   max-width: 100%;
   margin: 0 auto ;
-  background-image: url(/imagenes/Banner_Paradigmas.png);
+  background-image: url(/imagenes/mantenimiento.jpg);
   opacity: 0.9;
   background-position: center top;
   background-size: cover;
@@ -49,7 +49,7 @@ footer {
   margin: 10px;
 }
 .mantenimiento .inicio__contenido-titulo1 {
-  background-color: rgba(29, 54, 82, 0.774);
+  background-color: rgba(91, 107, 126, 0.774);
   width: 100%;
   padding: 15px;
   border-radius: 20px 0px 20px 0px;
@@ -61,7 +61,7 @@ footer {
   text-align: center;
 }
 .mantenimiento .inicio__contenido-titulo2 {
-  background-color: rgba(29, 54, 82, 0.774);
+  background-color: rgba(91, 107, 126, 0.774);
   width: 100%;
   padding: 15px;
   border-radius: 0px 20px 0px 20px;
