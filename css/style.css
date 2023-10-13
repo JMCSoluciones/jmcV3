@@ -14,6 +14,582 @@ footer {
   background-color: #020024;
   text-decoration: none;
 }
+.mantenimiento {
+  font-family: 'Raleway', sans-serif;
+}
+.mantenimiento .inicio {
+  max-width: 100%;
+  margin: 0 auto ;
+  background-image: url(/imagenes/mantenimiento.jpg);
+  opacity: 0.9;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mantenimiento .inicio__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+.mantenimiento .inicio__contenido-titulo1 {
+  background-color: rgba(91, 107, 126, 0.774);
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px 0px 20px 0px;
+}
+.mantenimiento .inicio__contenido-titulo1 h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+.mantenimiento .inicio__contenido-titulo2 {
+  background-color: rgba(91, 107, 126, 0.774);
+  width: 100%;
+  padding: 15px;
+  border-radius: 0px 20px 0px 20px;
+}
+.mantenimiento .inicio__contenido-titulo2 h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+.mantenimiento .desarrollo__contenido-titulo h2 {
+  margin: 30px;
+  border-top: 2px solid #020024;
+  border-bottom: 2px solid #020024;
+  padding: 5px 0px;
+}
+.mantenimiento .desarrollo__contenido__op {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mantenimiento .desarrollo__contenido__op__prof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(/imagenes/fondo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mantenimiento .desarrollo__contenido__op__prof-txt {
+  margin: 5px;
+  padding: 10px;
+}
+.mantenimiento .desarrollo__contenido__op__prof-txt h2 {
+  font-size: 1.4rem;
+  text-align: left;
+  border-bottom: 1px solid #020024;
+}
+.mantenimiento .desarrollo__contenido__op__prof-txt p {
+  font-size: 1.2rem;
+  text-align: left;
+  width: 180px;
+}
+.mantenimiento .desarrollo__contenido__op__prof-img img {
+  width: 100px;
+  height: auto;
+  bottom: 60px;
+  right: 90px;
+}
+.mantenimiento .desarrollo__contenido__op__exp {
+  padding: 10px;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(/imagenes/fondo2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mantenimiento .desarrollo__contenido__op__exp-txt {
+  margin: 5px;
+  padding: 10px;
+}
+.mantenimiento .desarrollo__contenido__op__exp-txt h2 {
+  font-size: 1.4rem;
+  text-align: right;
+  border-bottom: 1px solid #020024;
+}
+.mantenimiento .desarrollo__contenido__op__exp-txt p {
+  font-size: 1.2rem;
+  text-align: right;
+  width: 180px;
+}
+.mantenimiento .desarrollo__contenido__op__exp-img img {
+  width: 100px;
+  height: auto;
+  bottom: 60px;
+  right: 90px;
+}
+.mantenimiento .desarrollo__contenido__op__dist {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(/imagenes/fondo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mantenimiento .desarrollo__contenido__op__dist-txt {
+  margin: 5px;
+  padding: 10px;
+}
+.mantenimiento .desarrollo__contenido__op__dist-txt h2 {
+  font-size: 1.4rem;
+  text-align: left;
+  border-bottom: 1px solid #020024;
+}
+.mantenimiento .desarrollo__contenido__op__dist-txt p {
+  font-size: 1.2rem;
+  text-align: left;
+  width: 180px;
+}
+.mantenimiento .desarrollo__contenido__op__dist-img img {
+  width: 100px;
+  height: auto;
+  bottom: 60px;
+  right: 90px;
+}
+.mantenimiento .desarrollo__contenido__op__conf {
+  padding: 10px;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(/imagenes/fondo2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mantenimiento .desarrollo__contenido__op__conf-txt {
+  margin: 5px;
+  padding: 10px;
+}
+.mantenimiento .desarrollo__contenido__op__conf-txt h2 {
+  font-size: 1.4rem;
+  text-align: right;
+  border-bottom: 1px solid #020024;
+}
+.mantenimiento .desarrollo__contenido__op__conf-txt p {
+  font-size: 1.2rem;
+  text-align: right;
+  width: 180px;
+}
+.mantenimiento .desarrollo__contenido__op__conf-img img {
+  width: 100px;
+  height: auto;
+  bottom: 60px;
+  right: 90px;
+}
+.mantenimiento .desarrollo__contenido__op__solutions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(/imagenes/fondo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mantenimiento .desarrollo__contenido__op__solutions-txt {
+  margin: 5px;
+  padding: 10px;
+}
+.mantenimiento .desarrollo__contenido__op__solutions-txt h2 {
+  font-size: 1.4rem;
+  text-align: left;
+  border-bottom: 1px solid #020024;
+}
+.mantenimiento .desarrollo__contenido__op__solutions-txt p {
+  font-size: 1.2rem;
+  text-align: left;
+  width: 180px;
+}
+.mantenimiento .desarrollo__contenido__op__solutions-img img {
+  width: 100px;
+  height: auto;
+  bottom: 60px;
+  right: 90px;
+}
+.empresa .inicio {
+  max-width: 100%;
+  margin: 0 auto ;
+  background-image: url(/imagenes/Banner_Paradigmas.png);
+  opacity: 0.9;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.empresa .inicio__contenido {
+  background-color: rgba(61, 102, 131, 0.5);
+  width: 100%;
+  padding: 15px;
+}
+.empresa .inicio__contenido h2 {
+  color: #ffffff;
+  font-size: 4rem;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+}
+.empresa .desarrollo__inicio p {
+  font-size: 1.8rem;
+  padding: 10px;
+  text-align: center;
+  color: #6666;
+  font-family: 'Raleway', sans-serif;
+}
+.empresa .desarrollo__our {
+  margin: 20px;
+  gap: 20px;
+}
+.empresa .desarrollo__our h2 {
+  border-bottom: 1px solid #020024;
+  padding-bottom: 0.6em;
+  font-style: 300;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  margin-top: 20px;
+}
+.empresa .desarrollo__our p {
+  color: #6666;
+  font-family: 'Raleway', sans-serif;
+}
+.empresa .desarrollo__our-vision {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  font-size: 1.4rem;
+}
+.empresa .desarrollo__our-mision {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  font-size: 1.4rem;
+}
+.empresa .do .do__inicio {
+  max-width: 100%;
+  margin: 0 auto ;
+  background-image: url(/imagenes/Banner_Paradigmas.png);
+  opacity: 0.9;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.empresa .do .do__inicio-texto {
+  background-color: rgba(61, 102, 131, 0.5);
+  width: 100%;
+  padding: 15px;
+}
+.empresa .do .do__inicio-texto h2 {
+  color: #ffffff;
+  font-size: 4rem;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+}
+.empresa .do .do__descripcion__txt {
+  color: #6666;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 20px;
+}
+.empresa .do .do__descripcion__txt__soluciones h2 {
+  background: #2f90cf;
+  background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(47, 144, 207, 0)), color-stop(92%, rgba(40, 129, 186, 0.3)));
+  background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
+  padding: 20px 20px 20px 10px;
+  color: #6666;
+  font-size: 3rem;
+  border-radius: 0px 20px 20px 0px;
+  margin: 10px 30px 10px 5px;
+  text-align: center;
+}
+.empresa .do .do__descripcion__txt__soluciones ul {
+  margin: 20px;
+}
+.empresa .do .do__descripcion__txt__soluciones ul li {
+  font-size: 1.4rem;
+  color: #6666;
+}
+.empresa .do .do__descripcion__txt__soluciones-button {
+  background-color: #020024;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+  left: 220px;
+  position: relative;
+}
+.empresa .do .do__descripcion__txt__soluciones-button a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+.empresa .do .do__descripcion__txt__sadmin h2 {
+  background: #2881ba;
+  background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(40, 129, 186, 0.3)), color-stop(92%, rgba(47, 144, 207, 0)));
+  background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
+  padding: 25px 10px 25px 20px;
+  color: #6666;
+  font-size: 2.5rem;
+  border-radius: 20px 0px 0px 20px;
+  margin: 10px 0px 10px 30px;
+  text-align: center;
+}
+.empresa .do .do__descripcion__txt__sadmin ul {
+  margin: 20px;
+}
+.empresa .do .do__descripcion__txt__sadmin ul li {
+  font-size: 1.4rem;
+  color: #6666;
+}
+.empresa .do .do__descripcion__txt__sadmin-button {
+  background-color: #020024;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+  left: 220px;
+  position: relative;
+}
+.empresa .do .do__descripcion__txt__sadmin-button a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+.empresa .do .do__descripcion__txt__mantenimiento h2 {
+  background: #2f90cf;
+  background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(47, 144, 207, 0)), color-stop(92%, rgba(40, 129, 186, 0.3)));
+  background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
+  padding: 20px 20px 20px 10px;
+  color: #6666;
+  font-size: 2.8rem;
+  border-radius: 0px 25px 25px 0px;
+  margin: 10px 30px 10px 5px;
+  text-align: center;
+}
+.empresa .do .do__descripcion__txt__mantenimiento ul {
+  margin: 20px;
+}
+.empresa .do .do__descripcion__txt__mantenimiento ul li {
+  font-size: 1.4rem;
+  color: #6666;
+}
+.empresa .do .do__descripcion__txt__mantenimiento-button {
+  background-color: #020024;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+  left: 220px;
+  position: relative;
+}
+.empresa .do .do__descripcion__txt__mantenimiento-button a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+.empresa .start__banner {
+  max-width: 100%;
+  margin: 0 auto ;
+  background-image: url(/imagenes/Banner_Paradigmas.png);
+  opacity: 0.9;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.empresa .start__banner-img {
+  background-color: rgba(61, 102, 131, 0.5);
+  width: 100%;
+  padding: 15px;
+}
+.empresa .start__banner-img h2 {
+  color: #ffffff;
+  font-size: 4rem;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+}
+.empresa .start__txt-inicio p {
+  color: #6666;
+  font-size: 1.4rem;
+  margin: 20px;
+}
+.empresa .start__txt-compromiso h2 {
+  background: #2881ba;
+  background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(40, 129, 186, 0.3)), color-stop(92%, rgba(47, 144, 207, 0)));
+  background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
+  padding: 20px 10px 20px 0px;
+  color: #6666;
+  font-size: 3rem;
+  border-radius: 25px 0px 0px 25px;
+  margin: 10px 0px 10px 30px;
+  text-align: center;
+}
+.empresa .start__txt-compromiso p {
+  margin: 20px;
+  color: #6666;
+  font-size: 1.4rem;
+}
+.empresa .start__txt-valores h2 {
+  background: #2f90cf;
+  background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(47, 144, 207, 0)), color-stop(92%, rgba(40, 129, 186, 0.3)));
+  background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
+  padding: 20px 20px 20px 10px;
+  color: #6666;
+  font-size: 3rem;
+  border-radius: 0px 20px 20px 0px;
+  margin: 10px 30px 10px 5px;
+  text-align: center;
+}
+.empresa .start__txt-valores ul {
+  margin: 20px;
+}
+.empresa .start__txt-valores ul li {
+  font-size: 1.8rem;
+}
+.empresa .start__txt-valores ul p {
+  color: #6666;
+  font-size: 1.4rem;
+}
+.empresa .proveedores__txt h2 {
+  background: #2881ba;
+  background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(40, 129, 186, 0.3)), color-stop(92%, rgba(47, 144, 207, 0)));
+  background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
+  padding: 10px 10px 11px 20px;
+  color: #6666;
+  font-size: 2.2rem;
+  border-radius: 20px 0px 0px 20px;
+  margin: 10px 0px 10px 30px;
+  text-align: center;
+}
+.empresa .proveedores__txt p {
+  margin: 20px;
+  color: #6666;
+  font-size: 1.4rem;
+}
 .footer__box__body {
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#00d4ff));
