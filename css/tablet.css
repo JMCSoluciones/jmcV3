@@ -11,7 +11,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 footer {
-  background-color: #020024;
+  background-color: #17acc9;
   text-decoration: none;
 }
 .footer__box__body {
@@ -35,7 +35,7 @@ footer {
 }
 .footer__box__body__contacto-txt h2 h3 {
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .footer__box__body__contacto-phone {
   display: -webkit-box;
@@ -55,7 +55,7 @@ footer {
 }
 .footer__box__body__contacto-phone-num {
   font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .footer__box__body__contacto-email {
   -ms-grid-row: 2;
@@ -78,7 +78,7 @@ footer {
   height: auto;
 }
 .footer__box__body__contacto-email-direccion {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .footer__box__body__contacto-redes {
   display: -webkit-box;
@@ -97,7 +97,7 @@ footer {
   height: auto;
 }
 .footer__box__body__contacto-redes-txt {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .footer__box__body__logo {
   -ms-grid-row: 1;
@@ -150,5 +150,5 @@ footer {
   height: auto;
 }
 .footer__box__body__ubicacion-txt {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }

@@ -546,6 +546,7 @@
 .footer {
   &__box {
     &__body {
+      position: relative;
       background: rgb(2, 0, 36);
       background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
       color: @color-white;
@@ -561,7 +562,7 @@
         &-txt {
           h2 h3 {
             text-align: left;
-            font-size: @font-size-md;
+            font-size: @font-size-sm;
           }
         }
 
@@ -595,7 +596,7 @@
           }
 
           &-direccion {
-            font-size: @font-size-md ;
+            font-size: @font-size-sm ;
           }
         }
 
@@ -619,8 +620,9 @@
         grid-area: logo;
         display: flex;
         align-items: center;
+        margin-left: 10px;
         img{
-          width: 110px;
+          width: 100px;
           height: auto;
         }
       }

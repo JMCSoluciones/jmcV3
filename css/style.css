@@ -11,7 +11,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 footer {
-  background-color: #020024;
+  background-color: #17acc9;
   text-decoration: none;
 }
 .mantenimiento {
@@ -74,8 +74,8 @@ footer {
 }
 .mantenimiento .desarrollo__contenido-titulo h2 {
   margin: 30px;
-  border-top: 2px solid #020024;
-  border-bottom: 2px solid #020024;
+  border-top: 2px solid #17acc9;
+  border-bottom: 2px solid #17acc9;
   padding: 5px 0px;
 }
 .mantenimiento .desarrollo__contenido__op {
@@ -111,9 +111,9 @@ footer {
   padding: 10px;
 }
 .mantenimiento .desarrollo__contenido__op__prof-txt h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: left;
-  border-bottom: 1px solid #020024;
+  border-bottom: 1px solid #17acc9;
 }
 .mantenimiento .desarrollo__contenido__op__prof-txt p {
   font-size: 1.2rem;
@@ -151,9 +151,9 @@ footer {
   padding: 10px;
 }
 .mantenimiento .desarrollo__contenido__op__exp-txt h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: right;
-  border-bottom: 1px solid #020024;
+  border-bottom: 1px solid #17acc9;
 }
 .mantenimiento .desarrollo__contenido__op__exp-txt p {
   font-size: 1.2rem;
@@ -190,9 +190,9 @@ footer {
   padding: 10px;
 }
 .mantenimiento .desarrollo__contenido__op__dist-txt h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: left;
-  border-bottom: 1px solid #020024;
+  border-bottom: 1px solid #17acc9;
 }
 .mantenimiento .desarrollo__contenido__op__dist-txt p {
   font-size: 1.2rem;
@@ -230,9 +230,9 @@ footer {
   padding: 10px;
 }
 .mantenimiento .desarrollo__contenido__op__conf-txt h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: right;
-  border-bottom: 1px solid #020024;
+  border-bottom: 1px solid #17acc9;
 }
 .mantenimiento .desarrollo__contenido__op__conf-txt p {
   font-size: 1.2rem;
@@ -268,9 +268,9 @@ footer {
   padding: 10px;
 }
 .mantenimiento .desarrollo__contenido__op__solutions-txt h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: left;
-  border-bottom: 1px solid #020024;
+  border-bottom: 1px solid #17acc9;
 }
 .mantenimiento .desarrollo__contenido__op__solutions-txt p {
   font-size: 1.2rem;
@@ -322,7 +322,7 @@ footer {
   font-size: 1.8rem;
   padding: 10px;
   text-align: center;
-  color: #6666;
+  color: #666666d9;
   font-family: 'Raleway', sans-serif;
 }
 .empresa .desarrollo__our {
@@ -330,7 +330,7 @@ footer {
   gap: 20px;
 }
 .empresa .desarrollo__our h2 {
-  border-bottom: 1px solid #020024;
+  border-bottom: 1px solid #17acc9;
   padding-bottom: 0.6em;
   font-style: 300;
   font-size: 2rem;
@@ -339,7 +339,7 @@ footer {
   margin-top: 20px;
 }
 .empresa .desarrollo__our p {
-  color: #6666;
+  color: #666666d9;
   font-family: 'Raleway', sans-serif;
 }
 .empresa .desarrollo__our-vision {
@@ -347,14 +347,14 @@ footer {
       -ms-flex: 1;
           flex: 1;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .empresa .desarrollo__our-mision {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .empresa .do .do__inicio {
   max-width: 100%;
@@ -392,9 +392,9 @@ footer {
   font-family: 'Raleway', sans-serif;
 }
 .empresa .do .do__descripcion__txt {
-  color: #6666;
+  color: #666666d9;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: 'Raleway', sans-serif;
   margin-top: 20px;
 }
@@ -403,7 +403,7 @@ footer {
   background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(47, 144, 207, 0)), color-stop(92%, rgba(40, 129, 186, 0.3)));
   background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
   padding: 20px 20px 20px 10px;
-  color: #6666;
+  color: #666666d9;
   font-size: 3rem;
   border-radius: 0px 20px 20px 0px;
   margin: 10px 30px 10px 5px;
@@ -413,11 +413,11 @@ footer {
   margin: 20px;
 }
 .empresa .do .do__descripcion__txt__soluciones ul li {
-  font-size: 1.4rem;
-  color: #6666;
+  font-size: 1.6rem;
+  color: #666666d9;
 }
 .empresa .do .do__descripcion__txt__soluciones-button {
-  background-color: #020024;
+  background-color: #17acc9;
   border-radius: 50px;
   width: 100px;
   text-align: center;
@@ -436,7 +436,7 @@ footer {
   background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(40, 129, 186, 0.3)), color-stop(92%, rgba(47, 144, 207, 0)));
   background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
   padding: 25px 10px 25px 20px;
-  color: #6666;
+  color: #666666d9;
   font-size: 2.5rem;
   border-radius: 20px 0px 0px 20px;
   margin: 10px 0px 10px 30px;
@@ -446,11 +446,11 @@ footer {
   margin: 20px;
 }
 .empresa .do .do__descripcion__txt__sadmin ul li {
-  font-size: 1.4rem;
-  color: #6666;
+  font-size: 1.6rem;
+  color: #666666d9;
 }
 .empresa .do .do__descripcion__txt__sadmin-button {
-  background-color: #020024;
+  background-color: #17acc9;
   border-radius: 50px;
   width: 100px;
   text-align: center;
@@ -469,7 +469,7 @@ footer {
   background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(47, 144, 207, 0)), color-stop(92%, rgba(40, 129, 186, 0.3)));
   background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
   padding: 20px 20px 20px 10px;
-  color: #6666;
+  color: #666666d9;
   font-size: 2.8rem;
   border-radius: 0px 25px 25px 0px;
   margin: 10px 30px 10px 5px;
@@ -479,11 +479,11 @@ footer {
   margin: 20px;
 }
 .empresa .do .do__descripcion__txt__mantenimiento ul li {
-  font-size: 1.4rem;
-  color: #6666;
+  font-size: 1.6rem;
+  color: #666666d9;
 }
 .empresa .do .do__descripcion__txt__mantenimiento-button {
-  background-color: #020024;
+  background-color: #17acc9;
   border-radius: 50px;
   width: 100px;
   text-align: center;
@@ -533,8 +533,8 @@ footer {
   font-family: 'Raleway', sans-serif;
 }
 .empresa .start__txt-inicio p {
-  color: #6666;
-  font-size: 1.4rem;
+  color: #666666d9;
+  font-size: 1.6rem;
   margin: 20px;
 }
 .empresa .start__txt-compromiso h2 {
@@ -542,7 +542,7 @@ footer {
   background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(40, 129, 186, 0.3)), color-stop(92%, rgba(47, 144, 207, 0)));
   background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
   padding: 20px 10px 20px 0px;
-  color: #6666;
+  color: #666666d9;
   font-size: 3rem;
   border-radius: 25px 0px 0px 25px;
   margin: 10px 0px 10px 30px;
@@ -550,15 +550,15 @@ footer {
 }
 .empresa .start__txt-compromiso p {
   margin: 20px;
-  color: #6666;
-  font-size: 1.4rem;
+  color: #666666d9;
+  font-size: 1.6rem;
 }
 .empresa .start__txt-valores h2 {
   background: #2f90cf;
   background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(47, 144, 207, 0)), color-stop(92%, rgba(40, 129, 186, 0.3)));
   background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
   padding: 20px 20px 20px 10px;
-  color: #6666;
+  color: #666666d9;
   font-size: 3rem;
   border-radius: 0px 20px 20px 0px;
   margin: 10px 30px 10px 5px;
@@ -571,15 +571,15 @@ footer {
   font-size: 1.8rem;
 }
 .empresa .start__txt-valores ul p {
-  color: #6666;
-  font-size: 1.4rem;
+  color: #666666d9;
+  font-size: 1.6rem;
 }
 .empresa .proveedores__txt h2 {
   background: #2881ba;
   background: -webkit-gradient(linear, left top, right top, color-stop(14%, rgba(40, 129, 186, 0.3)), color-stop(92%, rgba(47, 144, 207, 0)));
   background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
   padding: 10px 10px 11px 20px;
-  color: #6666;
+  color: #666666d9;
   font-size: 2.2rem;
   border-radius: 20px 0px 0px 20px;
   margin: 10px 0px 10px 30px;
@@ -587,10 +587,11 @@ footer {
 }
 .empresa .proveedores__txt p {
   margin: 20px;
-  color: #6666;
-  font-size: 1.4rem;
+  color: #666666d9;
+  font-size: 1.6rem;
 }
 .footer__box__body {
+  position: relative;
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#00d4ff));
   background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
@@ -631,7 +632,7 @@ footer {
 }
 .footer__box__body__contacto-phone-num {
   font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .footer__box__body__contacto-email {
   -ms-grid-row: 2;
@@ -673,7 +674,7 @@ footer {
   height: auto;
 }
 .footer__box__body__contacto-redes-txt {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .footer__box__body__logo {
   -ms-grid-row: 1;
@@ -685,9 +686,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 10px;
 }
 .footer__box__body__logo img {
-  width: 110px;
+  width: 100px;
   height: auto;
 }
 .footer__box__body__enlaces {
