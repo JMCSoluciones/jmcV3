@@ -1,6 +1,573 @@
 @import "variables.less";
 @import "globals.less";
 
+#ocultar{
+  display: none;
+}
+
+header {
+  border-bottom: 1px solid @color-secondary;
+  .menu-top{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    padding: 10px 20px;
+    font-size: @font-size-md;
+    font-weight: @font-light;
+    font-family: @font-family;
+    margin: 0 auto;
+
+   
+    
+    &__link{
+      text-decoration: none;
+      color: @color-white;
+      font-weight: @font-semibold;
+      
+      img{
+        width: 25px;
+        height: auto;
+        top:0;
+      }
+    }
+  } 
+}
+
+  .menu{
+    &__links{
+      display: flexbox;
+      font-size: 2.2rem;
+      margin-top: 2px;
+      ul{
+        li{
+          a{
+            list-style: none;
+            text-decoration: none;
+            color:@color-text;
+            font-size: 2.2rem; 
+          }
+        }
+      }
+    }
+
+    &__container{
+      display: flex;
+     
+    }
+  } 
+    
+
+
+.content{     
+  &__section{
+    &-soluciones{
+      background-image: url(/imagenes/soluciones.svg);
+      max-width: 100%;
+      margin: 20px 20px;
+      background-position: center top;
+      background-size:contain;
+      background-repeat: no-repeat;
+      width: 253px;
+      height: 260px;   
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+           
+      &-title{
+        font-size:5.5rem;
+        color:@color-text;
+        font-weight: @font-regular;  
+        font-family: @font-family;
+        margin:center auto;       
+        text-align: left;
+        
+        }
+        &-txt{
+          font-size:8.5rem;
+          color: @color-text;
+          
+          
+            }  
+          }   
+    &-dominios{
+      margin: 20px auto;
+      text-align: left;
+      width: 300px;
+      display:flex;
+      padding: 10px; 
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      border-radius: 15px 15px 15px 15px;
+      position: relative;
+      line-height: 18px;
+      img{
+        width: 130px;
+        height: 100px;
+        border-radius: 0 15px 0 15px; 
+        display: flex; 
+        margin:auto;  
+      }     
+      &__box{
+        &-title{
+          font-size:3rem;
+          font-family: @font-family;
+          color:@color-text;
+          font-weight: @font-bold; 
+          margin: auto;       
+          text-align: center;
+          line-height: 40px; 
+        }
+        &-txt{
+          font: size 1.8em;
+          color: @color-text;
+          text-align: center;
+          margin: auto;
+        }
+      }
+    }
+    &-hosting{
+      margin: 20px auto;
+      text-align: left;
+      width: 300px;
+      display:flex;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      border-radius: 15px 15px 15px 15px;
+      flex-flow: row-reverse;
+      position: relative;
+      line-height: 18px;
+      
+      img{
+        width: 130px;
+        height: 100px;
+        border-radius: 0 15px 0 15px; 
+        display: flex; 
+        margin:auto;
+         
+      }     
+      &__box{
+        &-title{
+          font-size:3rem;
+          font-family: @font-family;
+          color:@color-text;
+          font-weight: @font-bold;
+          text-align: center;
+          margin: auto; 
+          margin-top: 0%;  
+          line-height: 40px; 
+               
+        }
+        &-txt{
+          font-size:1.8rem;
+          color: @color-text;
+          text-align: center;
+          margin: auto;
+
+        }
+      }
+    }
+    
+    &-correo{
+      margin: 20px auto;
+      text-align: left;
+      width: 300px;
+      display:flex;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      border-radius: 15px 15px 15px 15px;
+      position: relative;
+      line-height: 20px;
+      img{
+        width: 120px;
+        height: 100px;
+        border-radius: 0 15px 0 15px; 
+        display: flex; 
+        margin:auto; 
+      }     
+      &__box{
+        &-title{
+          font-size:3rem;
+          font-family: @font-family;
+          color:@color-text;          
+          text-align: center;
+          margin: auto; 
+          margin-top: 0%;  
+          line-height: 25px;               
+        }
+        &-txt{
+          font-size:1.8rem;
+          color: @color-text;
+          text-align: center;
+          margin: auto;
+       }
+      }
+    }     
+    &-pagina{
+      margin: 20px auto;
+      text-align: left;
+      width: 300px;
+      display:flex;
+      padding: 5%;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      border-radius: 15px 15px 15px 15px;
+      flex-flow: row-reverse;
+      position: relative;
+      line-height: 25px;
+      
+      img{
+        width: 120px;
+        height: 100px;
+        border-radius: 0 15px 0 15px; 
+        display: flex; 
+        margin:auto;   
+      }     
+      &__box{
+        &-title{
+          font-size:2.5rem;
+          font-family: @font-family;
+          color:@color-text;          
+          text-align: center;
+          margin: auto; 
+          margin-top: 0%;  
+          line-height: 25px;              
+        }
+        &-txt{
+          font-size:1.8rem;
+          color: @color-text;
+          text-align: center;
+          margin: auto;
+       }
+      }
+    }
+            
+    &-arquitectura{
+      background-image: url(/imagenes/soluciones.svg);
+      max-width: 100%;
+      margin: 20px 20px;
+      background-position: center top;
+      background-size:contain;
+      background-repeat: no-repeat;
+      width: 253px;
+      height: 260px;   
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      &-title{
+        font-size:4rem;
+        color:@color-text;
+        font-weight: @font-regular;  
+        font-family: @font-family;
+        text-align: center;
+        margin: auto;
+
+
+        }
+      }
+    &-servidores{
+      margin: 20px auto;
+      text-align: left;
+      width: 300px;
+      display:flex;
+      padding: 5%;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      border-radius: 15px 15px 15px 15px;
+      position: relative;
+      line-height: 18px;
+      img{
+        width: 120px;
+        height: 100px;
+        border-radius: 0 15px 0 15px; 
+        display: flex; 
+        margin:auto;    
+      }     
+      &__box{
+        &-title{
+          font-size:3rem;
+          font-family: @font-family;
+          color:@color-text;          
+          text-align: center;
+          margin: auto; 
+          margin-top: 0%;  
+          line-height: 20px;  
+        }
+        &-txt{
+          font-size:1.8rem;
+          color: @color-text;
+          text-align: center;
+          margin: auto;
+          line-height: 20px;
+       }
+      }
+    }  
+
+    &-desarrollo{
+      background-image: url(/imagenes/soluciones.svg);
+      max-width: 100%;
+      margin: 20px 20px;
+      background-position: center top;
+      background-size:contain;
+      background-repeat: no-repeat;
+      width: 253px;
+      height: 260px;   
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      &-title{
+        font-size:4rem;
+        color:@color-text;
+        font-weight: @font-regular;  
+        font-family: @font-family;
+        text-align: center;
+        margin: auto;
+
+
+        }
+      }
+    &-aplicaciones{
+      margin: 20px auto;
+      text-align: left;
+      width: 300px;
+      display:flex;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      border-radius: 15px 15px 15px 15px;
+      position: relative;
+      flex-flow: row-reverse;
+      line-height: 20px;
+      img{
+        width: 120px;
+        height: 100px;
+        border-radius: 0 15px 0 15px; 
+        display: flex; 
+        margin:auto; 
+      }     
+      &__box{
+        &-title{
+          font-size:2.5rem;
+          font-family: @font-family;
+          color:@color-text;          
+          text-align: center;
+          margin: auto; 
+          margin-top: 0%;  
+          line-height: 25px;            
+        }
+        &-txt{
+          font-size:1.6rem;
+          color: @color-text;
+          text-align: center;
+          margin: auto;
+       }
+      }
+    } 
+    &-online{
+      background-image: url(/imagenes/soluciones.svg);
+      max-width: 100%;
+      margin: 20px 20px;
+      background-position: center top;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 253px;
+      height: 260px;   
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &-title{
+        font-size:5.5rem;
+        color:@color-text;
+        font-weight: @font-regular;  
+        font-family: @font-family;
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+      }
+    }
+    &-tienda{
+      margin: 20px auto;
+      text-align: left;
+      width: 300px;
+      display:flex;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      border-radius: 15px 15px 15px 15px;
+      position: relative;
+      line-height: 20px;
+      
+      img{
+        width: 120px;
+        height: 100px;
+        border-radius: 0 15px 0 15px; 
+        display: flex; 
+        margin:auto;
+      }     
+      &__box{
+        &-title{
+          font-size:2.5rem;
+          font-family: @font-family;
+          color:@color-text;          
+          text-align: center;
+          margin: auto; 
+          margin-top: 0%;  
+          line-height: 25px;             
+        }
+        &-txt{
+          font-size:1.6rem;
+          color: @color-text;
+          text-align: center;
+          margin: auto;
+        
+        }
+      }
+    } 
+    &-soporte{
+      background-image: url(/imagenes/soluciones.svg);
+      max-width: 100%;
+      margin: 20px 20px;
+      background-position: center top;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 253px;
+      height: 260px;   
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &-title{
+        font-size:5.5rem;
+        color:@color-text;
+        font-weight: @font-regular;  
+        font-family: @font-family;
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+      }
+    }
+      
+    &-informatico{
+      margin: 20px auto;
+      text-align: left;
+      width: 300px;
+      display:flex;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+      border-radius: 15px 15px 15px 15px;
+      position: relative;
+      line-height: 20px;
+      flex-flow: row-reverse;
+      img{
+        width: 120px;
+        height: 100px;
+        border-radius: 0 15px 0 15px; 
+        display: flex; 
+        margin:auto;
+      }     
+      &__box{
+        &-title{
+          font-size:2.5rem;
+          font-family: @font-family;
+          color:@color-text;          
+          text-align: center;
+          margin: auto; 
+          margin-top: 0%;  
+          line-height: 25px;            
+        }
+        &-txt{
+          font-size:1.6rem;
+          color: @color-text;
+          text-align: center;
+          margin: auto;
+       }
+      }
+    } 
+    &-soluciones-administrativas{
+      opacity: .9;
+      background-image: url(/imagenes/administrativo.png);
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat; 
+      width: auto;
+      height: 200px;   
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;     
+      
+      &-title{
+        font-size:3.5rem;
+        color:@color-white;
+        font-weight: @font-regular;  
+        font-family: @font-family;
+        margin: 0;
+        background-color: rgba(40, 40, 40, 0.8);
+        height: 120px;
+        background-position: center top;
+        
+      }
+    }
+    &-empresa{
+        margin: 10px auto;   
+        display: flex;
+        flex-direction: column;
+        &-title{
+          font-size:2.8rem;
+          color:@color-text;
+          font-weight: @font-regular;  
+          font-family: @font-family;
+          line-height: -25px; 
+          text-align: center;     
+        }
+        &-ul{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-items: flex-start;
+          li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            font-size:@font-size-lg;
+            font-family: @font-family;
+            color: @color-text;
+            margin: 10px;
+            gap: 10px;
+
+            img{
+            width: 25px ;
+            height: auto;   
+            }
+            p{
+              margin: 0;
+              font-size: 1.6rem;
+            }
+        
+          }
+        
+        }
+        button.more-info {
+          background-color:@color-blue;
+          color: white;
+          border: none;
+          border-radius: 20px;
+          cursor: pointer;
+          font-family: @font-family;
+          font-size: 1.5rem;
+          width: 40%; 
+          left: 180px;
+          position:relative;
+          text-align: center;
+        }
+        
+        button.more-info:hover {
+          background-color: #F4973D;
+        }  
+      }
+       
+      }
+         
+  }
 .mantenimiento{
   font-family: @font-family;
   .inicio{
