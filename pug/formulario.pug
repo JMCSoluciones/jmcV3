@@ -1,0 +1,25 @@
+extend ../components/template.pug
+block content
+    .content__formulario 
+        .content__formulario__container
+            h1 Solicita más información
+        .content__formulario__container-nombre
+            .col
+                label(for='Nombre') Nombre
+                input.form-control(type='text' placeholder='Nombre' aria-label='Nombre')
+            .col
+                input.form-control(type='text' placeholder='Apellido' aria-label='Apellido')
+            .col
+                label(for='Empresa') Empresa o Negocio
+                input.form-control(type='text' placeholder='' aria-label='')
+            .col
+                label(for='e-mail') Correo electrónico
+                input(type='email', name='email', placeholder='Escriba su correo electrónico')
+            .col 
+                label(for='e-mail') Software
+                label.visually-hidden(for='autoSizingSelect') Software
+                select#autoSizingSelect.form-select
+                    option(selected='') Elige...
+                    option(value='1') Uno
+                    option(value='2') Dos
+                    option(value='3') Tres
