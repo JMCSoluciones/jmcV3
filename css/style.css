@@ -1408,10 +1408,7 @@ header .menu-top__link img {
   list-style: none;
   color: #ffffff;
 }
-.beneficiosSAE {
-  font-family: 'Raleway', sans-serif;
-}
-.beneficiosSAE .beneficiosSAE .barraFlotante * {
+.beneficiosSAE .barraFlotante * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1419,14 +1416,14 @@ header .menu-top__link img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.beneficiosSAE .beneficiosSAE .barraFlotante body {
+.beneficiosSAE .barraFlotante body {
   font-family: 'Raleway', sans-serif;
   background: url(bg.jpeg);
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
-.beneficiosSAE .beneficiosSAE .barraFlotante nav {
+.beneficiosSAE .barraFlotante nav {
   position: fixed;
   width: 50px;
   margin-top: 80px;
@@ -1436,11 +1433,11 @@ header .menu-top__link img {
           box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
   border-radius: 0px 20px 20px 0px;
 }
-.beneficiosSAE .beneficiosSAE .barraFlotante nav li {
+.beneficiosSAE .barraFlotante nav li {
   height: 50px;
   position: relative;
 }
-.beneficiosSAE .beneficiosSAE .barraFlotante nav li a {
+.beneficiosSAE .barraFlotante nav li a {
   color: #000000;
   display: block;
   height: 100%;
@@ -1450,7 +1447,7 @@ header .menu-top__link img {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.beneficiosSAE .beneficiosSAE .barraFlotante nav li a img {
+.beneficiosSAE .barraFlotante nav li a img {
   position: absolute;
   top: 7px;
   left: 5px;
@@ -1460,7 +1457,7 @@ header .menu-top__link img {
           justify-content: center;
   height: 40px;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio {
+.beneficiosSAE .desarrollo__inicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1473,17 +1470,17 @@ header .menu-top__link img {
           flex-direction: row-reverse;
   margin: 30px 0px;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio-logo {
+.beneficiosSAE .desarrollo__inicio-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 50px;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio-logo img {
+.beneficiosSAE .desarrollo__inicio-logo img {
   height: 110px;
   width: auto;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button {
+.beneficiosSAE .desarrollo__inicio__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1492,7 +1489,7 @@ header .menu-top__link img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-beneficios {
+.beneficiosSAE .desarrollo__inicio__button-beneficios {
   background-color: #002e64;
   width: 100px;
   border: 2px solid white;
@@ -1501,12 +1498,12 @@ header .menu-top__link img {
   left: 60px;
   position: relative;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-beneficios a {
+.beneficiosSAE .desarrollo__inicio__button-beneficios a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-funciones {
+.beneficiosSAE .desarrollo__inicio__button-funciones {
   background-color: #00559a;
   width: 100px;
   border: 2px solid white;
@@ -1515,12 +1512,12 @@ header .menu-top__link img {
   left: 60px;
   position: relative;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-funciones a {
+.beneficiosSAE .desarrollo__inicio__button-funciones a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-tienda {
+.beneficiosSAE .desarrollo__inicio__button-tienda {
   background-color: #00559a;
   width: 100px;
   border: 2px solid white;
@@ -1529,12 +1526,12 @@ header .menu-top__link img {
   left: 60px;
   position: relative;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-tienda a {
+.beneficiosSAE .desarrollo__inicio__button-tienda a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-precios {
+.beneficiosSAE .desarrollo__inicio__button-precios {
   background-color: #00559a;
   width: 100px;
   border: 2px solid white;
@@ -1543,12 +1540,12 @@ header .menu-top__link img {
   left: 60px;
   position: relative;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-precios a {
+.beneficiosSAE .desarrollo__inicio__button-precios a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__video video {
+.beneficiosSAE .desarrollo__video video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1559,33 +1556,33 @@ header .menu-top__link img {
           justify-content: flex-end;
   left: 80px;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__body {
+.beneficiosSAE .desarrollo__body {
   padding: 10px;
   margin: 20px 20px 50px 60px;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__body h2 {
+.beneficiosSAE .desarrollo__body h2 {
   margin: 10px 40px 10px 10px;
   padding-top: 10px;
   border-bottom: 1px solid #17acc9;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__body-descripcion {
+.beneficiosSAE .desarrollo__body-descripcion {
   margin: 20px 0px;
   background-color: rgba(128, 128, 128, 0.099);
   border-radius: 10px;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__body-descripcion p {
+.beneficiosSAE .desarrollo__body-descripcion p {
   color: #666666d9;
   padding: 10px;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__body-funcion {
+.beneficiosSAE .desarrollo__body-funcion {
   background-color: rgba(128, 128, 128, 0.099);
   border-radius: 10px;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__body-funcion ul li {
+.beneficiosSAE .desarrollo__body-funcion ul li {
   padding: 0px 10px;
   color: #666666d9;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__body-button {
+.beneficiosSAE .desarrollo__body-button {
   background-color: #17acc9;
   border-radius: 50px;
   width: 100px;
@@ -1595,13 +1592,10 @@ header .menu-top__link img {
   left: 150px;
   position: relative;
 }
-.beneficiosSAE .beneficiosSAE .desarrollo__body-button a {
+.beneficiosSAE .desarrollo__body-button a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
-}
-.beneficiosCOI {
-  font-family: 'Raleway', sans-serif;
 }
 .beneficiosCOI .barraFlotante * {
   margin: 0;
