@@ -1,14 +1,29 @@
 extend ../components/template.pug
 block content
- .login
-    .login-container
-    h1 Login
-    form(action='#', method='post')
-        label(for='username') Username
-        input(type='text', id='username', name='username', placeholder='Enter your username')
-        
-        label(for='password') Password
-        input(type='password', id='password', name='password', placeholder='Enter your password')
-        
-        button(type='submit') Login
+    .content__login
+        .content__login__container
+            img(src="imagenes/singin.svg")
+            h1 Sing in
+            form(action='#', method='post')
+        .content__login__item
+            <!-- caja de E-mail -->
+            label(for='e-mail') E-mail
+            img(src="imagenes/email.svg")
+            input(type='email', name='email', placeholder='Enter your E-mail')
+            <!-- caja de password -->
+            label(for='password') Password
+            img(src="imagenes/password.svg")
+            input(type='password', id='password', name='password', placeholder='Enter your password')
+            
+            <!-- boto de ingresar-->
+            button(type='submit') Ingresar
+            <!-- boto de ingresar-->
+        .content__login__remember
+            // Checkbox
+            .form-check
+                input#check-input(type='checkbox' value='' checked='')
+                label.form-check-label(for='form')  Remember me 
+            .col
+            <!--Simple link-->
+                a(href='#!') Forgot password?
     
