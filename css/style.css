@@ -14,9 +14,6 @@ footer {
   background-color: #17acc9;
   text-decoration: none;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .funcionesSAE {
   font-family: 'Raleway', sans-serif;
 }
@@ -788,13 +785,7 @@ footer {
 .beneficiosSAE {
   font-family: 'Raleway', sans-serif;
 }
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-.beneficiosSAE .barraFlotante * {
+.beneficiosSAE .beneficiosSAE .barraFlotante * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -802,14 +793,14 @@ footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.beneficiosSAE .barraFlotante body {
+.beneficiosSAE .beneficiosSAE .barraFlotante body {
   font-family: 'Raleway', sans-serif;
   background: url(bg.jpeg);
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
-.beneficiosSAE .barraFlotante nav {
+.beneficiosSAE .beneficiosSAE .barraFlotante nav {
   position: fixed;
   width: 50px;
   margin-top: 80px;
@@ -819,11 +810,11 @@ footer {
           box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
   border-radius: 0px 20px 20px 0px;
 }
-.beneficiosSAE .barraFlotante nav li {
+.beneficiosSAE .beneficiosSAE .barraFlotante nav li {
   height: 50px;
   position: relative;
 }
-.beneficiosSAE .barraFlotante nav li a {
+.beneficiosSAE .beneficiosSAE .barraFlotante nav li a {
   color: #000000;
   display: block;
   height: 100%;
@@ -833,7 +824,7 @@ footer {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.beneficiosSAE .barraFlotante nav li a img {
+.beneficiosSAE .beneficiosSAE .barraFlotante nav li a img {
   position: absolute;
   top: 7px;
   left: 5px;
@@ -843,7 +834,7 @@ footer {
           justify-content: center;
   height: 40px;
 }
-.beneficiosSAE .desarrollo__inicio {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -856,17 +847,17 @@ footer {
           flex-direction: row-reverse;
   margin: 30px 0px;
 }
-.beneficiosSAE .desarrollo__inicio-logo {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: 50px;
 }
-.beneficiosSAE .desarrollo__inicio-logo img {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio-logo img {
   height: 110px;
   width: auto;
 }
-.beneficiosSAE .desarrollo__inicio__button {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -875,7 +866,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.beneficiosSAE .desarrollo__inicio__button-beneficios {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-beneficios {
   background-color: #002e64;
   width: 100px;
   border: 2px solid white;
@@ -884,12 +875,12 @@ footer {
   left: 60px;
   position: relative;
 }
-.beneficiosSAE .desarrollo__inicio__button-beneficios a {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-beneficios a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
-.beneficiosSAE .desarrollo__inicio__button-funciones {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-funciones {
   background-color: #00559a;
   width: 100px;
   border: 2px solid white;
@@ -898,12 +889,12 @@ footer {
   left: 60px;
   position: relative;
 }
-.beneficiosSAE .desarrollo__inicio__button-funciones a {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-funciones a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
-.beneficiosSAE .desarrollo__inicio__button-tienda {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-tienda {
   background-color: #00559a;
   width: 100px;
   border: 2px solid white;
@@ -912,12 +903,12 @@ footer {
   left: 60px;
   position: relative;
 }
-.beneficiosSAE .desarrollo__inicio__button-tienda a {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-tienda a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
-.beneficiosSAE .desarrollo__inicio__button-precios {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-precios {
   background-color: #00559a;
   width: 100px;
   border: 2px solid white;
@@ -926,12 +917,12 @@ footer {
   left: 60px;
   position: relative;
 }
-.beneficiosSAE .desarrollo__inicio__button-precios a {
+.beneficiosSAE .beneficiosSAE .desarrollo__inicio__button-precios a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
-.beneficiosSAE .desarrollo__video video {
+.beneficiosSAE .beneficiosSAE .desarrollo__video video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,33 +933,33 @@ footer {
           justify-content: flex-end;
   left: 80px;
 }
-.beneficiosSAE .desarrollo__body {
+.beneficiosSAE .beneficiosSAE .desarrollo__body {
   padding: 10px;
   margin: 20px 20px 50px 60px;
 }
-.beneficiosSAE .desarrollo__body h2 {
+.beneficiosSAE .beneficiosSAE .desarrollo__body h2 {
   margin: 10px 40px 10px 10px;
   padding-top: 10px;
   border-bottom: 1px solid #17acc9;
 }
-.beneficiosSAE .desarrollo__body-descripcion {
+.beneficiosSAE .beneficiosSAE .desarrollo__body-descripcion {
   margin: 20px 0px;
   background-color: rgba(128, 128, 128, 0.099);
   border-radius: 10px;
 }
-.beneficiosSAE .desarrollo__body-descripcion p {
+.beneficiosSAE .beneficiosSAE .desarrollo__body-descripcion p {
   color: #666666d9;
   padding: 10px;
 }
-.beneficiosSAE .desarrollo__body-funcion {
+.beneficiosSAE .beneficiosSAE .desarrollo__body-funcion {
   background-color: rgba(128, 128, 128, 0.099);
   border-radius: 10px;
 }
-.beneficiosSAE .desarrollo__body-funcion ul li {
+.beneficiosSAE .beneficiosSAE .desarrollo__body-funcion ul li {
   padding: 0px 10px;
   color: #666666d9;
 }
-.beneficiosSAE .desarrollo__body-button {
+.beneficiosSAE .beneficiosSAE .desarrollo__body-button {
   background-color: #17acc9;
   border-radius: 50px;
   width: 100px;
@@ -978,23 +969,14 @@ footer {
   left: 150px;
   position: relative;
 }
-.beneficiosSAE .desarrollo__body-button a {
+.beneficiosSAE .beneficiosSAE .desarrollo__body-button a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .beneficiosCOI {
   font-family: 'Raleway', sans-serif;
 }
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
 .beneficiosCOI .barraFlotante * {
   margin: 0;
   padding: 0;
@@ -1162,18 +1144,9 @@ footer {
   list-style: none;
   color: #ffffff;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .beneficiosADM {
   font-family: 'Raleway', sans-serif;
 }
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
 .beneficiosADM .barraFlotante * {
   margin: 0;
   padding: 0;
@@ -1341,18 +1314,9 @@ footer {
   list-style: none;
   color: #ffffff;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .beneficiosFACTURE {
   font-family: 'Raleway', sans-serif;
 }
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
 .beneficiosFACTURE .barraFlotante * {
   margin: 0;
   padding: 0;
@@ -1520,18 +1484,9 @@ footer {
   list-style: none;
   color: #ffffff;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .beneficiosNOI {
   font-family: 'Raleway', sans-serif;
 }
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
 .beneficiosNOI .barraFlotante * {
   margin: 0;
   padding: 0;
@@ -1721,18 +1676,9 @@ footer {
   list-style: none;
   color: #ffffff;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .beneficiosCAJA {
   font-family: 'Raleway', sans-serif;
 }
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
 .beneficiosCAJA .barraFlotante * {
   margin: 0;
   padding: 0;
@@ -1922,18 +1868,9 @@ footer {
   list-style: none;
   color: #ffffff;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .beneficiosPROD {
   font-family: 'Raleway', sans-serif;
 }
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
 .beneficiosPROD .barraFlotante * {
   margin: 0;
   padding: 0;
@@ -2101,18 +2038,9 @@ footer {
   list-style: none;
   color: #ffffff;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 .beneficiosBANCO {
   font-family: 'Raleway', sans-serif;
 }
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
-=======
->>>>>>> 0d49ecd (Beneficios de los sistemas Aspel listo)
 .beneficiosBANCO .barraFlotante * {
   margin: 0;
   padding: 0;
