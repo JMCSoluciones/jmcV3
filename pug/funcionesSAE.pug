@@ -1,0 +1,68 @@
+extend ../components/template.pug
+block content
+  .funcionesSAE
+    .barraFlotante
+      nav
+        ul
+          li
+            a(href='beneficiosSAE.html')
+              img(src="/imagenes/SAE.png", alt="Aspel SAE")
+          li
+            a(href='beneficiosCOI.html')
+              img(src="/imagenes/COI.png", alt="Aspel COI")
+          li
+            a(href='beneficiosNOI.html')
+              img(src="/imagenes/NOI.png", alt="Aspel NOI")
+          li
+            a(href='beneficiosADM.html')
+              img(src="/imagenes/ADM.png", alt="Aspel ADM")
+          li
+            a(href='beneficiosFACTURE.html')
+              img(src="/imagenes/FACT.png", alt="Aspel FACT")     
+          li
+            a(href='beneficiosCAJA.html')
+              img(src="/imagenes/CAJA.png", alt="Aspel CAJA")
+          li
+            a(href='beneficiosPROD.html')
+              img(src="/imagenes/PROD.png", alt="Aspel PROD")
+          li
+            a(href='beneficiosBANCO.html')
+              img(src="/imagenes/BANCO.png", alt="Aspel BANCO")
+    .desarrollo 
+      .desarrollo__inicio 
+        .desarrollo__inicio-logo 
+          img(src="/imagenes/SAE.png", alt="")
+        .desarrollo__inicio__button
+          .desarrollo__inicio__button-beneficios
+            a(href='beneficiosSAE.html') Beneficios
+          .desarrollo__inicio__button-funciones
+            a(href='funcionesSAE.html') Funciones
+          .desarrollo__inicio__button-tienda
+            a(href='tiendaSAE.html') Tienda en linea
+          .desarrollo__inicio__button-precios
+            a(href='preciosSAE.html') Precios 
+    .inicio 
+      .inicio__contenido 
+        h2 Sistema Administrativo Empresarial
+    .info
+      .info__body
+        .info__body__descripcion-pUno 
+          p Aspel SAE permite controlar el ciclo de las operaciones de compra-venta de su empresa, como: clientes, proveedores, cuentas por pagar, cuentas por cobrar, inventarios, facturación, vendedores, compras y ventas, automatizando los procesos administrativos de cada empresa.
+        .info__body__descripcion-pDos
+          h2 Nuevas características de la versión de Aspel SAE.
+          ul 
+            li Proveedores y compras
+            li Emisión de documento de compra-venta
+            li Facturación electrónica 4.0
+            li Validación de datos fiscales
+            li Genera tus CFDI con el complemento carta porte
+            li Número de esquemas de cancelación
+            li Tienda en línea
+            li Expande tus limites de venta
+            li Punto de venta 
+          p Este sistema ofrece gran movilidad a las empresas, permitiendo a las sucursales conectarse remotamente al servidor, ya sea por dispositivos móviles o equipos de cómputo, permitiendo así el acceso a toda la información comercial y/o administrativa.
+        .info__body__descripcion-pTres 
+          p Mantiene una interfaz con Aspel-COI para relacionar los folios fiscales de los CFDI a las pólizas, con base en los requerimientos vigentes de la Contabilidad Electrónica.
+        .info__body-button 
+            a(href="#") Mas informacion 
+
