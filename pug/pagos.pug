@@ -1,179 +1,222 @@
 extend ../components/template.pug
 block content
-    .content__administrador__pagos 
-        .content__administrador__pagos__container 
-            h1 Control de pagos
-            .content__administrador__pagos__container-add
-                button#add(type='button') Add user
-                button#delete(type='button') Delete
-            .content__administrador__pagos__container-buscar 
-                input#busca(type='text') 
-                button#buscarButton(type='button') Buscar
-                button#limpiarButton(type='button') Limpiar
-                table.table.table-striped.table-hover
+    .container__pagos__administrador
+        .table-wrapper
+            .table-title
+                .row
+                    .col-sm-6
+                    h2 Control de clientes
+                    .col-sm-6
+                        a.btn.btn-success(href='#addUserModal' data-toggle='modal')
+                           i.bi.bi-plus-circle
+                            span Add New User
+                        a.btn.btn-danger(href='#deleteUserModal' data-toggle='modal')
+                            i.bi.bi-dash-circle
+                            span Delete
+            table.table.table-striped.table-hover
                 thead
-                tr
-                th
-                    span.custom-checkbox
-                    input#selectAll(type='checkbox')
-                    label(for='selectAll')
-                th Nombre
-                th Direccion
-                th Detalles
-                th Accion
-            tbody
-                tr
-                td
-                    span.custom-checkbox
-                    input#checkbox1(type='checkbox' name='options[]' value='1')
-                    label(for='checkbox1')
-                td 
-                td 
-                td 
-                td 
-                td
-                    a.edit(href='#editEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                    a.delete(href='#deleteEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-                tr
-                td
-                    span.custom-checkbox
-                    input#checkbox2(type='checkbox' name='options[]' value='1')
-                    label(for='checkbox2')
-                td 
-                td 
-                td 
-                td 
-                td
-                    a.edit(href='#editEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                    a.delete(href='#deleteEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-                tr
-                td
-                    span.custom-checkbox
-                    input#checkbox3(type='checkbox' name='options[]' value='1')
-                    label(for='checkbox3')
-                td 
-                td
-                td 
-                td 
-                td
-                    a.edit(href='#editEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                    a.delete(href='#deleteEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-                tr
-                td
-                    span.custom-checkbox
-                    input#checkbox4(type='checkbox' name='options[]' value='1')
-                    label(for='checkbox4')
-                td 
-                td 
-                td 
-                td 
-                td
-                    a.edit(href='#editEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                    a.delete(href='#deleteEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-                tr
-                td
-                    span.custom-checkbox
-                    input#checkbox5(type='checkbox' name='options[]' value='1')
-                    label(for='checkbox5')
-                td 
-                td 
-                td 
-                td 
-                td
-                    a.edit(href='#editEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                    a.delete(href='#deleteEmployeeModal' data-toggle='modal')
-                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                   tr
+                        th
+                        th Id
+                        th Nombre
+                        th Dirección
+                        th Detalles
+                        th Acción
+                tbody
+                    tr
+                        td
+                        td 1
+                        td Fran Wilson
+                        td 89 Chiaroscuro Rd, Portland, USA 
+                        td
+                            button(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...    
+                        td
+                            a.edit(href='#editUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                            a.delete(href='#deleteUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                    tr
+                        td
+                        td 2
+                        td 
+                        td 
+                        td
+                            button(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...    
+                        td
+                            a.edit(href='#editUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                            a.delete(href='#deleteUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                    tr
+                        td
+                        td 3
+                        td 
+                        td 
+                        td
+                            button(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...    
+                        td
+                            a.edit(href='#editUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                            a.delete(href='#deleteUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                    tr
+                        td
+                        td 4
+                        td 
+                        td 
+                        td
+                            button(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...    
+                        td
+                            a.edit(href='#editUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                            a.delete(href='#deleteUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                    tr
+                        td
+                        td 5
+                        td 
+                        td 
+                        td
+                            button(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...    
+                        td
+                            a.edit(href='#editUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                            a.delete(href='#deleteUserModal' data-toggle='modal')
+                                i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
             .clearfix
-            .hint-text
-                | Showing 
-                b 5
-                |  out of 
-                b 25
-                |  entries
+                .hint-text
+                    | Showing 
+                    b 5
+                    |  out of 
+                    b 15
+                    |  entries
                 ul.pagination
                     li.page-item.disabled
-                        a(href='#') Previous
+                    a(href='#') Previous
                     li.page-item
-                        a.page-link(href='#') 1
+                    a.page-link(href='#') 1
                     li.page-item
-                        a.page-link(href='#') 2
+                    a.page-link(href='#') 2
                     li.page-item.active
-                        a.page-link(href='#') 3
+                    a.page-link(href='#') 3
                     li.page-item
-                        a.page-link(href='#') 4
+                    a.page-link(href='#') 4
                     li.page-item
-                        a.page-link(href='#') 5
+                    a.page-link(href='#') 5
                     li.page-item
-                        a.page-link(href='#') Next
-        // Edit Modal
-        #addEmployeeModal.modal.fade
+                    a.page-link(href='#') Next
+            // Edit Modal HTML
+    #addUserModal.modal.fade
         .modal-dialog
-            .modal-content
-            form
-                .modal-header
-                h4.modal-title Add Employee
-                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
-                .modal-body
-                .form-group
-                    label Name
-                    input.form-control(type='text' required='')
-                .form-group
-                    label Email
-                    input.form-control(type='email' required='')
-                .form-group
-                    label Address
-                    textarea.form-control(required='')
-                .form-group
-                    label Phone
-                    input.form-control(type='text' required='')
-                .modal-footer
-                input.btn.btn-default(type='button' data-dismiss='modal' value='Cancel')
-                input.btn.btn-success(type='submit' value='Add')
-        // Edit Modal 
-        #editEmployeeModal.modal.fade
-        .modal-dialog
-            .modal-content
-            form
-                .modal-header
-                h4.modal-title Edit Employee
-                button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
-                .modal-body
-                .form-group
-                    label Name
-                    input.form-control(type='text' required='')
-                .form-group
-                    label Email
-                    input.form-control(type='email' required='')
-                .form-group
-                    label Address
-                    textarea.form-control(required='')
-                .form-group
-                    label Phone
-                    input.form-control(type='text' required='')
-                .modal-footer
-                input.btn.btn-default(type='button' data-dismiss='modal' value='Cancel')
-                input.btn.btn-info(type='submit' value='Save')
-        // Delete Modal HTML
-        #deleteEmployeeModal.modal.fade
-            .modal-dialog
             .modal-content
                 form
+                    .modal-header
+                        h4.modal-title Añadir Nuevo Cliente
+                        button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                    .modal-body
+                        .form-group
+                            label RFC
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Nombre
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Direccion
+                            input.form-control(type='email' required='')
+                        .form-group
+                            label Municipio
+                            textarea.form-control(required='')
+                        .form-group
+                            label Codigo postal
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Estado
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Regimen Fiscal
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Telefono
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Contrato
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Correo Electronico
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Password
+                            input.form-control(type='text' required='')
+                    .modal-footer
+                        input.btn.btn-default(type='button' data-dismiss='modal' value='Cancel')
+                        input.btn.btn-success(type='submit' value='Add')
+    // Edit Modal HTML
+    #editUserModal.modal.fade
+        .modal-dialog
+            .modal-content
+                form
+                    .modal-header
+                        h4.modal-title Editar Cliente
+                        button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                    .modal-body
+                        .form-group
+                            label RFC
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Nombre
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Direccion
+                            input.form-control(type='email' required='')
+                        .form-group
+                            label Municipio
+                            textarea.form-control(required='')
+                        .form-group
+                            label Codigo postal
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Estado
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Regimen Fiscal
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Telefono
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Contrato
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Correo Electronico
+                            input.form-control(type='text' required='')
+                        .form-group
+                            label Password
+                            input.form-control(type='text' required='')
+                    .modal-footer
+                        input.btn.btn-default(type='button' data-dismiss='modal' value='Cancel')
+                        input.btn.btn-info(type='submit' value='Save')
+    // Delete Modal HTML
+    #deleteUserModal.modal.fade
+        .modal-dialog
+            .modal-content
+                form
+                    .modal-header
+                        h4.modal-title Delete User
+                        button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                    .modal-body
+                        p Are you sure you want to delete these Records?
+                        p.text-warning
+                            small This action cannot be undone.
+                    .modal-footer
+                        input.btn.btn-default(type='button' data-dismiss='modal' value='Cancel')
+                        input.btn.btn-danger(type='submit' value='Delete')
+    // Modales para mostrar más detalles
+    #verMasModal.modal.fade
+        .modal-dialog
+            .modal-content
                 .modal-header
-                    h4.modal-title Delete Employee
-                    button.close(type='button' data-dismiss='modal' aria-hidden='true') &times;
+                    h5.modal-title Más Detalles
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') &times;
                 .modal-body
-                    p Are you sure you want to delete these Records?
-                    p.text-warning
-                    small This action cannot be undone.
-                .modal-footer
-                    input.btn.btn-default(type='button' data-dismiss='modal' value='Cancel')
-                    input.btn.btn-danger(type='submit' value='Delete')
+    script(src="../js/pagos.js")
