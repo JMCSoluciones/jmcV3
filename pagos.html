@@ -1,15 +1,259 @@
-
-<div class="content__pagos"> 
-  <div class="content__pagos__container"> 
-    <h1><strong>Control pagos</strong></h1>
-  </div>
-  <div class="content__pagos__container-txt"><i class="material-icons">&#xE147;</i>
-    <button class="btn btn-primary" id="addUserButton" type="button">Add user</button><i class="material-icons">&#xE15C;</i>
-    <button class="btn btn-primary" id="adddeleteButton" type="button">Delete</button>
-  </div>
-  <div class="content__pagos__container-buscar"> <span class="input-group-btn"></span>
-    <input class="form-control" type="text"/><i class="material-icons">&#xE8B6;</i>
-    <button id="buscarButton" type="button">Buscar</button>
-    <button id="limpiarButton" type="button">Limpiar</button>
-  </div>
-</div>
+<!DOCTYPE html >
+<html> 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <title>Titulo del sitio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Raleway:wght@100;300;400;600;800&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)"/>
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)"/>
+    <link rel="stylesheet" href="css/menu.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <link rel="shortcut icon" href="images/favIcon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body> 
+    <header>
+      <div class="menu-top"> <a class="menu-top__link" href="https://jmcsoluciones.com/privacidad/">Aviso de Privacidad</a><a class="menu-top__link" href="https://jmcsoluciones.com/webmail" id="ocultar">Webmail </a><a class="menu-top__link" href="https://store.jmcsoluciones.com/" id="ocultar">Tienda</a><a class="menu-top__link" href="https://jmcsoluciones.com/cpanel" id="ocultar">Cpanel</a><a class="menu-top__link" href="login.html">Login <img src="imagenes/login.svg" alt="icono de login" id="login"/></a></div>
+      <nav class="menu"> 
+        <section class="menu__container"> <img class="menu__logo" src="imagenes/logo.png" alt="Logo de la empresa" id="logo"/>
+          <ul class="menu__links"> 
+            <li class="menu__item"> <a class="menu__link" href="index.html">Inicio</a></li>
+            <li class="menu__item"> <a class="menu__link" href="#">Empresa</a></li>
+            <li class="menu__item"> <a class="menu__link" href="#">Soluciones Administrativas </a></li>
+            <li class="menu__item"> <a class="menu__link" href="#">Aspel</a></li>
+            <li class="menu__item"> <a class="menu__link" href="#">Mantenimiento</a></li>
+          </ul>
+          <div class="menu__hamburger"> <img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
+        </section>
+      </nav>
+    </header>
+    <div class="content__administrador__pagos"> 
+      <div class="content__administrador__pagos__container"> 
+        <h1>Control de pagos</h1>
+        <div class="content__administrador__pagos__container-add">
+          <button id="add" type="button">Add user</button>
+          <button id="delete" type="button">Delete</button>
+        </div>
+        <div class="content__administrador__pagos__container-buscar"> <span class="input-group-btn"></span>
+          <input class="form-control" type="text"/><!--i.material-icons &#128269;&#65038;--->
+          <button id="buscarButton" type="button">Buscar</button>
+          <button id="limpiarButton" type="button">Limpiar</button>
+        </div>
+        <table class="table table-striped table-hover"></table>
+        <thead>
+          <tr></tr>
+          <th><span class="custom-checkbox"></span>
+            <input id="selectAll" type="checkbox"/>
+            <label for="selectAll"></label>
+          </th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </thead>
+        <tbody>
+          <tr></tr>
+          <td><span class="custom-checkbox"></span>
+            <input id="checkbox1" type="checkbox" name="options[]" value="1"/>
+            <label for="checkbox1"></label>
+          </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><a class="edit" href="#editEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i><a class="delete" href="#deleteEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></td>
+          <tr></tr>
+          <td><span class="custom-checkbox"></span>
+            <input id="checkbox2" type="checkbox" name="options[]" value="1"/>
+            <label for="checkbox2"></label>
+          </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><a class="edit" href="#editEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i><a class="delete" href="#deleteEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></td>
+          <tr></tr>
+          <td><span class="custom-checkbox"></span>
+            <input id="checkbox3" type="checkbox" name="options[]" value="1"/>
+            <label for="checkbox3"></label>
+          </td>
+          <td> </td>
+          <td></td>
+          <td> </td>
+          <td> </td>
+          <td><a class="edit" href="#editEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i><a class="delete" href="#deleteEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></td>
+          <tr></tr>
+          <td><span class="custom-checkbox"></span>
+            <input id="checkbox4" type="checkbox" name="options[]" value="1"/>
+            <label for="checkbox4"></label>
+          </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><a class="edit" href="#editEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i><a class="delete" href="#deleteEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></td>
+          <tr></tr>
+          <td><span class="custom-checkbox"></span>
+            <input id="checkbox5" type="checkbox" name="options[]" value="1"/>
+            <label for="checkbox5"></label>
+          </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><a class="edit" href="#editEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i><a class="delete" href="#deleteEmployeeModal" data-toggle="modal"></a><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></td>
+        </tbody>
+        <div class="clearfix"></div>
+        <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries
+          <ul class="pagination">
+            <li class="page-item disabled"><a href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Edit Modal-->
+      <div class="modal fade" id="addEmployeeModal"></div>
+      <div class="modal-dialog">
+        <div class="modal-content"></div>
+        <form>
+          <div class="modal-header"></div>
+          <h4 class="modal-title">Add Employee</h4>
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body"></div>
+          <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" type="text" required=""/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input class="form-control" type="email" required=""/>
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <textarea class="form-control" required=""></textarea>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input class="form-control" type="text" required=""/>
+          </div>
+          <div class="modal-footer"></div>
+          <input class="btn btn-default" type="button" data-dismiss="modal" value="Cancel"/>
+          <input class="btn btn-success" type="submit" value="Add"/>
+        </form>
+      </div>
+      <!-- Edit Modal -->
+      <div class="modal fade" id="editEmployeeModal"></div>
+      <div class="modal-dialog">
+        <div class="modal-content"></div>
+        <form>
+          <div class="modal-header"></div>
+          <h4 class="modal-title">Edit Employee</h4>
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body"></div>
+          <div class="form-group">
+            <label>Name</label>
+            <input class="form-control" type="text" required=""/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input class="form-control" type="email" required=""/>
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <textarea class="form-control" required=""></textarea>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input class="form-control" type="text" required=""/>
+          </div>
+          <div class="modal-footer"></div>
+          <input class="btn btn-default" type="button" data-dismiss="modal" value="Cancel"/>
+          <input class="btn btn-info" type="submit" value="Save"/>
+        </form>
+      </div>
+      <!-- Delete Modal HTML-->
+      <div class="modal fade" id="deleteEmployeeModal">
+        <div class="modal-dialog"></div>
+        <div class="modal-content">
+          <form></form>
+          <div class="modal-header">
+            <h4 class="modal-title">Delete Employee</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to delete these Records?</p>
+            <p class="text-warning"></p><small>This action cannot be undone.</small>
+          </div>
+          <div class="modal-footer">
+            <input class="btn btn-default" type="button" data-dismiss="modal" value="Cancel"/>
+            <input class="btn btn-danger" type="submit" value="Delete"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__box">
+        <div class="footer__box__body">
+          <div class="footer__box__body__contacto">
+            <div class="footer__box__body__contacto-txt">
+              <h2>¿Tienes alguna duda?</h2>
+              <h3>Llámanos </h3>
+            </div>
+            <div class="footer__box__body__contacto-phone"> 
+              <div class="footer__box__body__contacto-phone-img"> <img src="/imagenes/telefono-icono.svg" alt="icono de telefono"/></div>
+              <div class="footer__box__body__contacto-phone-num"> 
+                <p>449 386 2691 </p>
+              </div>
+            </div>
+            <div class="footer__box__body__contacto-email">
+              <div class="footer__box__body__contacto-email-img"><img src="/imagenes/mail-icono.svg" alt="icono de correo"/></div>
+              <div class="footer__box__body__contacto-email-direccion"> 
+                <p>proyectos@jmcsoluciones.com</p>
+              </div>
+            </div>
+            <div class="footer__box__body__contacto-redes">
+              <div class="footer__box__body__contacto-redes-icon"><a href="#"> </a><img src="/imagenes/facebook-icon.svg" alt="Ícono de facebook" id="logoFacebook"/></div>
+              <div class="footer__box__body__contacto-redes-txt">
+                <p>JMC Soluciones</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__box__body__logo"> 
+            <div class="footer__box__body__logo-img"> <img src="/imagenes/logo.svg" alt="LogoJMC" id="logoJMC"/></div>
+          </div>
+          <div class="footer__box__body__enlaces">
+            <ul> 
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Soluciones Web </a></li>
+              <li><a href="#">Polizas de mantenimiento</a></li>
+              <li><a href="#">Aspel</a></li>
+              <li><a href="#">Empresa</a></li>
+              <li><a href="https://jmcsoluciones.com/privacidad/">Politicas de privacidad</a></li>
+            </ul>
+          </div>
+          <div class="footer__box__body__ubicacion"> 
+            <div class="footer__box__body__ubicacion-img"> <img src="/imagenes/ubicacion-icon.svg" alt="ícono de ubicación" id="logoUbicacion"/></div>
+            <div class="footer__box__body__ubicacion-txt">
+              <p>Juan de la Barrera #108-B, Col. Héroes, CP.20190 Aguascalientes,Ags.            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
