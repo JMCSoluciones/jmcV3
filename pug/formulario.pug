@@ -1,0 +1,25 @@
+extend ../components/template.pug
+block content
+  .formulario
+    .titulo Solicita más informacion
+    .content-form
+      form(action = "")
+        .mb-3
+          label.form-label(for="name") Nombre
+          input.form-control(type="text" aria-describedby="name")
+        .mb-3
+          label.form-label(for="number") Teléfono
+          input.form-control(type="num" aria-describedby="phone")
+        .mb-3
+          label.form-label(for="email") Email
+          input.form-control(type="email" aria-describedby="email")
+        .mb-3
+          label.form-label(for="companyName") Nombre de la empresa
+          input.form-control(type="text" aria-describedby="company")
+        .mb-3
+          label.form-label(for="message") Mensaje
+          textarea.form-control(type="text" aria-describedby="message")
+
+        button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#modalBtn')
+          | Enviar
+    

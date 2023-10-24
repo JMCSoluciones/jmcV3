@@ -26,127 +26,169 @@
         <section class="menu__container"> <img class="menu__logo" src="imagenes/logo.png" alt="Logo de la empresa" id="logo"/>
           <ul class="menu__links"> 
             <li class="menu__item"> <a class="menu__link" href="index.html">Inicio</a></li>
-            <li class="menu__item"> <a class="menu__link" href="#">Empresa</a></li>
-            <li class="menu__item"> <a class="menu__link" href="#">Soluciones Administrativas </a></li>
-            <li class="menu__item"> <a class="menu__link" href="#">Aspel</a></li>
-            <li class="menu__item"> <a class="menu__link" href="#">Mantenimiento</a></li>
+            <li class="menu__item"> <a class="menu__link" href="empresa.html">Empresa</a></li>
+            <li class="menu__item"> <a class="menu__link" href="sWeb.html">Soluciones Web </a></li>
+            <li class="menu__item"> <a class="menu__link" href="menuAspel.html">Aspel</a></li>
+            <li class="menu__item"> <a class="menu__link" href="mantenimiento.html">Mantenimiento</a></li>
           </ul>
           <div class="menu__hamburger"> <img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
         </section>
       </nav>
     </header>
-    <div class="content"> 
-      <div class="content__section-slide">
-        <section class="content__slides carousel slide carousel-fade" data-bs-ride="carousel" id="carouselExampleFade">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <picture class="carousel-item__img">
-                <source media="(min-width:1110px)" srcset="images/Desktop/desktopSlidesIndex-1920x466.jpg"/>
-                <source media="(min-width:768px)" srcset="images/Tablet/tabletSlidesIndex-1110x466.jpg"/><img class="d-block w-100" src="imagenes/principal.png" alt="Imagen de pallets"/>
-              </picture>
+    <div class="index"><!-- imagenes de carrusel -->
+      <div class="content"> 
+        <div class="content__slides">
+          <div class="content__section-slide">
+            <div class="content__slides carousel slide carousel-fade" id="carouselExampleFade">
+              <section data-bs-ride="carousel"></section>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-item__img">
+                    <picture></picture>
+                    <source media="(min-width:1110px)" srcset="images/Desktop/desktopSlidesIndex-1920x466.jpg"/>
+                    <source media="(min-width:768px)" srcset="images/Tablet/tabletSlidesIndex-1110x466.jpg"/><img class="d-block w-100" src="imagenes/principal.png" alt="Imagen de pallets"/>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div><!-- informacion general del index -->
+        </div>
+      </div>
+      <div class="desarrollo"> 
+        <div class="desarrollo__soluciones">
+          <div class="desarrollo__soluciones-txt">
+            <h2>Soluciones <br/> <strong>Web</strong> </h2><!- cajas de los servicios -->
+<!-- DOMINIOS -->
           </div>
-        </section>
+        </div><a class="desarrollo__dominios" href="formulario.html"><img src="imagenes/dominios.png" alt="logo dominios"/>
+          <div class="desarrollo__dominios__box">
+            <div class="desarrollo__dominios__box-title"> 
+              <h2>Dominios</h2>
+            </div>
+            <div class="desarrollo__dominios__box-txt"> 
+              <p><strong>Registra</strong> el nombre de tu empresa u organización, nosotros te ayudamos.</p>
+            </div><!-- HOSTING -->
+          </div></a><a class="desarrollo__hosting" href="formulario.html"><img src="imagenes/dominios.png" alt="hosting"/>
+          <div class="desarrollo__hosting__box">
+            <div class="desarrollo__hosting__box-title">
+              <h2>Hosting</h2>
+            </div>
+            <div class="desarrollo__hosting__box-txt"> 
+              <p>Hosting extremadamente <strong>rápido</strong> y lleno de <strong>funciones</strong>  </p><!-- CORREO -->         
+            </div>
+          </div></a><a class="desarrollo__correo" href="formulario.html"><img src="imagenes/correo.png" alt="correo electrónico"/>
+          <div class="desarrollo__correo__box">
+            <div class="desarrollo__correo__box-title">
+              <h2>Correo <strong>electrónico</strong></h2>
+            </div>
+            <div class="desarrollo__correo__box-txt"> 
+              <p>Usa <strong>cuentas profesionales</strong> con tu propio dominio </p>
+            </div>
+          </div><!-- PAGINA -->                   </a><a class="desarrollo__pagina" href="formulario.html"><img src="imagenes/dominios.png" alt="página web"/>
+          <div class="desarrollo__pagina__box">
+            <div class="desarrollo__pagina__box-title">
+              <h2>Creamos tu <strong>página web</strong></h2>
+            </div>
+            <div class="desarrollo__pagina__box-txt"> 
+              <p><strong>Desarrollamos</strong> tu página web <strong>a la medida</strong></p>
+            </div>
+          </div><!-- TITULO 2 - ARQUITECTURA -->           </a>
+        <div class="desarrollo__arquitectura">
+          <div class="desarrollo__arquitectura-title">
+            <h2><strong>Arquitectura</strong></h2>
+          </div><!-- SERVIDORES --> 
+        </div><a class="desarrollo__servidores" href="formulario.html"><img src="imagenes/dominios.png" alt="servidores"/>
+          <div class="desarrollo__servidores__box">
+            <div class="desarrollo__servidores__box-title">
+              <h2><strong>Servidores</strong>    </h2>
+            </div>
+            <div class="desarrollo__servidores__box-txt"> 
+              <p>Nos encargamos de implementar la <strong>arquitectura </strong> que necesites para poner en marcha tus aplicaciones</p>
+            </div>
+          </div><!-- TITULO 3 - DESARROLLO -->         </a>
+        <div class="desarrollo__dMedida">
+          <div class="desarrollo__dMedida-title">
+            <h2><strong>Desarrollo</strong> a la medida </h2>
+          </div><!-- APLICACIONES -->
+        </div><a class="desarrollo__aplicaciones" href="formulario.html"><img src="imagenes/dominios.png" alt="aplicaciones"/>
+          <div class="desarrollo__aplicaciones__box">
+            <div class="desarrollo__aplicaciones__box-title">
+              <h2><strong>Aplicaciones</strong> a la medida    </h2>
+            </div>
+            <div class="desarrollo__aplicaciones__box-txt"> 
+              <p><strong>Desarrollamos</strong> aplicaciones a la medida, Android, iOS, Escritorio o Web</p>
+            </div>
+          </div><!-- TITULO 4 - TIENDA -->             </a>
+        <div class="desarrollo__online">
+          <div class="desarrollo__online-title">
+            <h2><strong>Tienda</strong> Online </h2>
+          </div><!-- TIENDA ONLINE -->
+        </div><a class="desarrollo__tienda" href="formulario.html"><img src="imagenes/dominios.png" alt="tienda"/>
+          <div class="desarrollo__tienda__box">
+            <div class="desarrollo__tienda__box-title">
+              <h2><strong>Tienda</strong> en línea de computación   </h2>
+            </div>
+            <div class="desarrollo__tienda__box-txt"> 
+              <p>Encuentra los <strong>mejores equipos</strong> para tu empresa u organización </p>
+            </div>
+          </div><!-- TITULO 5 - SOPORTE -->           </a>
+        <div class="desarrollo__soporte">
+          <div class="desarrollo__soporte-title"> 
+            <h2><strong>Soporte</strong><!-- SOPORTE INFORMATICO --></h2>
+          </div>
+        </div><a class="desarrollo__informatico" href="formulario.html"><img src="imagenes/dominios.png" alt="soporte informatico"/>
+          <div class="desarrollo__informatico__box">
+            <div class="desarrollo__informatico__box-title">
+              <h2><strong>Soporte</strong> informático     </h2>
+            </div>
+            <div class="desarrollo__informatico__box-txt"> 
+              <p><strong>Mantenimiento</strong> preventivo y correctivo a equipos de cómputo </p>
+            </div>
+          </div></a>
       </div>
-      <div class="content__section-soluciones">
-        <p class="content__section-soluciones-title title">Soluciones   </p>
-        <p class="content__section-soluciones-txt"><strong>Web</strong> </p>
-      </div>
-      <div class="content__section-dominios"><img src="imagenes/dominios.png" alt="dominios"/>
-        <div class="content__section-dominios__box">
-          <p class="content__section-dominios__box-title">Dominios</p>
-          <p class="content__section-dominios__box-txt"><strong>Registra</strong> el nombre de tu empresa u organización, nosotros te ayudamos.</p>
+      <div class="final">           
+        <div class="final__sAdmin">
+          <div class="final__sAdmin-title">
+            <h2>Soluciones <strong>ADMINISTRATIVAS</strong></h2>
+          </div>
         </div>
-      </div>
-      <div class="content__section-hosting"><img src="imagenes/dominios.png" alt="hosting"/>
-        <div class="content__section-hosting__box">
-          <p class="content__section-hosting__box-title title">Hosting</p>
-          <p class="content__section-hosting__box-txt"> Hosting extremadamente <strong>rápido</strong> y lleno de <strong>funciones</strong>           </p>
+        <div class="final__empresa">
+          <div class="final__empresa-title">
+            <h2>Toma el <strong>control</strong> de tu empresa</h2>
+          </div>
+          <div class="final__empresa-txt">
+            <ul>        
+              <li> <img src="imagenes/acierto.svg"/>
+                <p>Controla tus ventas</p>
+              </li>
+              <li> <img src="imagenes/acierto.svg"/>
+                <p>Conoce a tus clientes</p>
+              </li>
+              <li> <img src="imagenes/acierto.svg"/>
+                <p>Administra tus inventarios</p>
+              </li>
+              <li> <img src="imagenes/acierto.svg"/>
+                <p>Factura rápido</p>
+              </li>
+              <li> <img src="imagenes/acierto.svg"/>
+                <p>Domina las cuentas por cobrar y pagar</p>
+              </li>
+              <li> <img src="imagenes/acierto.svg"/>
+                <p>Mantén tu contabilidad segura</p>
+              </li>
+              <li> <img src="imagenes/acierto.svg"/>
+                <p>Automatiza tus nóminas</p>
+              </li>
+              <li> <img src="imagenes/acierto.svg"/>
+                <p>Maneja a tus proveedores</p>
+              </li>
+              <li> <img src="imagenes/acierto.svg"/>
+                <p>Y mucho más </p>
+              </li>
+            </ul>
+          </div>
+          <div class="final__empresa-btn"><a href="formulario.html">Mas informacion</a></div>
         </div>
-      </div>
-      <div class="content__section-correo"><img src="imagenes/correo.png" alt="correo electrónico"/>
-        <div class="content__section-correo__box">
-          <p class="content__section-correo__box-title title">Correo <strong>electrónico</strong></p>
-          <p class="content__section-correo__box-txt">Usa <strong>cuentas profesionales</strong> con tu propio dominio                </p>
-        </div>
-      </div>
-      <div class="content__section-pagina"><img src="imagenes/dominios.png" alt="página web"/>
-        <div class="content__section-pagina__box">
-          <p class="content__section-pagina__box-title title">Creamos tu <strong>página web</strong></p>
-          <p class="content__section-pagina__box-txt"><strong>Diseñamos</strong> y desarrollamos tu página web <strong>a la medida</strong>     </p>
-        </div>
-      </div>
-      <div class="content__section-arquitectura">
-        <p class="content__section-arquitectura-title title"><strong>Arquitectura</strong> </p>
-      </div>
-      <div class="content__section-servidores"><img src="imagenes/dominios.png" alt="servidores"/>
-        <div class="content__section-servidores__box">
-          <p class="content__section-servidores__box-title title"><strong>Servidores</strong>    </p>
-          <p class="content__section-servidores__box-txt">Nos encargamos de implementar la <strong>arquitectura </strong> que necesites para poner en marcha tus aplicaciones         </p>
-        </div>
-      </div>
-      <div class="content__section-desarrollo">
-        <p class="content__section-desarrollo-title title"><strong>Desarrollo</strong> a la medida </p>
-      </div>
-      <div class="content__section-aplicaciones"><img src="imagenes/dominios.png" alt="aplicaciones"/>
-        <div class="content__section-aplicaciones__box">
-          <p class="content__section-aplicaciones__box-title title"><strong>Aplicaciones</strong> a la medida    </p>
-          <p class="content__section-aplicaciones__box-txt"> <strong>Desarrollamos</strong> aplicaciones a la medida, Android, iOS, Escritorio o Web             </p>
-        </div>
-      </div>
-      <div class="content__section-online">
-        <p class="content__section-online-title title"><strong>Tienda</strong> Online </p>
-      </div>
-      <div class="content__section-tienda"><img src="imagenes/dominios.png" alt="tienda"/>
-        <div class="content__section-tienda__box">
-          <p class="content__section-tienda__box-title title"><strong>Tienda</strong>     </p>
-          <p class="content__section-tienda__box-txt">en línea de computación Encuentra los <strong>mejores equipos</strong> para tu empresa u organización            </p>
-        </div>
-      </div>
-      <div class="content__section-soporte">
-        <p class="content__section-soporte-title title"><strong>Soporte</strong></p>
-      </div>
-      <div class="content__section-informatico"><img src="imagenes/dominios.png" alt="soporte informatico"/>
-        <div class="content__section-informatico__box">
-          <p class="content__section-informatico__box-title title"><strong>Soporte</strong> informático     </p>
-          <p class="content__section-informatico__box-txt"><strong>Mantenimiento</strong> preventivo y correctivo a equipos de cómputo                </p>
-        </div>
-      </div>
-      <div class="content__section-soluciones-administrativas">
-        <p class="content__section-soluciones-administrativas-title title">Soluciones <strong>ADMINISTRATIVAS</strong></p>
-      </div>
-      <div class="content__section-empresa">
-        <p class="content__section-empresa-title title">Toma el <strong>control</strong> de tu empresa</p>
-        <ul class="content__section-empresa-ul">        
-          <li> <img src="imagenes/acierto.svg" alt="soporte informatico"/>
-            <p>Controla tus ventas</p>
-          </li>
-          <li> <img src="imagenes/acierto.svg" alt="soporte informatico"/>
-            <p>Conoce a tus clientes</p>
-          </li>
-          <li> <img src="imagenes/acierto.svg" alt="soporte informatico"/>
-            <p>Administra tus inventarios</p>
-          </li>
-          <li> <img src="imagenes/acierto.svg" alt="soporte informatico"/>
-            <p>Factura rápido</p>
-          </li>
-          <li> <img src="imagenes/acierto.svg" alt="soporte informatico"/>
-            <p>Domina las cuentas por cobrar y pagar</p>
-          </li>
-          <li> <img src="imagenes/acierto.svg" alt="soporte informatico"/>
-            <p>Mantén tu contabilidad segura</p>
-          </li>
-          <li> <img src="imagenes/acierto.svg" alt="soporte informatico"/>
-            <p>Automatiza tus nóminas</p>
-          </li>
-          <li> <img src="imagenes/acierto.svg" alt="soporte informatico"/>
-            <p>Maneja a tus proveedores</p>
-          </li>
-          <li> <img src="imagenes/acierto.svg" alt="soporte informatico"/>
-            <p>Y mucho más </p>
-          </li>
-        </ul>
-        <button class="more-info">Más información </button>
       </div>
     </div>
     <footer>
@@ -158,34 +200,33 @@
               <h3>Llámanos </h3>
             </div>
             <div class="footer__box__body__contacto-phone"> 
-              <div class="footer__box__body__contacto-phone-img"> <img src="/imagenes/telefono-icono.svg" alt="icono de telefono"/></div>
+              <div class="footer__box__body__contacto-phone-img"> <img src="/Images/Icons/telefono-icono.svg" alt="icono de telefono"/></div>
               <div class="footer__box__body__contacto-phone-num"> 
                 <p>449 386 2691 </p>
               </div>
             </div>
             <div class="footer__box__body__contacto-email">
-              <div class="footer__box__body__contacto-email-img"><img src="/imagenes/mail-icono.svg" alt="icono de correo"/></div>
+              <div class="footer__box__body__contacto-email-img"><img src="/Images/Icons/mail-icono.svg" alt="icono de correo"/></div>
               <div class="footer__box__body__contacto-email-direccion"> 
                 <p>proyectos@jmcsoluciones.com</p>
               </div>
             </div>
             <div class="footer__box__body__contacto-redes">
-              <div class="footer__box__body__contacto-redes-icon"><a href="#"> </a><img src="/imagenes/facebook-icon.svg" alt="Ícono de facebook" id="logoFacebook"/></div>
+              <div class="footer__box__body__contacto-redes-icon"><a href="#"> </a><img src="/Images/Icons/facebook-icon.svg" alt="Ícono de facebook" id="logoFacebook"/></div>
               <div class="footer__box__body__contacto-redes-txt">
                 <p>JMC Soluciones</p>
               </div>
             </div>
           </div>
           <div class="footer__box__body__logo"> 
-            <div class="footer__box__body__logo-img"> <img src="/imagenes/logo.svg" alt="LogoJMC" id="logoJMC"/></div>
+            <div class="footer__box__body__logo-img"> <img src="/Images/Icons/jmc.svg" alt="LogoJMC" id="logoJMC"/></div>
           </div>
           <div class="footer__box__body__enlaces">
             <ul> 
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Soluciones Web </a></li>
-              <li><a href="#">Polizas de mantenimiento</a></li>
-              <li><a href="#">Aspel</a></li>
-              <li><a href="#">Empresa</a></li>
+              <li><a href="sWeb.html">Soluciones Web </a></li>
+              <li><a href="mantenimiento.html">Polizas de mantenimiento</a></li>
+              <li><a href="menuAspel.html">Aspel</a></li>
+              <li><a href="empresa.html">Empresa</a></li>
               <li><a href="https://jmcsoluciones.com/privacidad/">Politicas de privacidad</a></li>
             </ul>
           </div>
