@@ -7,24 +7,20 @@ block content
                 button#add(type='button') Add user
                 button#delete(type='button') Delete
             .content__administrador__pagos__container-buscar 
-                span.input-group-btn
-                input.form-control(type='text')
-                
-                <!--i.material-icons &#128269;&#65038;--->
+                input#busca(type='text') 
                 button#buscarButton(type='button') Buscar
                 button#limpiarButton(type='button') Limpiar
-            table.table.table-striped.table-hover
-            thead
+                table.table.table-striped.table-hover
+                thead
                 tr
                 th
                     span.custom-checkbox
                     input#selectAll(type='checkbox')
                     label(for='selectAll')
-                th Name
-                th Email
-                th Address
-                th Phone
-                th Actions
+                th Nombre
+                th Direccion
+                th Detalles
+                th Accion
             tbody
                 tr
                 td
