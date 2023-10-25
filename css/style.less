@@ -1,7 +1,7 @@
 @import "variables.less";
 @import "globals.less";
 
-
+//Cris
 .content__login{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     border-radius: 15px 15px 15px 15px;
@@ -154,7 +154,7 @@ header {
   
   }
   } 
-
+//Cris
 .content{     
   &__section{
     &-soluciones{
@@ -1203,33 +1203,33 @@ header {
     }
   
 }
+//Cris
 .container__pagos__administrador {
 	color: @color-text;
 	background: #f5f5f5;
 	font-family: @font-family;
-	font-size: 13px;
+	font-size: 10px;
   
 }
-  .table-wrapper {
+  .container__pagos__administrador-wrapper {
     background:@color-white;
-    padding: 20px 25px;
     margin: 30px 0;
     border-radius: 3px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
-  .table-title {
-    color: @color-text;
-    padding: 16px 30px;
-    margin: -20px -25px 10px;
-    text-align: center;
+    .container__pagos__administrador-title {
+      color: @color-text;
+      padding: 16px 30px;
+      margin: -20px -25px 10px;
+      text-align: center;
+      line-height: 20px;
 
     
     h2 {
-      margin: 5px 0 0;
+      margin: 10px 10px; 
       font-size: 24px;
-      font-weight: @font-bold;
+      font-weight: @font-semibold;
       font-family: @font-family;
-      padding: 10%;
+     /*  padding: 10%; */
     }
       .btn-group {
         float: right;
@@ -1245,11 +1245,14 @@ header {
         outline: none !important;
         margin-left: 10px;
         font-size: 1.5rem;
-        width: 30%; 
-        left: 300px;
         position:relative;
         line-height: 10px;
-        
+      }
+      .btn:hover{
+        background-color: @color-white;
+        border: none;
+        color: @color-orange;
+        }
         i {
           float: left;
           font-size: 21px;
@@ -1260,37 +1263,59 @@ header {
           font-size: 1rem;
           font-family: @font-family;
         }
+        /* .form-inline{
+          margin: 20px;
+        }
+        .from-control{
+          display: block;
+          border: 1px solid #ccc;
+          padding: 5px;
+          width: 70%;
+          margin: 20px;
+        } */
+        .btn-outline{
+          background-color: @color-blue;
+          color: #fff;
+          padding: 5px 10px;
+          border: none;
+          cursor: pointer;
+          line-height: 20px;
+
+         }
       }
-      .btn:hover{
-        background-color: @color-orange;
-      }
-    }
   table.table {
     thead{
       tr {
         th {
           border-color:@color-text;
-          padding: 12px 15px;
-          vertical-align: middle;
-          font-size: 13px;
+          vertical-align: middle; 
+          font-size: 10px;
+          font-family: @font-family;
+          text-align: center;
+          padding: 10px 1px;
         }
       }
-    }
-  
           td {
           border-color: @color-text;
-          padding: 12px 15px;
+          padding: 12px 15px; 
           vertical-align: middle;
+          font-size: 10px;
           }
+        }
           .btn-link {
             color: @color-blue;
             border: none;
-            border-radius: 20px;
             cursor: pointer;
             font-family: @font-family;
-            font-size: 13px;
+            font-size: 10px;
             /* position:relative; */
             text-align: left;
+            }
+          .btn-link:hover{
+            background-color: @color-white;
+            border: none;
+            color: @color-orange;
+            }
           }
         th {
           i {
@@ -1299,61 +1324,40 @@ header {
             cursor: pointer;
           }
         } 
-      }
+      
           td {
             &:last-child {
               i {
-                opacity: 0.9;
-                font-size: 22px;
-                margin: 0 5px;
-                font-family: @font-family;
+                border-color: @color-text;
+                vertical-align: middle;
+                font-size: 10px;
               }
-          }
-        }
-          /* a {
-            font-weight: bold;
-            color: @color_1;
-            display: inline-block;
-            text-decoration: none;
-            outline: none !important;
-            &:hover {
-              color: @color_2;
-            }
-          }
+              /* .btn-link {
+                color: @color-blue;
+                border: none;
+                cursor: pointer;
+                font-family: @font-family;
+                font-size: 10px;
+                /* position:relative; */
+                /*text-align: left;
+                }
+              .btn-link:hover{
+                background-color: @color-white;
+                border: none;
+                color: @color-orange;
+                } */
+          /*   }
           a.edit {
-            color: @color_3;
+            color: violet;
           }
           a.delete {
-            color: @color_4;
+            color: yellow;
           }
           i {
             font-size: 19px;
           }
         } */
-       /* .avatar {
-          border-radius: 50%;
-          vertical-align: middle;
-          margin-right: 10px;
-        }
-      
-      table.table-striped {
-        tbody {
-          tr {
-            &:nth-of-type(odd) {
-              background-color: @background_color_1;
-            }
-          }
-        }
-      }
-      table.table-striped.table-hover {
-        tbody {
-          tr {
-            &:hover {
-              background: #f5f5f5;
-            }
-          }
-        }
-      }
+     
       .pagination {
         float: right;
         margin: 0 0 5px;
@@ -1363,14 +1367,14 @@ header {
             font-size: 13px;
             min-width: 30px;
             min-height: 30px;
-            color: @color_5;
+            color: blue;
             margin: 0 2px;
             line-height: 30px;
             border-radius: 2px !important;
             text-align: center;
             padding: 0 6px;
-            &:hover {
-              color: @color_6;
+            a:hover {
+              color: red;
             }
           }
           i {
@@ -1391,7 +1395,7 @@ header {
         }
         li.disabled {
           i {
-            color: @color_7;
+            color: yellow;
           }
         }
       }
@@ -1400,7 +1404,7 @@ header {
         margin-top: 10px;
         font-size: 13px;
       }
-      .modal {
+      /*.modal {
         .modal-dialog {
           max-width: 400px;
         }
@@ -1439,8 +1443,10 @@ header {
           }
         }
       }
-   
+    
  */
+    }
+  }
 .footer {
   &__box {
     &__body {
