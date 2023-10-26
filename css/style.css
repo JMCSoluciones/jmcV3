@@ -222,6 +222,15 @@ header .menu-top__link img {
   display: -ms-flexbox;
   display: flex;
 }
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu__item img {
+  width: 40px;
+  height: 40px;
+}
 .index .content {
   margin: 20px 0;
 }

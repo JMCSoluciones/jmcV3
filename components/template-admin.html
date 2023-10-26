@@ -21,41 +21,35 @@
   </head>
   <body> 
     <header>
-      <div class="menu-top"> <a class="menu-top__link" href="https://jmcsoluciones.com/privacidad/">Aviso de Privacidad</a><a class="menu-top__link" href="https://jmcsoluciones.com/webmail" id="ocultar">Webmail </a><a class="menu-top__link" href="https://store.jmcsoluciones.com/" id="ocultar">Tienda</a><a class="menu-top__link" href="https://jmcsoluciones.com/cpanel" id="ocultar">Cpanel</a><a class="menu-top__link" href="login.html">Login <img src="imagenes/login.svg" alt="icono de login" id="login"/></a></div>
       <nav class="menu"> 
         <section class="menu__container"> <img class="menu__logo" src="imagenes/logo.png" alt="Logo de la empresa" id="logo"/>
-          <ul class="menu__links"> 
-            <li class="menu__item"> <a class="menu__link" href="index.html">Inicio</a></li>
-            <li class="menu__item"> <a class="menu__link" href="empresa.html">Empresa</a></li>
-            <li class="menu__item"> <a class="menu__link" href="sWeb.html">Soluciones Web </a></li>
-            <li class="menu__item"> <a class="menu__link" href="menuAspel.html">Aspel</a></li>
-            <li class="menu__item"> <a class="menu__link" href="mantenimiento.html">Mantenimiento</a></li>
+          <ul class="menu__links">
+            <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a><!-- img(src="/Images/Icons/home.svg") --></li>
+            <li class="menu__item"><a class="menu__link" href="empresa.html">Clientes</a><!-- img(src="/Images/Icons/clientes.svg") --></li>
+            <li class="menu__item"> <a class="menu__link" href="sWeb.html">Pagos</a><!-- img(src="/Images/Icons/pagos.svg") --></li>
+            <li class="menu__item"> <a class="menu__link" href="menuAspel.html">Contratos</a><!-- img(src="/Images/Icons/contratos.svg") --></li>
+            <li class="menu__item"><a class="menu__link" href="mantenimiento.html">Soporte</a><!-- img(src="/Images/Icons/soporte.svg") --></li>
+            <li class="menu__item"><a class="menu__link" href="mantenimiento.html">Ajustes</a><!-- img(src="/Images/Icons/ajustes.svg") --></li>
           </ul>
-          <div class="menu__hamburger"> <img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
+          <div class="menu__hamburger"><img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
         </section>
+        <div class="menu__botones"> 
+          <div class="menu__botones-clientes"><img src="/Images/Icons/clientes.svg" alt="clientes"/>
+            <p>Clientes</p>
+          </div>
+          <div class="menu__botones-soporte"><img src="/Images/Icons/soporte.svg" alt="soporte"/>
+            <p>Soporte</p>
+          </div>
+          <div class="menu__botones-pagos"><img src="/Images/Icons/pagos.svg" alt="pagos"/>
+            <p>Pagos</p>
+          </div>
+          <div class="menu__botones-contratos"><img src="/Images/Icons/contratos.svg" alt="contratos"/>
+            <p>Contratos</p>
+          </div>
+          <div class="menu__botones-ajustes"><img src="/Images/Icons/ajustes.svg" alt="Ajustes"/></div>
+        </div>
       </nav>
     </header>
-    <div class="login">
-      <div class="login__container"><img src="/Images/Icons/usuario.svg"/>
-        <h1>Sing in</h1>
-        <form action="#" method="post"></form>
-      </div>
-      <div class="login__item"><!-- caja de E-mail -->
-        <label for="e-mail">E-mail</label><img src="/Images/Icons/email-login.svg"/>
-        <input type="email" name="email" placeholder="Enter your E-mail"/><!-- caja de password -->
-        <label for="password">Password</label><img src="/Images/Icons/password.svg"/>
-        <input type="password" id="password" name="password" placeholder="Enter your password"/><!-- boto de ingresar--><a href="inicioAdmin.html">
-          <button type="submit">Ingresar</button></a><!-- boto de ingresar-->
-      </div>
-      <div class="login__remember">
-        <!-- Checkbox-->
-        <div class="form-check">
-          <input id="check-input" type="checkbox" value="" checked=""/>
-          <label class="form-check-label" for="form"> Remember me </label>
-        </div>
-        <div class="col"></div><!--Simple link--><a href="#!">Forgot password?</a>
-      </div>
-    </div>
     <footer>
       <div class="footer__box">
         <div class="footer__box__body">
