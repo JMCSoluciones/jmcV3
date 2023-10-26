@@ -231,6 +231,130 @@ header .menu-top__link img {
   width: 40px;
   height: 40px;
 }
+.menu__botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 20px;
+  text-align: center;
+}
+.menu__botones-clientes {
+  display: block;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 65px;
+  height: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu__botones-clientes a {
+  list-style: none;
+  text-decoration: none;
+}
+.menu__botones-clientes img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+.menu__botones-clientes p {
+  font-size: 1.4rem;
+  color: #666666d9;
+}
+.menu__botones-soporte {
+  display: block;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 65px;
+  height: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu__botones-soporte a {
+  list-style: none;
+  text-decoration: none;
+}
+.menu__botones-soporte img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+.menu__botones-soporte p {
+  font-size: 1.4rem;
+  color: #666666d9;
+}
+.menu__botones-pagos {
+  display: block;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 65px;
+  height: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu__botones-pagos a {
+  list-style: none;
+  text-decoration: none;
+}
+.menu__botones-pagos img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+.menu__botones-pagos p {
+  font-size: 1.4rem;
+  color: #666666d9;
+}
+.menu__botones-contratos {
+  display: block;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 65px;
+  height: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu__botones-contratos a {
+  list-style: none;
+  text-decoration: none;
+}
+.menu__botones-contratos img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+.menu__botones-contratos p {
+  font-size: 1.3rem;
+  color: #666666d9;
+}
+.menu__botones-ajustes {
+  display: block;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 65px;
+  height: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu__botones-ajustes a {
+  list-style: none;
+  text-decoration: none;
+}
+.menu__botones-ajustes img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+.menu__botones-ajustes p {
+  font-size: 1.4rem;
+  color: #666666d9;
+}
 .index .content {
   margin: 20px 0;
 }
@@ -7379,4 +7503,25 @@ header .menu-top__link img {
 .footer__box__body__ubicacion img {
   width: 22px;
   height: auto;
+}
+.footer__box__body h2 {
+  margin: 30px;
+  font-size: 3rem;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.inicioAdmin .inicio {
+  margin: 150px 50px;
+  padding: 10px;
+  color: #666666d9;
+  text-align: center;
+}
+.inicioAdmin .inicio h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.inicioAdmin .inicio h2 {
+  font-size: 4rem;
 }
