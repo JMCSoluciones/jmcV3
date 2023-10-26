@@ -1,0 +1,34 @@
+extend ../components/template.pug
+block content
+    .content__vermas 
+            .content__vermas__container
+                h1 Informacion del cliente
+                .content__vermas__container-datos
+                    .dato
+                        label(for='Nombre') Nombre
+                        input.form-control(type='text' placeholder='' aria-label='Nombre')
+                    .dato
+                        label(for='Empresa') Dirección
+                        input.form-control(type='text' placeholder='' aria-label='')
+                    .dato
+                        label(for='Empresa') Municipio
+                        input.form-control(type='text' placeholder='' aria-label='')
+                    .dato
+                        label(for='Nombre') Código postal
+                        input.form-control(type='text' placeholder='' aria-label='Nombre')
+                    .dato
+                        label(for='Empresa') Régimen Fiscal
+                        input.form-control(type='text' placeholder='' aria-label='')
+                    .dato
+                        label(for='Empresa') Teléfono
+                        input.form-control(type='text' placeholder='' aria-label='')
+                    .dato
+                        label(for='Empresa') Contrato
+                        input.form-control(type='text' placeholder='' aria-label='')
+                        
+                    .dato
+                        label(for='Empresa') Correo electrónico
+                        input.form-control(type='text' placeholder='' aria-label='')
+                    .dato
+                button.delete-button(type='button') Eliminar
+                    button.edit(type='button') Modificar
