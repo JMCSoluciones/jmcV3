@@ -7958,3 +7958,50 @@ header {
     }
   }
 }
+
+.controlMenuAdmin {   
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  width: 100vw;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: rgba(50, 50, 93, 0.237) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 0px 0px 10px 10px;
+  &__box{
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-self: center;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+
+     &__item{
+      background-color: white;
+      border-radius: 10px;
+      width: 95px;
+      padding: 10px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      a{
+          text-decoration: none;
+          color: @color-text;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 1.4rem;
+          img{
+              width: 35px;
+              height: auto;
+          }
+      }
+     }
+     &__item:hover{
+      background-color: @color-black;
+      scale: 1.1;
+      transition: .4s;
+  
+     }
+  }
+}

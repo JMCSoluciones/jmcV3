@@ -7525,3 +7525,65 @@ header .menu-top__link img {
 .inicioAdmin .inicio h2 {
   font-size: 4rem;
 }
+.controlMenuAdmin {
+  padding: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#00d4ff));
+  background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  width: 100vw;
+  max-width: 500px;
+  margin: 0 auto;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.237) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.237) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 0px 0px 10px 10px;
+}
+.controlMenuAdmin__box {
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.controlMenuAdmin__box__item {
+  background-color: white;
+  border-radius: 10px;
+  width: 95px;
+  padding: 10px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.controlMenuAdmin__box__item a {
+  text-decoration: none;
+  color: #666666d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.controlMenuAdmin__box__item a img {
+  width: 35px;
+  height: auto;
+}
+.controlMenuAdmin__box__item:hover {
+  background-color: #000000;
+  scale: 1.1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
