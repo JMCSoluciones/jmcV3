@@ -8005,3 +8005,42 @@ header {
      }
   }
 }
+
+.content__CtrlClientes{
+  max-width: 1110px;
+  margin: 20px auto;
+  padding: 20px;
+  height: 90vh;
+  &__tabs{
+      &__item{
+        .btn-dark{
+          margin: 3px;
+          background-color: @color-btn-nact;
+        }
+        .btn-clean{
+          margin: 3px;
+          background-color: red;
+        }
+          &__header{
+              color: @color-white;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 30px;
+              border-radius: 4px 4px 4px 4px;
+
+          }
+          &__body{
+            &__table{
+              .delete{
+                color: red;
+              }
+              .edit{
+                color: rgba(251, 255, 0, 0.555);
+              }
+            }
+          }
+      }
+  }
+ 
+}
