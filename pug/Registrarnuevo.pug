@@ -1,0 +1,52 @@
+extend ../components/template.pug
+block content
+    .content__Registrarnuevo 
+            .content__Registrarnuevo__container
+                h1 Añadir Nuevo Cliente
+                .content__Registrarnuevo__container-nuevos
+                    .new
+                        label(for='RFC') RFC
+                        input.form-control(type='text' placeholder='Ingrese su RFC' aria-label='RFC')
+                    .new
+                        label(for='Nombre') Nombre
+                        input.form-control(type='text' placeholder='Ingrese su nombre' aria-label='Nombre')
+                    .new
+                        label(for='Direccion') Dirección
+                        input.form-control(type='text' placeholder='Ingrese la dirección' aria-label='')
+                    .nuevo
+                        label(for='Municipio') Municipio
+                        label.muni(for='autoSizingSelect') 
+                        select#autoSizingSelect.form-select
+                            option(selected='') Elige...
+                            option(value='1') Aguascalientes
+                            option(value='2') San José de Gracia
+                            option(value='3') Jesús María
+                    .nuevo 
+                        label(for='Municipio') Estado
+                        label.muni(for='autoSizingSelect') 
+                        select#autoSizingSelect.form-select
+                            option(selected='') Elige...
+                            option(value='1') Aguascalientes
+                            option(value='2') Zacatecas
+                    .new
+                        label(for='Codigo postal') Código postal
+                        input.form-control(type='text' placeholder='' aria-label='Nombre')
+                    .new
+                        label(for='Régimen fiscal') Régimen Fiscal
+                        input.form-control(type='text' placeholder='Ingrese su régimen fiscal' aria-label='')
+                    .new
+                        label(for='telefono') Teléfono
+                        input.form-control(type='text' placeholder='Ingrese su teléfono' aria-label='')
+                    .new
+                        label(for='contrato') Nombre del contrato
+                        input.form-control(type='text' placeholder='Ingrese nombre' aria-label='')
+                        
+                    .new
+                        label(for='e-mail') Correo electrónico
+                        input.form-control(type='text' placeholder='Ingrese correo electrónico' aria-label='')
+                    .new
+                        label(for='password') Password
+                        input.form-control(type='password' placeholder='Ingrese password' aria-label='')
+                    .new
+                button.button-light(type='button') Agregar
+                    button.btn.btn-light(type='button') Cancelar

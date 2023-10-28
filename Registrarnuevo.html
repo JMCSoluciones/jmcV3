@@ -37,61 +37,70 @@
         </section>
       </nav>
     </header>
-    <div class="mantenimiento">
-      <div class="inicio">
-         <!-- imagen de incio de la pagina -->
-        <div class="inicio__contenido">
-          <div class="inicio__contenido-titulo1">
-            <h2>Mantén tus equipos de computo en estado óptimo</h2>
+    <div class="content__Registrarnuevo"> 
+      <div class="content__Registrarnuevo__container">
+        <h1>Añadir Nuevo Cliente</h1>
+        <div class="content__Registrarnuevo__container-nuevos">
+          <div class="new">
+            <label for="RFC">RFC</label>
+            <input class="form-control" type="text" placeholder="Ingrese su RFC" aria-label="RFC"/>
           </div>
-          <div class="inicio__contenido-titulo2">
-            <h2>Mantenimiento preventivo y correctivo</h2>
+          <div class="new">
+            <label for="Nombre">Nombre</label>
+            <input class="form-control" type="text" placeholder="Ingrese su nombre" aria-label="Nombre"/>
           </div>
+          <div class="new">
+            <label for="Direccion">Dirección</label>
+            <input class="form-control" type="text" placeholder="Ingrese la dirección" aria-label=""/>
+          </div>
+          <div class="nuevo">
+            <label for="Municipio">Municipio</label>
+            <label class="muni" for="autoSizingSelect"> </label>
+            <select class="form-select" id="autoSizingSelect">
+              <option selected="">Elige...</option>
+              <option value="1">Aguascalientes</option>
+              <option value="2">San José de Gracia</option>
+              <option value="3">Jesús María</option>
+            </select>
+          </div>
+          <div class="nuevo"> 
+            <label for="Municipio">Estado</label>
+            <label class="muni" for="autoSizingSelect"> </label>
+            <select class="form-select" id="autoSizingSelect">
+              <option selected="">Elige...</option>
+              <option value="1">Aguascalientes</option>
+              <option value="2">Zacatecas</option>
+            </select>
+          </div>
+          <div class="new">
+            <label for="Codigo postal">Código postal</label>
+            <input class="form-control" type="text" placeholder="" aria-label="Nombre"/>
+          </div>
+          <div class="new">
+            <label for="Régimen fiscal">Régimen Fiscal</label>
+            <input class="form-control" type="text" placeholder="Ingrese su régimen fiscal" aria-label=""/>
+          </div>
+          <div class="new">
+            <label for="telefono">Teléfono</label>
+            <input class="form-control" type="text" placeholder="Ingrese su teléfono" aria-label=""/>
+          </div>
+          <div class="new">
+            <label for="contrato">Nombre del contrato</label>
+            <input class="form-control" type="text" placeholder="Ingrese nombre" aria-label=""/>
+          </div>
+          <div class="new">
+            <label for="e-mail">Correo electrónico</label>
+            <input class="form-control" type="text" placeholder="Ingrese correo electrónico" aria-label=""/>
+          </div>
+          <div class="new">
+            <label for="password">Password</label>
+            <input class="form-control" type="password" placeholder="Ingrese password" aria-label=""/>
+          </div>
+          <div class="new"></div>
         </div>
-      </div>
-      <div class="desarrollo"> 
-        <div class="desarrollo__contenido"> 
-          <div class="desarrollo__contenido-titulo">
-            <h2>¿Por que adquirir una póliza de servicio con nosotros?</h2>
-          </div>
-          <div class="desarrollo__contenido__op">
-            <div class="desarrollo__contenido__op__prof">
-              <div class="desarrollo__contenido__op__prof-txt"> 
-                <h2>Profesionalismo </h2>
-                <p>Llevamos un <strong>estricto control</strong> en nuestros procesos de revisión y mantenimiento.</p>
-              </div>
-              <div class="desarrollo__contenido__op__prof-img"><img src="/images/Icons/Profesionalismo.svg" alt="icono"/></div>
-            </div>
-            <div class="desarrollo__contenido__op__exp">
-              <div class="desarrollo__contenido__op__exp-txt"> 
-                <h2>Experiencia </h2>
-                <p>Nuestra mayor fortaleza es nuestra <strong>amplia experiencia</strong> en resolver problemas técnicos.</p>
-              </div>
-              <div class="desarrollo__contenido__op__exp-img"><img src="/images/Icons/Experiencia.png" alt="icono"/></div>
-            </div>
-            <div class="desarrollo__contenido__op__dist">
-              <div class="desarrollo__contenido__op__dist-txt"> 
-                <h2>Somos distribuidores </h2>
-                <p>Nosotros adquirimos piezas de reemplazo <strong>directamente con el fabricante</strong> sin intermediaros, beneficiando directamente en los costos.</p>
-              </div>
-              <div class="desarrollo__contenido__op__dist-img"><img src="/images/Icons/Distribuidores.svg" alt="icono"/></div>
-            </div>
-            <div class="desarrollo__contenido__op__conf">
-              <div class="desarrollo__contenido__op__conf-txt"> 
-                <h2>Confidencialidad </h2>
-                <p>La <strong>información</strong> de nuestros clientes siempre está <strong>segura</strong>. Generamos un acuerdo de confidencialidad.</p>
-              </div>
-              <div class="desarrollo__contenido__op__conf-img"><img src="/images/Icons/confidencialidad.svg" alt="icono"/></div>
-            </div>
-            <div class="desarrollo__contenido__op__solutions">
-              <div class="desarrollo__contenido__op__solutions-txt"> 
-                <h2>Damos soluciones </h2>
-                <p>No solo reparamos computadoras, <strong>resolvemos situaciones</strong>. El alto grado de compromiso exige dar el mejor servicio.</p>
-              </div>
-              <div class="desarrollo__contenido__op__solutions-img"><img src="/images/Icons/soluciones.svg" alt="icono"/></div>
-            </div>
-          </div>
-        </div>
+        <button class="button-light" type="button">Agregar
+          <button class="btn btn-light" type="button">Cancelar</button>
+        </button>
       </div>
     </div>
     <footer>
