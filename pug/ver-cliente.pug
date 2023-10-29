@@ -1,0 +1,44 @@
+extend ../components/template-admin.pug
+block content
+    include control-menuAdmin.pug
+    .verCliente
+      h2 Informacion del cliente 
+      .botones 
+        .botones__contratos
+          a(href="#")  
+            p Contratos 
+            img(src="/Images/Icons/contratos.svg", alt="")
+        .botones__pagos
+          a(href="#")    
+            p Pagos 
+            img(src="/Images/Icons/pagos.svg", alt="")
+        .botones__ticket
+          a(href="#")  
+            p Tickets
+            img(src="/Images/Icons/tickets.svg", alt="")
+        .botones__imprimir
+          a(href="#")  
+            p Imprimir 
+            img(src="/Images/Icons/imprimir.svg", alt="")
+        .botones__equipos 
+          a(href="#")  
+            p Equipos 
+            img(src="/Images/Icons/equipos.svg", alt="")
+      a(href="inicioAdmin.html") 
+          button.btn.btn-exit(type="submit")#salir Regresar
+      .datos 
+        .datos__info 
+          label(for="nombre") Nombre 
+          label(for="direccion") Direccion 
+          label(for="estado") Estado  
+          label(for="municipio") Municipio 
+          label(for="cp") Código Postal  
+          label(for="rf") Regimen Fiscal 
+          label(for="tel") Teléfono  
+          label(for="contacto") Contacto 
+          label(for="correo") Correo Electrónico
+      .final
+        a(href="") 
+          button.btn.btn-eliminar(type="submit")#eliminar Eliminar
+        a(href="") 
+          button.btn.btn-modificar(type="submit")#modificar Modificar

@@ -1,0 +1,67 @@
+extend ../components/template-admin.pug
+block content
+    include control-menuAdmin.pug
+    .content__CtrlClientes
+        h3.title Control de clientes
+        a(href="registrar-nuevo.html") 
+          button.btn.btn-nuevo(type="submit")#nuevo Nuevo
+        .content__CtrlClientes__tabs
+            #myTabContent.tab-content
+                #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
+                    .content__CtrlClientes__tabs__item
+                        .content__CtrlClientes__tabs__item__header#usuario-header
+                            h3 Nombre
+                            form.d-flex(role="search")
+                                input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
+                                a(href='busqueda.html') 
+                                    .btn.btn-dark(type="submit") Buscar
+                                a(href="#") 
+                                    .btn.btn-clean(type="submit") Limpiar
+                        .content__CtrlClientes__tabs__item__body
+                            .table-wrapper.content__CtrlClientes__tabs__item__body__table
+                                table.table.table-striped.table-hover
+                                    thead 
+                                        tr                  
+                                            th Id
+                                            th Nombre
+                                            th Correo
+                                            th Detalles
+                                            th Acciones
+                                    tbody 
+                                        tr 
+                                            td 01
+                                            td Josue Martinez
+                                            td josue@jmcsoluciones.com
+                                            td
+                                                a(href="ver-cliente.html") ver más... 
+                                            td
+                                                a.edit(href="#editProductoModal" data-toggle='modal')
+                                                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                                                a.delete(href='#deleteProductoModal' data-toggle='modal')
+                                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                                        tr 
+                                            td 02
+                                            td cliente 2
+                                            td 23/octubre/2023
+                                            td 
+                                                a(href="ver-cliente.html") ver más... 
+                                            td
+                                                a.edit(href="#editProductoModal" data-toggle='modal')
+                                                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                                                a.delete(href='#deleteProductoModal' data-toggle='modal')
+                                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                        .content__CtrlCotizaciones__tabs__item__footer
+                            nav(aria-label='...')
+                                ul.pagination
+                                    li.page-item.disabled
+                                    a.page-link Previous
+                                    li.page-item
+                                    a.page-link(href='#') 1
+                                    li.page-item.active(aria-current='page')
+                                    a.page-link(href='#') 2
+                                    li.page-item
+                                    a.page-link(href='#') 3
+                                    li.page-item
+                                    a.page-link(href='#') Next   
+            a(href="inicioAdmin.html") 
+                button.btn.btn-exit(type="submit")#salir Salir
