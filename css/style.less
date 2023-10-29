@@ -7944,6 +7944,7 @@ header {
 }
 
 .inicioAdmin{
+  font-family: @font-family;
   .inicio{
     margin: 150px 50px;
     padding: 10px;
@@ -7959,7 +7960,8 @@ header {
   }
 }
 
-.controlMenuAdmin {   
+.controlMenuAdmin { 
+  font-family: @font-family;  
   padding: 10px;
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   width: 100vw;
@@ -7977,7 +7979,7 @@ header {
       margin: 0 auto;
 
      &__item{
-      background-color: white;
+      background-color: @color-white;
       border-radius: 10px;
       width: 95px;
       padding: 10px;
@@ -7998,7 +8000,7 @@ header {
       }
      }
      &__item:hover{
-      background-color: @color-black;
+      background-color: @color-secondary;
       scale: 1.1;
       transition: .4s;
   
@@ -8007,10 +8009,27 @@ header {
 }
 
 .content__CtrlClientes{
+  font-family: @font-family;
   max-width: 1110px;
-  margin: 20px auto;
+  margin: 5px auto;
   padding: 20px;
   height: 90vh;
+  h3{
+    font-size: @font-size-lg;
+  }
+
+  a{
+    list-style: none;
+    text-decoration: none;
+
+    .btn-nuevo{
+      display: flex;
+      justify-content: flex-end;
+      background-color: gray;
+      color: @color-white
+    }
+  }
+
   &__tabs{
       &__item{
         .btn-dark{
@@ -8020,15 +8039,23 @@ header {
         .btn-clean{
           margin: 3px;
           background-color: red;
+          color: @color-white
+        }
+        .btn-clean:hover{
+          background-color: rgb(60, 1, 1);
+          color: @color-white
         }
           &__header{
               color: @color-white;
               display: flex;
               justify-content: space-between;
               align-items: center;
-              padding: 30px;
+              padding: 20px;
               border-radius: 4px 4px 4px 4px;
-
+            h3{
+              font-size: 1.4rem;
+              color: black;
+            }
           }
           &__body{
             &__table{
@@ -8038,9 +8065,346 @@ header {
               .edit{
                 color: rgba(251, 255, 0, 0.555);
               }
+              .table-striped{
+                thead th:nth-child(1) {
+                  width: 10%;
+                }
+                
+                thead th:nth-child(2) {
+                  width: 20%;
+                }
+                
+                thead th:nth-child(3) {
+                  width: 30%;
+                }
+                
+                thead th:nth-child(4) {
+                  width: 20%;
+                }
+                thead th:nth-child(5) {
+                  width: 20%;
+                }
+                th,
+                td {
+                  padding: 2px;
+                }
             }
+          }
           }
       }
   }
- 
+  .btn-exit{
+    margin: 50px 0px;
+    background-color: orange;
+    padding: 5px 40px;
+   
+  }
+  .btn-exit:hover{
+    background-color: rgba(70, 46, 1, 0.747);
+    color: @color-white
+  }
+}
+
+.verCliente{
+  font-family: @font-family;
+  h2{
+    margin: 30px 0;
+    text-align: center;
+    font-weight: @font-semibold;
+    font-size: 2.5rem;
+  }
+  .botones{
+    display: flex;
+    margin: 30px 15px;
+    justify-content: center;
+    &__contratos{
+      border: 1px solid gray;
+      border-radius: 10px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column  ;
+      padding: 10px 0;
+      align-items: center;
+      justify-content: center;
+      a{
+        text-decoration: none;
+        list-style: none;
+        color: @color-text;
+        p{
+          font-size: 1.2rem;
+          display: flex;
+        }
+        img{
+          width: 50px;
+          display: flex;
+        }
+      }
+      
+    }
+    &__pagos{
+      border: 1px solid gray;
+      border-radius: 10px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column  ;
+      padding: 10px 0;
+      align-items: center;
+      justify-content: center;
+      a{
+        text-decoration: none;
+        list-style: none;
+        color: @color-text;
+        p{
+          font-size: 1.2rem;
+          display: flex;
+        }
+        img{
+          width: auto;
+          height: 40px;
+          display: flex;
+        }
+      }
+
+    }
+    &__ticket{
+      border: 1px solid gray;
+      border-radius: 10px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a{
+        text-decoration: none;
+        list-style: none;
+        color: @color-text;
+        p{
+          font-size: 1.2rem;
+          display: flex;
+        }
+        img{
+          height: 45px;
+          width: 35px;
+          display: flex;
+        }
+      }
+
+    }
+    &__imprimir{
+      border: 1px solid gray;
+      border-radius: 10px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column  ;
+      padding: 10px 0;
+      align-items: center;
+      justify-content: center;
+      a{
+        text-decoration: none;
+        list-style: none;
+        color: @color-text;
+        p{
+          font-size: 1.2rem;
+          display: flex;
+        }
+        img{
+          width: 35px;
+          display: flex;
+        }
+      }
+
+    }
+    &__equipos{
+      border: 1px solid gray;
+      border-radius: 10px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      flex-direction: column  ;
+      padding: 10px 0;
+      align-items: center;
+      justify-content: center;
+      a{
+        text-decoration: none;
+        list-style: none;
+        color: @color-text;
+        p{
+          font-size: 1.2rem;
+          display: flex;
+        }
+        img{
+          width: 40px;
+          display: flex;
+        }
+      }
+
+    }
+  }
+  a{
+    text-decoration: none;
+    list-style: none;
+    color: @color-text;
+    .btn-exit{
+      background-color: @color-secondary;
+      display: flex;
+      margin: 20px 30px;
+    }
+  }
+  .datos{
+    &__info{
+      margin: 20px;
+      label{
+        font-size: 1.6rem;
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  }
+  .final{
+    margin: 40px 10px;
+    display: flex;
+    justify-content: space-around;
+    .btn-eliminar{
+      background-color: red;
+      color: @color-white
+    }
+    .btn-modificar{
+      background-color: @color-secondary
+    }
+  }
+
+}
+
+.registrar{
+  .info{
+    font-family: @font-family;
+    h2{
+      margin: 10px 10px;
+      padding: 5px 0;
+      border-radius: 8px;
+      background-color: rgba(128, 128, 128, 0.245);
+      box-shadow: inset #2980b9;
+      text-align: center;
+    }
+    label{
+      margin: 10px;
+      display: block;
+      font-weight: @font-semibold;
+    }
+    input{
+      border: 1px solid gray;
+      border-radius: 10px;
+      justify-content: end;
+      text-align: center;
+    }
+    select, textarea{
+      border-radius: 20px;
+      width: 100px;
+      margin-left: 68px;
+      width: 200px;
+      padding: 3px;
+      border-color: gray;
+      text-align: center;
+    }
+    #rfc{
+      margin-left: 85px;
+      width: 200px;
+      padding: 3px;
+    }
+    #name{
+      margin-left: 65px;
+      width: 200px;
+      padding: 3px;
+    }
+    #direccion{
+      margin-left: 60px;
+      width: 200px;
+      padding: 3px;
+    }
+    #municipio{
+      margin-left: 58px;
+      width: 200px;
+      padding: 3px;
+    }
+    #cp{
+      margin-left: 40px;
+      width: 200px;
+      padding: 3px;
+    }
+    #rf{
+      margin-left: 35px;
+      width: 200px;
+      padding: 3px;
+    }
+    #tel{
+      margin-left: 63px;
+      width: 200px;
+      padding: 3px;
+    }
+    #nContacto{
+      margin-left: 10px;
+      width: 200px;
+      padding: 3px;
+    }
+    #email{
+      margin-left: 20px;
+      width: 200px;
+      padding: 3px;
+    }
+    #password{
+      margin-left: 20px;
+      width: 200px;
+      padding: 3px;
+    }
+  }
+  .botones{
+    display: flex;
+    justify-content: space-around;
+    .btn-add{
+      background-color: @color-secondary;
+      margin: 20px;
+      width: 100px;
+      border-radius: 22px;
+    }
+    .btn-cancelar{
+      border: 1px solid @color-secondary;
+      margin: 20px;
+      width: 100px;
+      border-radius: 22px;
+    }
+  }
+}
+
+.busqueda{
+  font-family: @font-family;
+  h2{
+    font-size: @font-size-lg;
+    text-align: center;
+    margin: 30px 0;
+  }
+  .content{
+    margin: 80px 0;
+    &__buscar{
+      margin: 30px 0;
+      &__body{
+        &__table{
+          .edit{
+            color: yellow;
+          }
+          .delete{
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  .btn-exit{
+    background-color: @color-secondary;
+    width: 80px;
+    margin: 0 0px 0 250px;
+  }
 }

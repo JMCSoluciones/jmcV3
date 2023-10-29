@@ -1,0 +1,54 @@
+extend ../components/template-admin.pug
+block content
+  .busqueda 
+    h2 Resultado de la busqueda
+    .content 
+      .content_buscar 
+        .content__buscar__body
+          .table-wrapper.content__buscar__body__table
+            table.table.table-striped.table-hover
+              thead 
+                tr                  
+                  th Id
+                  th Nombre
+                  th Correo
+                  th Detalles
+                  th Acciones
+              tbody 
+                tr 
+                  td 01
+                  td Josue Martinez
+                  td josue@jmcsoluciones.com
+                  td
+                    a(href="ver-cliente.html") ver más... 
+                  td
+                    a.edit(href="#editProductoModal" data-toggle='modal')
+                      i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                    a.delete(href='#deleteProductoModal' data-toggle='modal')
+                      i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                tr 
+                  td 02
+                  td cliente 2
+                  td 23/octubre/2023
+                  td 
+                    a(href="ver-cliente.html") ver más... 
+                  td
+                    a.edit(href="#editProductoModal" data-toggle='modal')
+                      i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                    a.delete(href='#deleteProductoModal' data-toggle='modal')
+                      i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+        .content__buscar__footer
+          nav(aria-label='...')
+            ul.pagination
+              li.page-item.disabled
+              a.page-link Previous
+              li.page-item
+              a.page-link(href='#') 1
+              li.page-item.active(aria-current='page')
+              a.page-link(href='#') 2
+              li.page-item
+              a.page-link(href='#') 3
+              li.page-item
+              a.page-link(href='#') Next  
+        a(href="inicioAdmin.html") 
+          button.btn.btn-exit(type="submit") Salir

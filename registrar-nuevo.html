@@ -1,0 +1,130 @@
+<!DOCTYPE html >
+<html> 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <title>JMC Soluciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Raleway:wght@100;300;400;600;800&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)"/>
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)"/>
+    <link rel="stylesheet" href="css/menu.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <link rel="shortcut icon" href="images/favIcon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body> 
+    <header>
+      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión <img src="imagenes/login.svg" alt="icono de login"/></a></div>
+      <nav class="menu"> 
+        <section class="menu__container"> <img class="menu__logo" src="imagenes/logo.png" alt="Logo de la empresa" id="logo"/>
+          <ul class="menu__links">
+            <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a><!-- img(src="/Images/Icons/home.svg") --></li>
+            <li class="menu__item"><a class="menu__link" href="empresa.html">Clientes</a><!-- img(src="/Images/Icons/clientes.svg") --></li>
+            <li class="menu__item"> <a class="menu__link" href="sWeb.html">Pagos</a><!-- img(src="/Images/Icons/pagos.svg") --></li>
+            <li class="menu__item"> <a class="menu__link" href="menuAspel.html">Contratos</a><!-- img(src="/Images/Icons/contratos.svg") --></li>
+            <li class="menu__item"><a class="menu__link" href="mantenimiento.html">Soporte</a><!-- img(src="/Images/Icons/soporte.svg") --></li>
+            <li class="menu__item"><a class="menu__link" href="mantenimiento.html">Ajustes</a><!-- img(src="/Images/Icons/ajustes.svg") --></li>
+          </ul>
+          <div class="menu__hamburger"><img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
+        </section>
+      </nav>
+    </header>
+    <div class="registrar">
+      <div class="info">
+        <h2>Añadir Nuevo Cliente</h2>
+        <label for="rfc">RFC
+          <input type="text" placeholder="Ingrese su RFC" id="rfc"/>
+        </label>
+        <label for="nombre">Nombre
+          <input type="text" placeholder="Ingrese su nombre" id="name"/>
+        </label>
+        <label for="direccion">Direccion
+          <input type="text" placeholder="Ingrese su direccion" id="direccion"/>
+        </label>
+        <label>Estados
+          <select name="estado" id="estado">
+            <option value="no">Seleccione un estado</option>
+            <option value="Aguascalientes">Aguascalientes</option>
+            <option value="Baja California">Baja California</option>
+            <option value="Baja California Sur">Baja California Sur</option>
+            <option value="Campeche">Campeche</option>
+            <option value="Chiapas">Chiapas</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="CDMX">Ciudad de M&eacute;xico</option>
+            <option value="Coahuila">Coahuila</option>
+            <option value="Colima">Colima</option>
+            <option value="Durango">Durango</option>
+            <option value="Estado de México">Estado de M&eacute;xico</option>
+            <option value="Guanajuato">Guanajuato</option>
+            <option value="Guerrero">Guerrero</option>
+            <option value="Hidalgo">Hidalgo</option>
+            <option value="Jalisco">Jalisco</option>
+            <option value="Michoacán">Michoac&aacute;n</option>
+            <option value="Morelos">Morelos</option>
+            <option value="Nayarit">Nayarit</option>
+            <option value="Nuevo León">Nuevo Le&oacute;n</option>
+            <option value="Oaxaca">Oaxaca</option>
+            <option value="Puebla">Puebla</option>
+            <option value="Querétaro">Quer&eacute;taro</option>
+            <option value="Quintana Roo">Quintana Roo</option>
+            <option value="San Luis Potosí">San Luis Potos&iacute;</option>
+            <option value="Sinaloa">Sinaloa</option>
+            <option value="Sonora">Sonora</option>
+            <option value="Tabasco">Tabasco</option>
+            <option value="Tamaulipas">Tamaulipas</option>
+            <option value="Tlaxcala">Tlaxcala</option>
+            <option value="Veracruz">Veracruz</option>
+            <option value="Yucatán">Yucat&aacute;n</option>
+            <option value="Zacatecas">Zacatecas</option>
+          </select>
+        </label>
+        <label for="municipio">Municipio
+          <input type="text" placeholder="Ingrese su municipio" id="municipio"/>
+        </label>
+        <label for="cp">Código Postal
+          <input type="number" id="cp"/>
+        </label>
+        <label for="rf">Régimen Fiscal
+          <input type="text" placeholder="Ingrese su regimen fiscal" id="rf"/>
+        </label>
+        <label for="tel">Teléfono
+          <input type="text" placeholder="Ingrese su teléfono" id="tel"/>
+        </label>
+        <label for="nContacto">Nombre de contacto
+          <input type="text" placeholder="Ingrese su nombre de contacto" id="nContacto"/>
+        </label>
+        <label for="email">Correo electrónico
+          <input type="email" placeholder="Ingrese su correo electrónico" id="email"/>
+        </label>
+        <label for="password">Correo electrónico
+          <input type="password" placeholder="Ingrese su contraseña" id="password"/>
+        </label>
+      </div>
+      <div class="botones"> <a href="#"> 
+          <button class="btn btn-add" type="submit">Agregar</button></a><a href="control-clientes.html"> 
+          <button class="btn btn-cancelar" type="submit">Cancelar</button></a></div>
+    </div>
+    <footer> 
+      <div class="footer__box">
+        <div class="footer__box__body">
+          <h2>JMC Soluciones</h2>
+          <div class="footer__box__body__logo"> 
+            <div class="footer__box__body__logo-img"> <img src="/Images/Icons/jmc.svg" alt="LogoJMC" id="logoJMC"/></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
