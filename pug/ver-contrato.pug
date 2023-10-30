@@ -1,0 +1,18 @@
+extend ../components/template-admin.pug
+block content
+  .verContrato
+    h2 Informacion del contrato
+      a(href="inicioAdmin.html") 
+        button.btn.btn-exit(type="submit")#salir Regresar
+      .datos 
+        .datos__info 
+          label(for="id") Id Contrato 
+          label(for="servicio") Servicio 
+          label(for="fContrato") Fecha de contrato
+          label(for="fRenovacion") Fecha de renovacion
+          label(for="status") status
+      .final
+        a(href="") 
+          button.btn.btn-eliminar(type="submit")#eliminar Eliminar
+        a(href="") 
+          button.btn.btn-modificar(type="submit")#modificar Modificar
