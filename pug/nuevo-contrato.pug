@@ -1,0 +1,73 @@
+extend ../components/template-admin.pug
+block content
+  .nvoContrato
+    .info
+      h2 Añadir Nuevo Contrato
+      label(for="cliente") Cliente
+        input(type='text', placeholder='Nombre del cliente')#cliente
+      label(for="servicio")
+       select(name="servicio")#servicio
+        option(value="no") Seleccione un servicio 
+        option(value="AWS") AWS 
+        option(value="Aspel") Aspel   
+      label(for="plan") Plan
+        select#plan(name="plan")
+          option(value="no") Seleccione el plan 
+          option(value="mensual") Mensual 
+          option(value="bimestral") Bimestral 
+          option(value="semestral") Semestral 
+          option(value="anual") Anual    
+      label Estados
+        select(name='estado')#estado
+          option(value='no') Seleccione un estado
+          option(value='Aguascalientes') Aguascalientes
+          option(value='Baja California') Baja California
+          option(value='Baja California Sur') Baja California Sur
+          option(value='Campeche') Campeche
+          option(value='Chiapas') Chiapas
+          option(value='Chihuahua') Chihuahua
+          option(value='CDMX') Ciudad de M&eacute;xico
+          option(value='Coahuila') Coahuila
+          option(value='Colima') Colima
+          option(value='Durango') Durango
+          option(value='Estado de México') Estado de M&eacute;xico
+          option(value='Guanajuato') Guanajuato
+          option(value='Guerrero') Guerrero
+          option(value='Hidalgo') Hidalgo
+          option(value='Jalisco') Jalisco
+          option(value='Michoacán') Michoac&aacute;n
+          option(value='Morelos') Morelos
+          option(value='Nayarit') Nayarit
+          option(value='Nuevo León') Nuevo Le&oacute;n
+          option(value='Oaxaca') Oaxaca
+          option(value='Puebla') Puebla
+          option(value='Querétaro') Quer&eacute;taro
+          option(value='Quintana Roo') Quintana Roo
+          option(value='San Luis Potosí') San Luis Potos&iacute;
+          option(value='Sinaloa') Sinaloa
+          option(value='Sonora') Sonora
+          option(value='Tabasco') Tabasco
+          option(value='Tamaulipas') Tamaulipas
+          option(value='Tlaxcala') Tlaxcala
+          option(value='Veracruz') Veracruz
+          option(value='Yucatán') Yucat&aacute;n
+          option(value='Zacatecas') Zacatecas
+      label(for="municipio") Municipio
+        input(type='text', placeholder='Ingrese su municipio')#municipio
+      label(for="cp") Código Postal
+        input(type='number')#cp
+      label(for="rf") Régimen Fiscal
+        input(type='text', placeholder='Ingrese su regimen fiscal')#rf
+      label(for="tel") Teléfono
+        input(type='text', placeholder='Ingrese su teléfono')#tel
+      label(for="nContacto") Nombre de contacto
+        input(type='text', placeholder='Ingrese su nombre de contacto')#nContacto
+      label(for="email") Correo electrónico
+        input(type='email', placeholder='Ingrese su correo electrónico')#email
+      label(for="password") Correo electrónico
+        input(type='password', placeholder='Ingrese su contraseña')#password
+    .botones  
+      a(href="#") 
+        button.btn.btn-add(type="submit") Agregar
+      a(href="control-clientes.html") 
+        button.btn.btn-cancelar(type="submit") Cancelar
