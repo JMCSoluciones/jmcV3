@@ -41,12 +41,12 @@
       </nav>
     </header>
     <div class="nvoContrato">
+      <h2>Añadir Nuevo Contrato</h2>
       <div class="info">
-        <h2>Añadir Nuevo Contrato</h2>
         <label for="cliente">Cliente
           <input type="text" placeholder="Nombre del cliente" id="cliente"/>
         </label>
-        <label for="servicio">
+        <label for="servicio">Servicio
           <select name="servicio" id="servicio">
             <option value="no">Seleccione un servicio </option>
             <option value="AWS">AWS </option>
@@ -59,70 +59,26 @@
             <option value="mensual">Mensual </option>
             <option value="bimestral">Bimestral </option>
             <option value="semestral">Semestral </option>
-            <option value="anual">Anual    </option>
+            <option value="anual">Anual </option>
           </select>
         </label>
-        <label>Estados
-          <select name="estado" id="estado">
-            <option value="no">Seleccione un estado</option>
-            <option value="Aguascalientes">Aguascalientes</option>
-            <option value="Baja California">Baja California</option>
-            <option value="Baja California Sur">Baja California Sur</option>
-            <option value="Campeche">Campeche</option>
-            <option value="Chiapas">Chiapas</option>
-            <option value="Chihuahua">Chihuahua</option>
-            <option value="CDMX">Ciudad de M&eacute;xico</option>
-            <option value="Coahuila">Coahuila</option>
-            <option value="Colima">Colima</option>
-            <option value="Durango">Durango</option>
-            <option value="Estado de México">Estado de M&eacute;xico</option>
-            <option value="Guanajuato">Guanajuato</option>
-            <option value="Guerrero">Guerrero</option>
-            <option value="Hidalgo">Hidalgo</option>
-            <option value="Jalisco">Jalisco</option>
-            <option value="Michoacán">Michoac&aacute;n</option>
-            <option value="Morelos">Morelos</option>
-            <option value="Nayarit">Nayarit</option>
-            <option value="Nuevo León">Nuevo Le&oacute;n</option>
-            <option value="Oaxaca">Oaxaca</option>
-            <option value="Puebla">Puebla</option>
-            <option value="Querétaro">Quer&eacute;taro</option>
-            <option value="Quintana Roo">Quintana Roo</option>
-            <option value="San Luis Potosí">San Luis Potos&iacute;</option>
-            <option value="Sinaloa">Sinaloa</option>
-            <option value="Sonora">Sonora</option>
-            <option value="Tabasco">Tabasco</option>
-            <option value="Tamaulipas">Tamaulipas</option>
-            <option value="Tlaxcala">Tlaxcala</option>
-            <option value="Veracruz">Veracruz</option>
-            <option value="Yucatán">Yucat&aacute;n</option>
-            <option value="Zacatecas">Zacatecas</option>
-          </select>
+        <label for="costo">Costo
+          <input type="number" placeholder="$" id="costo"/>
         </label>
-        <label for="municipio">Municipio
-          <input type="text" placeholder="Ingrese su municipio" id="municipio"/>
+        <label for="descripcion">Descripcion
+          <input type="text" placeholder="Agrega una descripcion" id="descripcion"/>
         </label>
-        <label for="cp">Código Postal
-          <input type="number" id="cp"/>
-        </label>
-        <label for="rf">Régimen Fiscal
-          <input type="text" placeholder="Ingrese su regimen fiscal" id="rf"/>
-        </label>
-        <label for="tel">Teléfono
-          <input type="text" placeholder="Ingrese su teléfono" id="tel"/>
-        </label>
-        <label for="nContacto">Nombre de contacto
-          <input type="text" placeholder="Ingrese su nombre de contacto" id="nContacto"/>
-        </label>
-        <label for="email">Correo electrónico
-          <input type="email" placeholder="Ingrese su correo electrónico" id="email"/>
-        </label>
-        <label for="password">Correo electrónico
-          <input type="password" placeholder="Ingrese su contraseña" id="password"/>
-        </label>
+        <div class="info__fechas">  
+          <label id="f1">Fecha de contrato
+            <input id="fechaInicio" type="date" name="fechaInicio"/>
+          </label>
+          <label id="f2">Fecha de renovacion
+            <input id="fechaRenovacion" type="date" name="fechaRenovacion"/>
+          </label>
+        </div>
       </div>
       <div class="botones"> <a href="#"> 
-          <button class="btn btn-add" type="submit">Agregar</button></a><a href="control-clientes.html"> 
+          <button class="btn btn-add" type="submit">Agregar</button></a><a href="control-contratos.html"> 
           <button class="btn btn-cancelar" type="submit">Cancelar</button></a></div>
     </div>
     <footer> 

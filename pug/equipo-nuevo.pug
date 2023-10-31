@@ -1,0 +1,58 @@
+extend ../components/template-admin.pug
+block content
+  .eqNuevo 
+    h2 Añadir Nuevo Equipo
+    a(href="inicioAdmin.html") 
+      button.btn.btn-exit(type="submit")#salir Regresar
+    .eqNuevo__info 
+      label Tipo de equipo
+        select#tipo(name="tipo")
+          option(value="no") Seleccione un tipo 
+          option(value="ao") All in One 
+          option(value="pc") Escritorio 
+          option(value="lap") Laptop 
+      label(for="marca") Marca 
+        input(type="text" placeholder="Marca del equipo")#marca
+      label(for="nombre") Nombre
+        input(type="text" placeholder="Ingrese el nombre")#nombre
+      label(for="ram") RAM 
+        input(type="text" placeholder="Capacidad de memoria")#ram
+      label(for="procesador") Procesador 
+        input(type="text" placeholder="Inserte el procesador")#procesador
+      label(for="disco")#txtDisco Disco duro
+        input(type="text" placeholder="Capacidad")#capacidad 
+        select#tipoDisco(name="tipoDisco")
+          option(value="no") Tipo 
+          option(value="hdd") HDD 
+          option(value="ssd") SSD 
+        input(type="text" placeholder="Uso")#uso 
+      label(for="ip") Ip 
+        input(type="number" placeholder="ip local")#ip
+      label(for="anydesk") Anydesk 
+        input(type="number" placeholder="Direccion Anydesk")#anydesk
+      label(for="usuario") Usuario 
+        input(type="text" placeholder="Nombre de usuario")#usuario
+      h3 Antivirus
+        .eqNuevo__info__vigencia
+          .eqNuevo__info__vigencia-name  
+            label(for="name")#txtName Nombre 
+              input(type="text")#nAntivirus
+          .eqNuevo__info__vigencia-date
+            label(for="vigencia")#txtVigencia Vigencia 
+              input(type="month" placeholder="Vigencia")#vigencia  
+      h3 Paqueteria Office 
+        .eqNuevo__info__office 
+          .eqNuevo__info__office-name
+            label(for="office")#officeName Nombre 
+              input(type="text")#nOffice
+          .eqNuevo__info__office-date
+            label(for="vigencia")#txtOffice Vigencia 
+              input(type="month" placeholder="Vigencia")#officeVigencia
+      label(for="descripcion") Descripción 
+        input(type="text" placeholder="Breve descripción")#descripcion 
+    .eqNuevo__button 
+      a(href="#") 
+        button.btn.btn-add(type="submit") Guardar
+      a(href="control-clientes.html") 
+        button.btn.btn-delete(type="submit") Eliminar
+              

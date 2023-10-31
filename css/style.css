@@ -8152,3 +8152,1052 @@ header .menu-top__link img {
 .verContrato .final .btn-modificar {
   background-color: #ffd331;
 }
+.nvoContrato {
+  font-family: 'Raleway', sans-serif;
+  margin: 5px;
+}
+.nvoContrato h2 {
+  margin: 10px 10px;
+  padding: 5px 0;
+  border-radius: 8px;
+  background-color: rgba(128, 128, 128, 0.245);
+  -webkit-box-shadow: inset #2980b9;
+          box-shadow: inset #2980b9;
+  text-align: center;
+}
+.nvoContrato .info label {
+  margin: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.nvoContrato .info input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: center;
+}
+.nvoContrato .info select,
+.nvoContrato .info textarea {
+  border-radius: 20px;
+  width: 100px;
+  margin-left: -8px;
+  width: 200px;
+  padding: 3px;
+  border-color: gray;
+  text-align: center;
+}
+.nvoContrato .info #cliente {
+  margin-left: 62px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.nvoContrato .info #servicio {
+  margin-left: 56px;
+  width: 200px;
+  padding: 3px;
+}
+.nvoContrato .info #plan {
+  margin-left: 85px;
+  width: 200px;
+  padding: 3px;
+}
+.nvoContrato .info #costo {
+  font-family: 'Inter', sans-serif;
+  margin-left: 73px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.nvoContrato .info #descripcion {
+  margin-left: 25px;
+  width: 200px;
+  height: 90px;
+  padding: 3px;
+}
+.nvoContrato .info__fechas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.nvoContrato .info__fechas label {
+  text-align: center;
+}
+.nvoContrato .info__fechas #fechaInicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 150px;
+  padding: 3px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.nvoContrato .info__fechas #f1 {
+  display: table-row-group;
+  text-align: center;
+}
+.nvoContrato .info__fechas #f2 {
+  display: table-row-group;
+}
+.nvoContrato .info__fechas #fechaRenovacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150px;
+  padding: 3px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.nvoContrato .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nvoContrato .botones .btn-add {
+  background-color: #ffd331;
+  margin: 20px;
+  width: 100px;
+  border-radius: 22px;
+  font-size: 1.4rem;
+}
+.nvoContrato .botones .btn-cancelar {
+  border: 1px solid #ffd331;
+  margin: 20px;
+  width: 100px;
+  border-radius: 22px;
+  font-size: 1.4rem;
+}
+.equipos {
+  font-family: 'Raleway', sans-serif;
+}
+.equipos h2 {
+  margin: 30px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.equipos a {
+  list-style: none;
+  text-decoration: none;
+}
+.equipos .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.equipos .botones__contratos {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column  ;
+          flex-direction: column  ;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.equipos .botones__contratos a {
+  text-decoration: none;
+  list-style: none;
+  color: #666666d9;
+}
+.equipos .botones__contratos a p {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos .botones__contratos a img {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos .botones__pagos {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column  ;
+          flex-direction: column  ;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.equipos .botones__pagos a {
+  text-decoration: none;
+  list-style: none;
+  color: #666666d9;
+}
+.equipos .botones__pagos a p {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos .botones__pagos a img {
+  width: auto;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos .botones__ticket {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.equipos .botones__ticket a {
+  text-decoration: none;
+  list-style: none;
+  color: #666666d9;
+}
+.equipos .botones__ticket a p {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos .botones__ticket a img {
+  height: 45px;
+  width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos .botones__imprimir {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column  ;
+          flex-direction: column  ;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.equipos .botones__imprimir a {
+  text-decoration: none;
+  list-style: none;
+  color: #666666d9;
+}
+.equipos .botones__imprimir a p {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos .botones__imprimir a img {
+  width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos .botones__equipos {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column  ;
+          flex-direction: column  ;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.equipos .botones__equipos a {
+  text-decoration: none;
+  list-style: none;
+  color: #666666d9;
+}
+.equipos .botones__equipos a p {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos .botones__equipos a img {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.equipos a {
+  text-decoration: none;
+  list-style: none;
+  color: #666666d9;
+}
+.equipos .acciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+}
+.equipos .acciones .btn-nuevo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: gray;
+  color: #ffffff;
+}
+.equipos .acciones .btn-exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: orange;
+}
+.equipos .acciones .btn-exit:hover {
+  background-color: rgba(70, 46, 1, 0.747);
+  color: #ffffff;
+}
+.equipos .content__equipoClientes__tabs {
+  margin: 20px 5px 100px 5px;
+}
+.equipos .content__equipoClientes__tabs__item .btn-dark {
+  margin: 3px;
+  background-color: #00559a;
+}
+.equipos .content__equipoClientes__tabs__item .btn-clean {
+  margin: 3px;
+  background-color: red;
+  color: #ffffff;
+}
+.equipos .content__equipoClientes__tabs__item .btn-clean:hover {
+  background-color: #3c0101;
+  color: #ffffff;
+}
+.equipos .content__equipoClientes__tabs__item__header {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  border-radius: 4px 4px 4px 4px;
+}
+.equipos .content__equipoClientes__tabs__item__header h3 {
+  font-size: 1.4rem;
+  color: black;
+}
+.equipos .content__equipoClientes__tabs__item__body__table .delete {
+  color: red;
+}
+.equipos .content__equipoClientes__tabs__item__body__table .edit {
+  color: rgba(251, 255, 0, 0.555);
+}
+.equipos .content__equipoClientes__tabs__item__body__table .table-striped thead th:nth-child(1) {
+  width: 10%;
+}
+.equipos .content__equipoClientes__tabs__item__body__table .table-striped thead th:nth-child(2) {
+  width: 20%;
+}
+.equipos .content__equipoClientes__tabs__item__body__table .table-striped thead th:nth-child(3) {
+  width: 30%;
+}
+.equipos .content__equipoClientes__tabs__item__body__table .table-striped thead th:nth-child(4) {
+  width: 20%;
+}
+.equipos .content__equipoClientes__tabs__item__body__table .table-striped thead th:nth-child(5) {
+  width: 20%;
+}
+.equipos .content__equipoClientes__tabs__item__body__table .table-striped th,
+.equipos .content__equipoClientes__tabs__item__body__table .table-striped td {
+  padding: 2px;
+}
+.eqNuevo {
+  font-family: 'Raleway', sans-serif;
+}
+.eqNuevo h2 {
+  margin: 30px 0;
+  text-align: center;
+}
+.eqNuevo a {
+  text-decoration: none;
+  list-style: none;
+}
+.eqNuevo .btn-exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: orange;
+  padding: 5px;
+  margin: 10px;
+}
+.eqNuevo .btn-exit:hover {
+  background-color: rgba(70, 46, 1, 0.747);
+  color: #ffffff;
+}
+.eqNuevo__info label {
+  margin: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.eqNuevo__info input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: center;
+}
+.eqNuevo__info select,
+.eqNuevo__info textarea {
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 20px;
+  width: 200px;
+  padding: 3px;
+  border-color: gray;
+  text-align: center;
+}
+.eqNuevo__info #marca {
+  margin-left: 88px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info #nombre {
+  margin-left: 72px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info #ram {
+  margin-left: 98px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info #procesador {
+  margin-left: 48px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info #txtDisco {
+  display: -webkit-box;
+  text-align: center;
+}
+.eqNuevo__info #txtDisco #capacidad {
+  width: 85px;
+  border-radius: 20px;
+}
+.eqNuevo__info #txtDisco #tipoDisco {
+  width: 85px;
+  margin: 0;
+}
+.eqNuevo__info #txtDisco #uso {
+  width: 85px;
+  border-radius: 20px;
+}
+.eqNuevo__info #ip {
+  margin-left: 120px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info #anydesk {
+  margin-left: 70px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info #usuario {
+  margin-left: 75px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info h3 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.eqNuevo__info__vigencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.eqNuevo__info__vigencia-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.eqNuevo__info__vigencia-date #txtVigencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.eqNuevo__info__vigencia-date #vigencia {
+  width: 150px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info__vigencia-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.eqNuevo__info__vigencia-name #txtName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.eqNuevo__info__vigencia-name #nAntivirus {
+  width: 150px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info__office {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.eqNuevo__info__office-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.eqNuevo__info__office-date #txtOffice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.eqNuevo__info__office-date #officeVigencia {
+  width: 150px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info__office-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.eqNuevo__info__office-name #officeName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.eqNuevo__info__office-name #nOffice {
+  width: 150px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__info #descripcion {
+  margin-left: 40px;
+  width: 200px;
+  height: 100px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.eqNuevo__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.eqNuevo__button .btn-add {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: green;
+  padding: 5px;
+  margin: 10px;
+  color: #ffffff;
+}
+.eqNuevo__button .btn-delete {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: red;
+  padding: 5px;
+  margin: 10px;
+  color: #ffffff;
+}
+.detalle {
+  font-family: 'Raleway', sans-serif;
+}
+.detalle h2 {
+  margin: 30px 0;
+  text-align: center;
+}
+.detalle a {
+  text-decoration: none;
+  list-style: none;
+}
+.detalle .btn-exit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: orange;
+  padding: 5px;
+  margin: 10px;
+}
+.detalle .btn-exit:hover {
+  background-color: rgba(70, 46, 1, 0.747);
+  color: #ffffff;
+}
+.detalle__info label {
+  margin: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.detalle__info input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: center;
+}
+.detalle__info select,
+.detalle__info textarea {
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 20px;
+  width: 200px;
+  padding: 3px;
+  border-color: gray;
+  text-align: center;
+}
+.detalle__info #marca {
+  margin-left: 88px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info #nombre {
+  margin-left: 72px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info #ram {
+  margin-left: 98px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info #procesador {
+  margin-left: 48px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info #txtDisco {
+  display: -webkit-box;
+  text-align: center;
+}
+.detalle__info #txtDisco #capacidad {
+  width: 85px;
+  border-radius: 20px;
+}
+.detalle__info #txtDisco #tipoDisco {
+  width: 85px;
+  margin: 0;
+}
+.detalle__info #txtDisco #uso {
+  width: 85px;
+  border-radius: 20px;
+}
+.detalle__info #ip {
+  margin-left: 120px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info #anydesk {
+  margin-left: 70px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info #usuario {
+  margin-left: 75px;
+  width: 200px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info h3 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.detalle__info__vigencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.detalle__info__vigencia-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.detalle__info__vigencia-date #txtVigencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.detalle__info__vigencia-date #vigencia {
+  width: 150px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info__vigencia-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.detalle__info__vigencia-name #txtName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.detalle__info__vigencia-name #nAntivirus {
+  width: 150px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info__office {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.detalle__info__office-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.detalle__info__office-date #txtOffice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.detalle__info__office-date #officeVigencia {
+  width: 150px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info__office-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.detalle__info__office-name #officeName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.detalle__info__office-name #nOffice {
+  width: 150px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__info #descripcion {
+  margin-left: 40px;
+  width: 200px;
+  height: 100px;
+  padding: 3px;
+  border-radius: 20px;
+}
+.detalle__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.detalle__button .btn-add {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: green;
+  padding: 5px;
+  margin: 10px;
+  color: #ffffff;
+}
+.detalle__button .btn-delete {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: red;
+  padding: 5px;
+  margin: 10px;
+  color: #ffffff;
+}
+.detalle__button .btn-historial {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #ffd331;
+  padding: 5px;
+  margin: 10px;
+  color: #ffffff;
+}
