@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css"/>
   </head>
   <body> 
     <header>
@@ -41,76 +40,79 @@
         </section>
       </nav>
     </header>
-    <div class="controlMenuAdmin"> 
-      <div class="controlMenuAdmin__box">
-        <div class="controlMenuAdmin__box__item"><a href="control-clientes.html">Clientes<img src="/Images/Icons/clientes.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"> <a href="control-soporte.html">Soporte<img src="/Images/Icons/soporte.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-pagos.html">Pagos<img src="/Images/Icons/pagos.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-contratos.html">Contratos<img src="/Images/Icons/contratos.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-productos.html">Ajustes<img src="/Images/Icons/ajustes.svg" alt=""/></a></div>
+    <div class="equipos">  
+      <div class="botones"> 
+        <div class="botones__contratos"><a href="#"> 
+            <p>Contratos </p><img src="/Images/Icons/contratos.svg" alt=""/></a></div>
+        <div class="botones__pagos"><a href="#">   
+            <p>Pagos </p><img src="/Images/Icons/pagos.svg" alt=""/></a></div>
+        <div class="botones__ticket"><a href="#"> 
+            <p>Tickets</p><img src="/Images/Icons/tickets.svg" alt=""/></a></div>
+        <div class="botones__imprimir"><a href="#"> 
+            <p>Imprimir </p><img src="/Images/Icons/imprimir.svg" alt=""/></a></div>
+        <div class="botones__equipos"> <a href="#"> 
+            <p>Equipos </p><img src="/Images/Icons/equipos.svg" alt=""/></a></div>
       </div>
-    </div>
-    <div class="content__CtrlClientes">
-      <h3 class="title">Control de clientes</h3><a href="registrar-nuevo.html"> 
-        <button class="btn btn-nuevo" type="submit" id="nuevo">Nuevo</button></a>
-      <div class="content__CtrlClientes__tabs">
+      <h2 class="title">Equipos</h2>
+      <div class="acciones"><a href="inicioAdmin.html"> 
+          <button class="btn btn-exit" type="submit" id="salir">Regresar</button></a><a href="equipo-nuevo.html"> 
+          <button class="btn btn-nuevo" type="submit">Nuevo </button></a></div>
+      <div class="content__equipoClientes__tabs">
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> 
-            <div class="content__CtrlClientes__tabs__item">
-              <div class="content__CtrlClientes__tabs__item__header" id="usuario-header">
-                <h3>Nombre</h3>
+            <div class="content__equipoClientes__tabs__item">
+              <div class="content__equipoClientes__tabs__item__header" id="usuario-header">
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/><a href="busqueda.html"> 
                     <div class="btn btn-dark" type="submit">Buscar</div></a><a href="#"> 
                     <div class="btn btn-clean" type="submit">Limpiar</div></a>
                 </form>
               </div>
-              <div class="content__CtrlClientes__tabs__item__body">
-                <div class="table-wrapper content__CtrlClientes__tabs__item__body__table">
-                  <table class="table table-striped table-hover">
-                    <thead> 
-                      <tr>                 
-                        <th>Id</th>
-                        <th>Nombre</th>
-                        <th>Correo</th>
-                        <th>Detalles</th>
-                        <th>Acciones</th>
-                      </tr>
-                    </thead>
-                    <tbody> 
-                      <tr> 
-                        <td>01</td>
-                        <td>Josue Martinez</td>
-                        <td>josue@jmcsoluciones.com</td>
-                        <td><a href="ver-cliente.html">ver más... </a></td>
-                        <td><a class="edit" href="#editProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
-                      </tr>
-                      <tr> 
-                        <td>02</td>
-                        <td>cliente 2</td>
-                        <td>23/octubre/2023</td>
-                        <td> <a href="ver-cliente.html">ver más... </a></td>
-                        <td><a class="edit" href="#editProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="content__CtrlCotizaciones__tabs__item__footer">
-                <nav aria-label="...">
-                  <ul class="pagination">
-                    <li class="page-item disabled"></li><a class="page-link">Previous</a>
-                    <li class="page-item"></li><a class="page-link" href="#">1</a>
-                    <li class="page-item active" aria-current="page"></li><a class="page-link" href="#">2</a>
-                    <li class="page-item"></li><a class="page-link" href="#">3</a>
-                    <li class="page-item"></li><a class="page-link" href="#">Next   </a>
-                  </ul>
-                </nav>
+            </div>
+            <div class="content__equipoClientes__tabs__item__body">
+              <div class="table-wrapper content__equipoClientes__tabs__item__body__table">
+                <table class="table table-striped table-hover">
+                  <thead> 
+                    <tr>                 
+                      <th>Id</th>
+                      <th>Equipo</th>
+                      <th>Usuario</th>
+                      <th>Detalles</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                    <tr> 
+                      <td>01</td>
+                      <td>Hp</td>
+                      <td>Josue Martinez</td>
+                      <td><a href="detalle-equipo.html">ver más... </a></td>
+                      <td><a class="edit" href="#editProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                    </tr>
+                    <tr> 
+                      <td>02</td>
+                      <td>Lenovo</td>
+                      <td>Josue Martinez</td>
+                      <td> <a href="detalle-equipo.html">ver más... </a></td>
+                      <td><a class="edit" href="#editProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
+            <div class="content__CtrlCotizaciones__tabs__item__footer">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled"></li><a class="page-link">Previous</a>
+                  <li class="page-item"></li><a class="page-link" href="#">1</a>
+                  <li class="page-item active" aria-current="page"></li><a class="page-link" href="#">2</a>
+                  <li class="page-item"></li><a class="page-link" href="#">3</a>
+                  <li class="page-item"></li><a class="page-link" href="#">Next    </a>
+                </ul>
+              </nav>
+            </div>
           </div>
-        </div><a href="inicioAdmin.html"> 
-          <button class="btn btn-exit" type="submit" id="salir">Salir</button></a>
+        </div>
       </div>
     </div>
     <footer> 

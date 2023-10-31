@@ -1,0 +1,33 @@
+extend ../components/template-admin.pug
+block content
+  .nvoContrato
+    h2 Añadir Nuevo Contrato
+    .info
+      label(for="cliente") Cliente
+        input(type='text', placeholder='Nombre del cliente')#cliente
+      label(for="servicio") Servicio
+       select(name="servicio")#servicio
+        option(value="no") Seleccione un servicio 
+        option(value="AWS") AWS 
+        option(value="Aspel") Aspel   
+      label(for="plan") Plan
+        select#plan(name="plan")
+          option(value="no") Seleccione el plan 
+          option(value="mensual") Mensual 
+          option(value="bimestral") Bimestral 
+          option(value="semestral") Semestral 
+          option(value="anual") Anual 
+      label(for="costo") Costo
+        input(type='number', placeholder='$')#costo
+      label(for="descripcion") Descripcion
+        input(type='text', placeholder='Agrega una descripcion')#descripcion
+      .info__fechas   
+        label#f1 Fecha de contrato
+          input#fechaInicio(type='date' name='fechaInicio')
+        label#f2 Fecha de renovacion
+          input#fechaRenovacion(type='date' name='fechaRenovacion')
+    .botones  
+      a(href="#") 
+        button.btn.btn-add(type="submit") Agregar
+      a(href="control-contratos.html") 
+        button.btn.btn-cancelar(type="submit") Cancelar
