@@ -1,15 +1,14 @@
 extend ../components/template-admin.pug
 block content
-  include control-menuAdmin.pug
-  .registrar
+  .modificar_cliente
     .info
-      h2 Añadir Nuevo Cliente
+      h2 Modificar Cliente
       label(for="rfc") RFC
-        input(type='text', placeholder='Ingrese su RFC')#rfc
+        input(type='text')#rfc
       label(for="nombre") Nombre
-        input(type='text', placeholder='Ingrese su nombre')#name
+        input(type='text')#name
       label(for="direccion") Direccion
-        input(type='text', placeholder='Ingrese su direccion')#direccion
+        input(type='text')#direccion
       label Estados
         select(name='estado')#estado
           option(value='no') Seleccione un estado
@@ -46,20 +45,19 @@ block content
           option(value='Yucatán') Yucat&aacute;n
           option(value='Zacatecas') Zacatecas
       label(for="municipio") Municipio
-        input(type='text', placeholder='Ingrese su municipio')#municipio
+        input(type='text')#municipio
       label(for="cp") Código Postal
         input(type='number')#cp
       label(for="rf") Régimen Fiscal
-        input(type='text', placeholder='Ingrese su regimen fiscal')#rf
+        input(type='text')#rf
       label(for="tel") Teléfono
-        input(type='text', placeholder='Ingrese su teléfono')#tel
+        input(type='text')#tel
       label(for="nContacto") Nombre de contacto
-        input(type='text', placeholder='Ingrese su nombre de contacto')#nContacto
+        input(type='text')#nContacto
       label(for="email") Correo electrónico
-        input(type='email', placeholder='Ingrese su correo electrónico')#email
+        input(type='email')#email
       label(for="password") Correo electrónico
-        input(type='password', placeholder='Ingrese su contraseña')#password
+        input(type='password')#password
     .botones
-      include modal.pug  
-      
+      button(type="submit") Guardar
           
