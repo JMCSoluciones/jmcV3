@@ -1,0 +1,40 @@
+button.btn.btn-success.newBtnElement(type="button" data-bs-toggle="modal" data-bs-target="#modalPago")#mbtnModificar Modificar
+.modal-Pago
+    #modalPago.modal.fade(aria-hidden='true' aria-labelledby='modalPagoLabel' tabindex='-1')
+        .modal-dialog.modal-lg.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h5#modalPagoLabel.modal-title Modificar #[strong Pago]
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .content-form
+                        form(action = "")
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="id" type="number" name="id")
+                                label.form-label(for="id") Id
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="text" name="nombre"  placeholder="nombre")
+                                label.form-label(for="nombre") Nombre
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="text" name="plan"  placeholder="plan")
+                                label.form-label(for="plan") Plan
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="number" name="moneda" )
+                                label.form-label(for="moneda") Moneda
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="number" name="costo" placeholder="Costo")
+                                label.form-label(for="costo") Costo
+                    .modal-body__buttons 
+                        button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                        button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+    #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h5#exampleModalToggleLabel2.modal-title Servicio 
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    h5 Modificacion Completa!
+                .modal-footer
+                    button.btn.btn-primary(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                    button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar

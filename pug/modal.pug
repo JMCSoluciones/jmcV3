@@ -1,0 +1,58 @@
+button.btn.btn-success.newBtnElement(type="button" data-bs-toggle="modal" data-bs-target="#modalModificar") Modificar
+.modal-modificar
+    #modalModificar.modal.fade(aria-hidden='true' aria-labelledby='modalCotizacion-gralLabel' tabindex='-1')
+        .modal-dialog.modal-lg.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h5#modalModificarLabel.modal-title Modificar #[strong Cliente]
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .content-form
+                        form(action = "")
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="RFC" type="text" name="rfc")
+                                label.form-label(for="rfc") RFC
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="text" name="nombre"  placeholder="Ingrese su télefono")
+                                label.form-label(for="exampleInputEmail1") Nombre del producto
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="text" name="direccion"  placeholder="Ingrese su direccion")
+                                label.form-label(for="direccion") Dirección
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="text" name="estado"  placeholder="Ingrese estado")
+                                label.form-label(for="direccion") Estado
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="text" name="municipio" placeholder="Ingrese su municipio")
+                                label.form-label(for="municipio") Municipio
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="number" name="cp" placeholder="Ingrese su Código Postal")
+                                label.form-label(for="cp") CP
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="text" name="rf" placeholder="Régimen Fiscal")
+                                label.form-label(for="rf") Régimen Fiscal
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="number" name="tel" placeholder="Numero de telefono")
+                                label.form-label(for="tel") Telefono 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="text" name="nContacto" placeholder="Nombre de contacto")
+                                label.form-label(for="nContacto") Nombre de Contacto 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="email" name="email" placeholder="Correo Electronico")
+                                label.form-label(for="email") Correo Electronico
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(type="password" name="password" placeholder="Contraseña")
+                                label.form-label(for="password") Contraseña
+                    .modal-body__buttons 
+                        button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                        button.btn.btn-success(data-bs-target='#exampleModalToggle2' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+    #exampleModalToggle2.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel2' tabindex='-1')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h5#exampleModalToggleLabel2.modal-title Cliente 
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    | Modificacion Completa!
+                .modal-footer
+                    button.btn.btn-primary(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                    button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
