@@ -1,0 +1,46 @@
+extend ../components/template-admin.pug
+block content
+  include control-menuAdmin.pug
+  .equipos   
+    h2.title Equipos
+    .acciones
+      a(href="inicioAdmin.html") 
+        button.btn.btn-exit(type="submit")#salir Regresar
+    .content__equipoClientes__tabs
+      #myTabContent.tab-content
+        #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
+          .content__equipoClientes__tabs__item__body
+            .table-wrapper.content__equipoClientes__tabs__item__body__table
+              table.table.table-striped.table-hover
+                thead 
+                  tr                  
+                    th Id
+                    th Equipo
+                    th Usuario
+                    th Detalles
+                tbody 
+                  tr 
+                    td 01
+                    td Hp
+                    td Josue Martinez
+                    td
+                      a(href="detalle-equipo-cliente.html") ver más... 
+                  tr 
+                    td 02
+                    td Lenovo
+                    td Josue Martinez
+                    td 
+                      a(href="detalle-equipo-cliente.html") ver más... 
+          .content__CtrlCotizaciones__tabs__item__footer
+            nav(aria-label='...')
+              ul.pagination
+                li.page-item.disabled
+                a.page-link Previous
+                li.page-item
+                a.page-link(href='#') 1
+                li.page-item.active(aria-current='page')
+                a.page-link(href='#') 2
+                li.page-item
+                a.page-link(href='#') 3
+                li.page-item
+                a.page-link(href='#') Next    

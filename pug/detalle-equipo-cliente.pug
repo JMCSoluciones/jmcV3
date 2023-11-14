@@ -1,0 +1,38 @@
+extend ../components/template-admin.pug
+block content
+  include inicio-cliente.pug
+  .detalleCliente 
+    h2 Informacion del equipo
+    a(href="equipo-cliente.html") 
+      button.btn.btn-exit(type="submit")#salir Regresar
+    .detalle__info 
+      label Tipo de equipo
+      label(for="marca") Marca 
+        
+      label(for="nombre") Nombre
+      
+      label(for="ram") RAM 
+       
+      label(for="procesador") Procesador 
+      
+      label(for="disco") Disco duro
+      
+      label(for="ip") Ip 
+      label(for="anydesk") Anydesk 
+      label(for="usuario") Usuario 
+      h3 Antivirus
+        .detalle__info__vigencia
+          .detalle__info__vigencia-name  
+            label(for="name")#txtName Nombre 
+          .detalle__info__vigencia-date
+            label(for="vigencia")#txtVigencia Vigencia  
+      h3 Paqueteria Office 
+        .detalle__info__office 
+          .detalle__info__office-name
+            label(for="office")#officeName Nombre 
+             
+          .detalle__info__office-date
+            label(for="vigencia")#txtOffice Vigencia 
+              
+      label(for="descripcion") Descripción 
+      
