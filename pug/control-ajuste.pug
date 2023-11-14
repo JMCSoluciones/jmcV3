@@ -1,0 +1,70 @@
+extend ../components/template-admin.pug
+block content
+    include control-menuAdmin.pug
+    .container__controlajuste 
+        .container__controlajuste__administrador
+            .container__controlajuste__administrador-wrapper
+                .container__controlajuste__administrador__title
+                    h1 Control de ajustes
+                    .container__controlajuste__administrador__title__box
+                        a(href="control-ajuste.html") Servicios
+                            img.staff(src="/Images/Icons/servicio.svg", alt="ajustes de servicio")
+                    .container__controlajuste__administrador__title__box
+                        a(href="control-staff.html") Staff
+                            img.staff(src="/Images/Icons/staff.svg", alt="ajustes de staff") 
+                .container__controlajuste__administrador__title
+                    h2 Control de servicios
+                    a.btn.btn-success(href="nuevo-servicio.html" ) add 
+                table.table.table-striped.table-hover
+                    thead
+                      tr
+                            th Id
+                            th Nombre
+                            th Descripcion
+                            th Costo
+                            th Detalles
+                            th Acción
+                    tbody
+                        tr
+                            td 1
+                            td Fran Wilson
+                            td --------
+                            td 3000 
+                            td
+                                a(href="info-servicio.html")  Ver Más...    
+                            td
+                                a.edit(href='#editUserModal' data-toggle='modal')
+                                    i.bi.bi-pencil-square
+                                a.delete(href='#deleteUserModal' data-toggle='modal')
+                                    i.bi.bi-trash
+                        tr
+                            td 2
+                            td Josue Martinez
+                            td ********
+                            td 8000
+                            td    
+                                a(href="info-servicio.html")  Ver Más...   
+                            td
+                                a.edit(href='#editUserModal' data-toggle='modal')
+                                    i.bi.bi-pencil-square
+                                a.delete(href='#deleteUserModal' data-toggle='modal')
+                                    i.bi.bi-trash
+                        
+                .clearfix
+                ul.pagination
+                    li.page-item.disabled
+                        a(href='#') Previous
+                    li.page-item
+                        a.page-link(href='#') 1
+                    li.page-item
+                        a.page-link(href='#') 2
+                    li.page-item.active
+                        a.page-link(href='#') 3
+                    li.page-item
+                        a.page-link(href='#') 4
+                    li.page-item
+                        a.page-link(href='#') 5
+                    li.page-item
+                        a.page-link(href='#') Next
+        a(href="control-ajuste.html") 
+            button(type="submit")#botonSalir Salir
