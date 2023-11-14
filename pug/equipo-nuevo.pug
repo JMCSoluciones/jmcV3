@@ -2,7 +2,7 @@ extend ../components/template-admin.pug
 block content
   .eqNuevo 
     h2 Añadir Nuevo Equipo
-    a(href="inicioAdmin.html") 
+    a(href="control-soporte.html") 
       button.btn.btn-exit(type="submit")#salir Regresar
     .eqNuevo__info 
       label Tipo de equipo
@@ -27,7 +27,7 @@ block content
           option(value="ssd") SSD 
         input(type="text" placeholder="Uso")#uso 
       label(for="ip") Ip 
-        input(type="number" placeholder="ip local")#ip
+        input(type="text" placeholder="ip local")#ip
       label(for="anydesk") Anydesk 
         input(type="number" placeholder="Direccion Anydesk")#anydesk
       label(for="usuario") Usuario 
@@ -51,8 +51,8 @@ block content
       label(for="descripcion") Descripción 
         input(type="text" placeholder="Breve descripción")#descripcion 
     .eqNuevo__button 
-      a(href="#") 
-        button.btn.btn-add(type="submit") Guardar
       a(href="control-clientes.html") 
         button.btn.btn-delete(type="submit") Eliminar
+      include modal-guardar.pug
+      
               

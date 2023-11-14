@@ -1,0 +1,46 @@
+extend ../components/template-admin.pug
+block content
+    include control-menuAdmin.pug
+    .content__nuevoservicio__administrador 
+        .content__nuevoservicio__administrador__container
+            h1 Añadir Nuevo Servicio
+        .content__nuevoservicio__administrador__container-servicio
+            .servicio
+                label(for='Nombre') Id 
+                select#autoSizingSelect.form-select
+                    option(selected='')  
+                    option(value='1') Uno
+                    option(value='2') Dos
+                    option(value='3') Tres
+            .servicio
+                label(for='nombre') Nombre
+                input.form-servicio(type='text' placeholder='Ingrese su nombre' aria-label='')
+            .servicio
+                label(for='Nombre') Costo
+                select#autoSizingSelect.form-costo
+                    option(selected='') 
+                    option(value='1') Uno
+                    option(value='2') Dos
+                    option(value='3') Tres
+            .servicio
+                label(for='concepto') Moneda
+                input#concepto.form-servicio(type='text' name='concepto' placeholder='Ingrese el monto')
+                button#valida(onclick='validarMoneda()') Validar
+            
+            .servicio
+                label(for='total') Plan
+                select#autoSizingSelect.form-plan
+                    option(selected='') 
+                    option(value='1') Uno
+                    option(value='2') Dos
+                    option(value='3') Tres
+            .servicio
+                label(for='descripcion') Descripci&oacute;n:
+                textarea#descripcion(name='descripcion' rows='4' cols='50' placeholder='Ingrese la descripción aquí...')
+        .content__nuevoservicio__administrador__container-botones
+            // Botón Agregar
+            include modal-guardar.pug
+                // Botón Cancelar
+            button#cancelaBtn(onclick='cancelarAccion()') Cancelar
+            script(src='agregar.js')
+            script(src='moneda.js')

@@ -145,3 +145,38 @@ footer {
   text-align: center;
   margin: 15px;
 }
+.nvoTicket h2 {
+  margin: 10px 10px;
+  padding: 5px 0;
+  border-radius: 8px;
+  background-color: rgba(128, 128, 128, 0.245);
+  -webkit-box-shadow: inset #2980b9;
+          box-shadow: inset #2980b9;
+  text-align: center;
+}
+.nvoTicket label {
+  margin: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.nvoTicket input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: center;
+  width: 280px;
+}
+.nvoTicket select,
+.nvoTicket textarea {
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 3px;
+  border-color: gray;
+  text-align: center;
+}
+.nvoTicket #cliente {
+  width: 100px;
+}

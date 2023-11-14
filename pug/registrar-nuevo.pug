@@ -1,5 +1,6 @@
 extend ../components/template-admin.pug
 block content
+  include control-menuAdmin.pug
   .registrar
     .info
       h2 Añadir Nuevo Cliente
@@ -58,8 +59,7 @@ block content
         input(type='email', placeholder='Ingrese su correo electrónico')#email
       label(for="password") Correo electrónico
         input(type='password', placeholder='Ingrese su contraseña')#password
-    .botones  
-      a(href="#") 
-        button.btn.btn-add(type="submit") Agregar
-      a(href="control-clientes.html") 
-        button.btn.btn-cancelar(type="submit") Cancelar
+    .botones
+      include modal.pug  
+      
+          

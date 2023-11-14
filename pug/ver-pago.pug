@@ -1,0 +1,16 @@
+extend ../components/template-admin.pug
+block content
+  .verPago
+    h2 Informacion del pago
+      a(href="control-pagos.html") 
+        button.btn.btn-exit(type="submit")#salir Regresar
+      .datos 
+        .datos__info 
+          label(for="cliente") Cliente
+          label(for="id") Id Pago 
+          label(for="servicio") Servicio 
+          label(for="fPago") Fecha de pago
+          label(for="Contrato") Contrato 
+          label(for="vigenciaContrato") Vigencia del contrato
+      .final
+        include modal-pago.pug

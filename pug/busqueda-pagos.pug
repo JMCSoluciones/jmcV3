@@ -1,0 +1,46 @@
+extend ../components/template-admin.pug
+block content
+  .busqueda_pagos 
+    h2 Resultado de la busqueda
+    .content 
+      .content_buscar 
+        .content__buscar__body
+          .table-wrapper.content__buscar__body__table
+            table.table.table-striped.table-hover
+              thead 
+                tr                  
+                  th Id
+                  th Nombre
+                  th Servicio 
+                  th Fecha
+                  th Detalles
+              tbody 
+                tr 
+                  td 01
+                  td Josue Martinez
+                  td Aspel 
+                  td 30/11/2023
+                  td
+                    a(href="ver-cliente.html") ver más... 
+                tr 
+                  td 02
+                  td cliente 2
+                  td AWS
+                  td 23/octubre/2023
+                  td 
+                    a(href="ver-cliente.html") ver más... 
+        .content__buscar__footer
+          nav(aria-label='...')
+            ul.pagination
+              li.page-item.disabled
+              a.page-link Previous
+              li.page-item
+              a.page-link(href='#') 1
+              li.page-item.active(aria-current='page')
+              a.page-link(href='#') 2
+              li.page-item
+              a.page-link(href='#') 3
+              li.page-item
+              a.page-link(href='#') Next  
+        a(href="control-pagos.html") 
+          button.btn.btn-exit(type="submit") Salir

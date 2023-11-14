@@ -27,7 +27,6 @@ block content
         label#f2 Fecha de renovacion
           input#fechaRenovacion(type='date' name='fechaRenovacion')
     .botones  
-      a(href="#") 
-        button.btn.btn-add(type="submit") Agregar
+      include modal-guardar.pug
       a(href="control-contratos.html") 
         button.btn.btn-cancelar(type="submit") Cancelar

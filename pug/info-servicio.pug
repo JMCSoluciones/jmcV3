@@ -1,0 +1,28 @@
+extend ../components/template-admin.pug
+block content
+    include control-menuAdmin.pug  
+    .container__infoservicio     
+        .container__infoservicio__administrador 
+        .container__infoservicio__administrador__container
+            h1 Información de Servicios
+            
+        .container__infoservicio__administrador__container-info
+            .info
+                label(for='Id') Id servicio
+                input.form-info(type='text' placeholder='' aria-label='')
+            .info
+                label(for='Nombre') Nombre
+                input.form-info(type='text' placeholder='' aria-label='')
+            .info
+                label(for='plan') Plan
+                input.form-info(type='text' placeholder='' aria-label='')
+            .info
+                label(for='moneda') Moneda
+                input#concepto.form-info(type='text' name='moneda' placeholder='')
+            .info
+                label(for='Costo') Costo
+                input.form-info(type='text' placeholder='' aria-label='')
+        .container__infoservicio__administrador__container-botones
+            include modal-servicio.pug
+            // Botón Eliminar
+            button#eliminarBtn(onclick='eliminarElemento()') Eliminar

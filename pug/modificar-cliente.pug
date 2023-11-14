@@ -1,0 +1,63 @@
+extend ../components/template-admin.pug
+block content
+  .modificar_cliente
+    .info
+      h2 Modificar Cliente
+      label(for="rfc") RFC
+        input(type='text')#rfc
+      label(for="nombre") Nombre
+        input(type='text')#name
+      label(for="direccion") Direccion
+        input(type='text')#direccion
+      label Estados
+        select(name='estado')#estado
+          option(value='no') Seleccione un estado
+          option(value='Aguascalientes') Aguascalientes
+          option(value='Baja California') Baja California
+          option(value='Baja California Sur') Baja California Sur
+          option(value='Campeche') Campeche
+          option(value='Chiapas') Chiapas
+          option(value='Chihuahua') Chihuahua
+          option(value='CDMX') Ciudad de M&eacute;xico
+          option(value='Coahuila') Coahuila
+          option(value='Colima') Colima
+          option(value='Durango') Durango
+          option(value='Estado de México') Estado de M&eacute;xico
+          option(value='Guanajuato') Guanajuato
+          option(value='Guerrero') Guerrero
+          option(value='Hidalgo') Hidalgo
+          option(value='Jalisco') Jalisco
+          option(value='Michoacán') Michoac&aacute;n
+          option(value='Morelos') Morelos
+          option(value='Nayarit') Nayarit
+          option(value='Nuevo León') Nuevo Le&oacute;n
+          option(value='Oaxaca') Oaxaca
+          option(value='Puebla') Puebla
+          option(value='Querétaro') Quer&eacute;taro
+          option(value='Quintana Roo') Quintana Roo
+          option(value='San Luis Potosí') San Luis Potos&iacute;
+          option(value='Sinaloa') Sinaloa
+          option(value='Sonora') Sonora
+          option(value='Tabasco') Tabasco
+          option(value='Tamaulipas') Tamaulipas
+          option(value='Tlaxcala') Tlaxcala
+          option(value='Veracruz') Veracruz
+          option(value='Yucatán') Yucat&aacute;n
+          option(value='Zacatecas') Zacatecas
+      label(for="municipio") Municipio
+        input(type='text')#municipio
+      label(for="cp") Código Postal
+        input(type='number')#cp
+      label(for="rf") Régimen Fiscal
+        input(type='text')#rf
+      label(for="tel") Teléfono
+        input(type='text')#tel
+      label(for="nContacto") Nombre de contacto
+        input(type='text')#nContacto
+      label(for="email") Correo electrónico
+        input(type='email')#email
+      label(for="password") Correo electrónico
+        input(type='password')#password
+    .botones
+      button(type="submit") Guardar
+          

@@ -15,8 +15,7 @@ block content
                                 input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
                                 a(href='busqueda.html') 
                                     .btn.btn-dark(type="submit") Buscar
-                                a(href="#") 
-                                    .btn.btn-clean(type="submit") Limpiar
+                                input.btn-clean(type="reset" value="Limpiar") 
                         .content__CtrlClientes__tabs__item__body
                             .table-wrapper.content__CtrlClientes__tabs__item__body__table
                                 table.table.table-striped.table-hover
@@ -35,7 +34,7 @@ block content
                                             td
                                                 a(href="ver-cliente.html") ver más... 
                                             td
-                                                a.edit(href="#editProductoModal" data-toggle='modal')
+                                                a.edit(href="modificar-cliente.html")
                                                     i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
                                                 a.delete(href='#deleteProductoModal' data-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
@@ -46,9 +45,9 @@ block content
                                             td 
                                                 a(href="ver-cliente.html") ver más... 
                                             td
-                                                a.edit(href="#editProductoModal" data-toggle='modal')
+                                                a.edit(href="modificar-cliente.html")
                                                     i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                                                a.delete(href='#deleteProductoModal' data-toggle='modal')
+                                                a.delete(href='#modalModificar' data-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
                         .content__CtrlCotizaciones__tabs__item__footer
                             nav(aria-label='...')

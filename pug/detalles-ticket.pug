@@ -1,0 +1,15 @@
+extend ../components/template-admin.pug
+block content
+  include inicio-cliente.pug
+  .detalleTicket
+    h2 Informacion del ticket
+    a(href="tickets-cliente.html") 
+      button.btn.btn-exit(type="submit")#salir Regresar
+    .detalleTicket__info 
+      label(for="fecha") Fecha
+      label(for="nombre") Nombre
+      label(for="rfc") RFC
+      label(for="contacto") Contacto 
+      label(for="asunto") Asunto
+      label(for="archivo") Archivo
+              

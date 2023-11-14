@@ -1,27 +1,7 @@
 extend ../components/template-admin.pug
 block content
+  include control-menuAdmin.pug
   .equipos   
-    .botones 
-      .botones__contratos
-        a(href="#")  
-          p Contratos 
-          img(src="/Images/Icons/contratos.svg", alt="")
-      .botones__pagos
-        a(href="#")    
-          p Pagos 
-          img(src="/Images/Icons/pagos.svg", alt="")
-      .botones__ticket
-        a(href="#")  
-          p Tickets
-          img(src="/Images/Icons/tickets.svg", alt="")
-      .botones__imprimir
-        a(href="#")  
-          p Imprimir 
-          img(src="/Images/Icons/imprimir.svg", alt="")
-      .botones__equipos 
-        a(href="#")  
-          p Equipos 
-          img(src="/Images/Icons/equipos.svg", alt="")
     h2.title Equipos
     .acciones
       a(href="inicioAdmin.html") 
@@ -37,8 +17,7 @@ block content
                 input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
                 a(href='busqueda.html') 
                   .btn.btn-dark(type="submit") Buscar
-                a(href="#") 
-                  .btn.btn-clean(type="submit") Limpiar
+                input.btn-clean(type="reset" value="Limpiar") 
           .content__equipoClientes__tabs__item__body
             .table-wrapper.content__equipoClientes__tabs__item__body__table
               table.table.table-striped.table-hover

@@ -1,0 +1,37 @@
+extend ../components/template.pug
+block content
+    include control-menuAdmin.pug
+    .content__nuevostaff__administrador 
+        .content__nuevostaff__administrador__container
+            h1 Añadir Nuevo Staff
+        .content__nuevostaff__administrador__container-staff
+            .staff
+                label(for='Nombre') Id 
+                select#autoSizingSelect.form-select
+                    option(selected='')  
+                    option(value='1') Uno
+                    option(value='2') Dos
+                    option(value='3') Tres
+            .staff
+                label(for='nombre') Nombre
+                input.form-staff(type='text' placeholder='Ingrese su nombre' aria-label='')
+            .staff
+                label(for='Nombre') Departamento
+                select#autoSizingSelect.form-dep
+                    option(selected='')  Seleccione departamento
+                    option(value='1') Uno
+                    option(value='2') Dos
+                    option(value='3') Tres
+            .staff
+                label(for='concepto') Correo Electrónico
+                input.form-staff(type='email', name='concepto', placeholder='Ingrese su correo')
+            .staff
+                label(for='total') Password
+                input.form-staff(type='password', name='contraseña', placeholder='Ingrese password') 
+        .content__nuevostaff__administrador__container-botones       
+          // Botón Agregar
+          include modal-guardar.pug
+              // Botón Cancelar
+          a(href="control-staff.html")     
+            button#cancelarBtn(type="submit") Cancelar  
+                     
