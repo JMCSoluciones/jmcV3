@@ -1,0 +1,57 @@
+extend ../components/template-admin.pug
+block content
+  .agregarPago
+    .info
+      h2 Agregar pago
+      .info__header
+        label(for="fecha")#fecha Fecha de pago
+      .info__buscar
+        form.d-flex(role="search")
+          input.form-control.me-2(type="search" placeholder="Cliente" aria-label="Search")#search
+          a(href='busqueda.html') 
+            .btn.btn-dark(type="submit") Buscar
+          input.btn-clean(type="reset" value="Limpiar") 
+      h3 Contrato
+      .info__agregar__contrato
+        .info__agregar__contrato-tipo
+          label(for="tipo") Tipo 
+          select(name='contrato')
+            option(value='no') 
+            option(value='mensual') Mensual
+            option(value="semestral") Semestral 
+            option(value='anual') Anual
+        .info__agregar__contrato-fecha
+          label(for="fechaContrato") Fecha
+          input(type="date")#txtDate
+        .info__agregar__contrato-id 
+          label(for="id") Id  
+          input(type="text")#id 
+      h3 Servicio
+      .info__vigencia
+        .info__vigencia-name  
+          label(for="name")#txtName Nombre
+            input(type="text")#nServicio
+        .info__vigencia-date
+          label(for="vigencia")#txtVigencia Vigencia 
+            input(type="month" placeholder="Vigencia")#vigencia  
+      label(for="concepto" ) Concepto 
+        input(type="text" placeholder="descripcion")#concepto 
+      label(for="total") Total a pagar 
+        input(type="number" placeholder="$")#money
+      label(for="staff") Staff 
+        input(type="text" placeholder="nombre")#staff 
+      .info__archivos 
+        .info__archivos-pdf
+          label(for="pdf") PDF 
+            input(type="file")#pdf 
+          .btn.btn-subir(type="submit")#subirPdf Subir
+        .info__archivos-xml
+          label(for="pdf") XML
+            input(type="file")#xml 
+          .btn.btn-subir(type="submit")#subirXml Subir
+    .botones
+      include modal-guardar.pug 
+      a(href="control-pagos.html") 
+        .btn.btn-cancelar(type="submit")#cancelar Cancelar 
+      
+          
