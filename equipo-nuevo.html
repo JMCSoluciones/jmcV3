@@ -41,7 +41,7 @@
       </nav>
     </header>
     <div class="eqNuevo"> 
-      <h2>Añadir Nuevo Equipo</h2><a href="inicioAdmin.html"> 
+      <h2>Añadir Nuevo Equipo</h2><a href="control-soporte.html"> 
         <button class="btn btn-exit" type="submit" id="salir">Regresar</button></a>
       <div class="eqNuevo__info"> 
         <label>Tipo de equipo
@@ -74,7 +74,7 @@
           <input type="text" placeholder="Uso" id="uso"/>
         </label>
         <label for="ip">Ip 
-          <input type="number" placeholder="ip local" id="ip"/>
+          <input type="text" placeholder="ip local" id="ip"/>
         </label>
         <label for="anydesk">Anydesk 
           <input type="number" placeholder="Direccion Anydesk" id="anydesk"/>
@@ -114,9 +114,28 @@
           <input type="text" placeholder="Breve descripción" id="descripcion"/>
         </label>
       </div>
-      <div class="eqNuevo__button"> <a href="#"> 
-          <button class="btn btn-add" type="submit">Guardar</button></a><a href="control-clientes.html"> 
-          <button class="btn btn-delete" type="submit">Eliminar</button></a></div>
+      <div class="eqNuevo__button"> <a href="control-clientes.html"> 
+          <button class="btn btn-delete" type="submit">Eliminar</button></a>
+        <button class="btn btn-success newBtnElement" type="button" data-bs-toggle="modal" data-bs-target="#modalGuardar" id="btnGuardarM">Guardar</button>
+        <div class="modalGuardar">
+          <div class="modal fade" id="modalGuardar" aria-hidden="true" aria-labelledby="modalGuardar" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalGuardar"> </h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Guardado!</h5>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer> 
       <div class="footer__box">

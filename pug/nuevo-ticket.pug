@@ -1,0 +1,31 @@
+extend ../components/template-admin.pug
+block content
+  .nvoTicket
+    h2 Añadir Nuevo Contrato
+    .info
+      label(for="fecha") Fecha
+      label(for="hora") Hora
+      label(for="cliente") Cliente
+        input(type='text', placeholder='Id')#cliente
+        .btn.btn-dark(type="submit") Buscar
+        .btn.btn-clean(type="submit") Limpiar
+      label(for="nombre") Nombre
+        input(type='text')#nombre
+      label(for="rfc") RFC
+        input(type='text')#rfc
+      label(for="contacto") Contacto
+        input(type='text')#contacto
+      label(for="asunto") Asunto
+        input(type='text')#asunto
+      label(for="mensaje") Mensaje
+        input(type='text')#mensaje
+      .info__archivo   
+        label(for="adjunto") Adjunto
+          input(type='file' name='archivo')#adjunto
+          .btn.btn-adj(type="submit") Adjuntar
+      label(for="staff") Staff 
+    .botones  
+      a(href="#") 
+        button.btn.btn-guardar(type="submit") Guardar
+      a(href="control-soporte.html") 
+        button.btn.btn-cancelar(type="submit") Cancelar

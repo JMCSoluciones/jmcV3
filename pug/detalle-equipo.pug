@@ -2,7 +2,7 @@ extend ../components/template-admin.pug
 block content
   .detalle 
     h2 Informacion del equipo
-    a(href="inicioAdmin.html") 
+    a(href="control-soporte.html") 
       button.btn.btn-exit(type="submit")#salir Regresar
     .detalle__info 
       label Tipo de equipo
@@ -51,8 +51,7 @@ block content
       label(for="descripcion") Descripción 
         input(type="text" placeholder="Breve descripción")#descripcion 
     .detalle__button 
-      a(href="#") 
-        button.btn.btn-add(type="submit") Guardar
+      include modal-guardar.pug
       a(href="control-clientes.html") 
         button.btn.btn-delete(type="submit") Eliminar
       a(href="#") 
