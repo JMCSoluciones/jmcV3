@@ -12,7 +12,7 @@ a{
 #ocultar {
   display: none;
 }
-header {
+header {  
   border-bottom: 1px solid @color-secondary;
   .menu-top {
     height: 40px;
@@ -1063,3246 +1063,282 @@ header {
     }
   }
 }
-.tiendaSAE{
-  .desarrollo{
-    &__logos{
+.sae {
+  h1{
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .desarrollo {
+    margin: 20px 0;
+    &__inicio {
       display: flex;
-      justify-content: flex-end;
-      padding: 20px;
-      &-mLibre{
-        img{
-          width: 150px;
-          height: auto;
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+      margin: 30px;
+      &-logo {
+        display: flex;
+        img {
+          height: 150px;
+          width: auto;
         }
       }
-      &-claro{
-        img{
-          width: 150px;
-          height: auto;
+      &-video {
+        video {
+          display: flex;
+          position: relative;
+          width: 280px;
+          justify-content: flex-end;
+          left: 2rem;
         }
+      }
+    }
+    &__imagenes{
+      display: flex;
+      justify-content: space-around;
+      img{
+        width: 100px;
       }
     }
     &__informacion{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     margin: 0px 0px 50px 51px;
-     gap: 20px;
-      &-online{
-        border: 2px solid @color-primary;
-        background-color: rgba(128, 128, 128, 0.178);
-        border-radius: 20px;
-        width: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        img{
-          padding: 5px;
-          align-content: center;
-          width: 100px;
-          height: auto;
-
-        }
-        p{
-          font-size: @font-size-md;
-          padding: 10px;
-          text-align: center;
-        }
-      }
-
-      &-sincroniza{
-        border: 2px solid @color-primary;
-        background-color: rgba(128, 128, 128, 0.178);
-        border-radius: 20px;
-        width: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        img{
-          width: 100px;
-          height: auto;
-
-        }
-        p{
-          font-size: @font-size-md;
-          padding: 10px;
-          text-align: center;
-        }
-      }
-
-      &-visualiza{
-        border: 2px solid @color-primary;
-        background-color: rgba(128, 128, 128, 0.178);
-        border-radius: 20px;
-        width: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        img{
-          height: 100px;
-          width: auto;
-          padding: 10px;
-        }
-        p{
-          font-size: @font-size-md;
-          padding: 10px;
-          text-align: center;
-        }
-      }
-      &-resumen{
-        border: 2px solid @color-primary;
-        background-color: rgba(128, 128, 128, 0.178);
-        border-radius: 20px;
-        width: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        img{
-          width: 100px;
-          height: auto;
-          padding: 10px;
-        }
-        p{
-          font-size: @font-size-md;
-          padding: 10px;
-          text-align: center;
-        }
-      }
-    }
-    &-button{
-      background-color: @color-primary;
-      border-radius: 50px;
-      width: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0px 0px 50px 51px;
+      gap: 20px;
       text-align: center;
-      padding: 5px;
-      margin: 20px;
-      left: 105px;
-      position: relative;
-    }
-  }
-}
-.preciosSAE{
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-tienda {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-
-        &-precios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
+      img{
         padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
+        align-content: center;
+        width: 50px;
+        height: 50px;
       }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          h2{
-            text-align: center;
-            font-size: @font-size-xl;
-            border-bottom: 1px solid @color-primary;
-            margin-bottom: 20px;
-          }
-          h3{
-            color: @color-text;
-            font-size: @font-size-lg;
-            margin-bottom: 10px;
-          }
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.preciosNOI{
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  } 
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          h2{
-            text-align: center;
-            font-size: @font-size-xl;
-            border-bottom: 1px solid @color-primary;
-            margin-bottom: 20px;
-          }
-          h3{
-            color: @color-text;
-            font-size: @font-size-lg;
-            margin-bottom: 10px;
-          }
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.preciosADM{
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info { 
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          h2{
-            text-align: center;
-            font-size: @font-size-xl;
-            border-bottom: 1px solid @color-primary;
-            margin-bottom: 20px;
-          }
-          h3{
-            color: @color-text;
-            font-size: @font-size-lg;
-            margin-bottom: 10px;
-          }
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.preciosFACTURE{
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          h2{
-            text-align: center;
-            font-size: @font-size-xl;
-            border-bottom: 1px solid @color-primary;
-            margin-bottom: 20px;
-          }
-          h3{
-            color: @color-text;
-            font-size: @font-size-lg;
-            margin-bottom: 10px;
-          }
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.preciosCAJA{
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-tienda {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          ;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          h2{
-            text-align: center;
-            font-size: @font-size-xl;
-            border-bottom: 1px solid @color-primary;
-            margin-bottom: 20px;
-          }
-          h3{
-            color: @color-text;
-            font-size: @font-size-lg;
-            margin-bottom: 10px;
-          }
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.preciosBANCO{
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info { 
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          h2{
-            text-align: center;
-            font-size: @font-size-xl;
-            border-bottom: 1px solid @color-primary;
-            margin-bottom: 20px;
-          }
-          h3{
-            color: @color-text;
-            font-size: @font-size-lg;
-            margin-bottom: 10px;
-          }
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.preciosPROD{
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          h2{
-            text-align: center;
-            font-size: @font-size-xl;
-            border-bottom: 1px solid @color-primary;
-            margin-bottom: 20px;
-          }
-          h3{
-            color: @color-text;
-            font-size: @font-size-lg;
-            margin-bottom: 10px;
-          }
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.funcionesSAE {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-tienda {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          ;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-        &-pDos {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          h2 {
-            margin: 10px 40px 10px 10px;
-            padding-top: 10px;
-            border-bottom: 1px solid @color-primary;
-          }
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-            }
-          }
-        }
-        &-pTres {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.funcionesPROD {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-        &-pDos {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-            }
-          }
-        }
-        &-pTres {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.funcionesCOI {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-        &-pDos {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-        &-pTres {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-        &-pCuatro {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.funcionesNOI {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          ul{
-            li{
-              margin-left: 20px;
-              color: @color-text;
-              padding: 10px;
-              font-size: @font-size-sm;
-            }
-          }
-        }
-        &-pDos {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          h2{
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-md;
-          }
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          ul{
-            li{
-              margin-left: 20px;
-              color: @color-text;
-              padding: 10px;
-              font-size: @font-size-sm;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.funcionesADM {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-        &-pDos {
-          display: flex;
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          justify-content: space-between;
-          img{
-            width: 100px;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.funcionesFACTURE {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-       ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 5px;
-            font-size: @font-size-sm;
-          }
-          ul{
-            li{
-              margin-left: 20px;
-              color: @color-text;
-              padding: 5px;
-              font-size: @font-size-sm;
-            }
-          }
-        }
-        &-pDos {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          h2{
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-md;
-          }
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          ul{
-            li{
-              margin-left: 20px;
-              color: @color-text;
-              padding: 10px;
-              font-size: @font-size-sm;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.funcionesBANCO {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 5px;
-            font-size: @font-size-sm;
-          }
-          ul{
-            li{
-              margin-left: 20px;
-              color: @color-text;
-              padding: 5px;
-              font-size: @font-size-sm;
-            }
-          }
-        }
-        &-pDos {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          h2{
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-md;
-          }
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          ul{
-            li{
-              margin-left: 20px;
-              color: @color-text;
-              padding: 10px;
-              font-size: @font-size-sm;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.funcionesCAJA {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-tienda {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-  .inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(/imagenes/Administrativo.jpg);
-    opacity: .9;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 360px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__contenido {
-      background-color: rgba(61, 102, 131, 0.841);
-      width: 100%;
-      padding: 15px;
-      h2 {
-        color: @color-white;
-        font-size: 4rem;
-        text-align: right;
-        padding-left: 20px;
-      }
-    }
-  }
-  .info {
-    &__body {
-      &__descripcion {
-        &-pUno {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-        }
-        &-pDos {
-          padding: 10px;
-          margin: 20px 20px 20px 60px;
-          h2 {
-            margin: 10px 40px 10px 10px;
-            color: @color-text;
-            border-bottom: 1px solid @color-primary;
-          }
-          h3{
-            margin: 10px 40px 10px 10px;
-            padding-top: 10px;
-            color: @color-text;
-            font-weight: @font-semibold;
-          }
-          p {
-            color: @color-text;
-            padding: 10px;
-            font-size: @font-size-sm;
-          }
-          ul {
-            li {
-              font-size: @font-size-sm;
-              color: @color-text;
-              margin-left: 10px;
-            }
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 105px;
-        position: relative;
-      }
-    }
-  }
-}
-.beneficiosSAE {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-tienda {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__video {
-      video {
-        display: flex;
-        position: relative;
-        width: 230px;
-        justify-content: flex-end;
-        left: 80px;
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-}
-.beneficiosCOI {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__video {
-      video {
-        display: flex;
-        position: relative;
-        width: 230px;
-        justify-content: flex-end;
-        left: 80px;
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      &-descripcion {
-        margin: 20px 0px;
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        h2 {
-          margin: 10px 40px 10px 10px;
-          padding-top: 10px;
-          border-bottom: 1px solid @color-primary;
-        }
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-}
-.beneficiosADM {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__video {
-      video {
-        display: flex;
-        position: relative;
-        width: 230px;
-        justify-content: flex-end;
-        left: 80px;
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      &-descripcion {
-        margin: 20px 0px;
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        h2 {
-          margin: 10px 40px 10px 10px;
-          padding-top: 10px;
-          border-bottom: 1px solid @color-primary;
-        }
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-}
-.beneficiosFACTURE {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__video {
-      video {
-        display: flex;
-        position: relative;
-        width: 230px;
-        justify-content: flex-end;
-        left: 80px;
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      &-descripcion {
-        margin: 20px 0px;
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        h2 {
-          margin: 10px 40px 10px 10px;
-          padding-top: 10px;
-          border-bottom: 1px solid @color-primary;
-        }
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-}
-.beneficiosNOI {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-tienda {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__video {
-      video {
-        display: flex;
-        position: relative;
-        width: 230px;
-        justify-content: flex-end;
-        left: 80px;
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-}
-.beneficiosCAJA {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-tienda {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__video {
-      video {
-        display: flex;
-        position: relative;
-        width: 230px;
-        justify-content: flex-end;
-        left: 80px;
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      h2 {
-        margin: 10px 40px 10px 10px;
-        padding-top: 10px;
-        border-bottom: 1px solid @color-primary;
-      }
-      &-descripcion {
-        margin: 20px 0px;
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-funcion {
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        ul {
-          li {
-            padding: 0px 10px;
-            color: @color-text;
-          }
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-}
-.beneficiosPROD {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__video {
-      video {
-        display: flex;
-        position: relative;
-        width: 230px;
-        justify-content: flex-end;
-        left: 80px;
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      &-descripcion {
-        margin: 20px 0px;
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        h2 {
-          margin: 10px 40px 10px 10px;
-          padding-top: 10px;
-          border-bottom: 1px solid @color-primary;
-        }
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-}
-.beneficiosBANCO {
-  .desarrollo {
-    &__inicio {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      margin: 30px 0px;
-      &-logo {
-        display: flex;
-        margin-right: 50px;
-        img {
-          height: 110px;
-          width: auto;
-        }
-      }
-      &__button {
-        display: flex;
-        flex-direction: column;
-        &-beneficios {
-          background-color: @color-btn-act;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-funciones {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-        &-precios {
-          background-color: @color-btn-nact;
-          width: 100px;
-          border: 2px solid white;
-          text-align: center;
-          padding: 5px;
-          left: 60px;
-          position: relative;
-        }
-      }
-    }
-    &__video {
-      video {
-        display: flex;
-        position: relative;
-        width: 230px;
-        justify-content: flex-end;
-        left: 80px;
-      }
-    }
-    &__body {
-      padding: 10px;
-      margin: 20px 20px 50px 60px;
-      &-descripcion {
-        margin: 20px 0px;
-        background-color: rgba(128, 128, 128, 0.099);
-        border-radius: 10px;
-        h2 {
-          margin: 10px 40px 10px 10px;
-          padding-top: 10px;
-          border-bottom: 1px solid @color-primary;
-        }
-        p {
-          color: @color-text;
-          padding: 10px;
-        }
-      }
-      &-button {
-        background-color: @color-primary;
-        border-radius: 50px;
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        margin: 20px;
-        left: 150px;
-        position: relative;
-      }
-    }
-  }
-}
-.pventaCAJA{
-  margin: 10px 10px 10px 40px;
-  .inicio{
-    margin-bottom: 20px;
-    &__titulo{
-      h2{
-        font-size: @font-size-xl;
-        color: @color-text;
-        border-bottom: 2px solid @color-primary;
-        margin-bottom: 20px;
-      }
-    }
-    &__descripcion{
       p{
         font-size: @font-size-md;
-        color: @color-text;
+        padding: 10px;
+        text-align: center;
+      }   
+    }
+    &__button{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 10px 30px 60px;
+      .tab-content{
+        h2 {
+          margin: 10px 40px 10px 10px;
+          padding-top: 10px;
+          border-bottom: 1px solid @color-primary;
+        }
+        p {
+          color: @color-text;
+          padding: 10px;
+        }
+        ul {
+          li {
+            margin-left: 25px;
+            padding: 0px 10px;
+            color: @color-text;
+          }
+        }
       }
     }
   }
-  .desarrollo{
+  #masinfo{
+    background-color: @color-primary;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    left: 150px;
+    position: relative;
+  }
+}
+.coi {
+  h1{
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .desarrollo {
+    margin: 20px 0;
+    &__inicio {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+      margin: 30px;
+      &-logo {
+        display: flex;
+        img {
+          height: 150px;
+          width: auto;
+        }
+      }
+      &-video {
+        video {
+          display: flex;
+          position: relative;
+          width: 280px;
+          justify-content: flex-end;
+          left: 2rem;
+        }
+      }
+    }
+    &__button{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 10px 30px 60px;
+      .tab-content{
+        h2 {
+          margin: 10px 40px 10px 10px;
+          padding-top: 10px;
+          border-bottom: 1px solid @color-primary;
+        }
+        p {
+          color: @color-text;
+          padding: 10px;
+        }
+        ul {
+          li {
+            margin-left: 25px;
+            padding: 0px 10px;
+            color: @color-text;
+          }
+        }
+      }
+    }
+  }
+  #masinfo{
+    background-color: @color-primary;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    left: 150px;
+    position: relative;
+  }
+}
+.banco {
+  h1{
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .desarrollo {
+    margin: 20px 0;
+    &__inicio {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+      margin: 30px;
+      &-logo {
+        display: flex;
+        img {
+          height: 150px;
+          width: auto;
+        }
+      }
+      &-video {
+        video {
+          display: flex;
+          position: relative;
+          width: 280px;
+          justify-content: flex-end;
+          left: 2rem;
+        }
+      }
+    }
+    &__button{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 10px 30px 60px;
+      .tab-content{
+        h2 {
+          margin: 10px 40px 10px 10px;
+          padding-top: 10px;
+          border-bottom: 1px solid @color-primary;
+        }
+        p {
+          color: @color-text;
+          padding: 10px;
+        }
+        ul {
+          li {
+            margin-left: 25px;
+            padding: 0px 10px;
+            color: @color-text;
+          }
+        }
+      }
+    }
+  }
+  #masinfo{
+    background-color: @color-primary;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    left: 150px;
+    position: relative;
+  }
+}
+.caja {
+  h1{
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .desarrollo {
+    margin: 20px 0;
+    &__inicio {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+      margin: 30px;
+      &-logo {
+        display: flex;
+        img {
+          height: 150px;
+          width: auto;
+        }
+      }
+      &-video {
+        video {
+          display: flex;
+          position: relative;
+          width: 280px;
+          justify-content: flex-end;
+          left: 2rem;
+        }
+      }
+    }
+    &__button{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 10px 30px 60px;
+      .tab-content{
+        h2 {
+          margin: 10px 40px 10px 10px;
+          padding-top: 10px;
+          border-bottom: 1px solid @color-primary;
+        }
+        p {
+          color: @color-text;
+          padding: 10px;
+        }
+        ul {
+          li {
+            margin-left: 25px;
+            padding: 0px 10px;
+            color: @color-text;
+          }
+        }
+      }
+    }
+  }
+  .kit{
     &__basica{
       display: flex;
       flex-direction: column;
@@ -4382,6 +1418,304 @@ header {
         }
       }
     }
+  }
+  #masinfo{
+    background-color: @color-primary;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    left: 150px;
+    position: relative;
+  }
+}
+.adm {
+  h1{
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .desarrollo {
+    margin: 20px 0;
+    &__inicio {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+      margin: 30px;
+      &-logo {
+        display: flex;
+        img {
+          height: 150px;
+          width: auto;
+        }
+      }
+      &-video {
+        video {
+          display: flex;
+          position: relative;
+          width: 280px;
+          justify-content: flex-end;
+          left: 2rem;
+        }
+      }
+    }
+    &__button{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 10px 30px 60px;
+      .tab-content{
+        h2 {
+          margin: 10px 40px 10px 10px;
+          padding-top: 10px;
+          border-bottom: 1px solid @color-primary;
+        }
+        p {
+          color: @color-text;
+          padding: 10px;
+        }
+        ul {
+          li {
+            margin-left: 25px;
+            padding: 0px 10px;
+            color: @color-text;
+          }
+        }
+        #funciones-tab-pane{
+          img{
+            width: 100px;
+            position: relative;
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  #masinfo{
+    background-color: @color-primary;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    left: 150px;
+    position: relative;
+  }
+}
+.noi {
+  h1{
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .desarrollo {
+    margin: 20px 0;
+    &__inicio {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+      margin: 30px;
+      &-logo {
+        display: flex;
+        img {
+          height: 150px;
+          width: auto;
+        }
+      }
+      &-video {
+        video {
+          display: flex;
+          position: relative;
+          width: 280px;
+          justify-content: flex-end;
+          left: 2rem;
+        }
+      }
+    }
+    &__button{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 10px 30px 60px;
+      .tab-content{
+        h2 {
+          margin: 10px 40px 10px 10px;
+          padding-top: 10px;
+          border-bottom: 1px solid @color-primary;
+        }
+        p {
+          color: @color-text;
+          padding: 10px;
+        }
+        ul {
+          li {
+            margin-left: 25px;
+            padding: 0px 10px;
+            color: @color-text;
+          }
+        }
+        #funciones-tab-pane{
+          img{
+            width: 100px;
+            position: relative;
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  #masinfo{
+    background-color: @color-primary;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    left: 150px;
+    position: relative;
+  }
+}
+.facture {
+  h1{
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .desarrollo {
+    margin: 20px 0;
+    &__inicio {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+      margin: 30px;
+      &-logo {
+        display: flex;
+        img {
+          height: 150px;
+          width: auto;
+        }
+      }
+      &-video {
+        video {
+          display: flex;
+          position: relative;
+          width: 280px;
+          justify-content: flex-end;
+          left: 2rem;
+        }
+      }
+    }
+    &__button{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 10px 30px 60px;
+      .tab-content{
+        h2 {
+          margin: 10px 40px 10px 10px;
+          padding-top: 10px;
+          border-bottom: 1px solid @color-primary;
+        }
+        p {
+          color: @color-text;
+          padding: 10px;
+        }
+        ul {
+          li {
+            margin-left: 25px;
+            padding: 0px 10px;
+            color: @color-text;
+          }
+        }
+        #funciones-tab-pane{
+          img{
+            width: 100px;
+            position: relative;
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  #masinfo{
+    background-color: @color-primary;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    left: 150px;
+    position: relative;
+  }
+}
+.prod {
+  h1{
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  .desarrollo {
+    margin: 20px 0;
+    &__inicio {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; 
+      align-items: center;
+      margin: 30px;
+      &-logo {
+        display: flex;
+        img {
+          height: 150px;
+          width: auto;
+        }
+      }
+      &-video {
+        video {
+          display: flex;
+          position: relative;
+          width: 280px;
+          justify-content: flex-end;
+          left: 2rem;
+        }
+      }
+    }
+    &__button{
+      display: flex;
+      flex-direction: column;
+      margin: 30px 10px 30px 60px;
+      .tab-content{
+        h2 {
+          margin: 10px 40px 10px 10px;
+          padding-top: 10px;
+          border-bottom: 1px solid @color-primary;
+        }
+        p {
+          color: @color-text;
+          padding: 10px;
+        }
+        ul {
+          li {
+            margin-left: 25px;
+            padding: 0px 10px;
+            color: @color-text;
+          }
+        }
+        #funciones-tab-pane{
+          img{
+            width: 100px;
+            position: relative;
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  #masinfo{
+    background-color: @color-primary;
+    border-radius: 50px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    left: 150px;
+    position: relative;
   }
 }
 .mantenimiento {
@@ -4881,7 +2215,7 @@ header {
           }
           &-num {
             font-family: @font-family2;
-            font-size: @font-size-md;
+            font-size: @font-size-sm;
           }
         }
         &-email {
@@ -4901,14 +2235,14 @@ header {
         &-redes {
           display: flex;
           justify-content: flex-start;
-          align-items: center;
+          align-items: flex-start;
           gap: 10px;
           img {
             width: 22px;
             height: auto;
           }
           &-txt {
-            font-size: @font-size-md;
+            font-size: @font-size-sm;
           }
         }
       }
@@ -4941,7 +2275,7 @@ header {
         }
       }
       h2{
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
         align-self: center;
       }
@@ -6332,6 +3666,8 @@ header {
 
 }
 .barraFlotante {
+  position: relative;
+  z-index: 3;
    * {
     margin: 0;
     padding: 0;
@@ -6347,10 +3683,11 @@ header {
   nav {
     position: fixed;
     width: 50px;
-    margin-top: 80px;
+    
     transition: all 0.3s linear;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
     border-radius: 0px 20px 20px 0px;
+    background: white;
   }
   nav li {
     height: 50px;
@@ -6375,7 +3712,7 @@ header {
     height: 40px;
   }
 }
-.dropdown{
+dropdown{
   position: relative;
   &-toggle{
     width: 100px;
@@ -7261,7 +4598,7 @@ header {
         }
       }
 
-}
+  }
 }
 .container__controlstaff{
   &__administrador {

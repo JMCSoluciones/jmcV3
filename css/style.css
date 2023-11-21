@@ -1244,24 +1244,60 @@ header .menu-top__link img {
   width: 88px;
   height: auto;
 }
-.tiendaSAE .desarrollo__logos {
+.sae h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.sae .desarrollo {
+  margin: 20px 0;
+}
+.sae .desarrollo__inicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+.sae .desarrollo__inicio-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.sae .desarrollo__inicio-logo img {
+  height: 150px;
+  width: auto;
+}
+.sae .desarrollo__inicio-video video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 280px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 20px;
+  left: 2rem;
 }
-.tiendaSAE .desarrollo__logos-mLibre img {
-  width: 150px;
-  height: auto;
+.sae .desarrollo__imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-.tiendaSAE .desarrollo__logos-claro img {
-  width: 150px;
-  height: auto;
+.sae .desarrollo__imagenes img {
+  width: 100px;
 }
-.tiendaSAE .desarrollo__informacion {
+.sae .desarrollo__informacion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1271,40 +1307,21 @@ header .menu-top__link img {
       justify-content: space-around;
   margin: 0px 0px 50px 51px;
   gap: 20px;
+  text-align: center;
 }
-.tiendaSAE .desarrollo__informacion-online {
-  border: 2px solid #17acc9;
-  background-color: rgba(128, 128, 128, 0.178);
-  border-radius: 20px;
-  width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.tiendaSAE .desarrollo__informacion-online img {
+.sae .desarrollo__informacion img {
   padding: 5px;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 100px;
-  height: auto;
+  width: 50px;
+  height: 50px;
 }
-.tiendaSAE .desarrollo__informacion-online p {
+.sae .desarrollo__informacion p {
   font-size: 1.6rem;
   padding: 10px;
   text-align: center;
 }
-.tiendaSAE .desarrollo__informacion-sincroniza {
-  border: 2px solid #17acc9;
-  background-color: rgba(128, 128, 128, 0.178);
-  border-radius: 20px;
-  width: 150px;
+.sae .desarrollo__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1312,170 +1329,23 @@ header .menu-top__link img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 30px 10px 30px 60px;
 }
-.tiendaSAE .desarrollo__informacion-sincroniza img {
-  width: 100px;
-  height: auto;
-}
-.tiendaSAE .desarrollo__informacion-sincroniza p {
-  font-size: 1.6rem;
-  padding: 10px;
-  text-align: center;
-}
-.tiendaSAE .desarrollo__informacion-visualiza {
-  border: 2px solid #17acc9;
-  background-color: rgba(128, 128, 128, 0.178);
-  border-radius: 20px;
-  width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.tiendaSAE .desarrollo__informacion-visualiza img {
-  height: 100px;
-  width: auto;
-  padding: 10px;
-}
-.tiendaSAE .desarrollo__informacion-visualiza p {
-  font-size: 1.6rem;
-  padding: 10px;
-  text-align: center;
-}
-.tiendaSAE .desarrollo__informacion-resumen {
-  border: 2px solid #17acc9;
-  background-color: rgba(128, 128, 128, 0.178);
-  border-radius: 20px;
-  width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.tiendaSAE .desarrollo__informacion-resumen img {
-  width: 100px;
-  height: auto;
-  padding: 10px;
-}
-.tiendaSAE .desarrollo__informacion-resumen p {
-  font-size: 1.6rem;
-  padding: 10px;
-  text-align: center;
-}
-.tiendaSAE .desarrollo-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.preciosSAE .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.preciosSAE .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.preciosSAE .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.preciosSAE .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.preciosSAE .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosSAE .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosSAE .desarrollo__inicio__button-tienda {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosSAE .desarrollo__inicio__button-precios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosSAE .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.preciosSAE .desarrollo__body h2 {
+.sae .desarrollo__button .tab-content h2 {
   margin: 10px 40px 10px 10px;
   padding-top: 10px;
   border-bottom: 1px solid #17acc9;
 }
-.preciosSAE .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.preciosSAE .desarrollo__body-descripcion p {
+.sae .desarrollo__button .tab-content p {
   color: #666666d9;
   padding: 10px;
 }
-.preciosSAE .desarrollo__body-funcion ul li {
+.sae .desarrollo__button .tab-content ul li {
+  margin-left: 25px;
   padding: 0px 10px;
   color: #666666d9;
 }
-.preciosSAE .desarrollo__body-button {
+.sae #masinfo {
   background-color: #17acc9;
   border-radius: 50px;
   width: 100px;
@@ -1485,19 +1355,20 @@ header .menu-top__link img {
   left: 150px;
   position: relative;
 }
-.preciosSAE .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
+.coi h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.coi .desarrollo {
+  margin: 20px 0;
+}
+.coi .desarrollo__inicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1505,2451 +1376,53 @@ header .menu-top__link img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 30px;
 }
-.preciosSAE .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.preciosSAE .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.preciosSAE .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.preciosSAE .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.preciosSAE .info__body__descripcion-pUno h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  border-bottom: 1px solid #17acc9;
-  margin-bottom: 20px;
-}
-.preciosSAE .info__body__descripcion-pUno h3 {
-  color: #666666d9;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-.preciosSAE .info__body__descripcion-pUno ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-}
-.preciosSAE .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.preciosNOI .desarrollo__inicio {
+.coi .desarrollo__inicio-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
 }
-.preciosNOI .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.preciosNOI .desarrollo__inicio-logo img {
-  height: 110px;
+.coi .desarrollo__inicio-logo img {
+  height: 150px;
   width: auto;
 }
-.preciosNOI .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.preciosNOI .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosNOI .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosNOI .desarrollo__inicio__button-precios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosNOI .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.preciosNOI .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.preciosNOI .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.preciosNOI .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.preciosNOI .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.preciosNOI .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.preciosNOI .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.preciosNOI .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.preciosNOI .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.preciosNOI .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.preciosNOI .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.preciosNOI .info__body__descripcion-pUno h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  border-bottom: 1px solid #17acc9;
-  margin-bottom: 20px;
-}
-.preciosNOI .info__body__descripcion-pUno h3 {
-  color: #666666d9;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-.preciosNOI .info__body__descripcion-pUno ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-}
-.preciosNOI .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.preciosADM .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.preciosADM .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.preciosADM .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.preciosADM .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.preciosADM .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosADM .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosADM .desarrollo__inicio__button-precios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosADM .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.preciosADM .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.preciosADM .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.preciosADM .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.preciosADM .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.preciosADM .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.preciosADM .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.preciosADM .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.preciosADM .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.preciosADM .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.preciosADM .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.preciosADM .info__body__descripcion-pUno h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  border-bottom: 1px solid #17acc9;
-  margin-bottom: 20px;
-}
-.preciosADM .info__body__descripcion-pUno h3 {
-  color: #666666d9;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-.preciosADM .info__body__descripcion-pUno ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-}
-.preciosADM .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.preciosFACTURE .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.preciosFACTURE .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.preciosFACTURE .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.preciosFACTURE .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.preciosFACTURE .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosFACTURE .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosFACTURE .desarrollo__inicio__button-precios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosFACTURE .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.preciosFACTURE .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.preciosFACTURE .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.preciosFACTURE .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.preciosFACTURE .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.preciosFACTURE .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.preciosFACTURE .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.preciosFACTURE .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.preciosFACTURE .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.preciosFACTURE .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.preciosFACTURE .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.preciosFACTURE .info__body__descripcion-pUno h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  border-bottom: 1px solid #17acc9;
-  margin-bottom: 20px;
-}
-.preciosFACTURE .info__body__descripcion-pUno h3 {
-  color: #666666d9;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-.preciosFACTURE .info__body__descripcion-pUno ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-}
-.preciosFACTURE .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.preciosCAJA .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.preciosCAJA .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.preciosCAJA .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.preciosCAJA .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.preciosCAJA .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosCAJA .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosCAJA .desarrollo__inicio__button-tienda {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosCAJA .desarrollo__inicio__button-precios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosCAJA .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.preciosCAJA .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.preciosCAJA .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.preciosCAJA .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.preciosCAJA .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.preciosCAJA .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.preciosCAJA .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.preciosCAJA .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.preciosCAJA .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.preciosCAJA .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.preciosCAJA .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.preciosCAJA .info__body__descripcion-pUno h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  border-bottom: 1px solid #17acc9;
-  margin-bottom: 20px;
-}
-.preciosCAJA .info__body__descripcion-pUno h3 {
-  color: #666666d9;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-.preciosCAJA .info__body__descripcion-pUno ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-}
-.preciosCAJA .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.preciosBANCO .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.preciosBANCO .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.preciosBANCO .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.preciosBANCO .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.preciosBANCO .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosBANCO .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosBANCO .desarrollo__inicio__button-precios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosBANCO .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.preciosBANCO .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.preciosBANCO .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.preciosBANCO .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.preciosBANCO .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.preciosBANCO .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.preciosBANCO .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.preciosBANCO .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.preciosBANCO .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.preciosBANCO .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.preciosBANCO .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.preciosBANCO .info__body__descripcion-pUno h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  border-bottom: 1px solid #17acc9;
-  margin-bottom: 20px;
-}
-.preciosBANCO .info__body__descripcion-pUno h3 {
-  color: #666666d9;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-.preciosBANCO .info__body__descripcion-pUno ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-}
-.preciosBANCO .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.preciosPROD .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.preciosPROD .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.preciosPROD .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.preciosPROD .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.preciosPROD .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosPROD .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosPROD .desarrollo__inicio__button-precios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.preciosPROD .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.preciosPROD .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.preciosPROD .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.preciosPROD .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.preciosPROD .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.preciosPROD .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.preciosPROD .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.preciosPROD .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.preciosPROD .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.preciosPROD .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.preciosPROD .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.preciosPROD .info__body__descripcion-pUno h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  border-bottom: 1px solid #17acc9;
-  margin-bottom: 20px;
-}
-.preciosPROD .info__body__descripcion-pUno h3 {
-  color: #666666d9;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-.preciosPROD .info__body__descripcion-pUno ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-}
-.preciosPROD .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.funcionesSAE .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.funcionesSAE .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.funcionesSAE .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.funcionesSAE .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.funcionesSAE .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesSAE .desarrollo__inicio__button-funciones {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesSAE .desarrollo__inicio__button-tienda {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesSAE .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-}
-.funcionesSAE .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.funcionesSAE .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesSAE .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.funcionesSAE .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.funcionesSAE .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.funcionesSAE .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.funcionesSAE .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.funcionesSAE .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.funcionesSAE .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.funcionesSAE .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesSAE .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesSAE .info__body__descripcion-pDos {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesSAE .info__body__descripcion-pDos h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesSAE .info__body__descripcion-pDos p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesSAE .info__body__descripcion-pDos ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-}
-.funcionesSAE .info__body__descripcion-pTres {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesSAE .info__body__descripcion-pTres p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesSAE .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.funcionesPROD .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.funcionesPROD .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.funcionesPROD .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.funcionesPROD .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.funcionesPROD .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesPROD .desarrollo__inicio__button-funciones {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesPROD .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesPROD .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.funcionesPROD .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesPROD .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.funcionesPROD .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.funcionesPROD .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.funcionesPROD .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.funcionesPROD .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.funcionesPROD .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.funcionesPROD .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.funcionesPROD .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesPROD .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesPROD .info__body__descripcion-pDos {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesPROD .info__body__descripcion-pDos ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-}
-.funcionesPROD .info__body__descripcion-pTres {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesPROD .info__body__descripcion-pTres p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesPROD .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.funcionesCOI .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.funcionesCOI .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.funcionesCOI .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.funcionesCOI .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.funcionesCOI .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesCOI .desarrollo__inicio__button-funciones {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-}
-.funcionesCOI .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesCOI .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.funcionesCOI .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesCOI .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.funcionesCOI .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.funcionesCOI .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.funcionesCOI .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.funcionesCOI .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.funcionesCOI .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.funcionesCOI .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.funcionesCOI .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesCOI .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesCOI .info__body__descripcion-pDos {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesCOI .info__body__descripcion-pDos p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesCOI .info__body__descripcion-pTres {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesCOI .info__body__descripcion-pTres p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesCOI .info__body__descripcion-pCuatro {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesCOI .info__body__descripcion-pCuatro p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesCOI .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.funcionesNOI .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.funcionesNOI .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.funcionesNOI .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.funcionesNOI .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.funcionesNOI .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesNOI .desarrollo__inicio__button-funciones {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesNOI .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesNOI .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.funcionesNOI .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesNOI .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.funcionesNOI .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.funcionesNOI .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.funcionesNOI .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.funcionesNOI .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.funcionesNOI .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.funcionesNOI .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.funcionesNOI .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesNOI .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesNOI .info__body__descripcion-pUno ul li {
-  margin-left: 20px;
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesNOI .info__body__descripcion-pDos {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesNOI .info__body__descripcion-pDos h2 {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.6rem;
-}
-.funcionesNOI .info__body__descripcion-pDos p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesNOI .info__body__descripcion-pDos ul li {
-  margin-left: 20px;
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesNOI .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.funcionesADM .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.funcionesADM .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.funcionesADM .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.funcionesADM .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.funcionesADM .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesADM .desarrollo__inicio__button-funciones {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesADM .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesADM .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.funcionesADM .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesADM .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.funcionesADM .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.funcionesADM .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.funcionesADM .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.funcionesADM .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.funcionesADM .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.funcionesADM .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.funcionesADM .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesADM .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesADM .info__body__descripcion-pDos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.funcionesADM .info__body__descripcion-pDos img {
-  width: 100px;
-}
-.funcionesADM .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.funcionesFACTURE .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.funcionesFACTURE .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.funcionesFACTURE .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.funcionesFACTURE .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.funcionesFACTURE .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesFACTURE .desarrollo__inicio__button-funciones {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesFACTURE .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesFACTURE .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.funcionesFACTURE .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesFACTURE .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.funcionesFACTURE .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.funcionesFACTURE .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.funcionesFACTURE .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.funcionesFACTURE .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.funcionesFACTURE .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.funcionesFACTURE .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.funcionesFACTURE .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesFACTURE .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 5px;
-  font-size: 1.4rem;
-}
-.funcionesFACTURE .info__body__descripcion-pUno ul li {
-  margin-left: 20px;
-  color: #666666d9;
-  padding: 5px;
-  font-size: 1.4rem;
-}
-.funcionesFACTURE .info__body__descripcion-pDos {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesFACTURE .info__body__descripcion-pDos h2 {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.6rem;
-}
-.funcionesFACTURE .info__body__descripcion-pDos p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesFACTURE .info__body__descripcion-pDos ul li {
-  margin-left: 20px;
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesFACTURE .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.funcionesBANCO .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.funcionesBANCO .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.funcionesBANCO .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.funcionesBANCO .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.funcionesBANCO .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesBANCO .desarrollo__inicio__button-funciones {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesBANCO .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesBANCO .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.funcionesBANCO .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesBANCO .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.funcionesBANCO .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.funcionesBANCO .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.funcionesBANCO .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.funcionesBANCO .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.funcionesBANCO .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.funcionesBANCO .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-}
-.funcionesBANCO .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesBANCO .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 5px;
-  font-size: 1.4rem;
-}
-.funcionesBANCO .info__body__descripcion-pUno ul li {
-  margin-left: 20px;
-  color: #666666d9;
-  padding: 5px;
-  font-size: 1.4rem;
-}
-.funcionesBANCO .info__body__descripcion-pDos {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesBANCO .info__body__descripcion-pDos h2 {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.6rem;
-}
-.funcionesBANCO .info__body__descripcion-pDos p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesBANCO .info__body__descripcion-pDos ul li {
-  margin-left: 20px;
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesBANCO .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.funcionesCAJA .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.funcionesCAJA .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.funcionesCAJA .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.funcionesCAJA .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.funcionesCAJA .desarrollo__inicio__button-beneficios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesCAJA .desarrollo__inicio__button-funciones {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesCAJA .desarrollo__inicio__button-tienda {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesCAJA .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.funcionesCAJA .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.funcionesCAJA .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesCAJA .desarrollo__body-descripcion {
-  margin: 20px 0px;
-}
-.funcionesCAJA .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.funcionesCAJA .desarrollo__body-funcion ul li {
-  padding: 0px 10px;
-  color: #666666d9;
-}
-.funcionesCAJA .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.funcionesCAJA .inicio {
-  max-width: 100%;
-  margin: 0 auto;
-  background-image: url(/imagenes/Administrativo.jpg);
-  opacity: 0.9;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.funcionesCAJA .inicio__contenido {
-  background-color: rgba(61, 102, 131, 0.841);
-  width: 100%;
-  padding: 15px;
-}
-.funcionesCAJA .inicio__contenido h2 {
-  color: #ffffff;
-  font-size: 4rem;
-  text-align: right;
-  padding-left: 20px;
-}
-.funcionesCAJA .info__body__descripcion-pUno {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesCAJA .info__body__descripcion-pUno p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesCAJA .info__body__descripcion-pDos {
-  padding: 10px;
-  margin: 20px 20px 20px 60px;
-}
-.funcionesCAJA .info__body__descripcion-pDos h2 {
-  margin: 10px 40px 10px 10px;
-  color: #666666d9;
-  border-bottom: 1px solid #17acc9;
-}
-.funcionesCAJA .info__body__descripcion-pDos h3 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  color: #666666d9;
-  font-weight: 600;
-}
-.funcionesCAJA .info__body__descripcion-pDos p {
-  color: #666666d9;
-  padding: 10px;
-  font-size: 1.4rem;
-}
-.funcionesCAJA .info__body__descripcion-pDos ul li {
-  font-size: 1.4rem;
-  color: #666666d9;
-  margin-left: 10px;
-}
-.funcionesCAJA .info__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 105px;
-  position: relative;
-}
-.beneficiosSAE .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.beneficiosSAE .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.beneficiosSAE .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.beneficiosSAE .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.beneficiosSAE .desarrollo__inicio__button-beneficios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosSAE .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosSAE .desarrollo__inicio__button-tienda {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosSAE .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosSAE .desarrollo__video video {
+.coi .desarrollo__inicio-video video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 230px;
+  width: 280px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  left: 80px;
+  left: 2rem;
 }
-.beneficiosSAE .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
+.coi .desarrollo__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 10px 30px 60px;
 }
-.beneficiosSAE .desarrollo__body h2 {
+.coi .desarrollo__button .tab-content h2 {
   margin: 10px 40px 10px 10px;
   padding-top: 10px;
   border-bottom: 1px solid #17acc9;
 }
-.beneficiosSAE .desarrollo__body-descripcion {
-  margin: 20px 0px;
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosSAE .desarrollo__body-descripcion p {
+.coi .desarrollo__button .tab-content p {
   color: #666666d9;
   padding: 10px;
 }
-.beneficiosSAE .desarrollo__body-funcion {
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosSAE .desarrollo__body-funcion ul li {
+.coi .desarrollo__button .tab-content ul li {
+  margin-left: 25px;
   padding: 0px 10px;
   color: #666666d9;
 }
-.beneficiosSAE .desarrollo__body-button {
+.coi #masinfo {
   background-color: #17acc9;
   border-radius: 50px;
   width: 100px;
@@ -3959,30 +1432,50 @@ header .menu-top__link img {
   left: 150px;
   position: relative;
 }
-.beneficiosCOI .desarrollo__inicio {
+.banco h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.banco .desarrollo {
+  margin: 20px 0;
+}
+.banco .desarrollo__inicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
 }
-.beneficiosCOI .desarrollo__inicio-logo {
+.banco .desarrollo__inicio-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 50px;
 }
-.beneficiosCOI .desarrollo__inicio-logo img {
-  height: 110px;
+.banco .desarrollo__inicio-logo img {
+  height: 150px;
   width: auto;
 }
-.beneficiosCOI .desarrollo__inicio__button {
+.banco .desarrollo__inicio-video video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 280px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  left: 2rem;
+}
+.banco .desarrollo__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3990,375 +1483,23 @@ header .menu-top__link img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 30px 10px 30px 60px;
 }
-.beneficiosCOI .desarrollo__inicio__button-beneficios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosCOI .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosCOI .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosCOI .desarrollo__video video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 230px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  left: 80px;
-}
-.beneficiosCOI .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.beneficiosCOI .desarrollo__body-descripcion {
-  margin: 20px 0px;
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosCOI .desarrollo__body-descripcion h2 {
+.banco .desarrollo__button .tab-content h2 {
   margin: 10px 40px 10px 10px;
   padding-top: 10px;
   border-bottom: 1px solid #17acc9;
 }
-.beneficiosCOI .desarrollo__body-descripcion p {
+.banco .desarrollo__button .tab-content p {
   color: #666666d9;
   padding: 10px;
 }
-.beneficiosCOI .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.beneficiosADM .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.beneficiosADM .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.beneficiosADM .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.beneficiosADM .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.beneficiosADM .desarrollo__inicio__button-beneficios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosADM .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosADM .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosADM .desarrollo__video video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 230px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  left: 80px;
-}
-.beneficiosADM .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.beneficiosADM .desarrollo__body-descripcion {
-  margin: 20px 0px;
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosADM .desarrollo__body-descripcion h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.beneficiosADM .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.beneficiosADM .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.beneficiosFACTURE .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.beneficiosFACTURE .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.beneficiosFACTURE .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.beneficiosFACTURE .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.beneficiosFACTURE .desarrollo__inicio__button-beneficios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosFACTURE .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosFACTURE .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosFACTURE .desarrollo__video video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 230px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  left: 80px;
-}
-.beneficiosFACTURE .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.beneficiosFACTURE .desarrollo__body-descripcion {
-  margin: 20px 0px;
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosFACTURE .desarrollo__body-descripcion h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.beneficiosFACTURE .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.beneficiosFACTURE .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.beneficiosNOI .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.beneficiosNOI .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.beneficiosNOI .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.beneficiosNOI .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.beneficiosNOI .desarrollo__inicio__button-beneficios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosNOI .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosNOI .desarrollo__inicio__button-tienda {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosNOI .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosNOI .desarrollo__video video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 230px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  left: 80px;
-}
-.beneficiosNOI .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.beneficiosNOI .desarrollo__body h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.beneficiosNOI .desarrollo__body-descripcion {
-  margin: 20px 0px;
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosNOI .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.beneficiosNOI .desarrollo__body-funcion {
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosNOI .desarrollo__body-funcion ul li {
+.banco .desarrollo__button .tab-content ul li {
+  margin-left: 25px;
   padding: 0px 10px;
   color: #666666d9;
 }
-.beneficiosNOI .desarrollo__body-button {
+.banco #masinfo {
   background-color: #17acc9;
   border-radius: 50px;
   width: 100px;
@@ -4368,30 +1509,50 @@ header .menu-top__link img {
   left: 150px;
   position: relative;
 }
-.beneficiosCAJA .desarrollo__inicio {
+.caja h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.caja .desarrollo {
+  margin: 20px 0;
+}
+.caja .desarrollo__inicio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
 }
-.beneficiosCAJA .desarrollo__inicio-logo {
+.caja .desarrollo__inicio-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 50px;
 }
-.beneficiosCAJA .desarrollo__inicio-logo img {
-  height: 110px;
+.caja .desarrollo__inicio-logo img {
+  height: 150px;
   width: auto;
 }
-.beneficiosCAJA .desarrollo__inicio__button {
+.caja .desarrollo__inicio-video video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 280px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  left: 2rem;
+}
+.caja .desarrollo__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4399,114 +1560,23 @@ header .menu-top__link img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 30px 10px 30px 60px;
 }
-.beneficiosCAJA .desarrollo__inicio__button-beneficios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosCAJA .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosCAJA .desarrollo__inicio__button-tienda {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosCAJA .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosCAJA .desarrollo__video video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 230px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  left: 80px;
-}
-.beneficiosCAJA .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.beneficiosCAJA .desarrollo__body h2 {
+.caja .desarrollo__button .tab-content h2 {
   margin: 10px 40px 10px 10px;
   padding-top: 10px;
   border-bottom: 1px solid #17acc9;
 }
-.beneficiosCAJA .desarrollo__body-descripcion {
-  margin: 20px 0px;
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosCAJA .desarrollo__body-descripcion p {
+.caja .desarrollo__button .tab-content p {
   color: #666666d9;
   padding: 10px;
 }
-.beneficiosCAJA .desarrollo__body-funcion {
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosCAJA .desarrollo__body-funcion ul li {
+.caja .desarrollo__button .tab-content ul li {
+  margin-left: 25px;
   padding: 0px 10px;
   color: #666666d9;
 }
-.beneficiosCAJA .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.beneficiosPROD .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.beneficiosPROD .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.beneficiosPROD .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.beneficiosPROD .desarrollo__inicio__button {
+.caja .kit__basica {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4515,213 +1585,24 @@ header .menu-top__link img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.beneficiosPROD .desarrollo__inicio__button-beneficios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosPROD .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosPROD .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosPROD .desarrollo__video video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 230px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  left: 80px;
-}
-.beneficiosPROD .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.beneficiosPROD .desarrollo__body-descripcion {
-  margin: 20px 0px;
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosPROD .desarrollo__body-descripcion h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.beneficiosPROD .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.beneficiosPROD .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.beneficiosBANCO .desarrollo__inicio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 30px 0px;
-}
-.beneficiosBANCO .desarrollo__inicio-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 50px;
-}
-.beneficiosBANCO .desarrollo__inicio-logo img {
-  height: 110px;
-  width: auto;
-}
-.beneficiosBANCO .desarrollo__inicio__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.beneficiosBANCO .desarrollo__inicio__button-beneficios {
-  background-color: #002e64;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosBANCO .desarrollo__inicio__button-funciones {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosBANCO .desarrollo__inicio__button-precios {
-  background-color: #00559a;
-  width: 100px;
-  border: 2px solid white;
-  text-align: center;
-  padding: 5px;
-  left: 60px;
-  position: relative;
-}
-.beneficiosBANCO .desarrollo__video video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 230px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  left: 80px;
-}
-.beneficiosBANCO .desarrollo__body {
-  padding: 10px;
-  margin: 20px 20px 50px 60px;
-}
-.beneficiosBANCO .desarrollo__body-descripcion {
-  margin: 20px 0px;
-  background-color: rgba(128, 128, 128, 0.099);
-  border-radius: 10px;
-}
-.beneficiosBANCO .desarrollo__body-descripcion h2 {
-  margin: 10px 40px 10px 10px;
-  padding-top: 10px;
-  border-bottom: 1px solid #17acc9;
-}
-.beneficiosBANCO .desarrollo__body-descripcion p {
-  color: #666666d9;
-  padding: 10px;
-}
-.beneficiosBANCO .desarrollo__body-button {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
-.pventaCAJA {
-  margin: 10px 10px 10px 40px;
-}
-.pventaCAJA .inicio {
-  margin-bottom: 20px;
-}
-.pventaCAJA .inicio__titulo h2 {
-  font-size: 2.8rem;
-  color: #666666d9;
-  border-bottom: 2px solid #17acc9;
-  margin-bottom: 20px;
-}
-.pventaCAJA .inicio__descripcion p {
-  font-size: 1.6rem;
-  color: #666666d9;
-}
-.pventaCAJA .desarrollo__basica {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.pventaCAJA .desarrollo__basica-titulo h2 {
+.caja .kit__basica-titulo h2 {
   font-size: 1.8rem;
   color: #666666d9;
   font-weight: 600;
 }
-.pventaCAJA .desarrollo__basica-img img {
+.caja .kit__basica-img img {
   width: 350px;
   height: auto;
 }
-.pventaCAJA .desarrollo__basica-txt h3 {
+.caja .kit__basica-txt h3 {
   font-size: 1.8rem;
   color: #666666d9;
 }
-.pventaCAJA .desarrollo__basica-txt h3 ul li {
+.caja .kit__basica-txt h3 ul li {
   font-size: 1.6rem;
   color: #666666d9;
 }
-.pventaCAJA .desarrollo__touch {
+.caja .kit__touch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4730,37 +1611,375 @@ header .menu-top__link img {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.pventaCAJA .desarrollo__touch-titulo h2 {
+.caja .kit__touch-titulo h2 {
   font-size: 1.8rem;
   color: #666666d9;
   font-weight: 600;
 }
-.pventaCAJA .desarrollo__touch-img img {
+.caja .kit__touch-img img {
   width: 350px;
   height: auto;
 }
-.pventaCAJA .desarrollo__touch-txt p {
+.caja .kit__touch-txt p {
   font-size: 1.6rem;
   color: #666666d9;
 }
-.pventaCAJA .desarrollo__touch-txt h3 {
+.caja .kit__touch-txt h3 {
   font-size: 1.8rem;
   color: #666666d9;
 }
-.pventaCAJA .desarrollo__touch-txt h3 ul li {
+.caja .kit__touch-txt h3 ul li {
   font-size: 1.6rem;
   color: #666666d9;
 }
-.pventaCAJA .desarrollo__dispositivos-txt p {
+.caja .kit__dispositivos-txt p {
   font-size: 1.6rem;
   color: #666666d9;
 }
-.pventaCAJA .desarrollo__dispositivos-img h2 {
+.caja .kit__dispositivos-img h2 {
   font-weight: 600;
   color: #666666d9;
 }
-.pventaCAJA .desarrollo__dispositivos-img img {
+.caja .kit__dispositivos-img img {
   width: 300px;
+}
+.caja #masinfo {
+  background-color: #17acc9;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+  left: 150px;
+  position: relative;
+}
+.adm h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.adm .desarrollo {
+  margin: 20px 0;
+}
+.adm .desarrollo__inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+.adm .desarrollo__inicio-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.adm .desarrollo__inicio-logo img {
+  height: 150px;
+  width: auto;
+}
+.adm .desarrollo__inicio-video video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 280px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  left: 2rem;
+}
+.adm .desarrollo__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 10px 30px 60px;
+}
+.adm .desarrollo__button .tab-content h2 {
+  margin: 10px 40px 10px 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #17acc9;
+}
+.adm .desarrollo__button .tab-content p {
+  color: #666666d9;
+  padding: 10px;
+}
+.adm .desarrollo__button .tab-content ul li {
+  margin-left: 25px;
+  padding: 0px 10px;
+  color: #666666d9;
+}
+.adm .desarrollo__button .tab-content #funciones-tab-pane img {
+  width: 100px;
+  position: relative;
+  margin: 0 20px;
+}
+.adm #masinfo {
+  background-color: #17acc9;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+  left: 150px;
+  position: relative;
+}
+.noi h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.noi .desarrollo {
+  margin: 20px 0;
+}
+.noi .desarrollo__inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+.noi .desarrollo__inicio-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.noi .desarrollo__inicio-logo img {
+  height: 150px;
+  width: auto;
+}
+.noi .desarrollo__inicio-video video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 280px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  left: 2rem;
+}
+.noi .desarrollo__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 10px 30px 60px;
+}
+.noi .desarrollo__button .tab-content h2 {
+  margin: 10px 40px 10px 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #17acc9;
+}
+.noi .desarrollo__button .tab-content p {
+  color: #666666d9;
+  padding: 10px;
+}
+.noi .desarrollo__button .tab-content ul li {
+  margin-left: 25px;
+  padding: 0px 10px;
+  color: #666666d9;
+}
+.noi .desarrollo__button .tab-content #funciones-tab-pane img {
+  width: 100px;
+  position: relative;
+  margin: 0 20px;
+}
+.noi #masinfo {
+  background-color: #17acc9;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+  left: 150px;
+  position: relative;
+}
+.facture h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.facture .desarrollo {
+  margin: 20px 0;
+}
+.facture .desarrollo__inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+.facture .desarrollo__inicio-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.facture .desarrollo__inicio-logo img {
+  height: 150px;
+  width: auto;
+}
+.facture .desarrollo__inicio-video video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 280px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  left: 2rem;
+}
+.facture .desarrollo__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 10px 30px 60px;
+}
+.facture .desarrollo__button .tab-content h2 {
+  margin: 10px 40px 10px 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #17acc9;
+}
+.facture .desarrollo__button .tab-content p {
+  color: #666666d9;
+  padding: 10px;
+}
+.facture .desarrollo__button .tab-content ul li {
+  margin-left: 25px;
+  padding: 0px 10px;
+  color: #666666d9;
+}
+.facture .desarrollo__button .tab-content #funciones-tab-pane img {
+  width: 100px;
+  position: relative;
+  margin: 0 20px;
+}
+.facture #masinfo {
+  background-color: #17acc9;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+  left: 150px;
+  position: relative;
+}
+.prod h1 {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.prod .desarrollo {
+  margin: 20px 0;
+}
+.prod .desarrollo__inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+.prod .desarrollo__inicio-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.prod .desarrollo__inicio-logo img {
+  height: 150px;
+  width: auto;
+}
+.prod .desarrollo__inicio-video video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 280px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  left: 2rem;
+}
+.prod .desarrollo__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 10px 30px 60px;
+}
+.prod .desarrollo__button .tab-content h2 {
+  margin: 10px 40px 10px 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #17acc9;
+}
+.prod .desarrollo__button .tab-content p {
+  color: #666666d9;
+  padding: 10px;
+}
+.prod .desarrollo__button .tab-content ul li {
+  margin-left: 25px;
+  padding: 0px 10px;
+  color: #666666d9;
+}
+.prod .desarrollo__button .tab-content #funciones-tab-pane img {
+  width: 100px;
+  position: relative;
+  margin: 0 20px;
+}
+.prod #masinfo {
+  background-color: #17acc9;
+  border-radius: 50px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px;
+  left: 150px;
+  position: relative;
 }
 .mantenimiento .inicio {
   max-width: 100%;
@@ -5329,7 +2548,7 @@ header .menu-top__link img {
 }
 .footer__box__body__contacto-phone-num {
   font-family: 'Inter', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .footer__box__body__contacto-email {
   -ms-grid-row: 2;
@@ -5361,9 +2580,9 @@ header .menu-top__link img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 10px;
 }
 .footer__box__body__contacto-redes img {
@@ -5371,7 +2590,7 @@ header .menu-top__link img {
   height: auto;
 }
 .footer__box__body__contacto-redes-txt {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .footer__box__body__logo {
   -ms-grid-row: 1;
@@ -5406,7 +2625,7 @@ header .menu-top__link img {
   height: auto;
 }
 .footer__box__body h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -7143,6 +4362,10 @@ header .menu-top__link img {
   border-radius: 20px;
   color: #666666d9;
 }
+.barraFlotante {
+  position: relative;
+  z-index: 3;
+}
 .barraFlotante * {
   margin: 0;
   padding: 0;
@@ -7158,12 +4381,12 @@ header .menu-top__link img {
 .barraFlotante nav {
   position: fixed;
   width: 50px;
-  margin-top: 80px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
   border-radius: 0px 20px 20px 0px;
+  background: white;
 }
 .barraFlotante nav li {
   height: 50px;
@@ -7189,14 +4412,14 @@ header .menu-top__link img {
           justify-content: center;
   height: 40px;
 }
-.dropdown {
+dropdown {
   position: relative;
 }
-.dropdown-toggle {
+dropdown-toggle {
   width: 100px;
   background-color: #17acc9 !important;
 }
-.dropdown ul li a {
+dropdown ul li a {
   color: #666666d9 !important;
 }
 .inicio_cliente {
