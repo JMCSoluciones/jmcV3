@@ -190,7 +190,7 @@ header {
         h2 {
           margin: 20px 0;
           color: @color-text;
-          font-size: 5.5rem;
+          font-size: @font-size-titulo;
           text-align: center;
           
         }
@@ -199,7 +199,7 @@ header {
     &__dominios {
       margin: 20px auto;
       text-align: center;
-      width: 300px;
+      width: 320px;
       display: flex;
       padding: 10px;
       box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
@@ -222,8 +222,9 @@ header {
             text-align: center;
             line-height: 40px;
             margin: auto;
-            border-bottom: 2px solid #ffa500;
-            width: 80%;
+            margin-bottom: 10px;
+            border-bottom: 2px solid @color-orange;
+            width: 90%;
           }
         }
         &-txt {
@@ -231,13 +232,14 @@ header {
           color: @color-text;
           text-align: center;
           margin: auto;
+          margin-top: 10px;
         }
       }
     }
     &__hosting {
       margin: 20px auto;
       text-align: left;
-      width: 300px;
+      width: 320px;
       display: flex;
       flex-flow: row-reverse;
       padding: 10px;
@@ -261,20 +263,24 @@ header {
             margin: auto;
             text-align: center;
             line-height: 40px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid @color-orange;
+            width: 80%;
           }
         }
         &-txt {
-          font-size: 1.8rem;
+          font-size: @font-size-lg;
           color: @color-text;
           text-align: center;
           margin: auto;
+          margin-top: 10px;
         }
       }
     }
     &__correo {
       margin: 20px auto;
       text-align: left;
-      width: 300px;
+      width: 320px;
       display: flex;
       padding: 10px;
       box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
@@ -293,10 +299,12 @@ header {
           h2{
             font-size: @font-size-xl;
             color: @color-text;
-            text-align: center;
+            text-align: right;
             margin: auto;
-            margin-top: 0%;
+            margin-bottom: 10%;
             line-height: 25px;
+            border-bottom: 2px solid @color-orange;
+            width: 95%;
           }
         }
         &-txt {
@@ -304,20 +312,22 @@ header {
           color: @color-text;
           text-align: center;
           margin: auto;
+          margin-top: 10px;
+
         }
       }
     }
     &__pagina {
       margin: 20px auto;
       text-align: left;
-      width: 300px;
+      width: 320px;
       display: flex;
       padding: 5%;
       box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
       border-radius: 15px 15px 15px 15px;
       flex-flow: row-reverse;
       position: relative;
-      line-height: 25px;
+      line-height: 20px;
       img {
         width: 120px;
         height: 100px;
@@ -328,12 +338,14 @@ header {
       &__box {
         &-title {
           h2 {
-            font-size: 2.2rem;
+            font-size: @font-size-xl;
             color: @color-text;
             margin: auto;
             text-align: center;
-            line-height: 20px;
+            line-height: 30px;
             margin-bottom: 10px;
+            border-bottom: 2px solid @color-orange;
+            width: 90%;
           }
         }
         &-txt {
@@ -341,6 +353,8 @@ header {
           color: @color-text;
           text-align: center;
           margin: auto;
+          margin-top: 10px;
+
         }
       }
     }
@@ -359,7 +373,7 @@ header {
       position: relative;
       &-title {
         h2{
-          font-size: 4rem;
+          font-size: @font-size-titulo;
           color: @color-text;
           font-weight: @font-regular;
           text-align: center;
@@ -370,7 +384,7 @@ header {
     &__servidores {
       margin: 20px auto;
       text-align: left;
-      width: 300px;
+      width: 320px;
       display: flex;
       padding: 5%;
       box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
@@ -391,16 +405,20 @@ header {
             color: @color-text;
             text-align: center;
             margin: auto;
-            margin-top: 0%;
-            line-height: 20px;
+            line-height: 25px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid @color-orange;
+            width: 100%;
+
           }
         }
         &-txt {
-          font-size: @font-size-md;
+          font-size: @font-size-lg;
           color: @color-text;
           text-align: center;
           margin: auto;
           line-height: 20px;
+          margin-top: 10px;
         }
       }
     }
@@ -430,7 +448,7 @@ header {
     &__aplicaciones {
       margin: 20px auto;
       text-align: left;
-      width: 300px;
+      width: 320px;
       display: flex;
       padding: 10px;
       box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
@@ -448,16 +466,18 @@ header {
       &__box {
         &-title {
           h2{
-            font-size: 2.5rem;
+            font-size: @font-size-xl;
             color: @color-text;
             text-align: center;
             margin: auto;
-            margin-top: 0%;
             line-height: 25px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid @color-orange;
+            width: 90%;
           }
         }
         &-txt {
-          font-size: @font-size-md;
+          font-size: @font-size-lg;
           color: @color-text;
           text-align: center;
           margin: auto;
