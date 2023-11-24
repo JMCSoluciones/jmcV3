@@ -361,7 +361,7 @@ header {
     &__arquitectura {
       background-image: url(/imagenes/soluciones.svg);
       max-width: 100%;
-      margin: 20px 20px;
+      margin: 20px 35px;
       background-position: center top;
       background-size: contain;
       background-repeat: no-repeat;
@@ -425,7 +425,7 @@ header {
     &__dMedida {
       background-image: url(/imagenes/soluciones.svg);
       max-width: 100%;
-      margin: 20px 20px;
+      margin: 20px 35px;
       background-position: center top;
       background-size: contain;
       background-repeat: no-repeat;
@@ -437,7 +437,7 @@ header {
       position: relative;
       &-title {
         h2{
-          font-size: 4rem;
+          font-size:@font-size-titulo;
           color: @color-text;
           font-weight: @font-regular;
           text-align: center;
@@ -487,7 +487,7 @@ header {
     &__online {
       background-image: url(/imagenes/soluciones.svg);
       max-width: 100%;
-      margin: 20px 20px;
+      margin: 20px 35px;
       background-position: center top;
       background-size: contain;
       background-repeat: no-repeat;
@@ -498,12 +498,13 @@ header {
       justify-content: center;
       &-title {
         h2{
-          font-size: 5.5rem;
+          font-size: @font-size-titulo;
           color: @color-text;
           font-weight: @font-regular;
           text-align: center;
           margin: auto;
           line-height: 60px;
+          
         }
       }
     }
@@ -534,6 +535,8 @@ header {
             margin-top: 0%;
             line-height: 25px;
             margin-bottom: 10px;
+            border-bottom: 2px solid @color-orange;
+            width: 100%;
           }
         }
         &-txt {
@@ -541,13 +544,15 @@ header {
           color: @color-text;
           text-align: center;
           margin: auto;
+          margin-top: 10px;
+
         }
       }
     }
     &__soporte {
       background-image: url(/imagenes/soluciones.svg);
       max-width: 100%;
-      margin: 20px 20px;
+      margin: 20px 35px;
       background-position: center top;
       background-size: contain;
       background-repeat: no-repeat;
@@ -558,7 +563,7 @@ header {
       justify-content: center;
       &-title {
         h2{
-          font-size: 5.5rem;
+          font-size: @font-size-titulo;
           color: @color-text;
           font-weight: @font-regular;
           text-align: center;
@@ -592,8 +597,10 @@ header {
             color: @color-text;
             text-align: center;
             margin: auto;
-            margin-top: 0%;
             line-height: 25px;
+            border-bottom: 2px solid @color-orange;
+            width: 90%;
+            margin-bottom: 10px;
           }
           }
         &-txt {
@@ -602,6 +609,7 @@ header {
             color: @color-text;
             text-align: center;
             margin: auto;
+            margin-top: 10px;
           }
         }
       }
@@ -622,7 +630,7 @@ header {
       justify-content: center;
       &-title {
         h2{
-          font-size: 3.5rem;
+          font-size: @font-size-tAdmin;
           color: @color-white;
           font-weight: @font-regular;
           margin: 0;
@@ -637,11 +645,13 @@ header {
       display: flex;
       flex-direction: column;
       &-title {
-        font-size: 2.8rem;
-        color: @color-text;
-        font-weight: @font-regular;
-        line-height: -25px;
-        text-align: center;
+        h2{
+          font-size: @font-size-titulo;
+          color: @color-text;
+          font-weight: @font-regular;
+          line-height: -25px;
+          text-align: center;
+        }
       }
       &-txt {
         ul{
@@ -664,7 +674,7 @@ header {
             }
             p {
               margin: 0;
-              font-size: 1.6rem;
+              font-size: @font-size-md;
             }
           }
         }
@@ -1949,7 +1959,7 @@ header {
       padding: 15px;
       h2 {
         color: @color-white;
-        font-size: 4rem;
+        font-size: @font-size-titulo;
         text-align: right;
       }
     }
@@ -1968,14 +1978,14 @@ header {
       gap: 20px;
       h2 {
         border-bottom: 1px solid @color-primary;
-        padding-bottom: .6em;
         font-style: @font-light;
-        font-size: 2rem;
+        font-size: @font-size-xl;
         text-align: left;
-        margin-top: 20px;
+        margin-bottom: 20px;
       }
       p {
         color: @color-text;
+        font-size: @font-size-lg;
       }
       &-vision {
         flex: 1;
@@ -2010,24 +2020,24 @@ header {
         padding: 15px;
         h2 {
           color: @color-white;
-          font-size: 4rem;
+          font-size: @font-size-titulo;
           text-align: right;
         }
       }
     }
     .do__descripcion {
       &__txt {
-        color: @color-text;
+        font-size: @font-size-lg;
+        padding: 10px;
         text-align: center;
-        font-size: @font-size-md;
-        margin-top: 20px;
+        color: @color-text;
         &__soluciones {
           h2 {
             background: rgb(47, 144, 207);
             background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
             padding: 20px 20px 20px 10px;
             color: @color-text;
-            font-size: 3rem;
+            font-size:@font-size-tAdmin;
             border-radius: 0px 20px 20px 0px;
             margin: 10px 30px 10px 5px;
             text-align: center;
