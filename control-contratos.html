@@ -23,18 +23,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   </head>
   <body> 
     <header>
-      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión <img src="imagenes/login.svg" alt="icono de login"/></a></div>
+      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión </a></div>
       <nav class="menu"> 
         <section class="menu__container"> <img class="menu__logo" src="imagenes/logo.png" alt="Logo de la empresa" id="logo"/>
           <ul class="menu__links">
             <li class="menu__item"><a class="menu__link" href="inicioAdmin.html">Inicio</a></li>
             <li class="menu__item"><a class="menu__link" href="contratos-cliente.html">Contratos</a></li>
             <li class="menu__item"> <a class="menu__link" href="pagos-cliente.html">Pagos</a></li>
-            <li class="menu__item"> <a class="menu__link" href="#">Tickets </a></li>
-            <li class="menu__item"><a class="menu__link" href="mantenimiento.html">Imprimir</a></li>
+            <li class="menu__item"> <a class="menu__link" href="tickets-cliente.html">Tickets </a></li>
             <li class="menu__item"><a class="menu__link" href="equipo-cliente.html">Equipos</a></li>
           </ul>
           <div class="menu__hamburger"><img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
@@ -58,7 +60,7 @@
           <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> 
             <div class="content__contratos__tabs__item__body">
               <div class="table-wrapper content__contratos__tabs__item__body__table">
-                <table class="table table-striped table-hover">
+                <table class="display" id="myTable" cellspacing="0" width="100%">
                   <thead> 
                     <tr>                 
                       <th>Folio</th>
@@ -89,23 +91,17 @@
                   </tbody>
                 </table>
               </div>
-            </div>
-            <div class="content__contratos__tabs__item__footer">
-              <nav aria-label="...">
-                <ul class="pagination">
-                  <li class="page-item disabled"></li><a class="page-link">Previous</a>
-                  <li class="page-item"></li><a class="page-link" href="#">1</a>
-                  <li class="page-item active" aria-current="page"></li><a class="page-link" href="#">2</a>
-                  <li class="page-item"></li><a class="page-link" href="#">3</a>
-                  <li class="page-item"></li><a class="page-link" href="#">Next   </a>
-                </ul>
-              </nav>
             </div><a href="inicioAdmin.html"> 
               <button class="btn btn-exit" type="submit" id="salir">Salir</button></a>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready( function () {
+      $('#myTable').DataTable();
+      } );
+    </script>
     <footer> 
       <div class="footer__box">
         <div class="footer__box__body">

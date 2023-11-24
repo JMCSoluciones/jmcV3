@@ -16,92 +16,45 @@ block content
                 h2 Control de staff
                 a.btn.btn-success(href='nuevo-staff.html')
                     i.bi.bi-plus-circle
-                    span add 
-            table.table.table-striped.table-hover
-                thead
-                   tr
-                        th
-                        th Id
-                        th Nombre
-                        th Dirección
-                        th Detalles
-                        th Acción
-                tbody
-                    tr
-                        td
-                        td 1
-                        td Fran Wilson
-                        td 89 Chiaroscuro Rd, Portland, USA 
-                        td
-                            button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...    
-                        td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
-                    tr
-                        td
-                        td 2
-                        td 
-                        td 
-                        td
-                            button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...   
-                        td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
-                    tr
-                        td
-                        td 3
-                        td 
-                        td 
-                        td
-                           button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...   
-                        td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
-                    tr
-                        td
-                        td 4
-                        td 
-                        td 
-                        td
-                            button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...   
-                        td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
-                    tr
-                        td
-                        td 5
-                        td 
-                        td 
-                        td
-                            button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...   
-                        td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
-            .clearfix
-                ul.pagination
-                    li.page-item.disabled
-                        a(href='#') Previous
-                    li.page-item
-                        a.page-link(href='#') 1
-                    li.page-item
-                        a.page-link(href='#') 2
-                    li.page-item.active
-                        a.page-link(href='#') 3
-                    li.page-item
-                        a.page-link(href='#') 4
-                    li.page-item
-                        a.page-link(href='#') 5
-                    li.page-item
-                        a.page-link(href='#') Next
-      .botonSalir(type='button') Salir
-    script(src='salir.js')
+                    span Nuevo
+            .container__controlstaff__administrador__table
+                table#myTable.display(cellspacing='0' width='100%')
+                    thead
+                        tr
+                            th Id
+                            th Nombre
+                            th Dirección
+                            th Detalles
+                            th Acción
+                    tbody
+                        tr
+                            
+                            td 1
+                            td Fran Wilson
+                            td 89 Chiaroscuro Rd, Portland, USA 
+                            td
+                                button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...    
+                            td
+                                a.edit(href="#editProductoModal" data-toggle='modal')
+                                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                                a.delete(href='#deleteProductoModal' data-toggle='modal')
+                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                        tr
+                            td 2
+                            td Josue Martinez
+                            td 89 Chiaroscuro Rd, Portland, USA 
+                            td
+                                button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...   
+                            td
+                                a.edit(href="#editProductoModal" data-toggle='modal')
+                                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+                                a.delete(href='#deleteProductoModal' data-toggle='modal')
+                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                   
+        button.botonSalir(onclick='regresar()') Salir
+        script(src="../js/regresar.js")
+    script.
+        $(document).ready( function () {
+        $('#myTable').DataTable();
+        } );
+ 

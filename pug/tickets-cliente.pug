@@ -8,7 +8,7 @@ block content
         #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
           .content__contratos__tabs__item__body
             .table-wrapper.content__contratos__tabs__item__body__table
-              table.table.table-striped.table-hover
+              table#myTable.display(cellspacing='0' width='100%')
                 thead 
                   tr                  
                     th N°
@@ -28,18 +28,9 @@ block content
                     td Josue Martinez
                     td 
                       a(href="detalles-ticket.html") Ver mas ...
-          .content__contratos__tabs__item__footer
-            nav(aria-label='...')
-              ul.pagination
-                li.page-item.disabled
-                a.page-link Previous
-                li.page-item
-                a.page-link(href='#') 1
-                li.page-item.active(aria-current='page')
-                a.page-link(href='#') 2
-                li.page-item
-                a.page-link(href='#') 3
-                li.page-item
-                a.page-link(href='#') Next   
           a(href="inicioAdmin.html") 
             button.btn.btn-exit(type="submit")#salir Salir
+      script.
+        $(document).ready( function () {
+        $('#myTable').DataTable();
+        } );
