@@ -190,7 +190,7 @@ header {
         h2 {
           margin: 20px 0;
           color: @color-text;
-          font-size: 5.5rem;
+          font-size: @font-size-titulo;
           text-align: center;
         }
       }  
@@ -224,7 +224,7 @@ header {
           }
         }
         &-txt {
-          font-size: @font-size-lg;
+          font-size: @font-size-md;
           color: @color-text;
           text-align: center;
           margin: auto;
@@ -261,7 +261,7 @@ header {
           }
         }
         &-txt {
-          font-size: 1.8rem;
+          font-size: @font-size-md;
           color: @color-text;
           text-align: center;
           margin: auto;
@@ -325,11 +325,11 @@ header {
       &__box {
         &-title {
           h2 {
-            font-size: 2.2rem;
+            font-size: @font-size-xl;
             color: @color-text;
             margin: auto;
             text-align: center;
-            line-height: 20px;
+            line-height: 27px;
             margin-bottom: 10px;
           }
         }
@@ -356,7 +356,7 @@ header {
       position: relative;
       &-title {
         h2{
-          font-size: 4rem;
+          font-size: @font-size-titulo;
           color: @color-text;
           font-weight: @font-regular;
           text-align: center;
@@ -390,6 +390,7 @@ header {
             margin: auto;
             margin-top: 0%;
             line-height: 20px;
+            margin-bottom: 2rem;
           }
         }
         &-txt {
@@ -416,7 +417,7 @@ header {
       position: relative;
       &-title {
         h2{
-          font-size: 4rem;
+          font-size: @font-size-titulo;
           color: @color-text;
           font-weight: @font-regular;
           text-align: center;
@@ -445,12 +446,13 @@ header {
       &__box {
         &-title {
           h2{
-            font-size: 2.5rem;
+            font-size: @font-size-xl;
             color: @color-text;
             text-align: center;
             margin: auto;
             margin-top: 0%;
             line-height: 25px;
+            margin-bottom: 1rem;
           }
         }
         &-txt {
@@ -475,7 +477,7 @@ header {
       justify-content: center;
       &-title {
         h2{
-          font-size: 5.5rem;
+          font-size: @font-size-titulo;
           color: @color-text;
           font-weight: @font-regular;
           text-align: center;
@@ -504,13 +506,13 @@ header {
       &__box {
         &-title {
           h2{
-            font-size: 2.5rem;
+            font-size: @font-size-xl;
             color: @color-text;
             text-align: center;
             margin: auto;
             margin-top: 0%;
             line-height: 25px;
-            margin-bottom: 10px;
+            margin-bottom: 1.3rem;
           }
         }
         &-txt {
@@ -535,7 +537,7 @@ header {
       justify-content: center;
       &-title {
         h2{
-          font-size: 5.5rem;
+          font-size: @font-size-titulo;
           color: @color-text;
           font-weight: @font-regular;
           text-align: center;
@@ -565,12 +567,13 @@ header {
       &__box {
         &-title {
           h2{
-            font-size: 2.5rem;
+            font-size: @font-size-xl;
             color: @color-text;
             text-align: center;
             margin: auto;
             margin-top: 0%;
             line-height: 25px;
+            margin-bottom: 1.3rem;
           }
           }
         &-txt {
@@ -606,6 +609,7 @@ header {
           background-color: rgba(40, 40, 40, 0.8);
           height: 120px;
           background-position: center top;
+          padding-left: 10px;
         }
       }
     }
@@ -614,11 +618,13 @@ header {
       display: flex;
       flex-direction: column;
       &-title {
-        font-size: 2.8rem;
-        color: @color-text;
-        font-weight: @font-regular;
-        line-height: -25px;
-        text-align: center;
+        h2{
+          font-size: @font-size-xl;
+          color: @color-text;
+          font-weight: @font-regular;
+          line-height: -25px;
+          text-align: center;
+        }
       }
       &-txt {
         ul{
@@ -631,17 +637,16 @@ header {
             justify-content: center;
             align-items: left;
             list-style-type: none;
-            font-size: @font-size-lg;
             color: @color-text;
             margin: 10px;
             gap: 10px;
             img {
-              width: 25px;
+              width: 18px;
               height: auto;
             }
             p {
               margin: 0;
-              font-size: 1.6rem;
+              font-size: @font-size-md;
             }
           }
         }
@@ -1782,6 +1787,8 @@ header {
         display: flex;
         flex-direction: column;
         &__prof {
+          padding: 10px;
+          margin: 20px 0;
           display: flex;
           flex-direction: row;
           align-items: flex-start;
@@ -1830,6 +1837,7 @@ header {
           }
         }
         &__dist {
+          padding: 10px;
           margin: 20px 0;
           display: flex;
           flex-direction: row;
@@ -1879,6 +1887,8 @@ header {
           }
         }
         &__solutions {
+          padding: 10px;
+          margin: 20px 0;
           display: flex;
           flex-direction: row;
           align-items: flex-start;
@@ -1926,7 +1936,7 @@ header {
       padding: 15px;
       h2 {
         color: @color-white;
-        font-size: 4rem;
+        font-size: @font-size-titulo;
         text-align: right;
       }
     }
@@ -1947,7 +1957,7 @@ header {
         border-bottom: 1px solid @color-primary;
         padding-bottom: .6em;
         font-style: @font-light;
-        font-size: 2rem;
+        font-size: @font-size-xl;
         text-align: left;
         margin-top: 20px;
       }
@@ -1987,7 +1997,7 @@ header {
         padding: 15px;
         h2 {
           color: @color-white;
-          font-size: 4rem;
+          font-size: @font-size-titulo;
           text-align: right;
         }
       }
@@ -2004,13 +2014,13 @@ header {
             background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
             padding: 20px 20px 20px 10px;
             color: @color-text;
-            font-size: 3rem;
+            font-size: @font-size-xl;
             border-radius: 0px 20px 20px 0px;
             margin: 10px 30px 10px 5px;
             text-align: center;
           }
           ul {
-            margin: 20px;
+            margin: 20px 60px;
             li {
               font-size: @font-size-md;
               color: @color-text;
@@ -2031,15 +2041,15 @@ header {
           h2 {
             background: rgb(40, 129, 186);
             background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
-            padding: 25px 10px 25px 20px;
+            padding: 15px 10px 15px 20px;
             color: @color-text;
-            font-size: 2.5rem;
+            font-size: @font-size-xl;
             border-radius: 20px 0px 0px 20px;
             margin: 10px 0px 10px 30px;
             text-align: center;
           }
           ul {
-            margin: 20px;
+            margin: 20px 60px;
             li {
               font-size: @font-size-md;
               color: @color-text;
@@ -2062,13 +2072,13 @@ header {
             background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
             padding: 20px 20px 20px 10px;
             color: @color-text;
-            font-size: 2.8rem;
+            font-size: @font-size-xl;
             border-radius: 0px 25px 25px 0px;
             margin: 10px 30px 10px 5px;
             text-align: center;
           }
           ul {
-            margin: 20px;
+            margin: 20px 60px;
             li {
               font-size: @font-size-md;
               color: @color-text;
@@ -2109,7 +2119,7 @@ header {
         padding: 15px;
         h2 {
           color: @color-white;
-          font-size: 4rem;
+          font-size: @font-size-titulo;
           text-align: right;
         }
       }
@@ -2118,7 +2128,7 @@ header {
       &-inicio {
         p {
           color: @color-text;
-          font-size: @font-size-md;
+          font-size: @font-size-sm;
           margin: 20px;
         }
       }
@@ -2128,7 +2138,7 @@ header {
           background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
           padding: 20px 10px 20px 0px;
           color: @color-text;
-          font-size: 3rem;
+          font-size: @font-size-xl;
           border-radius: 25px 0px 0px 25px;
           margin: 10px 0px 10px 30px;
           text-align: center;
@@ -2136,7 +2146,7 @@ header {
         p {
           margin: 20px;
           color: @color-text;
-          font-size: @font-size-md;
+          font-size: @font-size-sm;
         }
       }
       &-valores {
@@ -2145,19 +2155,19 @@ header {
           background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
           padding: 20px 20px 20px 10px;
           color: @color-text;
-          font-size: 3rem;
+          font-size: @font-size-xl;
           border-radius: 0px 20px 20px 0px;
           margin: 10px 30px 10px 5px;
           text-align: center;
         }
         ul {
-          margin: 20px;
+          margin: 20px 60px;
           li {
-            font-size: @font-size-lg;
+            font-size: @font-size-md;
           }
           p {
             color: @color-text;
-            font-size: @font-size-md;
+            font-size: @font-size-sm;
           }
         }
       }
@@ -2170,7 +2180,7 @@ header {
         background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
         padding: 10px 10px 11px 20px;
         color: @color-text;
-        font-size: 2.2rem;
+        font-size: @font-size-xl;
         border-radius: 20px 0px 0px 20px;
         margin: 10px 0px 10px 30px;
         text-align: center;
@@ -2178,7 +2188,7 @@ header {
       p {
         margin: 20px;
         color: @color-text;
-        font-size: @font-size-md;
+        font-size: @font-size-sm;
       }
     }
   }
@@ -2202,6 +2212,10 @@ header {
           h2 h3 {
             text-align: left;
             font-size: @font-size-sm;
+
+          }
+          #call{
+            margin-left: 30px;
           }
         }
         &-phone {
@@ -2361,6 +2375,10 @@ header {
   }
   &__tabs{
     &__item{
+      &__body{
+        margin:20px 0;
+        overflow: auto;
+      }
       .btn-dark{
         margin: 3px;
         background-color: @color-btn-nact;
@@ -2396,26 +2414,6 @@ header {
           .edit{
             color: rgba(251, 255, 0, 0.555) !important;
           }
-          .table-striped{
-            thead th:nth-child(1) {
-              width: 10%;
-            }
-            thead th:nth-child(2) {
-              width: 20%;
-            }
-            thead th:nth-child(3) {
-              width: 30%;
-            }
-            thead th:nth-child(4) {
-              width: 20%;
-            }
-            thead th:nth-child(5) {
-              width: 20%;
-            }
-            th, td {
-              padding: 2px;
-            }
-          }
         }
       }
     }
@@ -2439,7 +2437,6 @@ header {
       color: gray !important;
     }
     &__contratos{
-      //border: 1px solid gray;
       border-radius: 10px;
       width: 80px;
       height: 80px;
@@ -2460,7 +2457,6 @@ header {
       }
     }
     &__pagos{
-      //border: 1px solid gray;
       border-radius: 10px;
       width: 80px;
       height: 80px;
@@ -2482,7 +2478,6 @@ header {
       }
     }
     &__ticket{
-      //border: 1px solid gray;
       border-radius: 10px;
       width: 80px;
       height: 80px;
@@ -2547,25 +2542,17 @@ header {
   }
 }
 .verCliente{
-  .botones{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  }
   h2{
     margin: 30px 0;
     text-align: center;
     font-weight: @font-semibold;
     font-size: 2.5rem;
   }
-  a{
-    .btn-exit{
-      background-color: @color-secondary;
-      display: flex;
-      margin: 20px 30px;
-      padding: 5px 30px;
-    }
+  .btn-exit{
+    background-color: @color-secondary;
+    display: flex;
+    margin: 20px 30px;
+    padding: 5px 30px;
   }
   .datos{
     &__info{
@@ -2705,7 +2692,7 @@ header {
 }
 .ctrlContratos{
   max-width: 1110px;
-  margin: 8px;
+  margin: 35px 8px;
   height: 60vh;
   h2{
     font-size: @font-size-lg;
@@ -2727,31 +2714,13 @@ header {
         &__item{
           &__body{
             &__table{
+              overflow: auto;
+              margin: 5px 0;
               .delete{
                 color: red !important;
               }
               .edit{
                 color: rgba(251, 255, 0, 0.555) !important;
-              }
-              .table-striped{
-                thead th:nth-child(1) {
-                  width: 10%;
-                }
-                thead th:nth-child(2) {
-                  width: 20%;
-                }                
-                thead th:nth-child(3) {
-                  width: 30%;
-                }                
-                thead th:nth-child(4) {
-                  width: 20%;
-                }
-                thead th:nth-child(5) {
-                  width: 20%;
-                }
-                th, td {
-                  padding: 2px;
-                }
               }
             }
           }
@@ -2777,13 +2746,11 @@ header {
     font-weight: @font-semibold;
     font-size: 2.5rem;
   }
-  a{
-    color: @color-text;
-    .btn-exit{
-      background-color: @color-secondary;
-      display: flex;
-      margin: 20px 30px;
-    }
+  .btn-exit{
+    background-color: @color-secondary;
+    display: flex;
+    margin: 20px 30px;
+    
   }
   .datos{
     &__info{
@@ -3102,26 +3069,84 @@ header {
                 .edit{
                   color: rgba(211, 214, 35, 0.555) !important;
                 }
-                .table-striped{
-                  thead th:nth-child(1) {
-                    width: 10%;
-                  }                  
-                  thead th:nth-child(2) {
-                    width: 20%;
-                  }                  
-                  thead th:nth-child(3) {
-                    width: 30%;
-                  }                  
-                  thead th:nth-child(4) {
-                    width: 20%;
-                  }
-                  thead th:nth-child(5) {
-                    width: 20%;
-                  }
-                  th, td {
-                    padding: 2px;
-                  }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.equiposCliente{
+  h2{
+    margin: 30px 0;
+    text-align: center;
+    font-weight: @font-semibold;
+    font-size: 2.5rem;
+  }
+  a{
+    color: gray !important;
+  }
+  .acciones{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px;
+    a{
+      .btn-nuevo{
+        display: flex;
+        justify-content: flex-end;
+        background-color: gray;
+        color: @color-white;
+      }
+    }
+
+    .btn-exit{
+      display: flex;
+      justify-content: flex-end;
+      background-color: orange;
+    }
+    .btn-exit:hover{
+      background-color: rgba(70, 46, 1, 0.747);
+      color: @color-white;
+    }
+  }
+  .content{
+    &__equipoClientes{
+      &__tabs{
+        margin: 20px 5px 100px 5px;
+        &__item{
+          .btn-dark{
+            margin: 3px;
+            background-color: @color-btn-nact !important;
+          }
+          .btn-clean{
+            margin: 3px;
+            background-color: red;
+            color: @color-white;
+            border:1px solid red;
+            border-radius: 4px;
+            padding: 2px 6px;
+          }
+            &__header{
+                color: @color-white;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                padding: 20px;
+                border-radius: 4px 4px 4px 4px;
+              h3{
+                font-size: 1.4rem;
+                color: black;
               }
+            }
+            &__body{
+              &__table{
+                .delete{
+                  color: red !important;
+                }
+                .edit{
+                  color: rgba(211, 214, 35, 0.555) !important;
+                }
             }
           }
         }
@@ -3563,6 +3588,9 @@ header {
         justify-content: flex-end;
         margin: 10px;
       }
+      &__body{
+        overflow: auto;
+      }
       #search{
         width: 100px;
         margin: 0 10px;
@@ -3712,20 +3740,6 @@ header {
     height: 40px;
   }
 }
-dropdown{
-  position: relative;
-  &-toggle{
-    width: 100px;
-    background-color: @color-primary!important;
-  }
-  ul{
-    li{
-      a{
-        color: @color-text !important;
-      }
-    }
-  }
-}
 .inicio_cliente { 
   padding: 10px;
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -3784,25 +3798,7 @@ dropdown{
         &__item{
           &__body{
             &__table{
-              .table-striped{
-                text-align: center;
-                thead th:nth-child(1) {
-                  width: 10%;
-                }
-                thead th:nth-child(2) {
-                  width: 30%;
-                }                
-                thead th:nth-child(3) {
-                  width: 35%;
-                }                
-                thead th:nth-child(4) {
-                  width: 25%;
-                }
-                th, td {
-                  padding: 2px;
-                  font-family: @font-family2;
-                }
-              }
+              overflow: auto;
             }
           }
         }
@@ -3836,25 +3832,7 @@ dropdown{
         &__item{
           &__body{
             &__table{
-              .table-striped{
-                text-align: center;
-                thead th:nth-child(1) {
-                  width: 10%;
-                }
-                thead th:nth-child(2) {
-                  width: 30%;
-                }                
-                thead th:nth-child(3) {
-                  width: 35%;
-                }                
-                thead th:nth-child(4) {
-                  width: 25%;
-                }
-                th, td {
-                  padding: 2px;
-                  font-family: @font-family2;
-                }
-              }
+              overflow: auto;
             }
           }
         }
@@ -3919,6 +3897,7 @@ dropdown{
       }
       &__body{
         &__table{
+          overflow: auto;
           a{
             color: gray !important;
           }
@@ -3927,26 +3906,6 @@ dropdown{
           }
           .edit{
             color: rgba(251, 255, 0, 0.555) !important;
-          }
-          .table-striped{
-            thead th:nth-child(1) {
-              width: 10%;
-            }
-            thead th:nth-child(2) {
-              width: 30%;
-            }
-            thead th:nth-child(3) {
-              width: 20%;
-            }
-            thead th:nth-child(4) {
-              width: 20%;
-            }
-            thead th:nth-child(5) {
-              width: 20%;
-            }
-            th, td {
-              padding: 2px;
-            }
           }
         }
       }
@@ -4193,13 +4152,11 @@ dropdown{
     font-weight: @font-semibold;
     font-size: 2.5rem;
   }
-  a{
-    color: @color-text;
-    .btn-exit{
-      background-color: @color-secondary;
-      display: flex;
-      margin: 20px 30px;
-    }
+  .btn-exit{
+    background-color: @color-secondary;
+    display: flex;
+    margin: 20px 30px;
+    
   }
   .datos{
     &__info{
@@ -4228,11 +4185,7 @@ dropdown{
 .container__controlajuste{
   &__administrador{
     color: @color-text;
-    background: #f5f5f5;
-    font-family: @font-family;
-    font-size: 10px;
     &-wrapper{
-      background:@color-white;
       margin: 30px 0;
       border-radius: 3px;
     }
@@ -4253,50 +4206,26 @@ dropdown{
       margin: 10px 10px; 
       font-size: 24px;
       font-weight: @font-regular;
-      font-family: @font-family;
       position: relative;
       }
       h2 {
       margin: 50px 10px; 
       font-size: 20px;
       font-weight: @font-semibold;
-      font-family: @font-family;
-      
-      }
-      .btn-group {
-        float: right;
       }
       .btn {
         background-color: @color-text;
         color: @color-black;
         float: right;
-        font-size: 13px;
         border: none;
         border-radius: 8px;
-        border: none;
+        padding: 5px 8px;
         outline: none !important;
         margin-top: -20px;
-        font-size: 1.5rem;
+        font-size: 1rem;
         position:relative;
-        line-height: 10px;
-      }
-      .btn:hover{
-        background-color: @color-white;
-        border: none;
-        color: orange;
-      }
-      i {
-          float: left;
-          font-size: 21px;
-          margin-right: 5px;
-      }
-      span{
-          text-align: right;
-          font-size: 1rem;
-          font-family: @font-family;
       }
       &__box{
-        background-color: @color-white;
         display: inline-block;
         border-radius: 10px;
         width: 60px;
@@ -4306,14 +4235,10 @@ dropdown{
         margin-right: 10px;
        
         a{
-          text-decoration: none;
           color: @color-text !important;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
-          text-align: center;
-          font-size: 1.2rem;
         }
         img{
             width: 30px;
@@ -4321,89 +4246,18 @@ dropdown{
         }
       }
     }
-    table.table {
-      thead{
-        tr {
-          th {
-            border-color:@color-text;
-            vertical-align: middle; 
-            font-size: 10px;
-            font-family: @font-family;
-            text-align: center;
-            padding: 10px 1px;
-          }
-        }
-            td {
-            border-color: @color-text;
-            padding: 12px 15px; 
-            vertical-align: middle;
-            font-size: 10px;
-            }
-          }
-            a {
-              color: @color-blue !important;
-              border: none;
-              cursor: pointer;
-              font-family: @font-family;
-              font-size: 10px;
-              text-align: left;
-              }
-            
-          th {
-            i {
-              font-size: 13px;
-              margin: 0 15px;
-              cursor: pointer;
-            }
-          } 
-            td {
-              &:last-child {
-                i {
-                  border-color: @color-text;
-                  vertical-align: middle;
-                  font-size: 15px;
-                }
-              }
-              }
-            .edit{
-              color: yellow !important;
-            }
-            .delete{
-              color: red !important;
-            }
-            }
-    .pagination {
-      float: right;
-      margin: 0 0 5px;
-      li {
-        a {
-          border: none;
-          font-size: 13px;
-          min-width: 30px;
-          min-height: 30px;
-          color: blue !important;
-          margin: 0 2px;
-          line-height: 30px;
-          border-radius: 2px !important;
-          text-align: center;
-          padding: 0 6px;
-          a:hover {
-            color: orange;
-          }
-        }
+    &__table {
+      overflow: auto;
+      a{
+        color: @color-text !important;
       }
-      li.active {
-        a {
-          background: #03A9F4 !important;
-          &:hover {
-            background: #0397d6;
-          }
-        }
-        a.page-link {
-          background: #03A9F4;
-        }
+      .edit{
+        color: yellow !important;
       }
+      .delete{
+        color: red !important;
       }
+    }
   }
     #botonSalir{
       background-color:orange !important;
@@ -4411,30 +4265,22 @@ dropdown{
       border: none;
       border-radius: 5px;
       margin: 20px 0;
-      font-family: @font-family;
       font-size: 1.5rem;
       width: 20%; 
       left: 40px;
       position:relative;
       text-align: center;
-      }    
-     .botonSalir:hover {
-        background-color: @color-text
-      }  
-  
-  
+    }    
 }
 .container__infoservicio{
   &__administrador{
     color: @color-text;
     font-size: 10px;
     &__container{
-      background:@color-white;
       margin: 30px 0;
       border-radius: 3px;
       h1 {
         font-size: 20px;
-        font-family: @font-family;
         text-align: center;
         color: @color-text;
         font-weight: @font-semibold;
@@ -4450,7 +4296,6 @@ dropdown{
             color: @color-black;
             line-height: 40px;
             text-align: center;
-            font-family: @font-family;
           }
           input{
             display: flex;
@@ -4474,7 +4319,6 @@ dropdown{
           border-radius: 5px;
           border: none;
           cursor: pointer;
-          font-family: @font-family;
           font-size: @font-size-md; 
           left: 60px;
           position:relative;
@@ -4484,9 +4328,6 @@ dropdown{
           height: 35px;
           width: 80px;
         }
-        #eliminarBtn:hover{
-          background-color: @color-text;
-        }
       }
     }
   }
@@ -4495,7 +4336,6 @@ dropdown{
 .content__nuevoservicio{
   &__administrador {
   color: @color-text;
-  font-family: @font-family;
   font-size: 10px;
     &__container {
       background:@color-white;
@@ -4503,7 +4343,6 @@ dropdown{
       border-radius: 3px;
       h1 {
         font-size: 20px;
-        font-family: @font-family;
         text-align: center;
         background-color: #D9D9D9;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -4545,7 +4384,6 @@ dropdown{
                 width: 20%;
               } 
               #descripcion{
-                font-family: @font-family;
                 font-size: 1rem;
                 margin: 10px 10px;
               }
@@ -4556,7 +4394,6 @@ dropdown{
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
-                font-family: @font-family;
                 font-size: 1.5rem;
                 width: 20%; 
                 left: 10px;
@@ -4582,7 +4419,6 @@ dropdown{
             border:1px solid orange;
             border-radius: 5px;
             cursor: pointer;
-            font-family: @font-family;
             font-size: 1.5rem;
             width: 30%; 
             left: 87px;
@@ -4603,206 +4439,93 @@ dropdown{
 .container__controlstaff{
   &__administrador {
     color: @color-text;
-    background: #f5f5f5;
-    font-family: @font-family;
     font-size: 10px;
     &-wrapper {
-      background:@color-white;
       margin: 30px 0;
       border-radius: 3px;
     }
     &__title {
-        color: @color-text;
-        padding: 16px 30px;
-        margin: -20px -25px 10px;
-        text-align: center;
-        line-height: 20px;
-        img{
-          width: 30px;
-          height: auto;
-          display: flex; 
-          margin:auto;
-          float: left;
-        }
-        img:hover{
-          color: #F4973D;
-        }
-        h1 {
-        margin: 10px 10px; 
-        font-size: 24px;
-        font-weight: @font-regular;
-        font-family: @font-family;
-        position: relative;
-        }
-        h2 {
-        margin: 50px 10px; 
-        font-size: 20px;
-        font-weight: @font-semibold;
-        font-family: @font-family; 
-        }
-        .btn-group {
-          float: right;
-        }
-        .btn {
-          background-color: @color-text;
-          color: @color-black;
-          float: right;
-          font-size: 13px;
-          border: none;
-          border-radius: 8px;
-          border: none;
-          outline: none !important;
-          margin-top: -20px;
-          font-size: 1.5rem;
-          position:relative;
-          line-height: 10px;
-        }
-        .btn:hover{
-          background-color: @color-white;
-          border: none;
-          color: @color-orange;
-          }
-          i {
-            float: left;
-            font-size: 21px;
-            margin-right: 5px;
-          }
-          span{
-            text-align: right;
-            font-size: 1rem;
-            font-family: @font-family;
-          }
+      color: @color-text;
+      padding: 16px 30px;
+      margin: -20px -25px 10px;
+      text-align: center;
+      line-height: 20px;
+      img{
+        width: 30px;
+        height: auto;
+        display: flex; 
+        margin:auto;
+        float: left;
+      }
+      h1 {
+      margin: 10px 10px; 
+      font-size: 24px;
+      position: relative;
+      }
+      h2 {
+      margin: 50px 10px; 
+      font-size: 20px;
+      font-weight: @font-semibold;
+      }
+      .btn-group {
+        float: right;
+      }
+      .btn {
+        background-color: @color-text;
+        color: @color-black;
+        float: right;
+        font-size: 13px;
+        border: none;
+        border-radius: 8px;
+        outline: none !important;
+        margin-top: -20px;
+        font-size: 1.5rem;
+        position:relative;
+        line-height: 10px;
+      }
       &__box{
-            background-color: @color-white;
-            display: inline-block;
-            border-radius: 10px;
-            width: 60px;
-            height: 60px;
-            padding: 5px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            margin-right: 10px;
-       
-              a{
-                text-decoration: none;
-                color: @color-text !important;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                font-size: 1.2rem;
-              }
-                img{
-                    width: 30px;
-                    height: auto;
-                }
-            }
-          
-      table.table {
-        thead{
-          tr {
-            th {
-              border-color:@color-text;
-              vertical-align: middle; 
-              font-size: 10px;
-              font-family: @font-family;
-              text-align: center;
-              padding: 10px 1px;
-            }
-          }
-              td {
-              border-color: @color-text;
-              padding: 12px 15px; 
-              vertical-align: middle;
-              font-size: 10px;
-              }
-            }
-              .btn-link {
-                color: @color-blue;
-                border: none;
-                cursor: pointer;
-                font-family: @font-family;
-                font-size: 10px;
-                text-align: left;
-                }
-              .btn-link:hover{
-                background-color: @color-white;
-                border: none;
-                color: @color-orange;
-                }
-              
-            th {
-              i {
-                font-size: 13px;
-                margin: 0 15px;
-                cursor: pointer;
-              }
-            } 
-              td {
-                &:last-child {
-                  i {
-                    border-color: @color-text;
-                    vertical-align: middle;
-                    font-size: 15px;
-                  }
-                }
-                }
-              .edit{
-                color: yellow !important;
-              }
-              .delete{
-                color: @color-red !important;
-              }
-              }
-          .pagination {
-            float: right;
-            margin: 0 0 5px;
-            li {
-              a {
-                border: none;
-                font-size: 13px;
-                min-width: 30px;
-                min-height: 30px;
-                color: blue !important;
-                margin: 0 2px;
-                line-height: 30px;
-                border-radius: 2px !important;
-                text-align: center;
-                padding: 0 6px;
-                a:hover {
-                  color: @color-orange;
-                }
-              }
-            }
-            li.active {
-              a {
-                background: #03A9F4;
-                &:hover {
-                  background: #0397d6;
-                }
-              }
-              a.page-link {
-                background: #03A9F4;
-              }
-            }
-            }
+        background-color: @color-white;
+        display: inline-block;
+        border-radius: 10px;
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        margin-right: 10px;
+        a{
+          color: @color-text !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-size: 1.2rem;
+        }
+        img{
+            width: 30px;
+            height: auto;
+        }
+      }  
+      
     }
+    &__table{ 
+      overflow: auto;
+      .edit{
+        color: yellow !important;
+      }
+      .delete{
+        color: @color-red !important;
+      } }
   }
   .botonSalir{
     background-color:@color-orange;
     color: white;
     border: none;
     border-radius: 5px;
-    font-family: @font-family;
     font-size: 1.5rem;
     width: 20%; 
     left: 40px;
     position:relative;
     text-align: center;
     }
-    .botonSalir:hover {
-      background-color: @color-text;
-    }  
 }
 .modificar_cliente{
   .info{
@@ -4909,16 +4632,13 @@ dropdown{
 }
 .content__nuevostaff__administrador {
   color: @color-text;
-  font-family: @font-family;
   font-size: 10px;
   .content__nuevostaff__administrador__container {
     background:@color-white;
     margin: 30px 0;
     border-radius: 3px;
      h1 {
-
       font-size: 20px;
-      font-family: @font-family;
       text-align: center;
       background-color: #D9D9D9;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -4977,7 +4697,6 @@ dropdown{
           border-radius: 5px;
           border: 1px solid;
           cursor: pointer;
-          font-family: @font-family;
           font-size: 1.5rem;
           width: 70px; 
           left: 57px;

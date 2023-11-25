@@ -31,8 +31,9 @@ block content
                     td 5000
                     td 
                       a.boton-descarga(href='ruta/al/archivo/mi-archivo.pdf' download='mi-archivo.pdf') Descargar
-          a(href="inicioAdmin.html") 
-            button.btn.btn-exit(type="submit")#salir Salir
+          button.btn.btn-exit(onclick='paginaInicio()')#salir Salir
+
+      script(src="../js/inicio.js")
       script.
         $(document).ready( function () {
         $('#myTable').DataTable();

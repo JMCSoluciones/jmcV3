@@ -22,27 +22,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   </head>
   <body> 
     <header>
-      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión <img src="imagenes/login.svg" alt="icono de login"/></a></div>
+      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión </a></div>
       <nav class="menu"> 
         <section class="menu__container"> <img class="menu__logo" src="imagenes/logo.png" alt="Logo de la empresa" id="logo"/>
           <ul class="menu__links">
-            <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a><!-- img(src="/Images/Icons/home.svg") --></li>
-            <li class="menu__item"><a class="menu__link" href="empresa.html">Clientes</a><!-- img(src="/Images/Icons/clientes.svg") --></li>
-            <li class="menu__item"> <a class="menu__link" href="sWeb.html">Pagos</a><!-- img(src="/Images/Icons/pagos.svg") --></li>
-            <li class="menu__item"> <a class="menu__link" href="menuAspel.html">Contratos</a><!-- img(src="/Images/Icons/contratos.svg") --></li>
-            <li class="menu__item"><a class="menu__link" href="mantenimiento.html">Soporte</a><!-- img(src="/Images/Icons/soporte.svg") --></li>
-            <li class="menu__item"><a class="menu__link" href="mantenimiento.html">Ajustes</a><!-- img(src="/Images/Icons/ajustes.svg") --></li>
+            <li class="menu__item"><a class="menu__link" href="inicioAdmin.html">Inicio</a></li>
+            <li class="menu__item"><a class="menu__link" href="contratos-cliente.html">Contratos</a></li>
+            <li class="menu__item"> <a class="menu__link" href="pagos-cliente.html">Pagos</a></li>
+            <li class="menu__item"> <a class="menu__link" href="tickets-cliente.html">Tickets </a></li>
+            <li class="menu__item"><a class="menu__link" href="equipo-cliente.html">Equipos</a></li>
           </ul>
           <div class="menu__hamburger"><img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
         </section>
       </nav>
     </header>
     <div class="verPago">
-      <h2>Informacion del pago<a href="control-pagos.html"> 
-          <button class="btn btn-exit" type="submit" id="salir">Regresar</button></a>
+      <h2>Informacion del pago
+        <button class="btn btn-exit" onclick="regresar()" id="salir">Regresar</button>
         <div class="datos"> 
           <div class="datos__info"> 
             <label for="cliente">Cliente</label>
@@ -121,6 +124,7 @@
         </div>
       </h2>
     </div>
+    <script src="../js/regresar.js"></script>
     <footer> 
       <div class="footer__box">
         <div class="footer__box__body">

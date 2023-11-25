@@ -23,6 +23,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   </head>
   <body> 
     <header>
@@ -51,8 +54,8 @@
     </div>
     <div class="equipos">  
       <h2 class="title">Equipos</h2>
-      <div class="acciones"><a href="inicioAdmin.html"> 
-          <button class="btn btn-exit" type="submit" id="salir">Regresar</button></a></div>
+      <div class="acciones"></div>
+      <button class="btn btn-exit" onclick="regresar()" id="salir">Regresar</button>
       <div class="content__equipoClientes__tabs">
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> 
@@ -84,20 +87,10 @@
                 </table>
               </div>
             </div>
-            <div class="content__CtrlCotizaciones__tabs__item__footer">
-              <nav aria-label="...">
-                <ul class="pagination">
-                  <li class="page-item disabled"></li><a class="page-link">Previous</a>
-                  <li class="page-item"></li><a class="page-link" href="#">1</a>
-                  <li class="page-item active" aria-current="page"></li><a class="page-link" href="#">2</a>
-                  <li class="page-item"></li><a class="page-link" href="#">3</a>
-                  <li class="page-item"></li><a class="page-link" href="#">Next    </a>
-                </ul>
-              </nav>
-            </div>
           </div>
         </div>
       </div>
+      <script src="../js/regresar.js">    </script>
     </div>
     <footer> 
       <div class="footer__box">

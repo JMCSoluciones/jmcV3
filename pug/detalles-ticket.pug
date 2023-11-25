@@ -3,8 +3,7 @@ block content
   include inicio-cliente.pug
   .detalleTicket
     h2 Informacion del ticket
-    a(href="tickets-cliente.html") 
-      button.btn.btn-exit(type="submit")#salir Regresar
+    button.btn.btn-exit(onclick='regresar()')#salir Regresar
     .detalleTicket__info 
       label(for="fecha") Fecha
       label(for="nombre") Nombre
@@ -12,4 +11,4 @@ block content
       label(for="contacto") Contacto 
       label(for="asunto") Asunto
       label(for="archivo") Archivo
-              
+  script(src="../js/regresar.js")     

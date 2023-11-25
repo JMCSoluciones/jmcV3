@@ -2,8 +2,7 @@ extend ../components/template-admin.pug
 block content
   .verPago
     h2 Informacion del pago
-      a(href="control-pagos.html") 
-        button.btn.btn-exit(type="submit")#salir Regresar
+      button.btn.btn-exit(onclick='regresar()')#salir Regresar
       .datos 
         .datos__info 
           label(for="cliente") Cliente
@@ -14,3 +13,4 @@ block content
           label(for="vigenciaContrato") Vigencia del contrato
       .final
         include modal-pago.pug
+  script(src="../js/regresar.js")

@@ -28,8 +28,9 @@ block content
                     td Josue Martinez
                     td 
                       a(href="detalles-ticket.html") Ver mas ...
-          a(href="inicioAdmin.html") 
-            button.btn.btn-exit(type="submit")#salir Salir
+          button.btn.btn-exit(onclick='paginaInicio()')#salir Salir
+
+      script(src="../js/inicio.js")
       script.
         $(document).ready( function () {
         $('#myTable').DataTable();

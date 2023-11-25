@@ -50,8 +50,9 @@ block content
                                         i.bi.bi-pencil-square
                                     a.delete(href='#deleteUserModal' data-toggle='modal')
                                         i.bi.bi-trash
-        a(href="control-ajuste.html") 
-            button(type="submit")#botonSalir Salir
+        button.btn.btn-exit(onclick='paginaInicio()')#botonSalir Salir
+
+    script(src="../js/inicio.js")
     script.
         $(document).ready( function () {
         $('#myTable').DataTable();

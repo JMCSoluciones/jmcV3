@@ -26,8 +26,9 @@ block content
                     td Aws
                     td 23 octubre 2023
                     td Vencido  
-          a(href="inicioAdmin.html") 
-            button.btn.btn-exit(type="submit")#salir Salir
+          button.btn.btn-exit(onclick='paginaInicio()')#salir Salir
+
+  script(src="../js/inicio.js")
       script.
         $(document).ready( function () {
         $('#myTable').DataTable();

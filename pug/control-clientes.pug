@@ -43,9 +43,9 @@ block content
                                                 a.delete(href='#modalModificar' data-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
                        
-            a(href="inicioAdmin.html") 
-                button.btn.btn-exit(type="submit")#salir Salir
+                button.btn.btn-exit(onclick='paginaInicio()')#salir Salir
     script.
         $(document).ready( function () {
         $('#myTable').DataTable();
         } );
+    script(src="../js/inicio.js")
