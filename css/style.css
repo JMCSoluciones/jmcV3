@@ -754,15 +754,22 @@ header .menu-top__link img {
   margin: 0;
   font-size: 1.6rem;
 }
-.index .final__empresa-btn {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 220px;
+.index .boton {
   position: relative;
+  z-index: 2;
+}
+.index .boton .btn-info {
+  position: fixed;
+  border-radius: 30px;
+  bottom: 20px;
+  right: 5px;
+  font-size: 3rem;
+  padding: 5px 20px;
+  color: #ffffff;
+  font-weight: 800;
+  -webkit-box-shadow: 3px 3px 3px #888888;
+          box-shadow: 3px 3px 3px #888888;
+  border: 1px solid rgba(128, 128, 128, 0.363);
 }
 .sWeb .desarrollo__dominios {
   margin: 20px auto;
@@ -1078,6 +1085,23 @@ header .menu-top__link img {
   text-align: center;
   margin: auto;
 }
+.sWeb .boton {
+  position: relative;
+  z-index: 2;
+}
+.sWeb .boton .btn-info {
+  position: fixed;
+  border-radius: 30px;
+  bottom: 20px;
+  right: 5px;
+  font-size: 3rem;
+  padding: 5px 20px;
+  color: #ffffff;
+  font-weight: 800;
+  -webkit-box-shadow: 3px 3px 3px #888888;
+          box-shadow: 3px 3px 3px #888888;
+  border: 1px solid rgba(128, 128, 128, 0.363);
+}
 .aspel a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1088,6 +1112,30 @@ header .menu-top__link img {
           flex-direction: column-reverse;
   font-size: 1.6rem;
   color: #666666d9 !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aspel a p {
+  border: 1px solid #17acc9;
+  padding: 3px 4px;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px #888888;
+          box-shadow: 5px 5px 10px #888888;
+}
+.aspel .info {
+  padding: 1rem;
+}
+.aspel .info h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 10px 0;
+}
+.aspel .info p {
+  font-size: 1.4rem;
+  color: #666666d9;
+  padding: 1rem;
+  border: 1px solid #17acc9 0.9;
 }
 .aspel .logos {
   display: -webkit-box;
@@ -1095,7 +1143,7 @@ header .menu-top__link img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1190,7 +1238,7 @@ header .menu-top__link img {
   margin: 20px 10px;
 }
 .aspel .logos__ADM img {
-  width: auto;
+  width: 75px;
   height: 80px;
 }
 .aspel .logos__FACTURE {
