@@ -1,0 +1,64 @@
+extend ../components/template.pug
+block content
+  include barra.pug
+  .banco
+    .desarrollo 
+      h1 Aspel BANCO  
+      .desarrollo__inicio 
+        .desarrollo__inicio-logo 
+          img(src="/Images/BANCO.png", alt="")
+        .desarrollo__inicio-video 
+          video(src="/videos/Aspel BANCO - El control efectivo de tu dinero.mp4" controls) 
+      .desarrollo__button
+          ul#myTab.nav.nav-tabs(role='tablist')
+            li.nav-item(role='presentation')
+              button#beneficios-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#beneficios-tab-pane' type='button' role='tab' aria-controls='beneficios-tab-pane' aria-selected='true') Beneficios
+            li.nav-item(role='presentation')
+              button#funciones-tab.nav-link(data-bs-toggle='tab' data-bs-target='#funciones-tab-pane' type='button' role='tab' aria-controls='funciones-tab-pane' aria-selected='false') Funciones
+            li.nav-item(role='presentation')
+              button#precios-tab.nav-link(data-bs-toggle='tab' data-bs-target='#precios-tab-pane' type='button' role='tab' aria-controls='precios-tab-pane' aria-selected='false') Precios
+          #myTabContent.tab-content
+            #beneficios-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='beneficios-tab' tabindex='0')
+              h2 Descripcion del producto 
+              p #[strong Controla eficientemente ]los ingresos, egresos de cualquier cuenta bancaria, en moneda nacional y extranjera. Ofrece #[strong información financiera] en todo momento como estados de cuenta, diarios de bancos y flujo de efectivo. Todos los movimientos bancarios se contabilizan automáticamente en su interfaz con Aspel COI atendiendo los requisitos de la Contabilidad Electrónica. Además, permite la programación de movimientos periódicos, así como una eficiente conciliación de las operaciones bancarias. Para una mayor eficiencia administrativa e integridad de la información con Aspel SAE ofrece la afectación simultánea de las cuentas por cobrar y/o por pagar al registrar los movimientos bancarios y con Aspel NOI posibilita la generación automática de los cheques para el pago de nómina.
+            #funciones-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='funciones-tab' tabindex='0')
+              h2 h2 Sistema de Control de Producción
+              p Aspel BANCO es el Sistema de Control Bancario que te ayuda a llevar un control efectivo de tu dinero; es tu mejor aliado para:
+
+              ul 
+                li #[STRONG Capturar y actualizar] las cuentas por cobrar y cuentas por pagar
+                li Realizar la conciliación bancaria de forma automática a partir de la información proporcionada por los bancos
+                li #[strong Registrar operaciones] en moneda nacional y extranjeraMonousuario
+                li Conocer el #[strong saldo real y disponible] de tus cuentas bancarias
+                li Importar #[strong movimientos bancarios] de forma masiva 
+                li #[strong Conectar a tus sucursales y colaboradores] remotos vía Internet
+                li Visualizar los #[strong saldos reales y disponibles] de cada cuenta con su práctico Tablero
+                li Manejar #[strong movimientos en tránsito] y multiconcepto
+                li Llevar el #[strong control de cheques emitidos] y seleccionar el formato de impresión
+                li Planear #[strong cobros y pagos] sin afectar el saldo de la cuenta
+                li #[strong Autorizar] movimientos programados
+                li Obtener el #[strong histórico de saldos]
+              p Así obtendrás información #[strong financiera real] en todo momento, desde el flujo de efectivo hasta los estados de cuenta; y manéjala de forma segura controlando el acceso a los usuarios.
+              p Con Aspel BANCO tienes un #[strong control integral de tus cuentas bancarias] desde un solo lugar.
+            #precios-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='precios-tab' tabindex='0')
+              h2 Suscripción
+              h3 Sistema de Control Bancario 
+            p   
+              | #[strong Versión]: 6.0. #[br]
+              | #[strong Categoría]: Servicios de Telecomunicaciones y Tecnología. Solución de Escritorio. #[br]
+              | #[strong Especialidad]: Bancos. #[br]
+            h3 Características generales del producto 
+            ul 
+              li Base de datos en formato #[strong Firebird® ]y posibilidad de uso en formato #[strong MS-SQL®]. 
+              li Traductor automático de datos de versiones Aspel BANCO 5.0. 
+              li Conectividad entre sucursales o colaboradores remotos. 
+              li Programa movimientos de cargos y abonos a través de la agenda de movimientos. 
+              li Exporta consultas en formato TXT, HTML, XML o Excel®. 
+              li Maneja hasta 99 tipos de moneda. 
+              li Cuenta con varios formatos de cheques: Banamex, Bancomer, Inbursa, entre otros. 
+              li Asocia documentos digitales de diferentes formatos. 
+              li Actualización en línea vía Internet a las últimas mejoras de la versión. 
+              li Acceso seguro a la información mediante el manejo de perfiles de usuario. 
+              li Disponible en la modalidad de 1 usuario, 99 empresas y licencias de usuarios adicionales.     
+      a(href="formulario.html")#masinfo Mas informacion 
+

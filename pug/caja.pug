@@ -1,0 +1,114 @@
+extend ../components/template.pug
+block content
+  include barra.pug
+  .caja
+    .desarrollo 
+      h1 Aspel CAJA 
+      .desarrollo__inicio 
+        .desarrollo__inicio-logo 
+          img(src="/Images/CAJA.png", alt="")
+        .desarrollo__inicio-video 
+          video(src="/videos/Aspel CAJA - Control efectivo de tu punto de venta.mp4" controls) 
+      .desarrollo__button
+          ul#myTab.nav.nav-tabs(role='tablist')
+            li.nav-item(role='presentation')
+              button#beneficios-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#beneficios-tab-pane' type='button' role='tab' aria-controls='beneficios-tab-pane' aria-selected='true') Beneficios
+            li.nav-item(role='presentation')
+              button#funciones-tab.nav-link(data-bs-toggle='tab' data-bs-target='#funciones-tab-pane' type='button' role='tab' aria-controls='funciones-tab-pane' aria-selected='false') Funciones
+            li.nav-item(role='presentation')
+              button#precios-tab.nav-link(data-bs-toggle='tab' data-bs-target='#precios-tab-pane' type='button' role='tab' aria-controls='precios-tab-pane' aria-selected='false') Precios
+            li.nav-item(role='presentation')
+              button#puntoVenta-tab.nav-link(data-bs-toggle='tab' data-bs-target='#puntoVenta-tab-pane' type='button' role='tab' aria-controls='puntoVenta-tab-pane' aria-selected='false') Punto de venta
+          #myTabContent.tab-content
+            #beneficios-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='beneficios-tab' tabindex='0')
+              h2 Descripcion del producto 
+              p Aspel CAJA controla, administra y agiliza las operaciones de ventas, facturación e inventarios de uno o varios comercios, convirtiendo una computadora en un punto de venta capaz de operar con impresoras de tickets, cajones de dinero, básculas, lectores ópticos de código de barras, lectores de tarjetas de crédito y pantallas táctiles.
+            #funciones-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='funciones-tab' tabindex='0')
+              h2 Sistema de Punto de Venta y Administración 
+              p Software para controlar, administrar y agilizar las operaciones de ventas, facturación e inventarios de uno o varios comercios, tiendas, cajas y cajeros.
+              h2 Convierte tu equipo de cómputo en un punto de venta.
+              h3 Principales funcionalidades
+              ul 
+                li Administración de tiendas y cajas
+                li Control de inventarios
+                li Seguimiento de clientes
+                li Tecnología táctil
+                li Incrementa tus ventas
+                li Útiles reportes y consultas 
+            #precios-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='precios-tab' tabindex='0')
+              h2 Suscripción
+              h3 Sistema de Punto de Venta y Administración de Comercios   
+              p   
+                | #[strong Versión]: 5.0.  #[br]
+                | #[strong Categoría]:Servicios de Telecomunicaciones y Tecnología
+                | #[strong Solución de Escritorio.] #[br]
+                | #[strong Especialidad]: Producción. #[br]
+              h3 Características generales del producto 
+              ul 
+                li Cumple con las disposiciones obligatorias de la Resolución Miscelánea Fiscal vigente.
+                li Base de datos en formato Firebird® y posibilidad de uso en formato MS-SQL®.  
+                li Traductor automático de datos de versiones Aspel CAJA 4.0 
+                li Importación de archivos en hojas de cálculo de Microsoft Excel® como catálogo de clientes y productos. 
+                li Ágil captura al asignar teclas de función rápida.
+                li Formatos de tickets y facturas adaptables al tamaño de impresión. 
+                li Consolida información de ventas e inventarios de diferentes puntos de venta.  
+                li Lleva el control de ingresos totales por tienda, cajero o periodo. 
+                li Conexión con terminales bancarias para realizar operaciones de pago por Internet (verificar servicios disponibles). 
+                li Actualización en línea vía Internet a las últimas mejoras de la versión. 
+                li Acceso seguro a la información mediante el manejo de perfiles de usuario. 
+                li Disponible en la modalidad de 1 usuario 1 empresa, 99 Cajas y licencias de usuarios adicionales.
+            #puntoVenta-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='beneficios-tab' tabindex='0')
+              h2 Kit Punto de Venta 
+              p Lleva el control preciso de tu negocio con las Soluciones Aspel CAJA: Punto de venta TODO INCLUIDO. Gestiona todas las operaciones de tu tienda o comercio: ingresos, existencias, ventas, cajas, cajeros, inventarios en tiendas y mucho más.
+              .kit
+                .kit__basica
+                  .kit__basica-titulo 
+                    h2 Solucion Punto de Venta Básico
+                  .kit__basica-img 
+                    img(src="/Images/solucion_basica.png", alt="Punto de venta basico")
+                  .kit__basica-txt 
+                    h3 Componentes: 
+                      ul 
+                        li Aspel CAJA 4.0
+                        li Miniprinter
+                        li Lector
+                        li Código de barras
+                        li Cajón de dinero
+                    h3 Principales Beneficios 
+                      ul 
+                        li Controla, administra y agiliza las operaciones de venta, facturación e inventarios de uno o varios comercios, cajas y cajeros.
+                        li Entrega de forma inmediata el comprobante de venta a tu Cliente.
+                        li Optimiza el tiempo de cobro con el potente escáner.
+                        li Resguarda con total seguridad tu dinero.
+                .kit__touch 
+                  .kit__touch-titulo 
+                    h2 Solución Punto de Venta Touch
+                  .kit__touch-img 
+                    img(src="/Images/caja.jpg", alt="caja de punto de venta touch")
+                  .kit__touch-txt 
+                    p La solución de Punto de Venta más completa para administrar tu negocio.
+                    h3 Componentes:
+                      ul
+                        li Aspel CAJA 4.0
+                        li Miniprinter
+                        li Lector
+                        li Código de barras
+                        li Monitor Touch
+                        li Cajón de dinero
+                    h3 Principales beneficios:
+                      ul
+                        li Controla, administra y agiliza las operaciones de venta, facturación e inventarios de uno o varios comercios, cajas y cajeros.
+                        li Convierte tu PC en un poderoso Punto de Venta.
+                        li Agiliza la captura de Notas de Venta con un práctico Monitor de pantalla touch.
+                        li Entrega de forma inmediata el comprobante de venta a tu Cliente.
+                        li Optimiza el tiempo de cobro con el potente escáner.
+                        li Resguarda con total seguridad tu dinero.
+                .kit__dispositivos 
+                  .kit__dispositivos-txt
+                    p Aspel CAJA te permite convertir tu PC en un Sistema de Punto de Venta y administración para consolidar el éxito de tu negocio.
+                  .kit__dispositivos-img
+                    h2 DISPOSITIVOS COMPATIBLES 
+                    img(src="/Images/dispositivosCAJA.png", alt="lista de dispositivos compatibles")
+
+      a(href="formulario.html")#masinfo Mas informacion 
+

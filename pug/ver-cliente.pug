@@ -3,10 +3,7 @@ block content
     include control-menuAdmin.pug
     .verCliente
       h2 Informacion del cliente 
-      .botones
-        include botones-admin.pug
-        a(href="control-clientes.html") 
-          button.btn.btn-exit(type="submit")#salir Regresar
+        button.btn.btn-exit(onclick='regresar()')#salir Regresar
       .datos 
         .datos__info 
           label(for="nombre") Nombre 
@@ -22,3 +19,4 @@ block content
         a(href="") 
           button.btn.btn-eliminar(type="submit")#eliminar Eliminar
         include modal.pug
+    script(src="../js/regresar.js")

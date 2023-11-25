@@ -1,0 +1,54 @@
+extend ../components/template.pug
+block content
+  include barra.pug
+  .prod
+    .desarrollo 
+      h1 Aspel PROD
+      .desarrollo__inicio 
+        .desarrollo__inicio-logo 
+          img(src="/Images/PROD.png", alt="")
+        .desarrollo__inicio-video 
+          video(src="/videos/Demo PROD 4.0 - Sistema de Control de Producción.mp4" controls) 
+      .desarrollo__button
+          ul#myTab.nav.nav-tabs(role='tablist')
+            li.nav-item(role='presentation')
+              button#beneficios-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#beneficios-tab-pane' type='button' role='tab' aria-controls='beneficios-tab-pane' aria-selected='true') Beneficios
+            li.nav-item(role='presentation')
+              button#funciones-tab.nav-link(data-bs-toggle='tab' data-bs-target='#funciones-tab-pane' type='button' role='tab' aria-controls='funciones-tab-pane' aria-selected='false') Funciones
+            li.nav-item(role='presentation')
+              button#precios-tab.nav-link(data-bs-toggle='tab' data-bs-target='#precios-tab-pane' type='button' role='tab' aria-controls='precios-tab-pane' aria-selected='false') Precios
+          #myTabContent.tab-content
+            #beneficios-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='beneficios-tab' tabindex='0')
+              h2 Descripcion del producto 
+              p Aspel PROD permite la planeación y control de los procesos de fabricación de la empresa, asegurando una óptima administración de inventarios y costos. Proporciona, además, un eficiente seguimiento a las órdenes de producción, mejorando los tiempos de entrega. Actualiza y procesa la información de manera rápida al integrarse con la base de datos de Aspel SAE, de donde obtiene la materia prima y sub-ensambles para realizar los procesos de producción y, posteriormente, actualizar el inventario con los productos terminados.
+            #funciones-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='funciones-tab' tabindex='0')
+              h2 Sistema de Control de Produccion 
+              p Un programa de gestión de procesos de fabricación te ayuda a planear para incrementar la productividad.
+              ul 
+                li Administra inventarios, optimiza materia prima y calcula costos de producción.
+                li Es ideal para producción industrial, textil y otras empresas de manufactura, ganaderas, de extracción, automotriz y otros giros.Proveedores y compras
+              p ¡Comprueba cómo la gestión de producción te ayuda a simplificar tus operaciones en la industria!
+            #precios-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='precios-tab' tabindex='0')
+              h2 Suscripción
+              h3 Sistema de Control de Producción  
+              p   
+                | #[strong Versión]: 5.0.  #[br]
+                | #[strong Categoría]:Servicios de Telecomunicaciones y Tecnología.  Solución de Escritorio. #[br]
+                | #[strong Especialidad]: Producción. #[br]
+              h3 Características generales del producto 
+              ul 
+                li Base de datos integrada en Aspel SAE 9.0 en formato Firebird y posibilidad de uso en SQL Server®. 
+                li Captura observaciones en productos terminados, hojas de costos, órdenes y seguimiento de las mismas.  
+                li Proporciona el comparativo general y detallado del costo real vs. estimado 
+                li Exporta información en formato TXT, HTML, XML o Excel 
+                li Cambia un componente del mismo tipo en todos los productos terminados a través de la opción sustitución masiva. 
+                li Genera reportes en formato QR2 que entregan información precisa en el menor tiempo posible 
+                li Actualización en línea vía internet a las últimas mejoras de la versión 
+                li Acceso seguro a la información mediante el manejo de perfiles de usuario  
+                li Disponible en la modalidad de 1 usuario, 99 empresas y licencias de usuarios adicionales
+                li Cuenta con diferentes “Skins” o temas que permiten personalizar la vista del sistema al gusto del usuario. 
+                li Barra de búsqueda inteligente, la cual presenta una lista de todas las opciones que tienen relación con el tema especificado. 
+                li Actualización en línea vía Internet a las últimas mejoras de la versión (Aspel-AL)
+
+      a(href="formulario.html")#masinfo Mas informacion 
+

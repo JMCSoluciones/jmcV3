@@ -22,10 +22,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   </head>
   <body> 
     <header>
-      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión <img src="imagenes/login.svg" alt="icono de login"/></a></div>
+      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión </a></div>
       <nav class="menu"> 
         <section class="menu__container"> <img class="menu__logo" src="imagenes/logo.png" alt="Logo de la empresa" id="logo"/>
           <ul class="menu__links">
@@ -33,7 +37,6 @@
             <li class="menu__item"><a class="menu__link" href="contratos-cliente.html">Contratos</a></li>
             <li class="menu__item"> <a class="menu__link" href="pagos-cliente.html">Pagos</a></li>
             <li class="menu__item"> <a class="menu__link" href="tickets-cliente.html">Tickets </a></li>
-            <li class="menu__item"><a class="menu__link" href="mantenimiento.html">Imprimir</a></li>
             <li class="menu__item"><a class="menu__link" href="equipo-cliente.html">Equipos</a></li>
           </ul>
           <div class="menu__hamburger"><img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
@@ -58,88 +61,51 @@
             <div class="container__controlstaff__administrador__title__box"><a href="control-staff.html">Staff<img class="staff" src="/Images/Icons/staff.svg" alt="ajustes de staff"/></a></div>
           </div>
           <div class="container__controlstaff__administrador__title">
-            <h2>Control de staff</h2><a class="btn btn-success" href="nuevo-staff.html"><i class="bi bi-plus-circle"></i><span>add </span></a>
+            <h2>Control de staff</h2><a class="btn btn-success" href="nuevo-staff.html"><i class="bi bi-plus-circle"></i><span>Nuevo</span></a>
           </div>
-          <table class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Dirección</th>
-                <th>Detalles</th>
-                <th>Acción</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td>1</td>
-                <td>Fran Wilson</td>
-                <td>89 Chiaroscuro Rd, Portland, USA </td>
-                <td>
-                  <button class="btn btn-link btn btn-primary" type="button" data-toggle="modal" data-target="#verMasModal">Ver Más...    </button>
-                </td>
-                <td><a class="edit" href="#editUserModal" data-toggle="modal"><i class="bi bi-pencil-square"></i></a><a class="delete" href="#deleteUserModal" data-toggle="modal"><i class="bi bi-trash"></i></a></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>2</td>
-                <td> </td>
-                <td> </td>
-                <td>
-                  <button class="btn btn-link btn btn-primary" type="button" data-toggle="modal" data-target="#verMasModal">Ver Más...   </button>
-                </td>
-                <td><a class="edit" href="#editUserModal" data-toggle="modal"><i class="bi bi-pencil-square"></i></a><a class="delete" href="#deleteUserModal" data-toggle="modal"><i class="bi bi-trash"></i></a></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>3</td>
-                <td> </td>
-                <td> </td>
-                <td>
-                  <button class="btn btn-link btn btn-primary" type="button" data-toggle="modal" data-target="#verMasModal">Ver Más...   </button>
-                </td>
-                <td><a class="edit" href="#editUserModal" data-toggle="modal"><i class="bi bi-pencil-square"></i></a><a class="delete" href="#deleteUserModal" data-toggle="modal"><i class="bi bi-trash"></i></a></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>4</td>
-                <td> </td>
-                <td> </td>
-                <td>
-                  <button class="btn btn-link btn btn-primary" type="button" data-toggle="modal" data-target="#verMasModal">Ver Más...   </button>
-                </td>
-                <td><a class="edit" href="#editUserModal" data-toggle="modal"><i class="bi bi-pencil-square"></i></a><a class="delete" href="#deleteUserModal" data-toggle="modal"><i class="bi bi-trash"></i></a></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>5</td>
-                <td> </td>
-                <td> </td>
-                <td>
-                  <button class="btn btn-link btn btn-primary" type="button" data-toggle="modal" data-target="#verMasModal">Ver Más...   </button>
-                </td>
-                <td><a class="edit" href="#editUserModal" data-toggle="modal"><i class="bi bi-pencil-square"></i></a><a class="delete" href="#deleteUserModal" data-toggle="modal"><i class="bi bi-trash"></i></a></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="clearfix">
-            <ul class="pagination">
-              <li class="page-item disabled"><a href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item active"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item"><a class="page-link" href="#">5</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-            </ul>
+          <div class="container__controlstaff__administrador__table">
+            <table class="display" id="myTable" cellspacing="0" width="100%">
+              <thead>
+                <tr>
+                  <th>Id</th>
+                  <th>Nombre</th>
+                  <th>Dirección</th>
+                  <th>Detalles</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Fran Wilson</td>
+                  <td>89 Chiaroscuro Rd, Portland, USA </td>
+                  <td>
+                    <button class="btn btn-link btn btn-primary" type="button" data-toggle="modal" data-target="#verMasModal">Ver Más...    </button>
+                  </td>
+                  <td><a class="edit" href="#editProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Josue Martinez</td>
+                  <td>89 Chiaroscuro Rd, Portland, USA </td>
+                  <td>
+                    <button class="btn btn-link btn btn-primary" type="button" data-toggle="modal" data-target="#verMasModal">Ver Más...   </button>
+                  </td>
+                  <td><a class="edit" href="#editProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+        <button class="botonSalir" onclick="regresar()">Regresar</button>
+        <script src="../js/regresar.js"></script>
       </div>
-      <div class="botonSalir" type="button">Salir</div>
     </div>
-    <script src="salir.js"></script>
+    <script>
+      $(document).ready( function () {
+      $('#myTable').DataTable();
+      } );
+    </script>
     <footer> 
       <div class="footer__box">
         <div class="footer__box__body">

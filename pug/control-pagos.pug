@@ -10,15 +10,9 @@ block content
                         .content__CtrlPagos__tabs__item__header#usuario-header
                             a(href="nuevo-pago.html") 
                                 button.btn.btn-nuevo(type="submit")#nuevo Nuevo
-                            form.d-flex(role="search")
-                                input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
-                                a(href='busqueda-pagos.html') 
-                                    .btn.btn-dark(type="submit") Buscar
-                                input.btn-clean(type="reset" value="Limpiar") 
-
                         .content__CtrlPagos__tabs__item__body
                             .table-wrapper.content__CtrlPagos__tabs__item__body__table
-                                table.table.table-striped.table-hover
+                                table#myTable.display(cellspacing='0' width='100%')
                                     thead 
                                         tr                  
                                             th Id
@@ -48,19 +42,11 @@ block content
                                                 a.edit(href="#editProductoModal" data-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
                                                 a.delete(href='#deleteProductoModal' data-toggle='modal')
-                                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-                        .content__CtrlPagos__tabs__item__footer
-                            nav(aria-label='...')
-                                ul.pagination
-                                    li.page-item.disabled
-                                    a.page-link Previous
-                                    li.page-item
-                                    a.page-link(href='#') 1
-                                    li.page-item.active(aria-current='page')
-                                    a.page-link(href='#') 2
-                                    li.page-item
-                                    a.page-link(href='#') 3
-                                    li.page-item
-                                    a.page-link(href='#') Next   
-            a(href="inicioAdmin.html") 
-                button.btn.btn-exit(type="submit")#salir Salir
+                                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;   
+        button.btn.btn-exit(onclick='paginaInicio()')#salir Salir
+
+  script(src="../js/inicio.js")
+    script.
+        $(document).ready( function () {
+        $('#myTable').DataTable();
+        } );

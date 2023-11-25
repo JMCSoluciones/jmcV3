@@ -2,8 +2,7 @@ extend ../components/template-admin.pug
 block content
   .eqNuevo 
     h2 Añadir Nuevo Equipo
-    a(href="control-soporte.html") 
-      button.btn.btn-exit(type="submit")#salir Regresar
+    button.btn.btn-exit(onclick='regresar()')#salir Regresar
     .eqNuevo__info 
       label Tipo de equipo
         select#tipo(name="tipo")
@@ -54,5 +53,5 @@ block content
       a(href="control-clientes.html") 
         button.btn.btn-delete(type="submit") Eliminar
       include modal-guardar.pug
-      
+  script(src="../js/regresar.js")   
               

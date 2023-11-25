@@ -2,8 +2,7 @@ extend ../components/template-admin.pug
 block content
   .verContrato
     h2 Informacion del contrato
-      a(href="inicioAdmin.html") 
-        button.btn.btn-exit(type="submit")#salir Regresar
+      button.btn.btn-exit(onclick='regresar()')#salir Regresar
       .datos 
         .datos__info 
           label(for="id") Id Contrato 
@@ -16,3 +15,4 @@ block content
           button.btn.btn-eliminar(type="submit")#eliminar Eliminar
         a(href="") 
           button.btn.btn-modificar(type="submit")#modificar Modificar
+  script(src="../js/regresar.js")

@@ -2,8 +2,7 @@ extend ../components/template-admin.pug
 block content
   .detalle 
     h2 Informacion del equipo
-    a(href="control-soporte.html") 
-      button.btn.btn-exit(type="submit")#salir Regresar
+    button.btn.btn-exit(onclick='regresar()')#salir Regresar
     .detalle__info 
       label Tipo de equipo
         select#tipo(name="tipo")
@@ -56,4 +55,5 @@ block content
         button.btn.btn-delete(type="submit") Eliminar
       a(href="#") 
         button.btn.btn-historial(type="submit") Historial
+  script(src="../js/regresar.js")
               

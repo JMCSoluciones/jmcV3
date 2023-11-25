@@ -8,23 +8,16 @@ block content
         .ctrlSoporte__tabs
             #myTabContent.tab-content
                 #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
-                    .ctrlSoporte__tabs__item
-                        .ctrlSoporte__tabs__item__header#usuario-header
-                            form.d-flex(role="search")
-                                input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")#search
-                                a(href='equipos-clientes.html') 
-                                    .btn.btn-dark(type="submit") Buscar
-                                a(href="#") 
-                                    .btn.btn-clean(type="submit") Limpiar
+                    .ctrlSoporte__tabs__item                            
                         .ctrlSoporte__tabs__item__body
                             .table-wrapper.content__ctrlSoporte__tabs__item__body__table
-                                table.table.table-striped.table-hover
+                                table#myTable.display(cellspacing='0' width='100%')
                                     thead 
                                         tr                  
-                                            th #
+                                            th id
                                             th Cliente
-                                            th Contrato
-                                            th Servicio
+                                            th Asunto
+                                            th Status
                                             th Detalles 
                                             th Acciones
                                     tbody 
@@ -52,18 +45,10 @@ block content
                                                     i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
                                                 a.delete(href='#deleteProductoModal' data-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-                        .ctrlSoporte__tabs__item__footer
-                            nav(aria-label='...')
-                                ul.pagination
-                                    li.page-item.disabled
-                                    a.page-link Previous
-                                    li.page-item
-                                    a.page-link(href='#') 1
-                                    li.page-item.active(aria-current='page')
-                                    a.page-link(href='#') 2
-                                    li.page-item
-                                    a.page-link(href='#') 3
-                                    li.page-item
-                                    a.page-link(href='#') Next   
-            a(href="inicioAdmin.html") 
-                button.btn.btn-exit(type="submit")#salir Salir
+            button.btn.btn-exit(onclick='paginaInicio()')#salir Salir
+
+    script(src="../js/inicio.js")
+    script.
+        $(document).ready( function () {
+        $('#myTable').DataTable();
+        } );

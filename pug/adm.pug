@@ -1,0 +1,58 @@
+extend ../components/template.pug
+block content
+  include barra.pug
+  .adm
+    .desarrollo 
+      h1 Aspel ADM
+      .desarrollo__inicio 
+        .desarrollo__inicio-logo 
+          img(src="/Images/ADM.png", alt="")
+        .desarrollo__inicio-video 
+          video(src="/videos/Demo Aspel ADM  Sistema de Administración Móvil_720p.mp4" controls) 
+      .desarrollo__button
+          ul#myTab.nav.nav-tabs(role='tablist')
+            li.nav-item(role='presentation')
+              button#beneficios-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#beneficios-tab-pane' type='button' role='tab' aria-controls='beneficios-tab-pane' aria-selected='true') Beneficios
+            li.nav-item(role='presentation')
+              button#funciones-tab.nav-link(data-bs-toggle='tab' data-bs-target='#funciones-tab-pane' type='button' role='tab' aria-controls='funciones-tab-pane' aria-selected='false') Funciones
+            li.nav-item(role='presentation')
+              button#precios-tab.nav-link(data-bs-toggle='tab' data-bs-target='#precios-tab-pane' type='button' role='tab' aria-controls='precios-tab-pane' aria-selected='false') Precios
+          #myTabContent.tab-content
+            #beneficios-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='beneficios-tab' tabindex='0')
+              h2 Descripcion del producto 
+              p Aspel ADM es la app que revoluciona el control administrativo de las empresas desde la nube. Gestiona las principales operaciones de compra-venta y factura desde cualquier lugar y en todo momento de manera fácil, eficiente y segura. Incluye ADM Tienda para llevar el control de tu punto de venta desde la practicidad de una tablet; consulta el estado de cuenta de tus clientes, factura tus ventas del día y conoce las existencias de tus productos en tiempo real. Es ideal para Pymes, emprendedores y startups que inician operaciones o que desean consolidar su crecimiento. ¡Haz que tu negocio sea más productivo y genere mayores ingresos!
+            #funciones-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='funciones-tab' tabindex='0')
+              h2 Sistema de Administración Móvil
+              p Aspel ADM es la aplicación que revoluciona el #[strong control administrativo] de cada una de las empresas desde la nube de una manera sencilla y poderosa. Es una nueva app en la nube que administra las principales operaciones de compra-venta de cada una de las empresas, como lo es: compras, facturas, notas de crédito, cotizaciones, recibos de honorarios y de arrendamiento, entre otras de manera sencilla, fácil, eficiente y segura.
+
+              p Le permitirá, también conocer el #[strong inventario de todos sus productos], la rotación de los mismos y su costo. Tendrá disponible en cualquier momento el estado de todas sus cuentas por cobrar y podrá llevar un oportuno seguimiento de sus ventas, gastos e ingresos generados.
+
+              p Aspel ADM lo puede utilizar en #[strong cualquier momento] desde su computadora, Tablet o dispositivo móvil. Gestionar su negocio y genere sus CFDI en el momento que los requiera.
+
+              img(src="/Images/qr-appStore.png", alt="qr para descargar app desde la app store")#pstore
+              img(src="/Images/qr-playStore.png", alt="qr para descargar la app desde la play store")#astore
+            #precios-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='precios-tab' tabindex='0')
+              h2 Suscripción
+              h3 Sistema de Administración Móvil 
+              p   
+                | #[strong Versión]:3.0.   #[br]
+                | #[strong Categoría]:Servicios en la nube #[br]
+                |#[strong Solución de Escritorio.] #[br]
+                | #[strong Especialidad]:  Administración #[br]
+              h3 Características generales del producto 
+              ul 
+                li Cumple con las disposiciones obligatorias de la Resolución Miscelánea Fiscal Vigente.
+                li  Emite comprobantes con moneda extranjera. 
+                li  Configura hasta 6 decimales en Precios y Cantidades. 
+                li Traductor automático de versiones Aspel FACTURE 4.0 y 5.0. 
+                li Recibe una copia de los CFDI enviados y documentos de cuentas por cobrar. PREMIUM 
+                li  Obtén el resumen de los comprobantes emitidos. PREMIUM  
+                li Establece la fecha para generar el cierre automático de cuentas por cobrar y pagar. PREMIUM  
+                li  Incluye complementos fiscales que son fáciles de identificar al generar documentos. 
+                li Maneja hasta 3 sesiones simultáneas. 
+                li Trabaja sin conexión a Internet y sincroniza tu información cuando te conectes. 
+                li Actualización en línea vía Internet a las últimas mejoras de la versión
+                li  Acceso seguro a la información mediante el manejo de perfiles de usuario.
+                li  Disponible en la modalidad de 1 RFC.     
+      a(href="formulario.html")#masinfo Mas informacion 
+
