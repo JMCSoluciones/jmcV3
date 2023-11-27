@@ -4,13 +4,13 @@ block content
   .equipos   
     h2.title Equipos
     .acciones
-    button.btn.btn-exit(onclick='regresar()')#salir Regresar
+      button.btn.btn-exit(onclick='regresar()')#salir Regresar
     .content__equipoClientes__tabs
       #myTabContent.tab-content
         #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
           .content__equipoClientes__tabs__item__body
             .table-wrapper.content__equipoClientes__tabs__item__body__table
-              table.table.table-striped.table-hover
+              table#myTable.display(cellspacing='0' width='100%')
                 thead 
                   tr                  
                     th Id
@@ -30,4 +30,8 @@ block content
                     td Josue Martinez
                     td 
                       a(href="detalle-equipo-cliente.html") ver más... 
-    script(src="../js/regresar.js")     
+    script(src="../js/regresar.js")
+    script.
+      $(document).ready( function () {
+      $('#myTable').DataTable();
+      } );    
