@@ -22,9 +22,11 @@ header {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     width: 100%;
     padding: 10px 20px;
-    font-size: @font-size-md;
+    font-size: @font-size-lg;
     font-weight: @font-light;
     margin: 0 auto;
+    z-index: 4;
+  
     &__link {
       text-decoration: none;
       color: @color-white;
@@ -35,6 +37,9 @@ header {
         top: 0;
       }
     }
+  }
+  .menu__links-show{
+    z-index: 4;
   }
 }
 .login{
@@ -1132,7 +1137,7 @@ header {
 .sae {
   h1{
     text-align: center;
-    font-size: 2.3rem;
+    font-size: @font-size-xl;
   }
   .desarrollo {
     margin: 20px 0;
@@ -1180,7 +1185,7 @@ header {
         height: 50px;
       }
       p{
-        font-size: @font-size-md;
+        font-size: @font-size-lg;
         padding: 10px;
         text-align: center;
       }   
@@ -1194,16 +1199,20 @@ header {
           margin: 10px 40px 10px 10px;
           padding-top: 10px;
           border-bottom: 1px solid @color-primary;
+          font-size: @font-size-lg;
         }
         p {
           color: @color-text;
           padding: 10px;
+          font-size: @font-size-sm;
+          text-align: left;
         }
         ul {
           li {
             margin-left: 25px;
             padding: 0px 10px;
             color: @color-text;
+            font-size: @font-size-sm;
           }
         }
       }
@@ -3761,7 +3770,6 @@ header {
   nav {
     position: fixed;
     width: 50px;
-    
     transition: all 0.3s linear;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
     border-radius: 0px 20px 20px 0px;
