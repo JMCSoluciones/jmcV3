@@ -554,7 +554,297 @@ header {
       }
     }
   }
-
+  .empresa {
+    .inicio {
+      max-width: 100%;
+      margin: 0 auto;
+      background-image: url(/imagenes/Banner_Paradigmas.png);
+      opacity: .9;
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: auto;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &__contenido {
+        background-color: rgba(61, 102, 131, .5);
+        width: 100%;
+        padding: 15px;
+        h2 {
+          color: @color-white;
+          font-size: @font-size-titulo;
+          text-align: right;
+        }
+      }
+    }
+    .desarrollo {
+      &__inicio {
+        p {
+          font-size: @font-size-lg;
+          padding: 10px;
+          text-align: center;
+          color: @color-text;
+        }
+      }
+      &__our {
+        margin: 20px;
+        gap: 20px;
+        h2 {
+          border-bottom: 1px solid @color-primary;
+          font-style: @font-light;
+          font-size: @font-size-xl;
+          text-align: left;
+          margin-bottom: 20px;
+        }
+        p {
+          color: @color-text;
+          font-size: @font-size-lg;
+        }
+        &-vision {
+          flex: 1;
+          text-align: left;
+          font-size: @font-size-md;
+        }
+        &-mision {
+          flex: 1;
+          text-align: left;
+          font-size: @font-size-md;
+        }
+      }
+    }
+    .do {
+      .do__inicio {
+        max-width: 100%;
+        margin: 0 auto;
+        background-image: url(/imagenes/Banner_Paradigmas.png);
+        opacity: .9;
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-texto {
+          background-color: rgba(61, 102, 131, .5);
+          width: 100%;
+          padding: 15px;
+          h2 {
+            color: @color-white;
+            font-size: @font-size-titulo;
+            text-align: right;
+          }
+        }
+      }
+      .do__descripcion {
+        &__txt {
+          font-size: @font-size-lg;
+          padding: 10px;
+          text-align: center;
+          color: @color-text;
+          &__soluciones {
+            h2 {
+              background: rgb(47, 144, 207);
+              background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
+              padding: 20px 20px 20px 10px;
+              color: @color-text;
+              font-size:@font-size-tAdmin;
+              border-radius: 0px 20px 20px 0px;
+              margin: 10px 30px 10px 5px;
+              text-align: right;
+            }
+            ul {
+              margin: 40px;
+              li {
+                font-size: @font-size-lg;
+                color: @color-text;
+                
+              }
+            }
+            &-button {
+              background-color: @color-primary;
+              border-radius: 50px;
+              width: 120px;
+              text-align: center;
+              padding: 5px;
+              margin: 20px;
+              left: 500px;
+              position: relative;
+  
+              a{
+                font-size: @font-size-sm;
+              }
+            }
+          }
+          &__sadmin {
+            h2 {
+              background: rgb(40, 129, 186);
+              background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
+              padding: 25px 10px 25px 20px;
+              color: @color-text;
+              font-size: @font-size-tAdmin;
+              border-radius: 20px 0px 0px 20px;
+              margin: 10px 0px 10px 30px;
+              text-align: left;
+            }
+            ul {
+              margin: 40px;
+              li {
+                font-size: @font-size-lg;
+                color: @color-text;
+              }
+            }
+            &-button {
+              background-color: @color-primary;
+              border-radius: 50px;
+              width: 120px;
+              text-align: center;
+              padding: 5px;
+              margin: 20px;
+              left: 500px;
+              position: relative;
+  
+              a{
+                font-size: @font-size-sm;
+              }
+            }
+          }
+          &__mantenimiento {
+            h2 {
+              background: rgb(47, 144, 207);
+              background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
+              padding: 20px 20px 20px 10px;
+              color: @color-text;
+              font-size: @font-size-tAdmin;
+              border-radius: 0px 25px 25px 0px;
+              margin: 10px 30px 10px 5px;
+              text-align: right;
+            }
+            ul {
+              margin: 40px;
+              li {
+                font-size: @font-size-lg;
+                color: @color-text;
+              }
+            }
+            &-button {
+              background-color: @color-primary;
+              border-radius: 50px;
+              width: 120px;
+              text-align: center;
+              padding: 5px;
+              margin: 20px;
+              left: 500px;
+              position: relative;
+  
+              a{
+                font-size: @font-size-sm;
+              }
+            }
+          }
+        }
+      }
+    }
+    .start {
+      &__banner {
+        max-width: 100%;
+        margin: 0 auto;
+        background-image: url(/imagenes/Banner_Paradigmas.png);
+        opacity: .9;
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &-img {
+          background-color: rgba(61, 102, 131, .5);
+          width: 100%;
+          padding: 15px;
+          h2 {
+            color: @color-white;
+            font-size: @font-size-titulo;
+            text-align: center;
+          }
+        }
+      }
+      &__txt {
+        &-inicio {
+          p {
+            color: @color-text;
+            font-size: @font-size-lg;
+            margin: 20px;
+          }
+        }
+        &-compromiso {
+          h2 {
+            background: rgb(40, 129, 186);
+            background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
+            padding: 20px 10px 20px 0px;
+            color: @color-text;
+            font-size: @font-size-tAdmin;
+            border-radius: 25px 0px 0px 25px;
+            margin: 10px 0px 10px 30px;
+            text-align: left;
+          }
+          p {
+            margin: 20px;
+            color: @color-text;
+            font-size: @font-size-lg;
+          }
+        }
+        &-valores {
+          h2 {
+            background: rgb(47, 144, 207);
+            background: linear-gradient(90deg, rgba(47, 144, 207, 0) 14%, rgba(40, 129, 186, 0.3) 92%);
+            padding: 20px 20px 20px 10px;
+            color: @color-text;
+            font-size: @font-size-tAdmin;
+            border-radius: 0px 20px 20px 0px;
+            margin: 10px 30px 10px 5px;
+            text-align: right;
+          }
+          ul {
+            margin: 45px;
+            li {
+              font-size: @font-size-lg;
+            }
+            p {
+              color: @color-text;
+              font-size: @font-size-md;
+            }
+          }
+        }
+      }
+    }
+    .proveedores {
+      &__txt {
+        h2 {
+          background: rgb(40, 129, 186);
+          background: linear-gradient(90deg, rgba(40, 129, 186, 0.3) 14%, rgba(47, 144, 207, 0) 92%);
+          padding: 10px 10px 11px 20px;
+          color: @color-text;
+          font-size: @font-size-tAdmin;
+          border-radius: 20px 0px 0px 20px;
+          margin: 10px 0px 10px 30px;
+          text-align: left;
+        }
+        p {
+          margin: 20px;
+          color: @color-text;
+          font-size: @font-size-lg;
+        }
+      }
+    }
+  }
 .footer {
   &__box {
     &__body {
