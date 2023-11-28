@@ -2436,7 +2436,50 @@ header {
           justify-content: center;
           align-items: center;
           text-align: center;
-          font-size: 1.2rem;
+          font-size: @font-size-sm;
+          img{
+              width: 30px;
+              height: auto;
+          }
+      }
+     }
+     &__item:hover{
+      background-color: @color-secondary;
+      scale: 1.1;
+      transition: .4s;
+     }
+  }
+}
+.inicio_cliente { 
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  width: 100vw;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: rgba(50, 50, 93, 0.237) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 0px 0px 10px 10px;
+  &__box{
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-self: center;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 4px;
+     &__item{
+      background-color: @color-white;
+      border-radius: 10px;
+      width: 90px;
+      padding: 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      a{
+          color: @color-text !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: @font-size-sm;
           img{
               width: 30px;
               height: auto;
