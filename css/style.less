@@ -43,27 +43,26 @@ header {
   }
 }
 .login{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    border-radius: 15px 15px 15px 15px;
-    justify-content: center;
-    align-items: center;
-    margin: 0px; 
-    padding: 20px; 
-    background-position: center ;
-    background-repeat: no-repeat;
-    flex-direction: column;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 20px;
+  padding: 20px;
+  border-radius: 10px; 
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   &__container {
     width: 350px;
     margin: 0px;  
     height: auto;
     img{
-      width: 50px;
+      width: 70px;
       height: auto;
       display: flex; 
       margin:auto;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: @font-size-xl;
       color:@color-text; 
       text-align: center; 
       font-weight: @font-semibold;
@@ -71,25 +70,25 @@ header {
   }
   &__item{
     img{
-      width: 30px;
+      width: 40px;
       height: auto;
       display: flex; 
       position: absolute;
-      left: 25px;
+      left: 20px;
       margin: 0px 0px 15px;
       padding-top: 5px;
     }
     label {
-    font-size: 2rem;
+    font-size: @font-size-lg;
     color: @color-text;
     line-height: 20px;
-    text-align: center;
+    text-align: left;
   }
     input {
       display: flex;
       width: 100%;
-      padding: 7px;
-      margin-bottom: 10px; 
+      padding: 10px;
+      margin-bottom: 18px; 
       font-size: @font-size-md;
       text-align: center;
         }
@@ -104,9 +103,9 @@ header {
         border: none;
         border-radius: 100px;
         cursor: pointer;
-        font-size: 1.8rem;
-        width: 40%; 
-        left: 80px;
+        font-size: @font-size-lg;
+        width: 60%; 
+        left: 40px;
         position:relative;
         text-align: center;
         padding: 10px 20px;
