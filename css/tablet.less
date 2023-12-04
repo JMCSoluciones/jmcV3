@@ -1,5 +1,7 @@
+
 @import "variables.less";
 @import "globals.less";
+
 header {
   border-bottom: 1px solid @color-secondary;
   .menu-top {
@@ -17,10 +19,27 @@ header {
       text-decoration: none;
       color: @color-white;
       font-weight: @font-semibold;
+      a{
+        text-decoration: none !important;
+        list-style: none;
+        color: @color-black !important;
+      }
       img {
         width: 50px;
         height: auto;
         top: 0;
+      }
+    }
+  }
+  nav.menu{
+    .menu__links{
+      .menu__item{
+        .menu__link{
+          color: @color-black !important;
+          font-weight: @font-semibold;
+          font-size: @font-size-lg;
+          text-align: center;
+        }
       }
     }
   }
@@ -540,15 +559,15 @@ header {
       &-btn {
         background-color: @color-primary;
         border-radius: 50px;
-        width: 250px;
+        width: 200px;
         text-align: center;
         padding: 5px;
         margin: 40px;
-        left: 450px;
+        left: 700px;
         position: relative; 
           a{
             font-family: @font-family;
-            font-size: 2.5rem;
+            font-size: 2rem;
           }
         }
       }
@@ -568,7 +587,7 @@ header {
       margin: 0px;  
       height: auto;
       img{
-        width: 70px;
+        width: 100px;
         height: auto;
         display: flex; 
         margin:auto;
@@ -586,7 +605,7 @@ header {
         height: auto;
         display: flex; 
         position: absolute;
-        left: 265px;
+        left: 320px;
         margin: 0px 0px 15px;
         padding-top: 5px;
       }
@@ -610,7 +629,7 @@ header {
       }
         button {
           margin-top: 20px;
-          background-color:@color-primary;
+          background-color:@color-orange;
           color:@color-white;
           border: none;
           border-radius: 100px;
@@ -2058,6 +2077,110 @@ header {
     background-color: rgba(70, 46, 1, 0.747);
     color: @color-white;
   }
+}
+.content__CtrlClientes{
+  h3{
+    text-align: center;
+    margin: 20px 0;
+  }
+  a{
+    color: @color-text !important;
+  }
+  .btn-nuevo{
+    display: flex;
+    justify-content: flex-end;
+    background-color: gray;
+    color: @color-white;
+    margin: 10px;
+  }
+  &__tabs{
+    &__item{
+      &__header{
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px;
+      }
+      #search{
+        width: 100px;
+        margin: 0 10px;
+       
+      }
+      .btn-dark{
+        background-color: @color-primary;
+        margin: 0 10px;
+        border: none;
+      }
+      .btn-clean{
+        background-color: red !important;
+        margin: 0 10px;
+        color: @color-white;
+      }
+      .edit{
+        color: yellow !important;
+      }
+      .delete{
+        color: red !important;
+      }
+    }
+  }
+  .btn-exit{
+    background-color: @color-secondary;
+    margin: 20px;
+    width: 110px;
+  }
+}
+.ctrlSoporte{
+  h3{
+    text-align: center;
+    margin: 20px 0;
+  }
+  a{
+    color: @color-text !important;
+  }
+  .btn-nuevo{
+    display: flex;
+    justify-content: flex-end;
+    background-color: gray;
+    color: @color-white;
+    margin: 10px;
+  }
+  &__tabs{
+    &__item{
+      &__header{
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px;
+      }
+      #search{
+        width: 100px;
+        margin: 0 10px;
+      }
+      .btn-dark{
+        background-color: @color-primary;
+        margin: 0 10px;
+      }
+      .btn-clean{
+        background-color: red !important;
+        margin: 0 10px;
+        color: @color-white;
+      }
+      .edit{
+        color: yellow !important;
+      }
+      .delete{
+        color: red !important;
+      }
+    }
+  }
+  .btn-exit{
+    background-color: @color-secondary;
+    margin: 20px;
+    width: 80px;
+  }
+  .btn-exit:hover{
+    background-color: rgba(70, 46, 1, 0.747);
+    color: @color-white;
+}
 }
 .footer {
   &__box {
