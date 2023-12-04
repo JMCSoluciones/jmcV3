@@ -56,7 +56,7 @@ header {
     margin: 0px;  
     height: auto;
     img{
-      width: 70px;
+      width: 90px;
       height: auto;
       display: flex; 
       margin:auto;
@@ -98,7 +98,7 @@ header {
     }
       button {
         margin-top: 20px;
-        background-color:@color-primary;
+        background-color:@color-orange;
         color:@color-white;
         border: none;
         border-radius: 100px;
@@ -2496,17 +2496,18 @@ header {
 .content__CtrlClientes{
   max-width: 1110px;
   margin: 5px auto;
-  padding: 20px;
+  padding: 10px;
   height: 90vh;
   h3{
     font-size: @font-size-lg;
   }
   a{
     .btn-nuevo{
-      display: flex;
-      justify-content: flex-end;
-      background-color: gray;
-      color: @color-white;
+    display: flex;
+    justify-content: flex-end;
+    background-color: gray;
+    color: @color-white;
+    margin: 10px;
     }
   }
   &__tabs{
@@ -2571,9 +2572,11 @@ header {
     }
   }
   .btn-exit{
-    margin: 50px 0px;
+    margin: 20px 0px;
     background-color: orange;
     padding: 5px 40px;
+    font-size: @font-size-md;
+    
   }
   .btn-exit:hover{
     background-color: rgba(70, 46, 1, 0.747);
@@ -3739,6 +3742,10 @@ header {
     margin: 20px;
     width: 80px;
   }
+  .btn-exit:hover{
+    background-color: rgba(70, 46, 1, 0.747);
+    color: @color-white;
+}
 }
 .nvoTicket{
   h2{
