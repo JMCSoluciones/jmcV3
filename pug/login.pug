@@ -2,18 +2,17 @@ extend ../components/template.pug
 block content
     .login
         .login__container
-            img(src="/Images/Icons/usuario.svg")
-            h1 Sing in
+            h1 Login
             form(action='#', method='post')
         .login__item
             <!-- caja de E-mail -->
             label(for='e-mail') E-mail
             img(src="/Images/Icons/email-login.svg")
-            input(type='email', name='email', placeholder='Introduce tu email')
+            input(type='email', name='email', placeholder='')
             <!-- caja de password -->
             label(for='password') Password
             img(src="/Images/Icons/password.svg")
-            input(type='password', id='password', name='password', placeholder='Introduce tu password')
+            input(type='password', id='password', name='password', placeholder='')
             
             <!-- boto de ingresar-->
             a(href="inicioAdmin.html")
@@ -24,7 +23,5 @@ block content
             .form-check
                 input#check-input(type='checkbox' value='' checked='')
                 label.form-check-label(for='form')  Remember me 
-            .col
-            <!--Simple link-->
-                a(href='#!') Forgot password?
+        
     
