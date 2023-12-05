@@ -40,48 +40,79 @@
         </section>
       </nav>
     </header>
-    <div class="inicio_cliente"> 
-      <div class="inicio_cliente__box">
-        <div class="inicio_cliente__box__item"><a href="contratos-cliente.html">Contratos<img src="Images/Icons/contratos.svg" alt=""/></a></div>
-        <div class="inicio_cliente__box__item"> <a href="pagos-cliente.html">Pagos<img src="Images/Icons/pagos.svg" alt=""/></a></div>
-        <div class="inicio_cliente__box__item"><a href="tickets-cliente.html">Tickets<img src="Images/Icons/tickets.svg" alt=""/></a></div>
-        <div class="inicio_cliente__box__item"><a href="equipo-cliente.html">Equipos<img src="Images/Icons/equipos.svg" alt=""/></a></div>
+    <div class="modificar_cliente">
+      <div class="info">
+        <h2>Modificar Cliente</h2>
+        <label for="rfc">RFC
+          <input type="text" id="rfc"/>
+        </label>
+        <label for="nombre">Nombre
+          <input type="text" id="name"/>
+        </label>
+        <label for="direccion">Direccion
+          <input type="text" id="direccion"/>
+        </label>
+        <label>Estados
+          <select name="estado" id="estado">
+            <option value="no">Seleccione un estado</option>
+            <option value="Aguascalientes">Aguascalientes</option>
+            <option value="Baja California">Baja California</option>
+            <option value="Baja California Sur">Baja California Sur</option>
+            <option value="Campeche">Campeche</option>
+            <option value="Chiapas">Chiapas</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="CDMX">Ciudad de M&eacute;xico</option>
+            <option value="Coahuila">Coahuila</option>
+            <option value="Colima">Colima</option>
+            <option value="Durango">Durango</option>
+            <option value="Estado de México">Estado de M&eacute;xico</option>
+            <option value="Guanajuato">Guanajuato</option>
+            <option value="Guerrero">Guerrero</option>
+            <option value="Hidalgo">Hidalgo</option>
+            <option value="Jalisco">Jalisco</option>
+            <option value="Michoacán">Michoac&aacute;n</option>
+            <option value="Morelos">Morelos</option>
+            <option value="Nayarit">Nayarit</option>
+            <option value="Nuevo León">Nuevo Le&oacute;n</option>
+            <option value="Oaxaca">Oaxaca</option>
+            <option value="Puebla">Puebla</option>
+            <option value="Querétaro">Quer&eacute;taro</option>
+            <option value="Quintana Roo">Quintana Roo</option>
+            <option value="San Luis Potosí">San Luis Potos&iacute;</option>
+            <option value="Sinaloa">Sinaloa</option>
+            <option value="Sonora">Sonora</option>
+            <option value="Tabasco">Tabasco</option>
+            <option value="Tamaulipas">Tamaulipas</option>
+            <option value="Tlaxcala">Tlaxcala</option>
+            <option value="Veracruz">Veracruz</option>
+            <option value="Yucatán">Yucat&aacute;n</option>
+            <option value="Zacatecas">Zacatecas</option>
+          </select>
+        </label>
+        <label for="municipio">Municipio
+          <input type="text" id="municipio"/>
+        </label>
+        <label for="cp">Código Postal
+          <input type="number" id="cp"/>
+        </label>
+        <label for="rf">Régimen Fiscal
+          <input type="text" id="rf"/>
+        </label>
+        <label for="tel">Teléfono
+          <input type="text" id="tel"/>
+        </label>
+        <label for="nContacto">Nombre de contacto
+          <input type="text" id="nContacto"/>
+        </label>
+        <label for="email">Correo electrónico
+          <input type="email" id="email"/>
+        </label>
+        <label for="password">Correo electrónico
+          <input type="password" id="password"/>
+        </label>
       </div>
-    </div>
-    <div class="detalleCliente"> 
-      <h2>Informacion del equipo</h2><a href="equipo-cliente.html"> 
-        <button class="btn btn-exit" type="submit" id="salir">Regresar</button></a>
-      <div class="detalle__info"> 
-        <label>Tipo de equipo</label>
-        <label for="marca">Marca </label>
-        <label for="nombre">Nombre</label>
-        <label for="ram">RAM </label>
-        <label for="procesador">Procesador </label>
-        <label for="disco">Disco duro</label>
-        <label for="ip">Ip </label>
-        <label for="anydesk">Anydesk </label>
-        <label for="usuario">Usuario </label>
-        <h3>Antivirus
-          <div class="detalle__info__vigencia">
-            <div class="detalle__info__vigencia-name"> 
-              <label for="name" id="txtName">Nombre </label>
-            </div>
-            <div class="detalle__info__vigencia-date">
-              <label for="vigencia" id="txtVigencia">Vigencia  </label>
-            </div>
-          </div>
-        </h3>
-        <h3>Paqueteria Office 
-          <div class="detalle__info__office"> 
-            <div class="detalle__info__office-name">
-              <label for="office" id="officeName">Nombre </label>
-            </div>
-            <div class="detalle__info__office-date">
-              <label for="vigencia" id="txtOffice">Vigencia </label>
-            </div>
-          </div>
-        </h3>
-        <label for="descripcion">Descripción </label>
+      <div class="botones">
+        <button type="submit">Guardar</button>
       </div>
     </div>
     <footer> 

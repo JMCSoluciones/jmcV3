@@ -37,7 +37,7 @@ header {
         .menu__link{
           color: @color-black !important;
           font-weight: @font-semibold;
-          font-size: @font-size-lg;
+          font-size: @font-size-sm;
           text-align: center;
         }
       }
@@ -577,7 +577,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 260px;
+    margin: 30px 200px;
     padding: 60px;
     border-radius: 10px; 
     overflow: hidden;
@@ -606,11 +606,11 @@ header {
     }
     &__item{
       img{
-        width: 40px;
+        width: 30px;
         height: auto;
         display: flex; 
         position: absolute;
-        left: 590px;
+        left: 550px;
         margin: 0px 0px 15px;
         padding-top: 5px;
       }
@@ -636,10 +636,11 @@ header {
       }
         button {
           margin-top: 20px;
+          margin-bottom: 20px;
           background-color:@color-orange;
           color:@color-white;
           border: none;
-          border-radius: 10px;
+          border-radius: 5px;
           cursor: pointer;
           font-size: @font-size-lg;
           width: 100%; 
@@ -654,6 +655,8 @@ header {
       .form-check{
         display: flex;
         align-items: center;
+        margin-bottom: -15px;
+        margin-left: 120px;
         input{
           display: block;
           padding: 5px;
@@ -668,15 +671,80 @@ header {
         }
       }
     }
-      .col{
+      .forgot{
       a{
         font-size:@font-size-sm;
-        color: @color-text;
+        color: @color-text !important;
         line-height: 20px;
-        text-align: center;
+        text-align: right;
+      }
+      .btn.btn-primary{
+        border: none;
+        background-color:@color-white;
+        margin-top: -20px;
+        margin-left: -20px;
+        font-size: @font-size-sm;
+        color: @color-black;
       }
     }
+    #exampleModal{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .modal-dialog{
+        max-width: 600px;
+        margin: 30px auto;
+        .modal-content{
+          position: relative;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          .modal-header{
+            background-color: @color-primary;
+            color: #fff;
+            padding: 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            h1{
+              font-size: @font-size-lg !important;
+              font-family: @font-family;
+              margin-left: 180px;
+            }
+          }
+          .modal-body{
+            label{
+              font-size:@font-size-md;
+              color: @color-text;
+              line-height: 20px;
+              margin-left: 110px;
+              margin-bottom: 25px;
+              font-family: @font-family;
+            }
+            input{
+              display: block;
+              padding: 5px;
+              margin-left: 150px; 
+              width: 50%;
+              font-size:@font-size-sm;
+
+            }
+          }
+          .modal-footer{
+            button{
+              background-color: #ffa500;
+              font-size: @font-size-sm;
+              border-radius: 5px;
+              width:100px;
+              border: none;
+            
+            }
+          }
+        }
+      }
+    }
+    
   } 
+
 .empresa {
     .inicio {
       max-width: 100%;

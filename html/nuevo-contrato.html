@@ -40,48 +40,64 @@
         </section>
       </nav>
     </header>
-    <div class="inicio_cliente"> 
-      <div class="inicio_cliente__box">
-        <div class="inicio_cliente__box__item"><a href="contratos-cliente.html">Contratos<img src="Images/Icons/contratos.svg" alt=""/></a></div>
-        <div class="inicio_cliente__box__item"> <a href="pagos-cliente.html">Pagos<img src="Images/Icons/pagos.svg" alt=""/></a></div>
-        <div class="inicio_cliente__box__item"><a href="tickets-cliente.html">Tickets<img src="Images/Icons/tickets.svg" alt=""/></a></div>
-        <div class="inicio_cliente__box__item"><a href="equipo-cliente.html">Equipos<img src="Images/Icons/equipos.svg" alt=""/></a></div>
+    <div class="nvoContrato">
+      <h2>Añadir Nuevo Contrato</h2>
+      <div class="info">
+        <label for="cliente">Cliente
+          <input type="text" placeholder="Nombre del cliente" id="cliente"/>
+        </label>
+        <label for="servicio">Servicio
+          <select name="servicio" id="servicio">
+            <option value="no">Seleccione un servicio </option>
+            <option value="AWS">AWS </option>
+            <option value="Aspel">Aspel   </option>
+          </select>
+        </label>
+        <label for="plan">Plan
+          <select id="plan" name="plan">
+            <option value="no">Seleccione el plan </option>
+            <option value="mensual">Mensual </option>
+            <option value="bimestral">Bimestral </option>
+            <option value="semestral">Semestral </option>
+            <option value="anual">Anual </option>
+          </select>
+        </label>
+        <label for="costo">Costo
+          <input type="number" placeholder="$" id="costo"/>
+        </label>
+        <label for="descripcion">Descripcion
+          <input type="text" placeholder="Agrega una descripcion" id="descripcion"/>
+        </label>
+        <div class="info__fechas">  
+          <label id="f1">Fecha de contrato
+            <input id="fechaInicio" type="date" name="fechaInicio"/>
+          </label>
+          <label id="f2">Fecha de renovacion
+            <input id="fechaRenovacion" type="date" name="fechaRenovacion"/>
+          </label>
+        </div>
       </div>
-    </div>
-    <div class="detalleCliente"> 
-      <h2>Informacion del equipo</h2><a href="equipo-cliente.html"> 
-        <button class="btn btn-exit" type="submit" id="salir">Regresar</button></a>
-      <div class="detalle__info"> 
-        <label>Tipo de equipo</label>
-        <label for="marca">Marca </label>
-        <label for="nombre">Nombre</label>
-        <label for="ram">RAM </label>
-        <label for="procesador">Procesador </label>
-        <label for="disco">Disco duro</label>
-        <label for="ip">Ip </label>
-        <label for="anydesk">Anydesk </label>
-        <label for="usuario">Usuario </label>
-        <h3>Antivirus
-          <div class="detalle__info__vigencia">
-            <div class="detalle__info__vigencia-name"> 
-              <label for="name" id="txtName">Nombre </label>
-            </div>
-            <div class="detalle__info__vigencia-date">
-              <label for="vigencia" id="txtVigencia">Vigencia  </label>
+      <div class="botones"> 
+        <button class="btn btn-success newBtnElement" type="button" data-bs-toggle="modal" data-bs-target="#modalGuardar" id="btnGuardarM">Guardar</button>
+        <div class="modalGuardar">
+          <div class="modal fade" id="modalGuardar" aria-hidden="true" aria-labelledby="modalGuardar" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalGuardar"> </h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Guardado!</h5>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+              </div>
             </div>
           </div>
-        </h3>
-        <h3>Paqueteria Office 
-          <div class="detalle__info__office"> 
-            <div class="detalle__info__office-name">
-              <label for="office" id="officeName">Nombre </label>
-            </div>
-            <div class="detalle__info__office-date">
-              <label for="vigencia" id="txtOffice">Vigencia </label>
-            </div>
-          </div>
-        </h3>
-        <label for="descripcion">Descripción </label>
+        </div><a href="control-contratos.html"> 
+          <button class="btn btn-cancelar" type="submit">Cancelar</button></a>
       </div>
     </div>
     <footer> 

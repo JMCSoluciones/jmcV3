@@ -49,60 +49,79 @@
         <div class="controlMenuAdmin__box__item"><a href="control-ajuste.html">Ajustes<img src="Images/Icons/ajustes.svg" alt=""/></a></div>
       </div>
     </div>
-    <div class="container__controlajuste"> 
-      <div class="container__controlajuste__administrador">
-        <div class="container__controlajuste__administrador-wrapper">
-          <div class="container__controlajuste__administrador__title">
-            <h1>Control de ajustes</h1>
-            <div class="container__controlajuste__administrador__title__box"><a href="control-ajuste.html">Servicios<img class="staff" src="/Images/Icons/servicio.svg" alt="ajustes de servicio"/></a></div>
-            <div class="container__controlajuste__administrador__title__box"><a href="control-staff.html">Staff<img class="staff" src="/Images/Icons/staff.svg" alt="ajustes de staff"/></a></div>
-          </div>
-          <div class="container__controlajuste__administrador__title">
-            <h2>Control de servicios</h2><a class="btn btn-success" href="nuevo-servicio.html">add </a>
-          </div>
-          <table class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>Nombre</th>
-                <th>Descripcion</th>
-                <th>Costo</th>
-                <th>Detalles</th>
-                <th>Acción</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Fran Wilson</td>
-                <td>--------</td>
-                <td>3000 </td>
-                <td><a href="info-servicio.html"> Ver Más...    </a></td>
-                <td><a class="edit" href="#editUserModal" data-toggle="modal"><i class="bi bi-pencil-square"></i></a><a class="delete" href="#deleteUserModal" data-toggle="modal"><i class="bi bi-trash"></i></a></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Josue Martinez</td>
-                <td>********</td>
-                <td>8000</td>
-                <td>   <a href="info-servicio.html"> Ver Más...   </a></td>
-                <td><a class="edit" href="#editUserModal" data-toggle="modal"><i class="bi bi-pencil-square"></i></a><a class="delete" href="#deleteUserModal" data-toggle="modal"><i class="bi bi-trash"></i></a></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="clearfix"></div>
-          <ul class="pagination">
-            <li class="page-item disabled"><a href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item active"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
+    <div class="content__nuevoservicio__administrador"> 
+      <div class="content__nuevoservicio__administrador__container">
+        <h1>Añadir Nuevo Servicio</h1>
+      </div>
+      <div class="content__nuevoservicio__administrador__container-servicio">
+        <div class="servicio">
+          <label for="Nombre">Id </label>
+          <select class="form-select" id="autoSizingSelect">
+            <option selected=""> </option>
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3">Tres</option>
+          </select>
         </div>
-      </div><a href="control-ajuste.html"> 
-        <button type="submit" id="botonSalir">Salir</button></a>
+        <div class="servicio">
+          <label for="nombre">Nombre</label>
+          <input class="form-servicio" type="text" placeholder="Ingrese su nombre" aria-label=""/>
+        </div>
+        <div class="servicio">
+          <label for="Nombre">Costo</label>
+          <select class="form-costo" id="autoSizingSelect">
+            <option selected=""> </option>
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3">Tres</option>
+          </select>
+        </div>
+        <div class="servicio">
+          <label for="concepto">Moneda</label>
+          <input class="form-servicio" id="concepto" type="text" name="concepto" placeholder="Ingrese el monto"/>
+          <button id="valida" onclick="validarMoneda()">Validar</button>
+        </div>
+        <div class="servicio">
+          <label for="total">Plan</label>
+          <select class="form-plan" id="autoSizingSelect">
+            <option selected=""> </option>
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3">Tres</option>
+          </select>
+        </div>
+        <div class="servicio">
+          <label for="descripcion">Descripci&oacute;n:</label>
+          <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="Ingrese la descripción aquí..."></textarea>
+        </div>
+      </div>
+      <div class="content__nuevoservicio__administrador__container-botones">
+        <!-- Botón Agregar-->
+        <button class="btn btn-success newBtnElement" type="button" data-bs-toggle="modal" data-bs-target="#modalGuardar" id="btnGuardarM">Guardar</button>
+        <div class="modalGuardar">
+          <div class="modal fade" id="modalGuardar" aria-hidden="true" aria-labelledby="modalGuardar" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalGuardar"> </h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Guardado!</h5>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar
+                    <!-- Botón Cancelar-->
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="cancelaBtn" onclick="cancelarAccion()">Cancelar</button>
+        <script src="agregar.js"></script>
+        <script src="moneda.js"></script>
+      </div>
     </div>
     <footer> 
       <div class="footer__box">

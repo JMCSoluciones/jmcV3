@@ -42,16 +42,37 @@
     </header>
     <div class="controlMenuAdmin"> 
       <div class="controlMenuAdmin__box">
-        <div class="controlMenuAdmin__box__item"><a href="control-clientes.html">Clientes<img src="/Images/Icons/clientes.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"> <a href="control-soporte.html">Soporte<img src="/Images/Icons/soporte.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-pagos.html">Pagos<img src="/Images/Icons/pagos.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-contratos.html">Contratos<img src="/Images/Icons/contratos.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-ajuste.html">Ajustes<img src="/Images/Icons/ajustes.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-clientes.html">Clientes<img src="Images/Icons/clientes.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"> <a href="control-soporte.html">Soporte<img src="Images/Icons/soporte.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-pagos.html">Pagos<img src="Images/Icons/pagos.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-contratos.html">Contratos<img src="Images/Icons/contratos.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-ajuste.html">Ajustes<img src="Images/Icons/ajustes.svg" alt=""/></a></div>
       </div>
     </div>
     <div class="content__CtrlClientes">
-      <h3 class="title">Control de clientes</h3><a href="registrar-nuevo.html"> 
-        <button class="btn btn-nuevo" type="submit" id="nuevo">Nuevo</button></a>
+      <div class="content__CtrlClientes-box">
+        <h3 class="title">Control de clientes 
+          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Nuevo</button>
+        </h3>
+      </div>
+      <div class="modal fade modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalComedorLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 id="exampleModal">Recuperar Contraseña</h1>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
+              <label for="text">Si has olvidado tu contraseña pueder restablecera aquí</label>
+              <!-- Pregunta de seguridad-->
+              <input type="email" id="" name="" placeholder="Correo Electrónico"/>
+            </div>
+            <div class="modal-footer"><a href="login.html">
+                <button type="submit">Enviar</button></a></div>
+          </div>
+        </div>
+      </div>
       <div class="content__CtrlClientes__tabs">
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> 
@@ -109,7 +130,9 @@
             </div>
           </div>
         </div><a href="inicioAdmin.html"> 
-          <button class="btn btn-exit" type="submit" id="salir">Salir</button></a>
+          <button class="btn btn-exit" type="submit" id="salir">Salir
+            <!--MODAL-->
+          </button></a>
       </div>
     </div>
     <footer> 

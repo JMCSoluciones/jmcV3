@@ -76,11 +76,11 @@ header {
   }
   &__item{
     img{
-      width: 40px;
+      width: 30px;
       height: auto;
       display: flex; 
       position: absolute;
-      left: 240px;
+      left: 290px;
       margin: 0px 0px 15px;
       padding-top: 5px;
     }
@@ -125,7 +125,7 @@ header {
     .form-check{
       display: flex;
       align-items: center;
-      margin-top: -28px;
+      margin-bottom: -20px;
       margin-left: 120px;
       input{
         display: block;
@@ -148,9 +148,18 @@ header {
         line-height: 20px;
         text-align: right;
       }
+      .btn.btn-primary{
+        border: none;
+        background-color:@color-white;
+        margin-top: -20px;
+        margin-left: -20px;
+        font-size: @font-size-sm;
+        color: @color-black;
+      }
     }
   }
 } 
+
 .formulario{
   .titulo{
     margin: 20px 00;
@@ -2369,8 +2378,9 @@ header {
         align-items: center;
         margin-left: 10px;
         img {
-          width: 100px;
-          height: auto;
+          
+          overflow: hidden;
+          height: 100px;
         }
       }
       &__enlaces {

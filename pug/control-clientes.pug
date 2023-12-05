@@ -2,9 +2,24 @@ extend ../components/template-admin.pug
 block content
     include control-menuAdmin.pug
     .content__CtrlClientes
-        h3.title Control de clientes
-        a(href="registrar-nuevo.html") 
-          button.btn.btn-nuevo(type="submit")#nuevo Nuevo
+        .content__CtrlClientes-box
+            h3.title Control de clientes 
+                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal') Nuevo
+        #exampleModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalComedorLabel')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h1#exampleModal Recuperar Contraseña
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        form#forgotPasswordForm(onsubmit='submitForm(event)')
+                        label(for='text') Si has olvidado tu contraseña pueder restablecera aquí
+                        // Pregunta de seguridad
+                        input(type='email', id='', name='', placeholder='Correo Electrónico')
+                    .modal-footer
+                        a(href="login.html")
+                            button(type='submit') Enviar
         .content__CtrlClientes__tabs
             #myTabContent.tab-content
                 #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
@@ -64,3 +79,5 @@ block content
                                     a.page-link(href='#') Next   
             a(href="inicioAdmin.html") 
                 button.btn.btn-exit(type="submit")#salir Salir
+                            //MODAL
+    

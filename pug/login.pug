@@ -8,21 +8,36 @@ block content
         .login__item
             <!-- caja de E-mail -->
             label(for='e-mail') E-mail
-            img(src="/Images/Icons/email-login.svg")
+                img(src="Images/Icons/email-login.svg")
             input(type='email', name='email', placeholder='')
             <!-- caja de password -->
             label(for='password') Password
-            img(src="/Images/Icons/password.svg")
+                img(src="Images/Icons/password.svg")
             input(type='password', id='password', name='password', placeholder='')
             
-            <!-- boto de ingresar-->
+            <!-- boton de ingresar-->
             a(href="inicioAdmin.html")
                 button(type='submit') Ingresar
-            <!-- boto de ingresar-->
+            <!-- boton de ingresar-->
         .login__remember
             // Checkbox
-            .forgot
-                a(href='forgot-password.html') Forgot password?
             .form-check
                 input#check-input(type='checkbox' value='' checked='')
                 label.form-check-label(for='form')  Remember me 
+            .forgot
+                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal') Forgot my password?
+        #exampleModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalComedorLabel')
+                .modal-dialog(role='document')
+                    .modal-content
+                        .modal-header
+                            h1#exampleModal Recuperar Contraseña
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        .modal-body
+                            form#forgotPasswordForm(onsubmit='submitForm(event)')
+                            label(for='text') Si has olvidado tu contraseña pueder restablecera aquí
+                            // Pregunta de seguridad
+                            input(type='email', id='', name='', placeholder='Correo Electrónico')
+                        .modal-footer
+                            a(href="login.html")
+                                button(type='submit') Enviar 

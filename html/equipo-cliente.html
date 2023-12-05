@@ -40,48 +40,63 @@
         </section>
       </nav>
     </header>
-    <div class="inicio_cliente"> 
-      <div class="inicio_cliente__box">
-        <div class="inicio_cliente__box__item"><a href="contratos-cliente.html">Contratos<img src="Images/Icons/contratos.svg" alt=""/></a></div>
-        <div class="inicio_cliente__box__item"> <a href="pagos-cliente.html">Pagos<img src="Images/Icons/pagos.svg" alt=""/></a></div>
-        <div class="inicio_cliente__box__item"><a href="tickets-cliente.html">Tickets<img src="Images/Icons/tickets.svg" alt=""/></a></div>
-        <div class="inicio_cliente__box__item"><a href="equipo-cliente.html">Equipos<img src="Images/Icons/equipos.svg" alt=""/></a></div>
+    <div class="controlMenuAdmin"> 
+      <div class="controlMenuAdmin__box">
+        <div class="controlMenuAdmin__box__item"><a href="control-clientes.html">Clientes<img src="Images/Icons/clientes.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"> <a href="control-soporte.html">Soporte<img src="Images/Icons/soporte.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-pagos.html">Pagos<img src="Images/Icons/pagos.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-contratos.html">Contratos<img src="Images/Icons/contratos.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-ajuste.html">Ajustes<img src="Images/Icons/ajustes.svg" alt=""/></a></div>
       </div>
     </div>
-    <div class="detalleCliente"> 
-      <h2>Informacion del equipo</h2><a href="equipo-cliente.html"> 
-        <button class="btn btn-exit" type="submit" id="salir">Regresar</button></a>
-      <div class="detalle__info"> 
-        <label>Tipo de equipo</label>
-        <label for="marca">Marca </label>
-        <label for="nombre">Nombre</label>
-        <label for="ram">RAM </label>
-        <label for="procesador">Procesador </label>
-        <label for="disco">Disco duro</label>
-        <label for="ip">Ip </label>
-        <label for="anydesk">Anydesk </label>
-        <label for="usuario">Usuario </label>
-        <h3>Antivirus
-          <div class="detalle__info__vigencia">
-            <div class="detalle__info__vigencia-name"> 
-              <label for="name" id="txtName">Nombre </label>
+    <div class="equipos">  
+      <h2 class="title">Equipos</h2>
+      <div class="acciones"><a href="inicioAdmin.html"> 
+          <button class="btn btn-exit" type="submit" id="salir">Regresar</button></a></div>
+      <div class="content__equipoClientes__tabs">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> 
+            <div class="content__equipoClientes__tabs__item__body">
+              <div class="table-wrapper content__equipoClientes__tabs__item__body__table">
+                <table class="table table-striped table-hover">
+                  <thead> 
+                    <tr>                 
+                      <th>Id</th>
+                      <th>Equipo</th>
+                      <th>Usuario</th>
+                      <th>Detalles</th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                    <tr> 
+                      <td>01</td>
+                      <td>Hp</td>
+                      <td>Josue Martinez</td>
+                      <td><a href="detalle-equipo-cliente.html">ver más... </a></td>
+                    </tr>
+                    <tr> 
+                      <td>02</td>
+                      <td>Lenovo</td>
+                      <td>Josue Martinez</td>
+                      <td> <a href="detalle-equipo-cliente.html">ver más... </a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div class="detalle__info__vigencia-date">
-              <label for="vigencia" id="txtVigencia">Vigencia  </label>
+            <div class="content__CtrlCotizaciones__tabs__item__footer">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled"></li><a class="page-link">Previous</a>
+                  <li class="page-item"></li><a class="page-link" href="#">1</a>
+                  <li class="page-item active" aria-current="page"></li><a class="page-link" href="#">2</a>
+                  <li class="page-item"></li><a class="page-link" href="#">3</a>
+                  <li class="page-item"></li><a class="page-link" href="#">Next    </a>
+                </ul>
+              </nav>
             </div>
           </div>
-        </h3>
-        <h3>Paqueteria Office 
-          <div class="detalle__info__office"> 
-            <div class="detalle__info__office-name">
-              <label for="office" id="officeName">Nombre </label>
-            </div>
-            <div class="detalle__info__office-date">
-              <label for="vigencia" id="txtOffice">Vigencia </label>
-            </div>
-          </div>
-        </h3>
-        <label for="descripcion">Descripción </label>
+        </div>
       </div>
     </div>
     <footer> 
