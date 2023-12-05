@@ -577,11 +577,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 20px;
-    padding: 20px;
+    margin: 30px 260px;
+    padding: 60px;
     border-radius: 10px; 
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-bottom: 3px solid @color-blue;
     &__container {
       width: 350px;
       margin: 0px;  
@@ -597,6 +598,10 @@ header {
         color:@color-text; 
         text-align: center; 
         font-weight: @font-semibold;
+        margin-bottom: 4.5rem;
+        border-bottom: 4px solid @color-blue;
+        width: 30%;
+        margin-left: 130px;
       }
     }
     &__item{
@@ -617,11 +622,13 @@ header {
     }
       input {
         display: flex;
-        width: 100%;
-        padding: 10px;
+        width: 310px;
+        padding: 12px;
         margin-bottom: 18px; 
-        font-size: @font-size-md;
+        font-size: @font-size-sm;
         text-align: center;
+        border: none;
+        border-bottom: 2px solid @color-black;
           }
       .g-recaptcha {
         margin-bottom: 10px;
@@ -632,14 +639,12 @@ header {
           background-color:@color-orange;
           color:@color-white;
           border: none;
-          border-radius: 100px;
+          border-radius: 10px;
           cursor: pointer;
           font-size: @font-size-lg;
-          width: 60%; 
-          left: 40px;
+          width: 100%; 
+          left: 0px;
           position:relative;
-          text-align: center;
-          padding: 10px 20px;
         }
         button:hover {
           background-color: #2980b9;
