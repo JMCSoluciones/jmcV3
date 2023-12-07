@@ -51,7 +51,7 @@ header {
   border-radius: 10px; 
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  border-bottom: 3px solid @color-blue;
+
   &__container {
     width: 350px;
     margin: 0px;  
@@ -68,7 +68,7 @@ header {
       text-align: center; 
       font-weight: @font-semibold;
       margin-bottom: 4.5rem;
-      border-bottom: 4px solid @color-blue;
+      border-bottom: 4px solid @color-orange;
       width: 30%;
       margin-left: 120px;
     
@@ -158,6 +158,78 @@ header {
       }
     }
   }
+  .forgot{
+    a{
+      font-size:@font-size-sm;
+      color: @color-text !important;
+      line-height: 20px;
+      text-align: right;
+    }
+    .btn.btn-primary{
+      border: none;
+      background-color:@color-white;
+      margin-top: -20px;
+      margin-left: -20px;
+      font-size: @font-size-sm;
+      color: @color-black;
+    }
+  }
+  #exampleModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .modal-dialog{
+      max-width: 400px;
+      margin: 20px auto;
+      .modal-content{
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .modal-header{
+          background-color: @color-primary;
+          color: #fff;
+          padding: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          h1{
+            font-size: @font-size-lg !important;
+            font-family: @font-family;
+            margin-left: 45px;
+          }
+        }
+        .modal-body{
+          label{
+            font-size:@font-size-md;
+            color: @color-text;
+            line-height: 20px;
+            margin-left: 40px;
+            margin-bottom: 25px;
+            font-family: @font-family;
+          }
+          input{
+            display: block;
+            padding: 5px;
+            margin-left: 50px; 
+            width: 50%;
+            font-size:@font-size-sm;
+
+          }
+        }
+        .modal-footer{
+          button{
+            background-color: #ffa500;
+            font-size: @font-size-sm;
+            border-radius: 5px;
+            width:100px;
+            border: none;
+          
+          }
+        }
+      }
+    }
+  }
+  
 } 
 
 .formulario{
@@ -2522,7 +2594,7 @@ header {
     font-size: @font-size-lg;
   }
   a{
-    .btn-nuevo{
+    .btn-primary{
     display: flex;
     justify-content: flex-end;
     background-color: gray;
