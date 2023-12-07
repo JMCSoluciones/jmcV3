@@ -42,16 +42,37 @@
     </header>
     <div class="controlMenuAdmin"> 
       <div class="controlMenuAdmin__box">
-        <div class="controlMenuAdmin__box__item"><a href="control-clientes.html">Clientes<img src="/Images/Icons/clientes.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"> <a href="control-soporte.html">Soporte<img src="/Images/Icons/soporte.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-pagos.html">Pagos<img src="/Images/Icons/pagos.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-contratos.html">Contratos<img src="/Images/Icons/contratos.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-ajuste.html">Ajustes<img src="/Images/Icons/ajustes.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-clientes.html">Clientes<img src="Images/Icons/clientes.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"> <a href="control-soporte.html">Soporte<img src="Images/Icons/soporte.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-pagos.html">Pagos<img src="Images/Icons/pagos.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-contratos.html">Contratos<img src="Images/Icons/contratos.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-ajuste.html">Ajustes<img src="Images/Icons/ajustes.svg" alt=""/></a></div>
       </div>
     </div>
     <div class="content__CtrlClientes">
-      <h3 class="title">Control de clientes</h3><a href="registrar-nuevo.html"> 
-        <button class="btn btn-nuevo" type="submit" id="nuevo">Nuevo</button></a>
+      <div class="content__CtrlClientes-box">
+        <h3 class="title">Control de clientes 
+          <button class="btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Modalnuevo">Nuevo</button>
+        </h3>
+      </div>
+      <div class="modal fade modal fade" id="Modalnuevo" tabindex="-1" aria-labelledby="modalnuevoLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 id="Modagitlnuevo">Recuperar Contraseña</h1>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
+              <label for="text">Si has olvidado tu contraseña pueder restablecera aquí</label>
+              <!-- Pregunta de seguridad-->
+              <input type="email" id="" name="" placeholder="Correo Electrónico"/>
+            </div>
+            <div class="modal-footer"><a href="login.html">
+                <button type="submit">Enviar</button></a></div>
+          </div>
+        </div>
+      </div>
       <div class="content__CtrlClientes__tabs">
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> 
@@ -81,15 +102,19 @@
                         <td>01</td>
                         <td>Josue Martinez</td>
                         <td>josue@jmcsoluciones.com</td>
-                        <td><a href="ver-cliente.html">ver más... </a></td>
-                        <td><a class="edit" href="modificar-cliente.html"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                        <td>
+                          <button class="btn-mas" type="button" data-bs-toggle="modal" data-bs-target="#Modalmas">Ver más</button>
+                        </td>
+                        <td><i class="material-icons btn-modificar" data-bs-toggle="modal" data-bs-target="#Modalmodificar"> &#xE254;</i><i class="material-icons btn-delete" data-bs-toggle="modal" data-bs-target="#Modaldelete"> &#xE872;</i></td>
                       </tr>
                       <tr> 
                         <td>02</td>
                         <td>cliente 2</td>
                         <td>23/octubre/2023</td>
-                        <td> <a href="ver-cliente.html">ver más... </a></td>
-                        <td><a class="edit" href="modificar-cliente.html"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#modalModificar" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
+                        <td> 
+                          <button class="btn-mas" type="button" data-bs-toggle="modal" data-bs-target="#Modalmas">Ver más</button>
+                        </td>
+                        <td><i class="material-icons btn-modificar" data-bs-toggle="modal" data-bs-target="#Modalmodificar"> &#xE254;</i><i class="material-icons btn-delete" data-bs-toggle="modal" data-bs-target="#Modaldelete"> &#xE872;</i></td>
                       </tr>
                     </tbody>
                   </table>
@@ -109,7 +134,131 @@
             </div>
           </div>
         </div><a href="inicioAdmin.html"> 
-          <button class="btn btn-exit" type="submit" id="salir">Salir</button></a>
+          <button class="btn btn-exit" type="submit" id="salir">Salir
+            <!--MODAL-->
+          </button></a>
+      </div>
+      <div class="modal fade modal fade" id="Modalmodificar" tabindex="-1" aria-labelledby="modalmodificarLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 id="Modagitlnuevo">Modificar Cliente</h1>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
+              <label for="rfc">RFC
+                <input type="text" id="rfc"/>
+              </label>
+              <label for="nombre">Nombre
+                <input type="text" id="name"/>
+              </label>
+              <label for="direccion">Direccion
+                <input type="text" id="direccion"/>
+              </label>
+              <label>Estados
+                <select name="estado" id="estado">
+                  <option value="no">Seleccione un estado</option>
+                  <option value="Aguascalientes">Aguascalientes</option>
+                  <option value="Baja California">Baja California</option>
+                  <option value="Baja California Sur">Baja California Sur</option>
+                  <option value="Campeche">Campeche</option>
+                  <option value="Chiapas">Chiapas</option>
+                  <option value="Chihuahua">Chihuahua</option>
+                  <option value="CDMX">Ciudad de M&eacute;xico</option>
+                  <option value="Coahuila">Coahuila</option>
+                  <option value="Colima">Colima</option>
+                  <option value="Durango">Durango</option>
+                  <option value="Estado de México">Estado de M&eacute;xico</option>
+                  <option value="Guanajuato">Guanajuato</option>
+                  <option value="Guerrero">Guerrero</option>
+                  <option value="Hidalgo">Hidalgo</option>
+                  <option value="Jalisco">Jalisco</option>
+                  <option value="Michoacán">Michoac&aacute;n</option>
+                  <option value="Morelos">Morelos</option>
+                  <option value="Nayarit">Nayarit</option>
+                  <option value="Nuevo León">Nuevo Le&oacute;n</option>
+                  <option value="Oaxaca">Oaxaca</option>
+                  <option value="Puebla">Puebla</option>
+                  <option value="Querétaro">Quer&eacute;taro</option>
+                  <option value="Quintana Roo">Quintana Roo</option>
+                  <option value="San Luis Potosí">San Luis Potos&iacute;</option>
+                  <option value="Sinaloa">Sinaloa</option>
+                  <option value="Sonora">Sonora</option>
+                  <option value="Tabasco">Tabasco</option>
+                  <option value="Tamaulipas">Tamaulipas</option>
+                  <option value="Tlaxcala">Tlaxcala</option>
+                  <option value="Veracruz">Veracruz</option>
+                  <option value="Yucatán">Yucat&aacute;n</option>
+                  <option value="Zacatecas">Zacatecas</option>
+                </select>
+              </label>
+              <label for="municipio">Municipio
+                <input type="text" id="municipio"/>
+              </label>
+              <label for="cp">Código Postal
+                <input type="number" id="cp"/>
+              </label>
+              <label for="rf">Régimen Fiscal
+                <input type="text" id="rf"/>
+              </label>
+              <label for="tel">Teléfono
+                <input type="text" id="tel"/>
+              </label>
+              <label for="nContacto">Nombre de contacto
+                <input type="text" id="nContacto"/>
+              </label>
+              <label for="email">Correo electrónico
+                <input type="email" id="email"/>
+              </label>
+              <label for="password">Correo electrónico
+                <input type="password" id="password"/>
+              </label>
+            </div>
+            <div class="modal-footer"><a href="control-clientes.html">
+                <button type="submit">Guardar</button>
+                <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modaldelete" tabindex="-1" aria-labelledby="modaldelateLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 id="Modagitlnuevo">Eliminar</h1>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
+              <label for="text">Desea eliminar?</label>
+              <button class="btn btn-danger" type="button">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modalmas" tabindex="-1" aria-labelledby="modaldelateLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 id="Modagitlnuevo">Información del Cliente</h1>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
+              <label for="nombre">Nombre </label>
+              <label for="direccion">Direccion </label>
+              <label for="estado">Estado  </label>
+              <label for="municipio">Municipio </label>
+              <label for="cp">Código Postal  </label>
+              <label for="rf">Regimen Fiscal </label>
+              <label for="tel">Teléfono  </label>
+              <label for="contacto">Contacto </label>
+              <label for="correo">Correo Electrónico</label>
+            </div>
+            <div class="modal-footer"><a href="control-clientes.html">
+                <button class="btn btn-danger" type="button">Eliminar</button></a></div>
+          </div>
+        </div>
       </div>
     </div>
     <footer> 
