@@ -2,65 +2,199 @@ extend ../components/template-admin.pug
 block content
     include control-menuAdmin.pug
     .content__CtrlPagos
-        h3.title Control de pagos
-        .content__CtrlPagos__tabs
-            #myTabContent.tab-content
-                #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
-                    .content__CtrlPagos__tabs__item
-                        .content__CtrlPagos__tabs__item__header#usuario-header
-                            a(href="nuevo-pago.html") 
-                                button.btn.btn-nuevo(type="submit")#nuevo Nuevo
-                            form.d-flex(role="search")
-                                input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
-                                a(href='busqueda-pagos.html') 
-                                    .btn.btn-dark(type="submit") Buscar
-                                input.btn-clean(type="reset" value="Limpiar") 
-
-                        .content__CtrlPagos__tabs__item__body
-                            .table-wrapper.content__CtrlPagos__tabs__item__body__table
-                                table.table.table-striped.table-hover
-                                    thead 
-                                        tr                  
-                                            th Id
-                                            th Nombre
-                                            th Servicio
-                                            th Detalles
-                                            th Acciones
-                                    tbody 
-                                        tr 
-                                            td 01
-                                            td Josue Martinez
-                                            td Aspel
-                                            td
-                                                a(href="ver-pago.html") ver más... 
-                                            td
-                                                a.edit(href="#editProductoModal" data-toggle='modal')
-                                                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                                                a.delete(href='#deleteProductoModal' data-toggle='modal')
-                                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-                                        tr 
-                                            td 02
-                                            td cliente 2
-                                            td AWS
-                                            td 
-                                                a(href="ver-pago.html") ver más... 
-                                            td
-                                                a.edit(href="#editProductoModal" data-toggle='modal')
-                                                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                                                a.delete(href='#deleteProductoModal' data-toggle='modal')
-                                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-                        .content__CtrlPagos__tabs__item__footer
-                            nav(aria-label='...')
-                                ul.pagination
-                                    li.page-item.disabled
-                                    a.page-link Previous
-                                    li.page-item
-                                    a.page-link(href='#') 1
-                                    li.page-item.active(aria-current='page')
-                                    a.page-link(href='#') 2
-                                    li.page-item
-                                    a.page-link(href='#') 3
-                                    li.page-item
-                                    a.page-link(href='#') Next   
-            a(href="inicioAdmin.html") 
-                button.btn.btn-exit(type="submit")#salir Salir
+        .content__CtrlPagos-box
+            h3.title Control de pagos
+            button.btn-pago(type='button' data-bs-toggle='modal' data-bs-target='#Modalpago') Nuevo
+            .content__CtrlPagos__tabs
+                #myTabContent.tab-content
+                    #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
+                        .content__CtrlPagos__tabs__item
+                            .content__CtrlPagos__tabs__item__header#usuario-header
+                                form.d-flex(role="search")
+                                    input.form-control.me-2(type="search" placeholder="Search" aria-label="Search")
+                                    a(href='busqueda-pagos.html') 
+                                        .btn.btn-dark(type="submit") Buscar
+                                    input.btn-clean(type="reset" value="Limpiar") 
+                            .content__CtrlPagos__tabs__item__body
+                                .table-wrapper.content__CtrlPagos__tabs__item__body__table
+                                    table.table.table-striped.table-hover
+                                        thead 
+                                            tr                  
+                                                th Id
+                                                th Nombre
+                                                th Servicio
+                                                th Detalles
+                                                th Acciones
+                                        tbody   
+                                            tr 
+                                                td 01
+                                                td Josue Martinez
+                                                td Aspel
+                                                td
+                                                    button.btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más... 
+                                                td
+                                                    i.material-icons.btn-modificar(data-bs-toggle='modal' data-bs-target='#Modalcambia')  &#xE254;
+                                                    i.material-icons.btn-delete(data-bs-toggle='modal' data-bs-target='#Modalelimina')  &#xE872;
+                                            tr 
+                                                td 02
+                                                td cliente 2
+                                                td AWS
+                                                td 
+                                                    button.btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más... 
+                                                td
+                                                    i.material-icons.btn-modificar(data-bs-toggle='modal' data-bs-target='#Modalcambia')  &#xE254;
+                                                    i.material-icons.btn-delete(data-bs-toggle='modal' data-bs-target='#Modalelimina')  &#xE872;
+                            .content__CtrlPagos__tabs__item__footer
+                                nav(aria-label='...')
+                                    ul.pagination
+                                        li.page-item.disabled
+                                        a.page-link Previous
+                                        li.page-item
+                                        a.page-link(href='#') 1
+                                        li.page-item.active(aria-current='page')
+                                        a.page-link(href='#') 2
+                                        li.page-item
+                                        a.page-link(href='#') 3
+                                        li.page-item
+                                        a.page-link(href='#') Next   
+                a(href="inicioAdmin.html") 
+                    button.btn.btn-exit(type="submit")#salir Salir
+        #Modalpago.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalpagoLabel')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h1#Modagitlticket Agregar pago
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        .info__header
+                            label(for="fecha")#fecha Fecha de pago
+                                .info__buscar
+                                    form.d-flex(role="search")
+                                    input.form-control.me-2(type="search" placeholder="Cliente" aria-label="Search")#search
+                                    a(href='busqueda.html') 
+                                        .btn.btn-dark(type="submit") Buscar
+                                    input.btn-clean(type="reset" value="Limpiar") 
+                                h3 Contrato
+                                .info__agregar__contrato
+                                    .info__agregar__contrato-tipo
+                                    label(for="tipo") Tipo 
+                                    select(name='contrato')
+                                        option(value='no') 
+                                        option(value='mensual') Mensual
+                                        option(value="semestral") Semestral 
+                                        option(value='anual') Anual
+                                    .info__agregar__contrato-fecha
+                                    label(for="fechaContrato") Fecha
+                                    input(type="date")#txtDate
+                                    .info__agregar__contrato-id 
+                                    label(for="id") Id  
+                                    input(type="text")#id 
+                                h3 Servicio
+                                .info__vigencia
+                                    .info__vigencia-name  
+                                    label(for="name")#txtName Nombre
+                                        input(type="text")#nServicio
+                                    .info__vigencia-date
+                                    label(for="vigencia")#txtVigencia Vigencia 
+                                        input(type="month" placeholder="Vigencia")#vigencia  
+                                label(for="concepto" ) Concepto 
+                                    input(type="text" placeholder="descripcion")#concepto 
+                                label(for="total") Total a pagar 
+                                    input(type="number" placeholder="$")#money
+                                label(for="staff") Staff 
+                                    input(type="text" placeholder="nombre")#staff 
+                                .info__archivos 
+                                    .info__archivos-pdf
+                                    label(for="pdf") PDF 
+                                        input(type="file")#pdf 
+                                    .btn.btn-subir(type="submit")#subirPdf Subir
+                                    .info__archivos-xml
+                                    label(for="pdf") XML
+                                        input(type="file")#xml 
+                                    .btn.btn-subir(type="submit")#subirXml Subir      
+                    .modal-footer
+                        .botones  
+                        a(href="control-soporte.html") 
+                            button.btn.btn-guardar(type="submit") Guardar
+                        a(href="control-soporte.html") 
+                            button.btn.btn-cancelar(type="submit") Cancelar
+        #Modalcambia.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodificaLabel')
+                .modal-dialog(role='document')
+                    .modal-content
+                        .modal-header
+                            h1#Modagitlnuevo Modificar Cliente
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        .modal-body
+                            form#forgotPasswordForm(onsubmit='submitForm(event)')
+                            label(for="rfc") RFC
+                                input(type='text')#rfc
+                            label(for="nombre") Nombre
+                                input(type='text')#name
+                            label(for="direccion") Direccion
+                                input(type='text')#direccion
+                            label Estados
+                                select(name='estado')#estado
+                                    option(value='no') Seleccione un estado
+                                    option(value='Aguascalientes') Aguascalientes
+                                    option(value='Baja California') Baja California
+                                    option(value='Baja California Sur') Baja California Sur
+                                    option(value='Campeche') Campeche
+                                    option(value='Chiapas') Chiapas
+                                    option(value='Chihuahua') Chihuahua
+                                    option(value='CDMX') Ciudad de M&eacute;xico
+                                    option(value='Coahuila') Coahuila
+                                    option(value='Colima') Colima
+                                    option(value='Durango') Durango
+                                    option(value='Estado de México') Estado de M&eacute;xico
+                                    option(value='Guanajuato') Guanajuato
+                                    option(value='Guerrero') Guerrero
+                                    option(value='Hidalgo') Hidalgo
+                                    option(value='Jalisco') Jalisco
+                                    option(value='Michoacán') Michoac&aacute;n
+                                    option(value='Morelos') Morelos
+                                    option(value='Nayarit') Nayarit
+                                    option(value='Nuevo León') Nuevo Le&oacute;n
+                                    option(value='Oaxaca') Oaxaca
+                                    option(value='Puebla') Puebla
+                                    option(value='Querétaro') Quer&eacute;taro
+                                    option(value='Quintana Roo') Quintana Roo
+                                    option(value='San Luis Potosí') San Luis Potos&iacute;
+                                    option(value='Sinaloa') Sinaloa
+                                    option(value='Sonora') Sonora
+                                    option(value='Tabasco') Tabasco
+                                    option(value='Tamaulipas') Tamaulipas
+                                    option(value='Tlaxcala') Tlaxcala
+                                    option(value='Veracruz') Veracruz
+                                    option(value='Yucatán') Yucat&aacute;n
+                                    option(value='Zacatecas') Zacatecas
+                            label(for="municipio") Municipio
+                                input(type='text')#municipio
+                            label(for="cp") Código Postal
+                                input(type='number')#cp
+                            label(for="rf") Régimen Fiscal
+                                input(type='text')#rf
+                            label(for="tel") Teléfono
+                                input(type='text')#tel
+                            label(for="nContacto") Nombre de contacto
+                                input(type='text')#nContacto
+                            label(for="email") Correo electrónico
+                                input(type='email')#email
+                            label(for="password") Correo electrónico
+                                input(type='password')#password
+                        .modal-footer
+                            a(href="control-clientes.html")
+                                button(type='submit') Guardar
+                                button(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+        #Modalelimina.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
+                .modal-dialog(role='document')
+                    .modal-content
+                        .modal-header
+                            h1#Modagitlnuevo Eliminar
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        .modal-body
+                            form#forgotPasswordForm(onsubmit='submitForm(event)')
+                            label(for='text') Desea eliminar?
+                            button.btn.btn-danger(type='button') Eliminar

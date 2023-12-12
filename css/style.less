@@ -80,7 +80,7 @@ header {
       height: auto;
       display: flex; 
       position: absolute;
-      left: 290px;
+      left: 250px;
       margin: 0px 0px 15px;
       padding-top: 5px;
     }
@@ -3794,12 +3794,12 @@ header {
   a{
     color: @color-text !important;
   }
-  .btn-nuevo{
+  .btn-ticket{
     display: flex;
-    justify-content: flex-end;
     background-color: gray;
     color: @color-white;
     margin: 10px;
+    border: none;
   }
   &__tabs{
     &__item{
@@ -3815,20 +3815,35 @@ header {
       .btn-dark{
         background-color: @color-primary;
         margin: 0 10px;
+        border: none;
       }
       .btn-clean{
         background-color: red !important;
         margin: 0 10px;
         color: @color-white;
+        border: none;
       }
-      .edit{
+      .btn-modificar{
         color: yellow !important;
       }
-      .delete{
+      .btn-delete{
         color: red !important;
       }
     }
-  }
+      &__body{
+        &__table{
+          .table-hover{
+            thead{
+              tr{
+                th{
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   .btn-exit{
     background-color: @color-secondary;
     margin: 20px;
@@ -4125,7 +4140,7 @@ dropdown{
 .content__CtrlPagos{
   max-width: 1110px;
   margin: 5px auto;
-  padding: 20px;
+  padding: 10px;
   height: 90vh;
   h3{
     font-size: @font-size-lg;

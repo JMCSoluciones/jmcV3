@@ -4,12 +4,12 @@ block content
     .content__CtrlClientes
         .content__CtrlClientes-box
             h3.title Control de clientes 
-                button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal') Nuevo
-        #exampleModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalComedorLabel')
+                button.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Modalnuevo') Nuevo
+        #Modalnuevo.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalnuevoLabel')
             .modal-dialog(role='document')
                 .modal-content
                     .modal-header
-                        h1#exampleModal Recuperar Contraseña
+                        h1#Modagitlnuevo Recuperar Contraseña
                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                             span(aria-hidden='true') &times;
                     .modal-body
@@ -47,23 +47,19 @@ block content
                                             td Josue Martinez
                                             td josue@jmcsoluciones.com
                                             td
-                                                a(href="ver-cliente.html") ver más... 
+                                                button.btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalmas') Ver más
                                             td
-                                                a.edit(href="modificar-cliente.html")
-                                                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                                                a.delete(href='#deleteProductoModal' data-toggle='modal')
-                                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                                                    i.material-icons.btn-modificar(data-bs-toggle='modal' data-bs-target='#Modalmodificar')  &#xE254;
+                                                    i.material-icons.btn-delete(data-bs-toggle='modal' data-bs-target='#Modaldelete')  &#xE872;
                                         tr 
                                             td 02
                                             td cliente 2
                                             td 23/octubre/2023
                                             td 
-                                                a(href="ver-cliente.html") ver más... 
+                                                button.btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalmas') Ver más
                                             td
-                                                a.edit(href="modificar-cliente.html")
-                                                    i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                                                a.delete(href='#modalModificar' data-toggle='modal')
-                                                    i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
+                                                    i.material-icons.btn-modificar(data-bs-toggle='modal' data-bs-target='#Modalmodificar')  &#xE254;
+                                                    i.material-icons.btn-delete(data-bs-toggle='modal' data-bs-target='#Modaldelete')  &#xE872;
                         .content__CtrlCotizaciones__tabs__item__footer
                             nav(aria-label='...')
                                 ul.pagination
@@ -80,4 +76,103 @@ block content
             a(href="inicioAdmin.html") 
                 button.btn.btn-exit(type="submit")#salir Salir
                             //MODAL
-    
+        #Modalmodificar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodificarLabel')
+                .modal-dialog(role='document')
+                    .modal-content
+                        .modal-header
+                            h1#Modagitlnuevo Modificar Cliente
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        .modal-body
+                            form#forgotPasswordForm(onsubmit='submitForm(event)')
+                            label(for="rfc") RFC
+                                input(type='text')#rfc
+                            label(for="nombre") Nombre
+                                input(type='text')#name
+                            label(for="direccion") Direccion
+                                input(type='text')#direccion
+                            label Estados
+                                select(name='estado')#estado
+                                    option(value='no') Seleccione un estado
+                                    option(value='Aguascalientes') Aguascalientes
+                                    option(value='Baja California') Baja California
+                                    option(value='Baja California Sur') Baja California Sur
+                                    option(value='Campeche') Campeche
+                                    option(value='Chiapas') Chiapas
+                                    option(value='Chihuahua') Chihuahua
+                                    option(value='CDMX') Ciudad de M&eacute;xico
+                                    option(value='Coahuila') Coahuila
+                                    option(value='Colima') Colima
+                                    option(value='Durango') Durango
+                                    option(value='Estado de México') Estado de M&eacute;xico
+                                    option(value='Guanajuato') Guanajuato
+                                    option(value='Guerrero') Guerrero
+                                    option(value='Hidalgo') Hidalgo
+                                    option(value='Jalisco') Jalisco
+                                    option(value='Michoacán') Michoac&aacute;n
+                                    option(value='Morelos') Morelos
+                                    option(value='Nayarit') Nayarit
+                                    option(value='Nuevo León') Nuevo Le&oacute;n
+                                    option(value='Oaxaca') Oaxaca
+                                    option(value='Puebla') Puebla
+                                    option(value='Querétaro') Quer&eacute;taro
+                                    option(value='Quintana Roo') Quintana Roo
+                                    option(value='San Luis Potosí') San Luis Potos&iacute;
+                                    option(value='Sinaloa') Sinaloa
+                                    option(value='Sonora') Sonora
+                                    option(value='Tabasco') Tabasco
+                                    option(value='Tamaulipas') Tamaulipas
+                                    option(value='Tlaxcala') Tlaxcala
+                                    option(value='Veracruz') Veracruz
+                                    option(value='Yucatán') Yucat&aacute;n
+                                    option(value='Zacatecas') Zacatecas
+                            label(for="municipio") Municipio
+                                input(type='text')#municipio
+                            label(for="cp") Código Postal
+                                input(type='number')#cp
+                            label(for="rf") Régimen Fiscal
+                                input(type='text')#rf
+                            label(for="tel") Teléfono
+                                input(type='text')#tel
+                            label(for="nContacto") Nombre de contacto
+                                input(type='text')#nContacto
+                            label(for="email") Correo electrónico
+                                input(type='email')#email
+                            label(for="password") Correo electrónico
+                                input(type='password')#password
+                        .modal-footer
+                            a(href="control-clientes.html")
+                                button(type='submit') Guardar
+                                button(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+        #Modaldelete.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
+                .modal-dialog(role='document')
+                    .modal-content
+                        .modal-header
+                            h1#Modagitlnuevo Eliminar
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        .modal-body
+                            form#forgotPasswordForm(onsubmit='submitForm(event)')
+                            label(for='text') Desea eliminar?
+                            button.btn.btn-danger(type='button') Eliminar
+        #Modalmas.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
+                .modal-dialog(role='document')
+                    .modal-content
+                        .modal-header
+                            h2 Informacion del equipo
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') &times;
+                        .modal-body
+                            form#forgotPasswordForm(onsubmit='submitForm(event)')
+                            label(for="nombre") Nombre 
+                            label(for="direccion") Direccion 
+                            label(for="estado") Estado  
+                            label(for="municipio") Municipio 
+                            label(for="cp") Código Postal  
+                            label(for="rf") Regimen Fiscal 
+                            label(for="tel") Teléfono  
+                            label(for="contacto") Contacto 
+                            label(for="correo") Correo Electrónico
+                        .modal-footer
+                            a(href="control-clientes.html")
+                                button.btn.btn-danger(type='button') Eliminar

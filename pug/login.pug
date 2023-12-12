@@ -26,18 +26,18 @@ block content
                 label.form-check-label(for='form')  Remember me 
             .forgot
                 button.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal') Forgot my password?
-        #exampleModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalComedorLabel')
-                .modal-dialog(role='document')
-                    .modal-content
-                        .modal-header
-                            h1#exampleModal Recuperar Contraseña
-                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                span(aria-hidden='true') &times;
-                        .modal-body
-                            form#forgotPasswordForm(onsubmit='submitForm(event)')
-                            label(for='text') Si has olvidado tu contraseña pueder restablecera aquí
-                            // Pregunta de seguridad
-                            input(type='email', id='', name='', placeholder='Correo Electrónico')
-                        .modal-footer
-                            a(href="login.html")
-                                button(type='submit') Enviar 
+    #exampleModal.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalComedorLabel')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h1#exampleModal Recuperar Contraseña
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        form#forgotPasswordForm(onsubmit='submitForm(event)')
+                        label(for='text') Si has olvidado tu contraseña pueder restablecera aquí
+                        // Pregunta de seguridad
+                        input(type='email', id='', name='', placeholder='Correo Electrónico')
+                    .modal-footer
+                        a(href="login.html")
+                            button(type='submit') Enviar 
