@@ -50,6 +50,9 @@ header .menu-top__link {
   color: #ffffff;
   font-weight: 600;
 }
+header .menu-top__link ul li {
+  color: #0397d6;
+}
 header .menu-top__link img {
   width: 25px;
   height: auto;
@@ -203,9 +206,6 @@ header .menu-top__link img {
           justify-content: center;
   position: relative;
   left: 90px;
-}
-.index .content {
-  margin: 20px 0;
 }
 .index .desarrollo__soluciones {
   max-width: 100%;
@@ -4496,7 +4496,8 @@ header .menu-top__link img {
   padding: 10px;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #090979), to(#00d4ff));
   background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-  max-width: 5000px;
+  width: 100vw;
+  max-width: 500px;
   margin: 0 auto;
   -webkit-box-shadow: rgba(50, 50, 93, 0.237) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(50, 50, 93, 0.237) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
