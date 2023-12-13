@@ -90,7 +90,7 @@ block content
 						button.btn-guardar(type='button' data-bs-toggle='modal' data-bs-target='#Modalguardar') Guardar
 						button.btn-cancelar(type='button' data-bs-toggle='modal' data-bs-target='#Modalcancelar') Cancelar 
 	#Modalguardar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalguardarLabel')
-		.modal-dialog(role='document')
+		.modal-dialog.modal-dialog-centered
 			.modal-content
 					.modal-header
 						h5#modalGuardar.modal-title  
@@ -112,7 +112,7 @@ block content
 						.botones  
 							button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
 	#Modalve.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalveLabel')
-		.modal-dialog(role='document')
+		.modal-dialog.modal-dialog-centered
 			.modal-content
 					.modal-header
 						h2 Información del contrato
@@ -128,7 +128,7 @@ block content
 								button.btn-modi(type='button' data-bs-toggle='modal' data-bs-target='#Modalmodi') Modificar
 								button.btn-del(type='button' data-bs-toggle='modal' data-bs-target='#Modaldel') Eliminar
 	#Modalmodi.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodiLabel')
-		.modal-dialog(role='document')
+		.modal-dialog.modal-dialog-centered
 			.modal-content
 				.modal-header
 					h1#Modagitlmodi Modificar Contrato
@@ -162,7 +162,7 @@ block content
 						button.btn-guardar(type='button' data-bs-toggle='modal' data-bs-target='#Modalguardar') Guardar
 						button.btn-cancelar(type='button' data-bs-toggle='modal' data-bs-target='#Modalcancelar') Cancelar 
 	#Modaldel.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelLabel')
-		.modal-dialog(role='document')
+		.modal-dialog.modal-dialog-centered
 			.modal-content
 				.modal-header
 					h1#Modagitlnuevo Eliminar
@@ -172,7 +172,7 @@ block content
 					label(for='text') Desea eliminar?
 					button.btn.btn-danger(type='button' data-bs-toggle='modal' data-bs-target='#Modaleliminar') Eliminar
 	#Modaleliminar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaleliminarLabel')
-		.modal-dialog(role='document')
+		.modal-dialog.modal-dialog-centered
 			.modal-content
 					.modal-header
 						h5#modaleliminar.modal-title  

@@ -14,7 +14,7 @@ block content
                             img.staff(src="/Images/Icons/staff.svg", alt="ajustes de staff") 
                 .container__controlajuste__administrador__title
                     h2 Control de servicios
-                    a.btn.btn-success(href="nuevo-servicio.html" ) add 
+                    button.btn.btn-servicio(type='button' data-bs-toggle='modal' data-bs-target='#Modalservcio' ) add 
                 table.table.table-striped.table-hover
                     thead
                       tr
@@ -31,24 +31,20 @@ block content
                             td --------
                             td 3000 
                             td
-                                a(href="info-servicio.html")  Ver Más...    
+                                button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más...    
                             td
-                                a.edit(href='#editUserModal' data-toggle='modal')
-                                    i.bi.bi-pencil-square
-                                a.delete(href='#deleteUserModal' data-toggle='modal')
-                                    i.bi.bi-trash
+                                i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
+                                i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
                         tr
                             td 2
                             td Josue Martinez
                             td ********
                             td 8000
                             td    
-                                a(href="info-servicio.html")  Ver Más...   
+                                button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más...   
                             td
-                                a.edit(href='#editUserModal' data-toggle='modal')
-                                    i.bi.bi-pencil-square
-                                a.delete(href='#deleteUserModal' data-toggle='modal')
-                                    i.bi.bi-trash
+                                i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
+                                i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
                         
                 .clearfix
                 ul.pagination
@@ -68,3 +64,130 @@ block content
                         a.page-link(href='#') Next
         a(href="control-ajuste.html") 
             button(type="submit")#botonSalir Salir
+        #Modalservcio.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalservicioLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h1#Modagicontrato Añadir Nuevo Servicio
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        .servicio
+                            label(for='Nombre') Id 
+                            select#autoSizingSelect.form-select
+                                option(selected='')  
+                                option(value='1') Uno
+                                option(value='2') Dos
+                                option(value='3') Tres
+                        .servicio
+                            label(for='nombre') Nombre
+                            input.form-servicio(type='text' placeholder='Ingrese su nombre' aria-label='')
+                        .servicio
+                            label(for='Nombre') Costo
+                            select#autoSizingSelect.form-costo
+                                option(selected='') 
+                                option(value='1') Uno
+                                option(value='2') Dos
+                                option(value='3') Tres
+                        .servicio
+                            label(for='concepto') Moneda
+                            input#concepto.form-servicio(type='text' name='concepto' placeholder='Ingrese el monto')
+                            button#valida(onclick='validarMoneda()') Validar
+                        
+                        .servicio
+                            label(for='total') Plan
+                            select#autoSizingSelect.form-plan
+                                option(selected='') 
+                                option(value='1') Uno
+                                option(value='2') Dos
+                                option(value='3') Tres
+                        .servicio
+                            label(for='descripcion') Descripci&oacute;n:
+                            textarea#descripcion(name='descripcion' rows='4' cols='50' placeholder='Ingrese la descripción aquí...')
+                    .modal-footer
+                                .botones  
+                                    button.btn-guarda(type='button' data-bs-toggle='modal' data-bs-target='#Modalguarda') Guardar
+                                    button.btn-cancela(type='button' data-bs-toggle='modal' data-bs-target='#Modalcancela') Cancelar 
+        #Modalguarda.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalguardaLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                        .modal-header
+                            h5#modalGuardar.modal-title  
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                        .modal-body
+                            h5 Guardado!
+                        .modal-footer
+                            a(href="control-ajuste.html") 
+                                button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+        #Modalcancela.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalcancelaLabel')
+            .modal-dialog(role='document')
+                .modal-content
+                        .modal-header
+                            h5#modalcancela.modal-title  
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                        .modal-body
+                            h5 Cancelado!
+                        .modal-footer
+                            .botones  
+                                a(href="control-ajuste.html")
+                                    button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+        #Modalvr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalvrLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                        .modal-header
+                            h2 Información de servicios
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                            .modal-body 
+                                .info
+                                    label(for='Id') Id servicio
+                                    input.form-info(type='text' placeholder='' aria-label='')
+                                .info
+                                    label(for='Nombre') Nombre
+                                    input.form-info(type='text' placeholder='' aria-label='')
+                                .info
+                                    label(for='plan') Plan
+                                    input.form-info(type='text' placeholder='' aria-label='')
+                                .info
+                                    label(for='moneda') Moneda
+                                    input#concepto.form-info(type='text' name='moneda' placeholder='')
+                                .info
+                                    label(for='Costo') Costo
+                                    input.form-info(type='text' placeholder='' aria-label='')
+                            .modal-footer
+                                    button.btn-eliminar(type='button' data-bs-toggle='modal' data-bs-target='#Modaleliminar') Eliminar
+        #Modaleliminar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaleliminarLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                        .modal-header
+                            h5#modaleliminar.modal-title  
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                        .modal-body
+                            h5 Eliminado!
+                        .modal-footer
+                            a(href="control-ajuste.html") 
+                                button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+        #Modalmr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodiLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h1#Modagitlmodi Modificar Servicio
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        .info
+                            label(for='Id') Id servicio
+                            input.form-info(type='text' placeholder='' aria-label='')
+                        .info
+                            label(for='Nombre') Nombre
+                            input.form-info(type='text' placeholder='' aria-label='')
+                        .info
+                            label(for='plan') Plan
+                            input.form-info(type='text' placeholder='' aria-label='')
+                        .info
+                            label(for='moneda') Moneda
+                            input#concepto.form-info(type='text' name='moneda' placeholder='')
+                        .info
+                            label(for='Costo') Costo
+                            input.form-info(type='text' placeholder='' aria-label='')
+                    .modal-footer
+                        a(href="control-ajuste.html")
+                            button.btn-guarda(type='button' data-bs-toggle='modal' data-bs-target='#Modalguarda') Guardar
+                            button.btn-cancela(type='button' data-bs-toggle='modal' data-bs-target='#Modalcancela') Cancelar 
