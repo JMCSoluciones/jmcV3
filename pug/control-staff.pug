@@ -14,9 +14,7 @@ block content
                         img.staff(src="/Images/Icons/staff.svg", alt="ajustes de staff") 
             .container__controlstaff__administrador__title
                 h2 Control de staff
-                a.btn.btn-success(href='nuevo-staff.html')
-                    i.bi.bi-plus-circle
-                    span add 
+                button.btn.btn-staff(type='button' data-bs-toggle='modal' data-bs-target='#Modalstaff' ) add 
             table.table.table-striped.table-hover
                 thead
                    tr
@@ -33,60 +31,50 @@ block content
                         td Fran Wilson
                         td 89 Chiaroscuro Rd, Portland, USA 
                         td
-                            button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...    
+                            button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
                         td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
+                            i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
+                            i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
                     tr
                         td
                         td 2
                         td 
                         td 
                         td
-                            button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...   
+                            button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
                         td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
+                            i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
+                            i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
                     tr
                         td
                         td 3
                         td 
                         td 
                         td
-                           button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...   
+                           button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
                         td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
+                            i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
+                            i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
                     tr
                         td
                         td 4
                         td 
                         td 
                         td
-                            button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...   
+                            button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
                         td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
+                            i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
+                            i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
                     tr
                         td
                         td 5
                         td 
                         td 
                         td
-                            button.btn.btn-link(type='button', class='btn btn-primary',data-toggle='modal', data-target='#verMasModal') Ver Más...   
+                            button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
                         td
-                            a.edit(href='#editUserModal' data-toggle='modal')
-                                i.bi.bi-pencil-square
-                            a.delete(href='#deleteUserModal' data-toggle='modal')
-                                i.bi.bi-trash
+                            i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
+                            i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
             .clearfix
                 ul.pagination
                     li.page-item.disabled
