@@ -151,7 +151,7 @@ block content
                         .modal-body
                             form#forgotPasswordForm(onsubmit='submitForm(event)')
                             label(for='text') Desea eliminar?
-                            button.btn.btn-danger(type='button') Eliminar
+					button.btn.btn-danger(type='button' data-bs-toggle='modal' data-bs-target='#Modaleliminar') Eliminar
         #Modalmas.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
                 .modal-dialog.modal-dialog-centered
                     .modal-content
@@ -184,7 +184,7 @@ block content
                         a(href="control-clientes.html") 
                             button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
         #Modalcr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalcrLabel')
-            .modal-dialog(role='document')
+            .modal-dialog.modal-dialog-centered
                 .modal-content
                     .modal-header
                         h5#modalcancelar.modal-title  
@@ -194,4 +194,15 @@ block content
                     .modal-footer
                         .botones  
                             a(href="control-clientes.html") 
+                                button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+        #Modaleliminar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaleliminarLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                        .modal-header
+                            h5#modaleliminar.modal-title  
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                        .modal-body
+                            h5 Eliminado!
+                        .modal-footer
+                            a(href="control-contratos.html") 
                                 button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
