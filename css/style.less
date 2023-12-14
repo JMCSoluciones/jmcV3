@@ -3801,13 +3801,6 @@ header {
     margin: 10px;
     border: none;
   }
-  .btn-nuevo{
-    display: flex;
-    justify-content: flex-end;
-    background-color: gray;
-    color: @color-white;
-    margin: 10px;
-  }
   &__tabs{
     &__item{
       &__header{
@@ -3859,120 +3852,82 @@ header {
   .btn-exit:hover{
     background-color: rgba(70, 46, 1, 0.747);
     color: @color-white;
+}
+}
+.nvoTicket{
+  h2{
+    margin: 10px 10px;
+    padding: 5px 0;
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.245);
+    box-shadow: inset #2980b9;
+    text-align: center;
   }
-  .btn-ticket{
-    background-color: @color-grey;
+  label{
+    margin: 10px;
+    display: block;
+    font-weight: @font-semibold;
+    font-size: @font-size-md ;
+  }
+  input{
+    border: 1px solid gray;
     border-radius: 10px;
-    padding: 5px 15px;
+    justify-content: end;
+    text-align: center;
+    width: 160px;
   }
-  #Modalticket{
-    width: 100%;
-    h2{
-      margin: 10px 10px;
-      padding: 5px 0;
-      border-radius: 8px;
-      background-color: rgba(128, 128, 128, 0.245);
-      box-shadow: inset #2980b9;
-      text-align: center;
-    }
-    label{
-      margin: 10px;
-      display: block;
-      font-weight: @font-semibold;
-      font-size: @font-size-md ;
-    }
-    input{
-      border: 1px solid gray;
-      border-radius: 10px;
-      justify-content: end;
-      text-align: center;
-      width: 80%;
-      height: 40px;
-    }
-    select, textarea{
-      border-radius: 20px;
-      margin-left: 20px;
+  select, textarea{
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 3px;
+    border-color: gray;
+    text-align: center;
+  }
+  #cliente{
+    width: 100px;
+    margin-left: 30px;
+  }
+  #nombre{
+    margin-left: 20px;
+  }
+  #rfc{
+    margin-left: 50px;
+  }
+  #contacto{
+    margin-left: 10px;
+  }
+  #asunto{
+    margin-left: 26px;
+  }
+  #mensaje{
+    margin-left: 15px;
+  }
+  #adjunto{
+    margin-left: 15px;
+    border-radius: 20px;
+  }
+  .botones{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    .btn-guardar{
+      background-color: @color-primary;
+      width: 80px;
       padding: 3px;
-      border-color: gray;
-      text-align: center;
+      border: 1px solid @color-primary;
+      border-radius: 20px;
+      color: @color-white;
     }
-    #cliente{
-      width: 150px;
-      margin-left: 30px;
-    }
-    #nombre{
-      margin-left: 20px;
-    }
-    #rfc{
-      margin-left: 50px;
-    }
-    #contacto{
-      margin-left: 10px;
-    }
-    #asunto{
-      margin-left: 26px;
-    }
-    #mensaje{
-      margin-left: 15px;
-    }
-    #adjunto{
-      margin-left: 15px;
-      border-radius: 10px;
-      height: 30px;
-      width: 64%;
-    }
-    .modal-footer{
-      display: flex;
-      .botones{
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
-        a{
-          .btn-guardar{
-            background-color: @color-green;
-            width: 80px;
-            padding: 8px;
-            border: 1px solid @color-green;
-            border-radius: 10px;
-            color: @color-white;
-          }
-        }
-        .btn-cancelar{
-          background-color: @color-red;
-          width: 80px;
-          padding: 8px;
-          border: 1px solid @color-red;
-          border-radius: 10px;
-          color: @color-white;
-        }
-      }
-    }
-    .modal-body{
-      .btn-dark{
-        background-color: @color-primary;
-        padding: 11px 15px;
-        border-radius: 10px;
-        margin-left: 20px;
-        border: none;
-      }
-      .btn-clean{
-        background-color: @color-btnlimpiar;
-        padding: 11px 15px;
-        border-radius: 10px;
-        margin-left: 20px;
-        border: none;
-      }
-      .btn-adj{
-        background-color: @color-grey;
-        padding: 7px 40px;
-        border-radius: 10px;
-        color: @color-white;
-      }
+    .btn-cancelar{
+      background-color: @color-secondary;
+      width: 80px;
+      padding: 3px;
+      border: 1px solid @color-secondary;
+      border-radius: 20px;
+      color: @color-text;
     }
   }
-  #modalvermas{
-    width: 100%;
-  }
+
 }
 .barraFlotante {
   position: relative;
@@ -4637,19 +4592,15 @@ dropdown{
           th {
             border-color:@color-text;
             vertical-align: middle; 
-            font-size: 20px;
+            font-size: 14px;
             font-family: @font-family;
             text-align: center;
             padding: 10px 1px;
           }
-        }
-            td {
-            border-color: @color-text;
-            padding: 12px 15px; 
-            vertical-align: middle;
-            font-size: 10px;
-            }
+        
+           
           }
+        
             a {
               color: @color-blue !important;
               border: none;
@@ -4682,6 +4633,25 @@ dropdown{
               color: red !important;
             }
             }
+          }
+      tbody{
+        tr{
+          th{
+            border-color:@color-text;
+            vertical-align: middle; 
+            font-size: 14px;
+            font-family: @font-family;
+            text-align: center;
+            padding: 10px 1px;
+          }
+          td {
+            border-color: @color-text;
+            padding: 12px 15px; 
+            vertical-align: middle;
+            font-size: 14px;
+            }
+        }
+      }
     .pagination {
       float: right;
       margin: 0 0 5px;
@@ -5009,17 +4979,12 @@ dropdown{
             }
     }
       table.table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        overflow-x: auto;
-    
         thead{
           tr {
             th {
               border-color:@color-text;
               vertical-align: middle; 
-              font-size: 16px;
+              font-size: 14px;
               font-family: @font-family;
               text-align: center;
               padding: 10px 1px;
