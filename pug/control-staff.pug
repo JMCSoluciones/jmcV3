@@ -21,17 +21,16 @@ block content
                         th
                         th Id
                         th Nombre
-                        th Dirección
-                        th Detalles
+                        th Correo
+                        th Departamento
                         th Acción
                 tbody
                     tr
                         td
                         td 1
                         td Fran Wilson
-                        td 89 Chiaroscuro Rd, Portland, USA 
-                        td
-                            button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
+                        td jouse@gmail.com
+                        td 
                         td
                             i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
                             i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
@@ -41,7 +40,6 @@ block content
                         td 
                         td 
                         td
-                            button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
                         td
                             i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
                             i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
@@ -51,27 +49,6 @@ block content
                         td 
                         td 
                         td
-                           button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
-                        td
-                            i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
-                            i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
-                    tr
-                        td
-                        td 4
-                        td 
-                        td 
-                        td
-                            button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
-                        td
-                            i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
-                            i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
-                    tr
-                        td
-                        td 5
-                        td 
-                        td 
-                        td
-                            button.btn-vr(type='button' data-bs-toggle='modal' data-bs-target='#Modalvr') ver más....    
                         td
                             i.material-icons.btn-mr(data-bs-toggle='modal' data-bs-target='#Modalmr') &#xE254;
                             i.material-icons.btn-de(data-bs-toggle='modal' data-bs-target='#Modalde') &#xE872;
@@ -93,3 +70,99 @@ block content
                         a.page-link(href='#') Next
       .botonSalir(type='button') Salir
     script(src='salir.js')
+    #Modalstaff.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalstaffLabel')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                    .modal-header
+                        h2 Información del staff
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body 
+                        .staff
+                            label(for='Nombre') Id 
+                            input.form-staff(type='text' placeholder='' aria-label='')
+                        .staff  
+                            label(for='Nombre') Departamento
+                            select#autoSizingSelect.form-select
+                                option(selected='')  
+                                option(value='1') Uno
+                                option(value='2') Dos
+                                option(value='3') Tres
+                        .staff
+                            label(for='nombre') Nombre
+                            input.form-staff(type='text' placeholder='Ingrese su nombre' aria-label='')
+                        .staff
+                            label(for='Nombre') Departamento
+                            select#autoSizingSelect.form-dep
+                                option(selected='')  Seleccione departamento
+                                option(value='1') Uno
+                                option(value='2') Dos
+                                option(value='3') Tres
+                        .staff
+                            label(for='concepto') Correo Electrónico
+                            input.form-staff(type='email', name='concepto', placeholder='Ingrese su correo')
+                        .staff
+                            label(for='total') Password
+                            input.form-staff(type='password', name='contraseña', placeholder='Ingrese password') 
+                    .modal-footer
+                        button.btn-ar(type='button' data-bs-toggle='modal' data-bs-target='#Modalar') Agergar
+                        button.btn-ca(type='button' data-bs-toggle='modal' data-bs-target='#Modalca') Cancelar
+    #Modalar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalguardarLabel')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                    .modal-header
+                        h5#modalGuardar.modal-title  
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        h5 Se añadió!
+                    .modal-footer
+                        a(href="control-staff.html") 
+                            button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+    #Modalca.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalcaLabel')
+        .modal-dialog(role='document')
+            .modal-content
+                    .modal-header
+                        h5#modalca.modal-title  
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        h5 Cancelado!
+                    .modal-footer
+                        .botones  
+                            a(href="control-staff.html")
+                                button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+	#Modalmr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmrLabel')
+		.modal-dialog.modal-dialog-centered
+		.modal-content
+			.modal-header
+					h1#Modagitlmodi Modificar Staff
+					button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+			.modal-body
+				.staff
+					label(for='Nombre') Id 
+						input.form-staff(type='text' placeholder='' aria-label='')
+				.staff  
+						label(for='Nombre') Departamento
+						select#autoSizingSelect.form-select
+							option(selected='')  
+							option(value='1') Uno
+							option(value='2') Dos
+							option(value='3') Tres
+				.staff
+						label(for='nombre') Nombre
+						input.form-staff(type='text' placeholder='Ingrese su nombre' aria-label='')
+				.staff
+						label(for='Nombre') Departamento
+					select#autoSizingSelect.form-dep
+					option(selected='')  Seleccione departamento
+					option(value='1') Uno
+					option(value='2') Dos
+					option(value='3') Tres
+				.staff
+					label(for='concepto') Correo Electrónico
+					input.form-staff(type='email', name='concepto', placeholder='Ingrese su correo')
+				.staff
+					label(for='total') Password
+					input.form-staff(type='password', name='contraseña', placeholder='Ingrese password') 
+				.modal-footer
+					a(href="control-contratos.html")
+							button.btn-guardar(type='button' data-bs-toggle='modal' data-bs-target='#Modalguardar') Guardar
+							button.btn-cancelar(type='button' data-bs-toggle='modal' data-bs-target='#Modalcancelar') Cancelar                     
