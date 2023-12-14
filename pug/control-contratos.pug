@@ -1,61 +1,184 @@
 extend ../components/template-admin.pug
 block content
-  include control-menuAdmin.pug
-  .ctrlContratos 
-    h2.title Control de contratos
-      a(href="nuevo-contrato.html") 
-        button.btn.btn-nuevo(type="submit")#nuevo Nuevo
-    .content__contratos__tabs
-      #myTabContent.tab-content
-        #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
-          .content__contratos__tabs__item__body
-            .table-wrapper.content__contratos__tabs__item__body__table
-              table.table.table-striped.table-hover
-                thead 
-                  tr                  
-                    th Folio
-                    th Cliente
-                    th Servicio
-                    th Vigencia
-                    th Detalles 
-                    th Acción
-                tbody 
-                  tr 
-                    td 01
-                    td Josue Martinez
-                    td Aspel
-                    td 27 Enero 2024
-                    td 
-                      a(href="ver-contrato.html") ver más... 
-                    td
-                      a.edit(href="#editProductoModal" data-toggle='modal')
-                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                      a.delete(href='#deleteProductoModal' data-toggle='modal')
-                        i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-                  tr 
-                    td 02
-                    td cliente 2
-                    td Aws
-                    td 23 octubre 2023
-                    td 
-                      a(href="ver-contrato.html") ver más... 
-                    td
-                      a.edit(href="#editProductoModal" data-toggle='modal')
-                        i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                      a.delete(href='#deleteProductoModal' data-toggle='modal')
-                        i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
-          .content__contratos__tabs__item__footer
-            nav(aria-label='...')
-              ul.pagination
-                li.page-item.disabled
-                a.page-link Previous
-                li.page-item
-                a.page-link(href='#') 1
-                li.page-item.active(aria-current='page')
-                a.page-link(href='#') 2
-                li.page-item
-                a.page-link(href='#') 3
-                li.page-item
-                a.page-link(href='#') Next   
-          a(href="inicioAdmin.html") 
-            button.btn.btn-exit(type="submit")#salir Salir
+	include control-menuAdmin.pug
+	.ctrlContratos 
+		.ctrlContratos-box
+			h2.title Control de contratos
+			button.btn.btn-contrato(type='button' data-bs-toggle='modal' data-bs-target='#Modalcontrato') Nuevo 
+			.content__contratos__tabs
+				#myTabContent.tab-content
+					#usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
+			.content__contratos__tabs__item__body
+				.table-wrapper.content__contratos__tabs__item__body__table
+					table.table.table-striped.table-hover
+						thead 
+							tr                  
+								th Folio
+								th Cliente
+								th Servicio
+								th Vigencia
+								th Detalles 
+								th Acción
+						tbody 
+							tr 
+								td 01
+								td Josue Martinez
+								td Aspel
+								td 27 Enero 2024
+								td 
+									button.btn-ve(type='button' data-bs-toggle='modal' data-bs-target='#Modalve') ver más...
+								td
+									i.material-icons.btn-modi(data-bs-toggle='modal' data-bs-target='#Modalmodi')  &#xE254;
+									i.material-icons.btn-del(data-bs-toggle='modal' data-bs-target='#Modaldel')  &#xE872;                  
+							tr 
+								td 02
+								td cliente 2
+								td Aws
+								td 23 octubre 2023
+								td 
+									button.btn-ve(type='button' data-bs-toggle='modal' data-bs-target='#Modalve') ver más...
+								td
+									i.material-icons.btn-modi(data-bs-toggle='modal' data-bs-target='#Modalmodi')  &#xE254;
+									i.material-icons.btn-del(data-bs-toggle='modal' data-bs-target='#Modaldel')  &#xE872;                  
+			.content__contratos__tabs__item__footer
+				nav(aria-label='...')
+					ul.pagination
+						li.page-item.disabled
+						a.page-link Previous
+						li.page-item
+						a.page-link(href='#') 1
+						li.page-item.active(aria-current='page')
+						a.page-link(href='#') 2
+						li.page-item
+						a.page-link(href='#') 3
+						li.page-item
+						a.page-link(href='#') Next   
+				a(href="inicioAdmin.html") 
+					button.btn.btn-exit(type="submit")#salir Salir
+	#Modalcontrato.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalcontratoLabel')
+		.modal-dialog(role='document')
+			.modal-content
+				.modal-header
+					h1#Modagicontrato Añadir Nuevo Contrato
+					button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					label(for="cliente") Cliente
+						input(type='text', placeholder='Nombre del cliente')#cliente
+					label(for="servicio") Servicio
+					select(name="servicio")#servicio
+						option(value="no") Seleccione un servicio 
+						option(value="AWS") AWS 
+						option(value="Aspel") Aspel   
+					label(for="plan") Plan
+						select#plan(name="plan")
+						option(value="no") Seleccione el plan 
+						option(value="mensual") Mensual 
+						option(value="bimestral") Bimestral 
+						option(value="semestral") Semestral 
+						option(value="anual") Anual 
+					label(for="costo") Costo
+						input(type='number', placeholder='$')#costo
+					label(for="descripcion") Descripcion
+						input(type='text', placeholder='Agrega una descripcion')#descripcion
+					.info__fechas   
+						label#f1 Fecha de contrato
+						input#fechaInicio(type='date' name='fechaInicio')
+						label#f2 Fecha de renovacion
+						input#fechaRenovacion(type='date' name='fechaRenovacion')
+				.modal-footer
+					.botones  
+						button.btn-guardar(type='button' data-bs-toggle='modal' data-bs-target='#Modalguardar') Guardar
+						button.btn-cancelar(type='button' data-bs-toggle='modal' data-bs-target='#Modalcancelar') Cancelar 
+	#Modalguardar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalguardarLabel')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+					.modal-header
+						h5#modalGuardar.modal-title  
+						button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+					.modal-body
+						h5 Guardado!
+					.modal-footer
+						a(href="control-contratos.html") 
+							button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+	#Modalcancelar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalcancelarLabel')
+		.modal-dialog(role='document')
+			.modal-content
+					.modal-header
+						h5#modalcancelar.modal-title  
+						button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+					.modal-body
+						h5 Cancelado!
+					.modal-footer
+						.botones  
+							button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+	#Modalve.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalveLabel')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+					.modal-header
+						h2 Información del contrato
+						button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+						.modal-body 
+							.datos__info 
+							label(for="id") Id Contrato 
+							label(for="servicio") Servicio 
+							label(for="fContrato") Fecha de contrato
+							label(for="fRenovacion") Fecha de renovacion
+							label(for="status") status
+						.modal-footer
+								button.btn-modi(type='button' data-bs-toggle='modal' data-bs-target='#Modalmodi') Modificar
+								button.btn-del(type='button' data-bs-toggle='modal' data-bs-target='#Modaldel') Eliminar
+	#Modalmodi.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodiLabel')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+				.modal-header
+					h1#Modagitlmodi Modificar Contrato
+					button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					label(for="cliente") Cliente
+						input(type='text', placeholder='Nombre del cliente')#cliente
+					label(for="servicio") Servicio
+					select(name="servicio")#servicio
+						option(value="no") Seleccione un servicio 
+						option(value="AWS") AWS 
+						option(value="Aspel") Aspel   
+					label(for="plan") Plan
+						select#plan(name="plan")
+						option(value="no") Seleccione el plan 
+						option(value="mensual") Mensual 
+						option(value="bimestral") Bimestral 
+						option(value="semestral") Semestral 
+						option(value="anual") Anual 
+					label(for="costo") Costo
+						input(type='number', placeholder='$')#costo
+					label(for="descripcion") Descripcion
+						input(type='text', placeholder='Agrega una descripcion')#descripcion
+					.info__fechas   
+						label#f1 Fecha de contrato
+							input#fechaInicio(type='date' name='fechaInicio')
+						label#f2 Fecha de renovacion
+							input#fechaRenovacion(type='date' name='fechaRenovacion')
+				.modal-footer
+					a(href="control-contratos.html")
+						button.btn-guardar(type='button' data-bs-toggle='modal' data-bs-target='#Modalguardar') Guardar
+						button.btn-cancelar(type='button' data-bs-toggle='modal' data-bs-target='#Modalcancelar') Cancelar 
+	#Modaldel.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelLabel')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+				.modal-header
+					h1#Modagitlnuevo Eliminar
+					button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					form#forgotPasswordForm(onsubmit='submitForm(event)')
+					label(for='text') Desea eliminar?
+					button.btn.btn-danger(type='button' data-bs-toggle='modal' data-bs-target='#Modaleliminar') Eliminar
+	#Modaleliminar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaleliminarLabel')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+					.modal-header
+						h5#modaleliminar.modal-title  
+						button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+					.modal-body
+						h5 Eliminado!
+					.modal-footer
+						a(href="control-contratos.html") 
+							button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar

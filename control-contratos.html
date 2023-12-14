@@ -50,58 +50,241 @@
       </div>
     </div>
     <div class="ctrlContratos"> 
-      <h2 class="title">Control de contratos<a href="nuevo-contrato.html"> 
-          <button class="btn btn-nuevo" type="submit" id="nuevo">Nuevo</button></a></h2>
-      <div class="content__contratos__tabs">
-        <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> 
-            <div class="content__contratos__tabs__item__body">
-              <div class="table-wrapper content__contratos__tabs__item__body__table">
-                <table class="table table-striped table-hover">
-                  <thead> 
-                    <tr>                 
-                      <th>Folio</th>
-                      <th>Cliente</th>
-                      <th>Servicio</th>
-                      <th>Vigencia</th>
-                      <th>Detalles </th>
-                      <th>Acción</th>
-                    </tr>
-                  </thead>
-                  <tbody> 
-                    <tr> 
-                      <td>01</td>
-                      <td>Josue Martinez</td>
-                      <td>Aspel</td>
-                      <td>27 Enero 2024</td>
-                      <td> <a href="ver-contrato.html">ver más... </a></td>
-                      <td><a class="edit" href="#editProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
-                    </tr>
-                    <tr> 
-                      <td>02</td>
-                      <td>cliente 2</td>
-                      <td>Aws</td>
-                      <td>23 octubre 2023</td>
-                      <td> <a href="ver-contrato.html">ver más... </a></td>
-                      <td><a class="edit" href="#editProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="content__contratos__tabs__item__footer">
-              <nav aria-label="...">
-                <ul class="pagination">
-                  <li class="page-item disabled"></li><a class="page-link">Previous</a>
-                  <li class="page-item"></li><a class="page-link" href="#">1</a>
-                  <li class="page-item active" aria-current="page"></li><a class="page-link" href="#">2</a>
-                  <li class="page-item"></li><a class="page-link" href="#">3</a>
-                  <li class="page-item"></li><a class="page-link" href="#">Next   </a>
-                </ul>
-              </nav>
-            </div><a href="inicioAdmin.html"> 
-              <button class="btn btn-exit" type="submit" id="salir">Salir</button></a>
+      <div class="ctrlContratos-box">
+        <h2 class="title">Control de contratos</h2>
+        <button class="btn btn-contrato" type="button" data-bs-toggle="modal" data-bs-target="#Modalcontrato">Nuevo </button>
+        <div class="content__contratos__tabs">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="usuario-tab-pane" role="tabpanel" aria-labelledby="usuario-tab" tabindex="0"> </div>
           </div>
+        </div>
+        <div class="content__contratos__tabs__item__body">
+          <div class="table-wrapper content__contratos__tabs__item__body__table">
+            <table class="table table-striped table-hover">
+              <thead> 
+                <tr>                 
+                  <th>Folio</th>
+                  <th>Cliente</th>
+                  <th>Servicio</th>
+                  <th>Vigencia</th>
+                  <th>Detalles </th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody> 
+                <tr> 
+                  <td>01</td>
+                  <td>Josue Martinez</td>
+                  <td>Aspel</td>
+                  <td>27 Enero 2024</td>
+                  <td> 
+                    <button class="btn-ve" type="button" data-bs-toggle="modal" data-bs-target="#Modalve">ver más...</button>
+                  </td>
+                  <td><i class="material-icons btn-modi" data-bs-toggle="modal" data-bs-target="#Modalmodi"> &#xE254;</i><i class="material-icons btn-del" data-bs-toggle="modal" data-bs-target="#Modaldel"> &#xE872;                  </i></td>
+                </tr>
+                <tr> 
+                  <td>02</td>
+                  <td>cliente 2</td>
+                  <td>Aws</td>
+                  <td>23 octubre 2023</td>
+                  <td> 
+                    <button class="btn-ve" type="button" data-bs-toggle="modal" data-bs-target="#Modalve">ver más...</button>
+                  </td>
+                  <td><i class="material-icons btn-modi" data-bs-toggle="modal" data-bs-target="#Modalmodi"> &#xE254;</i><i class="material-icons btn-del" data-bs-toggle="modal" data-bs-target="#Modaldel"> &#xE872;                  </i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="content__contratos__tabs__item__footer">
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled"></li><a class="page-link">Previous</a>
+              <li class="page-item"></li><a class="page-link" href="#">1</a>
+              <li class="page-item active" aria-current="page"></li><a class="page-link" href="#">2</a>
+              <li class="page-item"></li><a class="page-link" href="#">3</a>
+              <li class="page-item"></li><a class="page-link" href="#">Next   </a>
+            </ul>
+          </nav><a href="inicioAdmin.html"> 
+            <button class="btn btn-exit" type="submit" id="salir">Salir</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modalcontrato" tabindex="-1" aria-labelledby="modalcontratoLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="Modagicontrato">Añadir Nuevo Contrato</h1>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="cliente">Cliente
+              <input type="text" placeholder="Nombre del cliente" id="cliente"/>
+            </label>
+            <label for="servicio">Servicio</label>
+            <select name="servicio" id="servicio">
+              <option value="no">Seleccione un servicio </option>
+              <option value="AWS">AWS </option>
+              <option value="Aspel">Aspel   </option>
+            </select>
+            <label for="plan">Plan
+              <select id="plan" name="plan"></select>
+              <option value="no">Seleccione el plan </option>
+              <option value="mensual">Mensual </option>
+              <option value="bimestral">Bimestral </option>
+              <option value="semestral">Semestral </option>
+              <option value="anual">Anual </option>
+            </label>
+            <label for="costo">Costo
+              <input type="number" placeholder="$" id="costo"/>
+            </label>
+            <label for="descripcion">Descripcion
+              <input type="text" placeholder="Agrega una descripcion" id="descripcion"/>
+            </label>
+            <div class="info__fechas">  
+              <label id="f1">Fecha de contrato</label>
+              <input id="fechaInicio" type="date" name="fechaInicio"/>
+              <label id="f2">Fecha de renovacion</label>
+              <input id="fechaRenovacion" type="date" name="fechaRenovacion"/>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="botones"> 
+              <button class="btn-guardar" type="button" data-bs-toggle="modal" data-bs-target="#Modalguardar">Guardar</button>
+              <button class="btn-cancelar" type="button" data-bs-toggle="modal" data-bs-target="#Modalcancelar">Cancelar </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modalguardar" tabindex="-1" aria-labelledby="modalguardarLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalGuardar"> </h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Guardado!</h5>
+          </div>
+          <div class="modal-footer"><a href="control-contratos.html"> 
+              <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modalcancelar" tabindex="-1" aria-labelledby="modalcancelarLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalcancelar"> </h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Cancelado!</h5>
+          </div>
+          <div class="modal-footer">
+            <div class="botones"> 
+              <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modalve" tabindex="-1" aria-labelledby="modalveLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Información del contrato</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body"> 
+              <div class="datos__info"> </div>
+              <label for="id">Id Contrato </label>
+              <label for="servicio">Servicio </label>
+              <label for="fContrato">Fecha de contrato</label>
+              <label for="fRenovacion">Fecha de renovacion</label>
+              <label for="status">status</label>
+            </div>
+            <div class="modal-footer">
+              <button class="btn-modi" type="button" data-bs-toggle="modal" data-bs-target="#Modalmodi">Modificar</button>
+              <button class="btn-del" type="button" data-bs-toggle="modal" data-bs-target="#Modaldel">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modalmodi" tabindex="-1" aria-labelledby="modalmodiLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="Modagitlmodi">Modificar Contrato</h1>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <label for="cliente">Cliente
+              <input type="text" placeholder="Nombre del cliente" id="cliente"/>
+            </label>
+            <label for="servicio">Servicio</label>
+            <select name="servicio" id="servicio">
+              <option value="no">Seleccione un servicio </option>
+              <option value="AWS">AWS </option>
+              <option value="Aspel">Aspel   </option>
+            </select>
+            <label for="plan">Plan
+              <select id="plan" name="plan"></select>
+              <option value="no">Seleccione el plan </option>
+              <option value="mensual">Mensual </option>
+              <option value="bimestral">Bimestral </option>
+              <option value="semestral">Semestral </option>
+              <option value="anual">Anual </option>
+            </label>
+            <label for="costo">Costo
+              <input type="number" placeholder="$" id="costo"/>
+            </label>
+            <label for="descripcion">Descripcion
+              <input type="text" placeholder="Agrega una descripcion" id="descripcion"/>
+            </label>
+            <div class="info__fechas">  
+              <label id="f1">Fecha de contrato
+                <input id="fechaInicio" type="date" name="fechaInicio"/>
+              </label>
+              <label id="f2">Fecha de renovacion
+                <input id="fechaRenovacion" type="date" name="fechaRenovacion"/>
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer"><a href="control-contratos.html">
+              <button class="btn-guardar" type="button" data-bs-toggle="modal" data-bs-target="#Modalguardar">Guardar</button>
+              <button class="btn-cancelar" type="button" data-bs-toggle="modal" data-bs-target="#Modalcancelar">Cancelar </button></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modaldel" tabindex="-1" aria-labelledby="modaldelLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="Modagitlnuevo">Eliminar</h1>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
+            <label for="text">Desea eliminar?</label>
+            <button class="btn btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#Modaleliminar">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modaleliminar" tabindex="-1" aria-labelledby="modaleliminarLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modaleliminar"> </h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Eliminado!</h5>
+          </div>
+          <div class="modal-footer"><a href="control-contratos.html"> 
+              <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
         </div>
       </div>
     </div>

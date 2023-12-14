@@ -55,7 +55,7 @@
         <button class="btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Modalnuevo">Nuevo</button>
       </div>
       <div class="modal fade modal fade" id="Modalnuevo" tabindex="-1" aria-labelledby="modalnuevoLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h1 id="Modagitlnuevo">Recuperar Contraseña</h1>
@@ -138,7 +138,7 @@
           </button></a>
       </div>
       <div class="modal fade modal fade" id="Modalmodificar" tabindex="-1" aria-labelledby="modalmodificarLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h1 id="Modagitlnuevo">Modificar Cliente</h1>
@@ -214,18 +214,20 @@
                 <input type="password" id="password"/>
               </label>
             </div>
-            <div class="modal-footer"><a href="control-clientes.html">
-                <button type="submit">Guardar</button>
-                <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button></a></div>
+            <div class="modal-footer">
+              <div class="botones"> </div>
+              <button class="btn-gr" type="button" data-bs-toggle="modal" data-bs-target="#Modalgr">Guardar</button>
+              <button class="btn-cr" type="button" data-bs-toggle="modal" data-bs-target="#Modalcr">Cancelar</button>
+            </div>
           </div>
         </div>
       </div>
       <div class="modal fade modal fade" id="Modaldelete" tabindex="-1" aria-labelledby="modaldelateLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h1 id="Modagitlnuevo">Eliminar</h1>
-              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
@@ -236,7 +238,7 @@
         </div>
       </div>
       <div class="modal fade modal fade" id="Modalmas" tabindex="-1" aria-labelledby="modaldelateLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h2>Informacion del equipo</h2>
@@ -256,6 +258,38 @@
             </div>
             <div class="modal-footer"><a href="control-clientes.html">
                 <button class="btn btn-danger" type="button">Eliminar</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modalgr" tabindex="-1" aria-labelledby="modalgrLabel">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalgr"> </h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Guardado!</h5>
+            </div>
+            <div class="modal-footer"><a href="control-clientes.html"> 
+                <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modalcr" tabindex="-1" aria-labelledby="modalcrLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalcancelar"> </h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Cancelado!</h5>
+            </div>
+            <div class="modal-footer">
+              <div class="botones"> <a href="control-clientes.html"> 
+                  <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ block content
             h3.title Control de clientes 
             button.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#Modalnuevo') Nuevo
         #Modalnuevo.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalnuevoLabel')
-            .modal-dialog(role='document')
+            .modal-dialog.modal-dialog-centered
                 .modal-content
                     .modal-header
                         h1#Modagitlnuevo Recuperar Contraseña
@@ -77,7 +77,7 @@ block content
                 button.btn.btn-exit(type="submit")#salir Salir
                             //MODAL
         #Modalmodificar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodificarLabel')
-                .modal-dialog(role='document')
+                .modal-dialog.modal-dialog-centered
                     .modal-content
                         .modal-header
                             h1#Modagitlnuevo Modificar Cliente
@@ -141,22 +141,21 @@ block content
                             label(for="password") Correo electrónico
                                 input(type='password')#password
                         .modal-footer
-                            a(href="control-clientes.html")
-                                button(type='submit') Guardar
-                                button(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                            .botones 
+                            button.btn-gr(type='button' data-bs-toggle='modal' data-bs-target='#Modalgr') Guardar
+                            button.btn-cr(type='button' data-bs-toggle='modal' data-bs-target='#Modalcr') Cancelar
         #Modaldelete.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
-                .modal-dialog(role='document')
+                .modal-dialog.modal-dialog-centered
                     .modal-content
                         .modal-header
                             h1#Modagitlnuevo Eliminar
                             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                span(aria-hidden='true') &times;
                         .modal-body
                             form#forgotPasswordForm(onsubmit='submitForm(event)')
                             label(for='text') Desea eliminar?
                             button.btn.btn-danger(type='button') Eliminar
         #Modalmas.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
-                .modal-dialog(role='document')
+                .modal-dialog.modal-dialog-centered
                     .modal-content
                         .modal-header
                             h2 Informacion del equipo
@@ -176,3 +175,26 @@ block content
                         .modal-footer
                             a(href="control-clientes.html")
                                 button.btn.btn-danger(type='button') Eliminar
+        #Modalgr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalgrLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5#modalgr.modal-title  
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        h5 Guardado!
+                    .modal-footer
+                        a(href="control-clientes.html") 
+                            button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+        #Modalcr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalcrLabel')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h5#modalcancelar.modal-title  
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        h5 Cancelado!
+                    .modal-footer
+                        .botones  
+                            a(href="control-clientes.html") 
+                                button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar

@@ -5386,7 +5386,7 @@ dropdown ul li a {
 .container__controlajuste__administrador table.table thead tr th {
   border-color: #666666d9;
   vertical-align: middle;
-  font-size: 10px;
+  font-size: 20px;
   font-family: 'Raleway', sans-serif;
   text-align: center;
   padding: 10px 1px;
@@ -5757,21 +5757,21 @@ dropdown ul li a {
   width: 30px;
   height: auto;
 }
-.container__controlstaff__administrador__title table.table thead tr th {
+.container__controlstaff__administrador table.table thead tr th {
   border-color: #666666d9;
   vertical-align: middle;
-  font-size: 10px;
+  font-size: 16px;
   font-family: 'Raleway', sans-serif;
   text-align: center;
   padding: 10px 1px;
 }
-.container__controlstaff__administrador__title table.table thead td {
+.container__controlstaff__administrador table.table tbody tr td {
   border-color: #666666d9;
   padding: 12px 15px;
   vertical-align: middle;
-  font-size: 10px;
+  font-size: 16px;
 }
-.container__controlstaff__administrador__title table.table .btn-link {
+.container__controlstaff__administrador table.table .btn-link {
   color: #2D97B2;
   border: none;
   cursor: pointer;
@@ -5779,32 +5779,32 @@ dropdown ul li a {
   font-size: 10px;
   text-align: left;
 }
-.container__controlstaff__administrador__title table.table .btn-link:hover {
+.container__controlstaff__administrador table.table .btn-link:hover {
   background-color: #ffffff;
   border: none;
   color: #ffa500;
 }
-.container__controlstaff__administrador__title table.table th i {
+.container__controlstaff__administrador table.table th i {
   font-size: 13px;
   margin: 0 15px;
   cursor: pointer;
 }
-.container__controlstaff__administrador__title table.table td:last-child i {
+.container__controlstaff__administrador table.table td:last-child i {
   border-color: #666666d9;
   vertical-align: middle;
   font-size: 15px;
 }
-.container__controlstaff__administrador__title table.table .edit {
+.container__controlstaff__administrador table.table .edit {
   color: yellow !important;
 }
-.container__controlstaff__administrador__title table.table .delete {
+.container__controlstaff__administrador table.table .delete {
   color: red !important;
 }
-.container__controlstaff__administrador__title .pagination {
+.container__controlstaff__administrador .pagination {
   float: right;
   margin: 0 0 5px;
 }
-.container__controlstaff__administrador__title .pagination li a {
+.container__controlstaff__administrador .pagination li a {
   border: none;
   font-size: 13px;
   min-width: 30px;
@@ -5816,19 +5816,19 @@ dropdown ul li a {
   text-align: center;
   padding: 0 6px;
 }
-.container__controlstaff__administrador__title .pagination li a a:hover {
-  color: #ffa500;
+.container__controlstaff__administrador .pagination li a a:hover {
+  color: orange;
 }
-.container__controlstaff__administrador__title .pagination li.active a {
-  background: #03A9F4;
+.container__controlstaff__administrador .pagination li li.active a {
+  background: #03A9F4 !important;
 }
-.container__controlstaff__administrador__title .pagination li.active a:hover {
+.container__controlstaff__administrador .pagination li li.active a:hover {
   background: #0397d6;
 }
-.container__controlstaff__administrador__title .pagination li.active a.page-link {
+.container__controlstaff__administrador .pagination li li.active a.page-link {
   background: #03A9F4;
 }
-.container__controlstaff .botonSalir {
+.container__controlstaff__administrador .botonSalir {
   background-color: #ffa500;
   color: white;
   border: none;
@@ -5840,7 +5840,7 @@ dropdown ul li a {
   position: relative;
   text-align: center;
 }
-.container__controlstaff .botonSalir:hover {
+.container__controlstaff__administrador .botonSalir:hover {
   background-color: #666666d9;
 }
 .modificar_cliente .info h2 {
