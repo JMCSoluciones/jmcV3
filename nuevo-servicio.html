@@ -26,15 +26,14 @@
   </head>
   <body> 
     <header>
-      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión <img src="imagenes/login.svg" alt="icono de login"/></a></div>
+      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión </a></div>
       <nav class="menu"> 
         <section class="menu__container"> <img class="menu__logo" src="imagenes/logo.png" alt="Logo de la empresa" id="logo"/>
           <ul class="menu__links">
             <li class="menu__item"><a class="menu__link" href="inicioAdmin.html">Inicio</a></li>
             <li class="menu__item"><a class="menu__link" href="contratos-cliente.html">Contratos</a></li>
             <li class="menu__item"> <a class="menu__link" href="pagos-cliente.html">Pagos</a></li>
-            <li class="menu__item"> <a class="menu__link" href="#">Tickets </a></li>
-            <li class="menu__item"><a class="menu__link" href="mantenimiento.html">Imprimir</a></li>
+            <li class="menu__item"> <a class="menu__link" href="tickets-cliente.html">Tickets </a></li>
             <li class="menu__item"><a class="menu__link" href="equipo-cliente.html">Equipos</a></li>
           </ul>
           <div class="menu__hamburger"><img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
@@ -43,11 +42,11 @@
     </header>
     <div class="controlMenuAdmin"> 
       <div class="controlMenuAdmin__box">
-        <div class="controlMenuAdmin__box__item"><a href="control-clientes.html">Clientes<img src="/Images/Icons/clientes.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"> <a href="control-soporte.html">Soporte<img src="/Images/Icons/soporte.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-pagos.html">Pagos<img src="/Images/Icons/pagos.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-contratos.html">Contratos<img src="/Images/Icons/contratos.svg" alt=""/></a></div>
-        <div class="controlMenuAdmin__box__item"><a href="control-ajuste.html">Ajustes<img src="/Images/Icons/ajustes.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-clientes.html">Clientes<img src="Images/Icons/clientes.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"> <a href="control-soporte.html">Soporte<img src="Images/Icons/soporte.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-pagos.html">Pagos<img src="Images/Icons/pagos.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-contratos.html">Contratos<img src="Images/Icons/contratos.svg" alt=""/></a></div>
+        <div class="controlMenuAdmin__box__item"><a href="control-ajuste.html">Ajustes<img src="Images/Icons/ajustes.svg" alt=""/></a></div>
       </div>
     </div>
     <div class="content__nuevoservicio__administrador"> 
@@ -55,45 +54,25 @@
         <h1>Añadir Nuevo Servicio</h1>
       </div>
       <div class="content__nuevoservicio__administrador__container-servicio">
-        <div class="servicio">
-          <label for="Nombre">Id </label>
-          <select class="form-select" id="autoSizingSelect">
-            <option selected=""> </option>
-            <option value="1">Uno</option>
-            <option value="2">Dos</option>
-            <option value="3">Tres</option>
-          </select>
+        <div class="info">
+          <label for="Id">Id servicio</label>
+          <input class="form-info" type="text" placeholder="" aria-label=""/>
         </div>
-        <div class="servicio">
-          <label for="nombre">Nombre</label>
-          <input class="form-servicio" type="text" placeholder="Ingrese su nombre" aria-label=""/>
+        <div class="info">
+          <label for="Nombre">Nombre</label>
+          <input class="form-info" type="text" placeholder="" aria-label=""/>
         </div>
-        <div class="servicio">
-          <label for="Nombre">Costo</label>
-          <select class="form-costo" id="autoSizingSelect">
-            <option selected=""> </option>
-            <option value="1">Uno</option>
-            <option value="2">Dos</option>
-            <option value="3">Tres</option>
-          </select>
+        <div class="info">
+          <label for="plan">Plan</label>
+          <input class="form-info" type="text" placeholder="" aria-label=""/>
         </div>
-        <div class="servicio">
-          <label for="concepto">Moneda</label>
-          <input class="form-servicio" id="concepto" type="text" name="concepto" placeholder="Ingrese el monto"/>
-          <button id="valida" onclick="validarMoneda()">Validar</button>
+        <div class="info">
+          <label for="moneda">Moneda</label>
+          <input class="form-info" id="concepto" type="text" name="moneda" placeholder=""/>
         </div>
-        <div class="servicio">
-          <label for="total">Plan</label>
-          <select class="form-plan" id="autoSizingSelect">
-            <option selected=""> </option>
-            <option value="1">Uno</option>
-            <option value="2">Dos</option>
-            <option value="3">Tres</option>
-          </select>
-        </div>
-        <div class="servicio">
-          <label for="descripcion">Descripci&oacute;n:</label>
-          <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="Ingrese la descripción aquí..."></textarea>
+        <div class="info">
+          <label for="Costo">Costo</label>
+          <input class="form-info" type="text" placeholder="" aria-label=""/>
         </div>
       </div>
       <div class="content__nuevoservicio__administrador__container-botones">
