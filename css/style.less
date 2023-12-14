@@ -4592,7 +4592,7 @@ dropdown{
           th {
             border-color:@color-text;
             vertical-align: middle; 
-            font-size: 10px;
+            font-size: 20px;
             font-family: @font-family;
             text-align: center;
             padding: 10px 1px;
@@ -4969,7 +4969,7 @@ dropdown{
             th {
               border-color:@color-text;
               vertical-align: middle; 
-              font-size: 10px;
+              font-size: 14px;
               font-family: @font-family;
               text-align: center;
               padding: 10px 1px;
@@ -4979,7 +4979,7 @@ dropdown{
               border-color: @color-text;
               padding: 12px 15px; 
               vertical-align: middle;
-              font-size: 10px;
+              font-size: 14px;
               }
             }
               .btn-link {
@@ -5019,39 +5019,38 @@ dropdown{
                 color: @color-red !important;
               }
               }
-          .pagination {
-            float: right;
-            margin: 0 0 5px;
-            li {
-              a {
-                border: none;
-                font-size: 13px;
-                min-width: 30px;
-                min-height: 30px;
-                color: blue !important;
-                margin: 0 2px;
-                line-height: 30px;
-                border-radius: 2px !important;
-                text-align: center;
-                padding: 0 6px;
-                a:hover {
-                  color: @color-orange;
+              .pagination {
+                float: right;
+                margin: 0 0 5px;
+                li {
+                  a {
+                    border: none;
+                    font-size: 13px;
+                    min-width: 30px;
+                    min-height: 30px;
+                    color: blue !important;
+                    margin: 0 2px;
+                    line-height: 30px;
+                    border-radius: 2px !important;
+                    text-align: center;
+                    padding: 0 6px;
+                    a:hover {
+                      color: orange;
+                    }
+                  }
                 }
-              }
-            }
-            li.active {
-              a {
-                background: #03A9F4;
-                &:hover {
-                  background: #0397d6;
+                li.active {
+                  a {
+                    background: #03A9F4 !important;
+                    &:hover {
+                      background: #0397d6;
+                    }
+                  }
+                  a.page-link {
+                    background: #03A9F4;
+                  }
                 }
-              }
-              a.page-link {
-                background: #03A9F4;
-              }
-            }
-            }
-    }
+                }
   }
   .botonSalir{
     background-color:@color-orange;

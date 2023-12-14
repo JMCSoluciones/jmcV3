@@ -67,8 +67,8 @@
                 <th></th>
                 <th>Id</th>
                 <th>Nombre</th>
-                <th>Dirección</th>
-                <th>Detalles</th>
+                <th>Correo</th>
+                <th>Departamento</th>
                 <th>Acción</th>
               </tr>
             </thead>
@@ -77,10 +77,8 @@
                 <td></td>
                 <td>1</td>
                 <td>Fran Wilson</td>
-                <td>89 Chiaroscuro Rd, Portland, USA </td>
-                <td>
-                  <button class="btn-vr" type="button" data-bs-toggle="modal" data-bs-target="#Modalvr">ver más....    </button>
-                </td>
+                <td>jouse@gmail.com</td>
+                <td> </td>
                 <td><i class="material-icons btn-mr" data-bs-toggle="modal" data-bs-target="#Modalmr">&#xE254;</i><i class="material-icons btn-de" data-bs-toggle="modal" data-bs-target="#Modalde">&#xE872;</i></td>
               </tr>
               <tr>
@@ -88,9 +86,7 @@
                 <td>2</td>
                 <td> </td>
                 <td> </td>
-                <td>
-                  <button class="btn-vr" type="button" data-bs-toggle="modal" data-bs-target="#Modalvr">ver más....    </button>
-                </td>
+                <td></td>
                 <td><i class="material-icons btn-mr" data-bs-toggle="modal" data-bs-target="#Modalmr">&#xE254;</i><i class="material-icons btn-de" data-bs-toggle="modal" data-bs-target="#Modalde">&#xE872;</i></td>
               </tr>
               <tr>
@@ -98,29 +94,7 @@
                 <td>3</td>
                 <td> </td>
                 <td> </td>
-                <td>
-                  <button class="btn-vr" type="button" data-bs-toggle="modal" data-bs-target="#Modalvr">ver más....    </button>
-                </td>
-                <td><i class="material-icons btn-mr" data-bs-toggle="modal" data-bs-target="#Modalmr">&#xE254;</i><i class="material-icons btn-de" data-bs-toggle="modal" data-bs-target="#Modalde">&#xE872;</i></td>
-              </tr>
-              <tr>
                 <td></td>
-                <td>4</td>
-                <td> </td>
-                <td> </td>
-                <td>
-                  <button class="btn-vr" type="button" data-bs-toggle="modal" data-bs-target="#Modalvr">ver más....    </button>
-                </td>
-                <td><i class="material-icons btn-mr" data-bs-toggle="modal" data-bs-target="#Modalmr">&#xE254;</i><i class="material-icons btn-de" data-bs-toggle="modal" data-bs-target="#Modalde">&#xE872;</i></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>5</td>
-                <td> </td>
-                <td> </td>
-                <td>
-                  <button class="btn-vr" type="button" data-bs-toggle="modal" data-bs-target="#Modalvr">ver más....    </button>
-                </td>
                 <td><i class="material-icons btn-mr" data-bs-toggle="modal" data-bs-target="#Modalmr">&#xE254;</i><i class="material-icons btn-de" data-bs-toggle="modal" data-bs-target="#Modalde">&#xE872;</i></td>
               </tr>
             </tbody>
@@ -141,6 +115,137 @@
       <div class="botonSalir" type="button">Salir</div>
     </div>
     <script src="salir.js"></script>
+    <div class="modal fade modal fade" id="Modalstaff" tabindex="-1" aria-labelledby="modalstaffLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Información del staff</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"> 
+            <div class="staff">
+              <label for="Nombre">Id </label>
+              <input class="form-staff" type="text" placeholder="" aria-label=""/>
+            </div>
+            <div class="staff"> 
+              <label for="Nombre">Departamento</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected=""> </option>
+                <option value="1">Uno</option>
+                <option value="2">Dos</option>
+                <option value="3">Tres</option>
+              </select>
+            </div>
+            <div class="staff">
+              <label for="nombre">Nombre</label>
+              <input class="form-staff" type="text" placeholder="Ingrese su nombre" aria-label=""/>
+            </div>
+            <div class="staff">
+              <label for="Nombre">Departamento</label>
+              <select class="form-dep" id="autoSizingSelect">
+                <option selected=""> Seleccione departamento</option>
+                <option value="1">Uno</option>
+                <option value="2">Dos</option>
+                <option value="3">Tres</option>
+              </select>
+            </div>
+            <div class="staff">
+              <label for="concepto">Correo Electrónico</label>
+              <input class="form-staff" type="email" name="concepto" placeholder="Ingrese su correo"/>
+            </div>
+            <div class="staff">
+              <label for="total">Password</label>
+              <input class="form-staff" type="password" name="contraseña" placeholder="Ingrese password"/>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn-ar" type="button" data-bs-toggle="modal" data-bs-target="#Modalar">Agergar</button>
+            <button class="btn-ca" type="button" data-bs-toggle="modal" data-bs-target="#Modalca">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modalar" tabindex="-1" aria-labelledby="modalguardarLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalGuardar"> </h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Se añadió!</h5>
+          </div>
+          <div class="modal-footer"><a href="control-staff.html"> 
+              <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modalca" tabindex="-1" aria-labelledby="modalcaLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalca"> </h5>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h5>Cancelado!</h5>
+          </div>
+          <div class="modal-footer">
+            <div class="botones"> <a href="control-staff.html">
+                <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modalmr" tabindex="-1" aria-labelledby="modalmrLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 id="Modagitlmodi">Modificar Staff</h1>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="staff">
+              <label for="Nombre">Id </label>
+              <input class="form-staff" type="text" placeholder="" aria-label=""/>
+            </div>
+            <div class="staff"> 
+              <label for="Nombre">Departamento</label>
+              <select class="form-select" id="autoSizingSelect">
+                <option selected=""> </option>
+                <option value="1">Uno</option>
+                <option value="2">Dos</option>
+                <option value="3">Tres</option>
+              </select>
+            </div>
+            <div class="staff">
+              <label for="nombre">Nombre</label>
+              <input class="form-staff" type="text" placeholder="Ingrese su nombre" aria-label=""/>
+            </div>
+            <div class="staff">
+              <label for="Nombre">Departamento</label>
+              <select class="form-dep" id="autoSizingSelect">
+                <option selected=""> Seleccione departamento</option>
+                <option value="1">Uno</option>
+                <option value="2">Dos</option>
+                <option value="3">Tres</option>
+              </select>
+            </div>
+            <div class="staff">
+              <label for="concepto">Correo Electrónico</label>
+              <input class="form-staff" type="email" name="concepto" placeholder="Ingrese su correo"/>
+            </div>
+            <div class="staff">
+              <label for="total">Password</label>
+              <input class="form-staff" type="password" name="contraseña" placeholder="Ingrese password"/>
+            </div>
+          </div>
+          <div class="modal-footer"><a href="control-contratos.html">
+              <button class="btn-guardar" type="button" data-bs-toggle="modal" data-bs-target="#Modalguardar">Guardar</button>
+              <button class="btn-cancelar" type="button" data-bs-toggle="modal" data-bs-target="#Modalcancelar">Cancelar </button></a></div>
+        </div>
+      </div>
+    </div>
     <footer> 
       <div class="footer__box">
         <div class="footer__box__body">
