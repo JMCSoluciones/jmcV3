@@ -1,0 +1,99 @@
+<!DOCTYPE html >
+<html> 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <title>JMC Soluciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Raleway:wght@100;300;400;600;800&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px)"/>
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1024px)"/>
+    <link rel="stylesheet" href="css/menu.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <link rel="shortcut icon" href="images/favIcon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body> 
+    <header>
+      <div class="menu-top"> <a class="menu-top__link" href="login.html">Cerrar Sesión </a></div>
+      <nav class="menu"> 
+        <section class="menu__container"> <img class="menu__logo" src="imagenes/logo.png" alt="Logo de la empresa" id="logo"/>
+          <ul class="menu__links">
+            <li class="menu__item"><a class="menu__link" href="inicioAdmin.html">Inicio</a></li>
+            <li class="menu__item"><a class="menu__link" href="contratos-cliente.html">Contratos</a></li>
+            <li class="menu__item"> <a class="menu__link" href="pagos-cliente.html">Pagos</a></li>
+            <li class="menu__item"> <a class="menu__link" href="tickets-cliente.html">Tickets </a></li>
+            <li class="menu__item"><a class="menu__link" href="equipo-cliente.html">Equipos</a></li>
+          </ul>
+          <div class="menu__hamburger"><img class="menu__img" src="imagenes/menu.svg" alt="icono de menu" id="menu"/></div>
+        </section>
+      </nav>
+    </header>
+    <div class="inicio_cliente"> 
+      <div class="inicio_cliente__box">
+        <div class="inicio_cliente__box__item"><a href="contratos-cliente.html">Contratos<img src="Images/Icons/contratos.svg" alt=""/></a></div>
+        <div class="inicio_cliente__box__item"> <a href="pagos-cliente.html">Pagos<img src="Images/Icons/pagos.svg" alt=""/></a></div>
+        <div class="inicio_cliente__box__item"><a href="tickets-cliente.html">Tickets<img src="Images/Icons/tickets.svg" alt=""/></a></div>
+        <div class="inicio_cliente__box__item"><a href="equipo-cliente.html">Equipos<img src="Images/Icons/equipos.svg" alt=""/></a></div>
+      </div>
+    </div>
+    <div class="detalleCliente"> 
+      <h2>Informacion del equipo</h2><a href="equipo-cliente.html"> 
+        <button class="btn btn-exit" type="submit" id="salir">Regresar</button></a>
+      <div class="detalle__info"> 
+        <label>Tipo de equipo</label>
+        <label for="marca">Marca </label>
+        <label for="nombre">Nombre</label>
+        <label for="ram">RAM </label>
+        <label for="procesador">Procesador </label>
+        <label for="disco">Disco duro</label>
+        <label for="ip">Ip </label>
+        <label for="anydesk">Anydesk </label>
+        <label for="usuario">Usuario </label>
+        <h3>Antivirus
+          <div class="detalle__info__vigencia">
+            <div class="detalle__info__vigencia-name"> 
+              <label for="name" id="txtName">Nombre </label>
+            </div>
+            <div class="detalle__info__vigencia-date">
+              <label for="vigencia" id="txtVigencia">Vigencia  </label>
+            </div>
+          </div>
+        </h3>
+        <h3>Paqueteria Office 
+          <div class="detalle__info__office"> 
+            <div class="detalle__info__office-name">
+              <label for="office" id="officeName">Nombre </label>
+            </div>
+            <div class="detalle__info__office-date">
+              <label for="vigencia" id="txtOffice">Vigencia </label>
+            </div>
+          </div>
+        </h3>
+        <label for="descripcion">Descripción </label>
+      </div>
+    </div>
+    <footer> 
+      <div class="footer__box">
+        <div class="footer__box__body">
+          <h2>JMC Soluciones</h2>
+          <div class="footer__box__body__logo"> 
+            <div class="footer__box__body__logo-img"> <img src="/Images/Icons/jmc.svg" alt="LogoJMC" id="logoJMC"/></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

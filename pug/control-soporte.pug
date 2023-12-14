@@ -49,8 +49,8 @@ block content
                                                 td 
                                                     button.btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más... 
                                                 td
-                                                    i.material-icons.btn-modificar(data-bs-toggle='modal' data-bs-target='#Modalmodifica')  &#xE254;
-                                                    i.material-icons.btn-delete(data-bs-toggle='modal' data-bs-target='#Modaldeletee')  &#xE872;
+                                                    i.material-icons.btn-modifica(data-bs-toggle='modal' data-bs-target='#Modalmodifica')  &#xE254;
+                                                    i.material-icons.btn-deletee(data-bs-toggle='modal' data-bs-target='#Modaldeletee')  &#xE872;
                             .ctrlSoporte__tabs__item__footer
                                 nav(aria-label='...')
                                     ul.pagination
@@ -67,176 +67,137 @@ block content
                 a(href="inicioAdmin.html") 
                     button.btn.btn-exit(type="submit")#salir Salir
         #Modalticket.modal-lg.fade(class="modal fade" tabindex='-1' aria-labelledby='modalticketLabel')
-            .modal-dialog(role='document')
+            .modal-dialog.modal-dialog-centered
                 .modal-content
                     .modal-header
                         h1#Modagitlticket Añadir Nuevo Ticket
                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                            span(aria-hidden='true') &times;
                     .modal-body
-                        form#forgotPasswordForm(onsubmit='submitForm(event)')
-                        label(for="fecha") Fecha
-                        label(for="hora") Hora
-                        label(for="cliente") Cliente
-                            input(type='text', placeholder='Id')#cliente
-                            .btn.btn-dark(type="submit") Buscar
-                            .btn.btn-clean(type="submit") Limpiar
-                        label(for="nombre") Nombre
-                            input(type='text')#nombre
-                        label(for="rfc") RFC
-                            input(type='text')#rfc
-                        label(for="contacto") Contacto
-                            input(type='text')#contacto
-                        label(for="asunto") Asunto
-                            input(type='text')#asunto
-                        label(for="mensaje") Mensaje
-                            input(type='text')#mensaje
-                        .info__archivo   
-                        label(for="adjunto") Adjunto
-                            input(type='file' name='archivo')#adjunto
-                            .btn.btn-adj(type="submit") Adjuntar
-                        label(for="staff") Staff 
+                        .info
+                            label(for="fecha") Fecha
+                            label(for="hora") Hora
+                            label(for="cliente") Cliente
+                                input(type='text', placeholder='Id')#cliente
+                                .btn.btn-dark(type="submit") Buscar
+                                .btn.btn-clean(type="submit") Limpiar
+                            label(for="nombre") Nombre
+                                input(type='text')#nombre
+                            label(for="rfc") RFC
+                                input(type='text')#rfc
+                            label(for="contacto") Contacto
+                                input(type='text')#contacto
+                            label(for="contacto") Contrato
+                                input(type='text')#contrato
+                            label(for="asunto") Asunto
+                                input(type='text')#asunto
+                            label(for="mensaje") Mensaje
+                                input(type='text')#mensaje
+                            .info__archivo   
+                                label(for="adjunto") Adjunto
+                                input(type='file' name='archivo')#adjunto
+                                .btn.btn-adj(type="submit") Adjuntar
+                            label(for="staff") Staff 
                     .modal-footer
                         .botones  
                             a(href="control-soporte.html") 
-                                button.btn.btn-guardar(type="submit") Guardar
-                            a(href="control-soporte.html") 
-                                button.btn.btn-cancelar(type="submit") Cancelar
+                                button.btn-gr(type='button' data-bs-toggle='modal' data-bs-target='#Modalgr') Guardar
+                                button.btn-cr(type='button' data-bs-toggle='modal' data-bs-target='#Modalcr') Cancelar
         #Modalvermas.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalvermasLabel')
             .modal-dialog.modal-dialog-centered
                 .modal-content
                     .modal-header
-                        h2 Informacion del equipo
+                        h2 Información del Ticket
                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                            span(aria-hidden='true') &times;
                     .modal-body
-                        form#forgotPasswordForm(onsubmit='submitForm(event)')
-                        label Tipo de equipo
-                            select#tipo(name="tipo")
-                                option(value="no") Seleccione un tipo 
-                                option(value="ao") All in One 
-                                option(value="pc") Escritorio 
-                                option(value="lap") Laptop 
-                        label(for="marca") Marca 
-                            input(type="text" placeholder="Marca del equipo")#marca
-                        label(for="nombre") Nombre
-                            input(type="text" placeholder="Ingrese el nombre")#nombre
-                        label(for="ram") RAM 
-                            input(type="text" placeholder="Capacidad de memoria")#ram
-                        label(for="procesador") Procesador 
-                            input(type="text" placeholder="Inserte el procesador")#procesador
-                        label(for="disco")#txtDisco Disco duro
-                            input(type="text" placeholder="Capacidad")#capacidad 
-                            select#tipoDisco(name="tipoDisco")
-                            option(value="no") Tipo 
-                            option(value="hdd") HDD 
-                            option(value="ssd") SSD 
-                            input(type="text" placeholder="Uso")#uso 
-                        label(for="ip") Ip 
-                            input(type="number" placeholder="ip local")#ip
-                        label(for="anydesk") Anydesk 
-                            input(type="number" placeholder="Direccion Anydesk")#anydesk
-                        label(for="usuario") Usuario 
-                            input(type="text" placeholder="Nombre de usuario")#usuario
-                        h3 Antivirus
-                            .detalle__info__vigencia
-                                .detalle__info__vigencia-name  
-                                    label(for="name")#txtName Nombre 
-                                        input(type="text")#nAntivirus
-                                .detalle__info__vigencia-date
-                                    label(for="vigencia")#txtVigencia Vigencia 
-                                        input(type="month" placeholder="Vigencia")#vigencia  
-                        h3 Paqueteria Office 
-                            .detalle__info__office 
-                                .detalle__info__office-name
-                                    label(for="office")#officeName Nombre 
-                                        input(type="text")#nOffice
-                                .detalle__info__office-date
-                                    label(for="vigencia")#txtOffice Vigencia 
-                                        input(type="month" placeholder="Vigencia")#officeVigencia
-                        label(for="descripcion") Descripción 
-                            input(type="text" placeholder="Breve descripción")#descripcion 
+                        .detalleTicket__info 
+                            label(for="fecha") Fecha
+                            label(for="nombre") Nombre
+                            label(for="rfc") RFC
+                            label(for="contacto") Contacto 
+                            label(for="contrato") Contrato
+                            label(for="asunto") Asunto
+                            label(for="archivo") Archivo
                     .modal-footer
-                        a(href="control-clientes.html") 
-                            button.btn.btn-deletee(type="submit") Eliminar
-                        a(href="#") 
+                        a(href="control-soporte.html") 
+                            button.btn.btn-deletee(type="submit" data-bs-toggle='modal' data-bs-target='#Modaleliminar') Eliminar
+                        a(href="tickets-cliente.html") 
                             button.btn.btn-historial(type="submit") Historial
         #Modalmodifica.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodificaLabel')
                 .modal-dialog.modal-dialog-centered
                     .modal-content
                         .modal-header
-                            h1#Modagitlnuevo Modificar Cliente
+                            h1#Modagitlnuevo Modificar Ticket
                             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                span(aria-hidden='true') &times;
                         .modal-body
-                            form#forgotPasswordForm(onsubmit='submitForm(event)')
-                            label(for="rfc") RFC
-                                input(type='text')#rfc
-                            label(for="nombre") Nombre
-                                input(type='text')#name
-                            label(for="direccion") Direccion
-                                input(type='text')#direccion
-                            label Estados
-                                select(name='estado')#estado
-                                    option(value='no') Seleccione un estado
-                                    option(value='Aguascalientes') Aguascalientes
-                                    option(value='Baja California') Baja California
-                                    option(value='Baja California Sur') Baja California Sur
-                                    option(value='Campeche') Campeche
-                                    option(value='Chiapas') Chiapas
-                                    option(value='Chihuahua') Chihuahua
-                                    option(value='CDMX') Ciudad de M&eacute;xico
-                                    option(value='Coahuila') Coahuila
-                                    option(value='Colima') Colima
-                                    option(value='Durango') Durango
-                                    option(value='Estado de México') Estado de M&eacute;xico
-                                    option(value='Guanajuato') Guanajuato
-                                    option(value='Guerrero') Guerrero
-                                    option(value='Hidalgo') Hidalgo
-                                    option(value='Jalisco') Jalisco
-                                    option(value='Michoacán') Michoac&aacute;n
-                                    option(value='Morelos') Morelos
-                                    option(value='Nayarit') Nayarit
-                                    option(value='Nuevo León') Nuevo Le&oacute;n
-                                    option(value='Oaxaca') Oaxaca
-                                    option(value='Puebla') Puebla
-                                    option(value='Querétaro') Quer&eacute;taro
-                                    option(value='Quintana Roo') Quintana Roo
-                                    option(value='San Luis Potosí') San Luis Potos&iacute;
-                                    option(value='Sinaloa') Sinaloa
-                                    option(value='Sonora') Sonora
-                                    option(value='Tabasco') Tabasco
-                                    option(value='Tamaulipas') Tamaulipas
-                                    option(value='Tlaxcala') Tlaxcala
-                                    option(value='Veracruz') Veracruz
-                                    option(value='Yucatán') Yucat&aacute;n
-                                    option(value='Zacatecas') Zacatecas
-                            label(for="municipio") Municipio
-                                input(type='text')#municipio
-                            label(for="cp") Código Postal
-                                input(type='number')#cp
-                            label(for="rf") Régimen Fiscal
-                                input(type='text')#rf
-                            label(for="tel") Teléfono
-                                input(type='text')#tel
-                            label(for="nContacto") Nombre de contacto
-                                input(type='text')#nContacto
-                            label(for="email") Correo electrónico
-                                input(type='email')#email
-                            label(for="password") Correo electrónico
-                                input(type='password')#password
+                            .info
+                                label(for="fecha") Fecha
+                                label(for="hora") Hora
+                                label(for="cliente") Cliente
+                                    input(type='text', placeholder='Id')#cliente
+                                    .btn.btn-dark(type="submit") Buscar
+                                    .btn.btn-clean(type="submit") Limpiar
+                                label(for="nombre") Nombre
+                                    input(type='text')#nombre
+                                label(for="rfc") RFC
+                                    input(type='text')#rfc
+                                label(for="contacto") Contacto
+                                    input(type='text')#contacto
+                                label(for="contacto") Contrato
+                                    input(type='text')#contrato
+                                label(for="asunto") Asunto
+                                    input(type='text')#asunto
+                                label(for="mensaje") Mensaje
+                                    input(type='text')#mensaje
+                            .info__archivo   
+                                label(for="adjunto") Adjunto
+                                input(type='file' name='archivo')#adjunto
+                                .btn.btn-adj(type="submit") Adjuntar
+                                label(for="staff") Staff 
                         .modal-footer
-                            a(href="control-clientes.html")
-                                button(type='submit') Guardar
-                                button(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                            a(href="control-soporte.html")
+                                button.btn-gr(type='button' data-bs-toggle='modal' data-bs-target='#Modalgr') Guardar
+                                button.btn-cr(type='button' data-bs-toggle='modal' data-bs-target='#Modalcr') Cancelar
         #Modaldeletee.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
                 .modal-dialog.modal-dialog-centered
                     .modal-content
                         .modal-header
                             h1#Modagitlnuevo Eliminar
                             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                span(aria-hidden='true') &times;
                         .modal-body
                             form#forgotPasswordForm(onsubmit='submitForm(event)')
                             label(for='text') Desea eliminar?
-                            button.btn.btn-danger(type='button') Eliminar
+                            button.btn.btn-danger(data-bs-toggle='modal' data-bs-target='#Modaleliminar') Eliminar
+        #Modaleliminar.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaleliminarLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                        .modal-header
+                            h5#modaleliminar.modal-title  
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                        .modal-body
+                            h5 Eliminado!
+                        .modal-footer
+                            a(href="control-soporte.html") 
+                                button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+        #Modalgr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalgrLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5#modalgr.modal-title  
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        h5 Guardado!
+                    .modal-footer
+                        a(href="control-clientes.html") 
+                            button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+        #Modalcr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalcrLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5#modalcancelar.modal-title  
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        h5 Cancelado!
+                    .modal-footer
+                        .botones  
+                            a(href="control-clientes.html") 
+                                button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar

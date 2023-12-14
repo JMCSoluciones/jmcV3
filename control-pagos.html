@@ -117,11 +117,11 @@
         </div>
       </div>
       <div class="modal fade modal fade" id="Modalpago" tabindex="-1" aria-labelledby="modalpagoLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h1 id="Modagitlticket">Agregar pago</h1>
-              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="info__header">
@@ -185,107 +185,99 @@
               </div>
             </div>
             <div class="modal-footer">
-              <div class="botones"> </div><a href="control-soporte.html"> 
-                <button class="btn btn-guardar" type="submit">Guardar</button></a><a href="control-soporte.html"> 
-                <button class="btn btn-cancelar" type="submit">Cancelar</button></a>
+              <div class="botones"> </div><a href="control-pagos.html"> 
+                <button class="btn-gr" type="button" data-bs-toggle="modal" data-bs-target="#Modalgr">Guardar</button>
+                <button class="btn-cr" type="button" data-bs-toggle="modal" data-bs-target="#Modalcr">Cancelar</button></a>
             </div>
           </div>
         </div>
       </div>
       <div class="modal fade modal fade" id="Modalcambia" tabindex="-1" aria-labelledby="modalmodificaLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 id="Modagitlnuevo">Modificar Cliente</h1>
-              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h5 class="modal-title" id="modalPagoLabel">Modificar <strong>Pago</strong></h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
-              <label for="rfc">RFC
-                <input type="text" id="rfc"/>
-              </label>
-              <label for="nombre">Nombre
-                <input type="text" id="name"/>
-              </label>
-              <label for="direccion">Direccion
-                <input type="text" id="direccion"/>
-              </label>
-              <label>Estados
-                <select name="estado" id="estado">
-                  <option value="no">Seleccione un estado</option>
-                  <option value="Aguascalientes">Aguascalientes</option>
-                  <option value="Baja California">Baja California</option>
-                  <option value="Baja California Sur">Baja California Sur</option>
-                  <option value="Campeche">Campeche</option>
-                  <option value="Chiapas">Chiapas</option>
-                  <option value="Chihuahua">Chihuahua</option>
-                  <option value="CDMX">Ciudad de M&eacute;xico</option>
-                  <option value="Coahuila">Coahuila</option>
-                  <option value="Colima">Colima</option>
-                  <option value="Durango">Durango</option>
-                  <option value="Estado de México">Estado de M&eacute;xico</option>
-                  <option value="Guanajuato">Guanajuato</option>
-                  <option value="Guerrero">Guerrero</option>
-                  <option value="Hidalgo">Hidalgo</option>
-                  <option value="Jalisco">Jalisco</option>
-                  <option value="Michoacán">Michoac&aacute;n</option>
-                  <option value="Morelos">Morelos</option>
-                  <option value="Nayarit">Nayarit</option>
-                  <option value="Nuevo León">Nuevo Le&oacute;n</option>
-                  <option value="Oaxaca">Oaxaca</option>
-                  <option value="Puebla">Puebla</option>
-                  <option value="Querétaro">Quer&eacute;taro</option>
-                  <option value="Quintana Roo">Quintana Roo</option>
-                  <option value="San Luis Potosí">San Luis Potos&iacute;</option>
-                  <option value="Sinaloa">Sinaloa</option>
-                  <option value="Sonora">Sonora</option>
-                  <option value="Tabasco">Tabasco</option>
-                  <option value="Tamaulipas">Tamaulipas</option>
-                  <option value="Tlaxcala">Tlaxcala</option>
-                  <option value="Veracruz">Veracruz</option>
-                  <option value="Yucatán">Yucat&aacute;n</option>
-                  <option value="Zacatecas">Zacatecas</option>
-                </select>
-              </label>
-              <label for="municipio">Municipio
-                <input type="text" id="municipio"/>
-              </label>
-              <label for="cp">Código Postal
-                <input type="number" id="cp"/>
-              </label>
-              <label for="rf">Régimen Fiscal
-                <input type="text" id="rf"/>
-              </label>
-              <label for="tel">Teléfono
-                <input type="text" id="tel"/>
-              </label>
-              <label for="nContacto">Nombre de contacto
-                <input type="text" id="nContacto"/>
-              </label>
-              <label for="email">Correo electrónico
-                <input type="email" id="email"/>
-              </label>
-              <label for="password">Correo electrónico
-                <input type="password" id="password"/>
-              </label>
+              <div class="content-form">
+                <form action="">
+                  <div class="form-floating mb-3">
+                    <input class="form-control form-control-lg" placeholder="cliente" type="text" name="cliente"/>
+                    <label class="form-label" for="cliente">Cliente</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control form-control-lg" type="number" name="id" placeholder="id"/>
+                    <label class="form-label" for="id pago">Id</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control form-control-lg" type="text" name="servicio" placeholder="servicio"/>
+                    <label class="form-label" for="servicio">Servicio</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control form-control-lg" type="date" name="fPago"/>
+                    <label class="form-label" for="fPago"> </label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control form-control-lg" type="text" name="contrato" placeholder="Ingrese tipo de contrato"/>
+                    <label class="form-label" for="contrato">Contrato</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control form-control-lg" type="date" name="vigenciaContrato" placeholder="Ingrese la vigencia del contrato"/>
+                    <label class="form-label" for="vigenciaContrato"> </label>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="modal-footer"><a href="control-clientes.html">
-                <button type="submit">Guardar</button>
-                <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button></a></div>
+            <div class="modal-footer"><a href="control-pagos.html">
+                <button class="btn-gr" type="button" data-bs-toggle="modal" data-bs-target="#Modalgr">Guardar</button>
+                <button class="btn-cr" type="button" data-bs-toggle="modal" data-bs-target="#Modalcr">Cancelar</button></a></div>
           </div>
         </div>
       </div>
       <div class="modal fade modal fade" id="Modalelimina" tabindex="-1" aria-labelledby="modaldelateLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h1 id="Modagitlnuevo">Eliminar</h1>
-              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
               <label for="text">Desea eliminar?</label>
               <button class="btn btn-danger" type="button">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modalgr" tabindex="-1" aria-labelledby="modalgrLabel">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalgr"> </h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Guardado!</h5>
+            </div>
+            <div class="modal-footer"><a href="control-clientes.html"> 
+                <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modalcr" tabindex="-1" aria-labelledby="modalcrLabel">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalcancelar"> </h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Cancelado!</h5>
+            </div>
+            <div class="modal-footer">
+              <div class="botones"> <a href="control-clientes.html"> 
+                  <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
             </div>
           </div>
         </div>

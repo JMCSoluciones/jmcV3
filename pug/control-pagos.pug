@@ -60,12 +60,11 @@ block content
                 a(href="inicioAdmin.html") 
                     button.btn.btn-exit(type="submit")#salir Salir
         #Modalpago.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalpagoLabel')
-            .modal-dialog(role='document')
+            .modal-dialog.modal-dialog-centered
                 .modal-content
                     .modal-header
                         h1#Modagitlticket Agregar pago
                         button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                            span(aria-hidden='true') &times;
                     .modal-body
                         .info__header
                             label(for="fecha")#fecha Fecha de pago
@@ -115,86 +114,71 @@ block content
                                     .btn.btn-subir(type="submit")#subirXml Subir      
                     .modal-footer
                         .botones  
-                        a(href="control-soporte.html") 
-                            button.btn.btn-guardar(type="submit") Guardar
-                        a(href="control-soporte.html") 
-                            button.btn.btn-cancelar(type="submit") Cancelar
+                        a(href="control-pagos.html") 
+                            button.btn-gr(type='button' data-bs-toggle='modal' data-bs-target='#Modalgr') Guardar
+                            button.btn-cr(type='button' data-bs-toggle='modal' data-bs-target='#Modalcr') Cancelar
         #Modalcambia.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodificaLabel')
-                .modal-dialog(role='document')
+            .modal-dialog.modal-dialog-centered
                     .modal-content
                         .modal-header
-                            h1#Modagitlnuevo Modificar Cliente
+                            h5#modalPagoLabel.modal-title Modificar #[strong Pago]
                             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                span(aria-hidden='true') &times;
                         .modal-body
-                            form#forgotPasswordForm(onsubmit='submitForm(event)')
-                            label(for="rfc") RFC
-                                input(type='text')#rfc
-                            label(for="nombre") Nombre
-                                input(type='text')#name
-                            label(for="direccion") Direccion
-                                input(type='text')#direccion
-                            label Estados
-                                select(name='estado')#estado
-                                    option(value='no') Seleccione un estado
-                                    option(value='Aguascalientes') Aguascalientes
-                                    option(value='Baja California') Baja California
-                                    option(value='Baja California Sur') Baja California Sur
-                                    option(value='Campeche') Campeche
-                                    option(value='Chiapas') Chiapas
-                                    option(value='Chihuahua') Chihuahua
-                                    option(value='CDMX') Ciudad de M&eacute;xico
-                                    option(value='Coahuila') Coahuila
-                                    option(value='Colima') Colima
-                                    option(value='Durango') Durango
-                                    option(value='Estado de México') Estado de M&eacute;xico
-                                    option(value='Guanajuato') Guanajuato
-                                    option(value='Guerrero') Guerrero
-                                    option(value='Hidalgo') Hidalgo
-                                    option(value='Jalisco') Jalisco
-                                    option(value='Michoacán') Michoac&aacute;n
-                                    option(value='Morelos') Morelos
-                                    option(value='Nayarit') Nayarit
-                                    option(value='Nuevo León') Nuevo Le&oacute;n
-                                    option(value='Oaxaca') Oaxaca
-                                    option(value='Puebla') Puebla
-                                    option(value='Querétaro') Quer&eacute;taro
-                                    option(value='Quintana Roo') Quintana Roo
-                                    option(value='San Luis Potosí') San Luis Potos&iacute;
-                                    option(value='Sinaloa') Sinaloa
-                                    option(value='Sonora') Sonora
-                                    option(value='Tabasco') Tabasco
-                                    option(value='Tamaulipas') Tamaulipas
-                                    option(value='Tlaxcala') Tlaxcala
-                                    option(value='Veracruz') Veracruz
-                                    option(value='Yucatán') Yucat&aacute;n
-                                    option(value='Zacatecas') Zacatecas
-                            label(for="municipio") Municipio
-                                input(type='text')#municipio
-                            label(for="cp") Código Postal
-                                input(type='number')#cp
-                            label(for="rf") Régimen Fiscal
-                                input(type='text')#rf
-                            label(for="tel") Teléfono
-                                input(type='text')#tel
-                            label(for="nContacto") Nombre de contacto
-                                input(type='text')#nContacto
-                            label(for="email") Correo electrónico
-                                input(type='email')#email
-                            label(for="password") Correo electrónico
-                                input(type='password')#password
+                            .content-form
+                                form(action = "")
+                                    .form-floating.mb-3
+                                        input.form-control.form-control-lg(placeholder="cliente" type="text" name="cliente")
+                                        label.form-label(for="cliente") Cliente
+                                    .form-floating.mb-3
+                                        input.form-control.form-control-lg(type="number" name="id"  placeholder="id")
+                                        label.form-label(for="id pago") Id
+                                    .form-floating.mb-3
+                                        input.form-control.form-control-lg(type="text" name="servicio"  placeholder="servicio")
+                                        label.form-label(for="servicio") Servicio
+                                    .form-floating.mb-3
+                                        input.form-control.form-control-lg(type="date" name="fPago" )
+                                        label.form-label(for="fPago") 
+                                    .form-floating.mb-3
+                                        input.form-control.form-control-lg(type="text" name="contrato" placeholder="Ingrese tipo de contrato")
+                                        label.form-label(for="contrato") Contrato
+                                    .form-floating.mb-3
+                                        input.form-control.form-control-lg(type="date" name="vigenciaContrato" placeholder="Ingrese la vigencia del contrato")
+                                        label.form-label(for="vigenciaContrato") 
                         .modal-footer
-                            a(href="control-clientes.html")
-                                button(type='submit') Guardar
-                                button(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                            a(href="control-pagos.html")
+                                button.btn-gr(type='button' data-bs-toggle='modal' data-bs-target='#Modalgr') Guardar
+                                button.btn-cr(type='button' data-bs-toggle='modal' data-bs-target='#Modalcr') Cancelar
         #Modalelimina.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
-                .modal-dialog(role='document')
+            .modal-dialog.modal-dialog-centered
                     .modal-content
                         .modal-header
                             h1#Modagitlnuevo Eliminar
                             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                span(aria-hidden='true') &times;
                         .modal-body
                             form#forgotPasswordForm(onsubmit='submitForm(event)')
                             label(for='text') Desea eliminar?
                             button.btn.btn-danger(type='button') Eliminar
+        #Modalgr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalgrLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5#modalgr.modal-title  
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        h5 Guardado!
+                    .modal-footer
+                        a(href="control-clientes.html") 
+                            button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+        #Modalcr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalcrLabel')
+            .modal-dialog.modal-dialog-centered
+                .modal-content
+                    .modal-header
+                        h5#modalcancelar.modal-title  
+                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                    .modal-body
+                        h5 Cancelado!
+                    .modal-footer
+                        .botones  
+                            a(href="control-clientes.html") 
+                                button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+        

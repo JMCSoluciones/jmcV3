@@ -102,7 +102,7 @@
                           <td> 
                             <button class="btn-mas" type="button" data-bs-toggle="modal" data-bs-target="#Modalvermas">ver más... </button>
                           </td>
-                          <td><i class="material-icons btn-modificar" data-bs-toggle="modal" data-bs-target="#Modalmodifica"> &#xE254;</i><i class="material-icons btn-delete" data-bs-toggle="modal" data-bs-target="#Modaldeletee"> &#xE872;</i></td>
+                          <td><i class="material-icons btn-modifica" data-bs-toggle="modal" data-bs-target="#Modalmodifica"> &#xE254;</i><i class="material-icons btn-deletee" data-bs-toggle="modal" data-bs-target="#Modaldeletee"> &#xE872;</i></td>
                         </tr>
                       </tbody>
                     </table>
@@ -126,47 +126,51 @@
         </div>
       </div>
       <div class="modal-lg fade modal fade" id="Modalticket" tabindex="-1" aria-labelledby="modalticketLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h1 id="Modagitlticket">Añadir Nuevo Ticket</h1>
-              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
-              <label for="fecha">Fecha</label>
-              <label for="hora">Hora</label>
-              <label for="cliente">Cliente
-                <input type="text" placeholder="Id" id="cliente"/>
-                <div class="btn btn-dark" type="submit">Buscar</div>
-                <div class="btn btn-clean" type="submit">Limpiar</div>
-              </label>
-              <label for="nombre">Nombre
-                <input type="text" id="nombre"/>
-              </label>
-              <label for="rfc">RFC
-                <input type="text" id="rfc"/>
-              </label>
-              <label for="contacto">Contacto
-                <input type="text" id="contacto"/>
-              </label>
-              <label for="asunto">Asunto
-                <input type="text" id="asunto"/>
-              </label>
-              <label for="mensaje">Mensaje
-                <input type="text" id="mensaje"/>
-              </label>
-              <div class="info__archivo">  </div>
-              <label for="adjunto">Adjunto
-                <input type="file" name="archivo" id="adjunto"/>
-                <div class="btn btn-adj" type="submit">Adjuntar</div>
-              </label>
-              <label for="staff">Staff </label>
+              <div class="info">
+                <label for="fecha">Fecha</label>
+                <label for="hora">Hora</label>
+                <label for="cliente">Cliente
+                  <input type="text" placeholder="Id" id="cliente"/>
+                  <div class="btn btn-dark" type="submit">Buscar</div>
+                  <div class="btn btn-clean" type="submit">Limpiar</div>
+                </label>
+                <label for="nombre">Nombre
+                  <input type="text" id="nombre"/>
+                </label>
+                <label for="rfc">RFC
+                  <input type="text" id="rfc"/>
+                </label>
+                <label for="contacto">Contacto
+                  <input type="text" id="contacto"/>
+                </label>
+                <label for="contacto">Contrato
+                  <input type="text" id="contrato"/>
+                </label>
+                <label for="asunto">Asunto
+                  <input type="text" id="asunto"/>
+                </label>
+                <label for="mensaje">Mensaje
+                  <input type="text" id="mensaje"/>
+                </label>
+                <div class="info__archivo">  
+                  <label for="adjunto">Adjunto</label>
+                  <input type="file" name="archivo" id="adjunto"/>
+                  <div class="btn btn-adj" type="submit">Adjuntar</div>
+                </div>
+                <label for="staff">Staff </label>
+              </div>
             </div>
             <div class="modal-footer">
               <div class="botones"> <a href="control-soporte.html"> 
-                  <button class="btn btn-guardar" type="submit">Guardar</button></a><a href="control-soporte.html"> 
-                  <button class="btn btn-cancelar" type="submit">Cancelar</button></a></div>
+                  <button class="btn-gr" type="button" data-bs-toggle="modal" data-bs-target="#Modalgr">Guardar</button>
+                  <button class="btn-cr" type="button" data-bs-toggle="modal" data-bs-target="#Modalcr">Cancelar</button></a></div>
             </div>
           </div>
         </div>
@@ -175,82 +179,22 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h2>Informacion del equipo</h2>
-              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h2>Información del Ticket</h2>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
-              <label>Tipo de equipo
-                <select id="tipo" name="tipo">
-                  <option value="no">Seleccione un tipo </option>
-                  <option value="ao">All in One </option>
-                  <option value="pc">Escritorio </option>
-                  <option value="lap">Laptop </option>
-                </select>
-              </label>
-              <label for="marca">Marca 
-                <input type="text" placeholder="Marca del equipo" id="marca"/>
-              </label>
-              <label for="nombre">Nombre
-                <input type="text" placeholder="Ingrese el nombre" id="nombre"/>
-              </label>
-              <label for="ram">RAM 
-                <input type="text" placeholder="Capacidad de memoria" id="ram"/>
-              </label>
-              <label for="procesador">Procesador 
-                <input type="text" placeholder="Inserte el procesador" id="procesador"/>
-              </label>
-              <label for="disco" id="txtDisco">Disco duro
-                <input type="text" placeholder="Capacidad" id="capacidad"/>
-                <select id="tipoDisco" name="tipoDisco"></select>
-                <option value="no">Tipo </option>
-                <option value="hdd">HDD </option>
-                <option value="ssd">SSD </option>
-                <input type="text" placeholder="Uso" id="uso"/>
-              </label>
-              <label for="ip">Ip 
-                <input type="number" placeholder="ip local" id="ip"/>
-              </label>
-              <label for="anydesk">Anydesk 
-                <input type="number" placeholder="Direccion Anydesk" id="anydesk"/>
-              </label>
-              <label for="usuario">Usuario 
-                <input type="text" placeholder="Nombre de usuario" id="usuario"/>
-              </label>
-              <h3>Antivirus
-                <div class="detalle__info__vigencia">
-                  <div class="detalle__info__vigencia-name"> 
-                    <label for="name" id="txtName">Nombre 
-                      <input type="text" id="nAntivirus"/>
-                    </label>
-                  </div>
-                  <div class="detalle__info__vigencia-date">
-                    <label for="vigencia" id="txtVigencia">Vigencia 
-                      <input type="month" placeholder="Vigencia" id="vigencia"/>
-                    </label>
-                  </div>
-                </div>
-              </h3>
-              <h3>Paqueteria Office 
-                <div class="detalle__info__office"> 
-                  <div class="detalle__info__office-name">
-                    <label for="office" id="officeName">Nombre 
-                      <input type="text" id="nOffice"/>
-                    </label>
-                  </div>
-                  <div class="detalle__info__office-date">
-                    <label for="vigencia" id="txtOffice">Vigencia 
-                      <input type="month" placeholder="Vigencia" id="officeVigencia"/>
-                    </label>
-                  </div>
-                </div>
-              </h3>
-              <label for="descripcion">Descripción 
-                <input type="text" placeholder="Breve descripción" id="descripcion"/>
-              </label>
+              <div class="detalleTicket__info"> 
+                <label for="fecha">Fecha</label>
+                <label for="nombre">Nombre</label>
+                <label for="rfc">RFC</label>
+                <label for="contacto">Contacto </label>
+                <label for="contrato">Contrato</label>
+                <label for="asunto">Asunto</label>
+                <label for="archivo">Archivo</label>
+              </div>
             </div>
-            <div class="modal-footer"><a href="control-clientes.html"> 
-                <button class="btn btn-deletee" type="submit">Eliminar</button></a><a href="#"> 
+            <div class="modal-footer"><a href="control-soporte.html"> 
+                <button class="btn btn-deletee" type="submit" data-bs-toggle="modal" data-bs-target="#Modaleliminar">Eliminar</button></a><a href="tickets-cliente.html"> 
                 <button class="btn btn-historial" type="submit">Historial</button></a></div>
           </div>
         </div>
@@ -259,82 +203,47 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 id="Modagitlnuevo">Modificar Cliente</h1>
-              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h1 id="Modagitlnuevo">Modificar Ticket</h1>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
-              <label for="rfc">RFC
-                <input type="text" id="rfc"/>
-              </label>
-              <label for="nombre">Nombre
-                <input type="text" id="name"/>
-              </label>
-              <label for="direccion">Direccion
-                <input type="text" id="direccion"/>
-              </label>
-              <label>Estados
-                <select name="estado" id="estado">
-                  <option value="no">Seleccione un estado</option>
-                  <option value="Aguascalientes">Aguascalientes</option>
-                  <option value="Baja California">Baja California</option>
-                  <option value="Baja California Sur">Baja California Sur</option>
-                  <option value="Campeche">Campeche</option>
-                  <option value="Chiapas">Chiapas</option>
-                  <option value="Chihuahua">Chihuahua</option>
-                  <option value="CDMX">Ciudad de M&eacute;xico</option>
-                  <option value="Coahuila">Coahuila</option>
-                  <option value="Colima">Colima</option>
-                  <option value="Durango">Durango</option>
-                  <option value="Estado de México">Estado de M&eacute;xico</option>
-                  <option value="Guanajuato">Guanajuato</option>
-                  <option value="Guerrero">Guerrero</option>
-                  <option value="Hidalgo">Hidalgo</option>
-                  <option value="Jalisco">Jalisco</option>
-                  <option value="Michoacán">Michoac&aacute;n</option>
-                  <option value="Morelos">Morelos</option>
-                  <option value="Nayarit">Nayarit</option>
-                  <option value="Nuevo León">Nuevo Le&oacute;n</option>
-                  <option value="Oaxaca">Oaxaca</option>
-                  <option value="Puebla">Puebla</option>
-                  <option value="Querétaro">Quer&eacute;taro</option>
-                  <option value="Quintana Roo">Quintana Roo</option>
-                  <option value="San Luis Potosí">San Luis Potos&iacute;</option>
-                  <option value="Sinaloa">Sinaloa</option>
-                  <option value="Sonora">Sonora</option>
-                  <option value="Tabasco">Tabasco</option>
-                  <option value="Tamaulipas">Tamaulipas</option>
-                  <option value="Tlaxcala">Tlaxcala</option>
-                  <option value="Veracruz">Veracruz</option>
-                  <option value="Yucatán">Yucat&aacute;n</option>
-                  <option value="Zacatecas">Zacatecas</option>
-                </select>
-              </label>
-              <label for="municipio">Municipio
-                <input type="text" id="municipio"/>
-              </label>
-              <label for="cp">Código Postal
-                <input type="number" id="cp"/>
-              </label>
-              <label for="rf">Régimen Fiscal
-                <input type="text" id="rf"/>
-              </label>
-              <label for="tel">Teléfono
-                <input type="text" id="tel"/>
-              </label>
-              <label for="nContacto">Nombre de contacto
-                <input type="text" id="nContacto"/>
-              </label>
-              <label for="email">Correo electrónico
-                <input type="email" id="email"/>
-              </label>
-              <label for="password">Correo electrónico
-                <input type="password" id="password"/>
-              </label>
+              <div class="info">
+                <label for="fecha">Fecha</label>
+                <label for="hora">Hora</label>
+                <label for="cliente">Cliente
+                  <input type="text" placeholder="Id" id="cliente"/>
+                  <div class="btn btn-dark" type="submit">Buscar</div>
+                  <div class="btn btn-clean" type="submit">Limpiar</div>
+                </label>
+                <label for="nombre">Nombre
+                  <input type="text" id="nombre"/>
+                </label>
+                <label for="rfc">RFC
+                  <input type="text" id="rfc"/>
+                </label>
+                <label for="contacto">Contacto
+                  <input type="text" id="contacto"/>
+                </label>
+                <label for="contacto">Contrato
+                  <input type="text" id="contrato"/>
+                </label>
+                <label for="asunto">Asunto
+                  <input type="text" id="asunto"/>
+                </label>
+                <label for="mensaje">Mensaje
+                  <input type="text" id="mensaje"/>
+                </label>
+              </div>
+              <div class="info__archivo">  
+                <label for="adjunto">Adjunto</label>
+                <input type="file" name="archivo" id="adjunto"/>
+                <div class="btn btn-adj" type="submit">Adjuntar</div>
+                <label for="staff">Staff </label>
+              </div>
             </div>
-            <div class="modal-footer"><a href="control-clientes.html">
-                <button type="submit">Guardar</button>
-                <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button></a></div>
+            <div class="modal-footer"><a href="control-soporte.html">
+                <button class="btn-gr" type="button" data-bs-toggle="modal" data-bs-target="#Modalgr">Guardar</button>
+                <button class="btn-cr" type="button" data-bs-toggle="modal" data-bs-target="#Modalcr">Cancelar</button></a></div>
           </div>
         </div>
       </div>
@@ -343,12 +252,59 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 id="Modagitlnuevo">Eliminar</h1>
-              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
               <label for="text">Desea eliminar?</label>
-              <button class="btn btn-danger" type="button">Eliminar</button>
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Modaleliminar">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modaleliminar" tabindex="-1" aria-labelledby="modaleliminarLabel">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modaleliminar"> </h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Eliminado!</h5>
+            </div>
+            <div class="modal-footer"><a href="control-soporte.html"> 
+                <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modalgr" tabindex="-1" aria-labelledby="modalgrLabel">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalgr"> </h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Guardado!</h5>
+            </div>
+            <div class="modal-footer"><a href="control-clientes.html"> 
+                <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modalcr" tabindex="-1" aria-labelledby="modalcrLabel">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalcancelar"> </h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Cancelado!</h5>
+            </div>
+            <div class="modal-footer">
+              <div class="botones"> <a href="control-clientes.html"> 
+                  <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
             </div>
           </div>
         </div>
