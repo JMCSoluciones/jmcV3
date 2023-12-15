@@ -37,7 +37,7 @@ block content
                                                 td ----------
                                                 td **********
                                                 td
-                                                    button.btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más...
+                                                    .btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más...
                                                 td
                                                     i.material-icons.btn-modificar(data-bs-toggle='modal' data-bs-target='#Modalmodifica')  &#xE254;
                                                     i.material-icons.btn-delete(data-bs-toggle='modal' data-bs-target='#Modaldeletee')  &#xE872;
@@ -47,7 +47,7 @@ block content
                                                 td ----------
                                                 td **********
                                                 td 
-                                                    button.btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más... 
+                                                    .btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más... 
                                                 td
                                                     i.material-icons.btn-modificar(data-bs-toggle='modal' data-bs-target='#Modalmodifica')  &#xE254;
                                                     i.material-icons.btn-delete(data-bs-toggle='modal' data-bs-target='#Modaldeletee')  &#xE872;
@@ -102,7 +102,7 @@ block content
                                 button.btn.btn-guardar(type="submit") Guardar
                             a(href="control-soporte.html") 
                                 button.btn.btn-cancelar(type="submit") Cancelar
-        #Modalvermas.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalvermasLabel')
+        #Modalvermas.modal-lg.fade(class="modal fade" tabindex='-1' aria-labelledby='modalvermasLabel')
             .modal-dialog.modal-dialog-centered
                 .modal-content
                     .modal-header
@@ -161,7 +161,7 @@ block content
                             button.btn.btn-deletee(type="submit") Eliminar
                         a(href="#") 
                             button.btn.btn-historial(type="submit") Historial
-        #Modalmodifica.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodificaLabel')
+        #Modalmodifica.modal-lg.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodificaLabel')
                 .modal-dialog.modal-dialog-centered
                     .modal-content
                         .modal-header
@@ -227,8 +227,8 @@ block content
                                 input(type='password')#password
                         .modal-footer
                             a(href="control-clientes.html")
-                                button(type='submit') Guardar
-                                button(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                                .btn-guardar(type='submit') Guardar
+                            .btn-cancelar(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
         #Modaldeletee.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
                 .modal-dialog.modal-dialog-centered
                     .modal-content

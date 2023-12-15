@@ -90,7 +90,7 @@
                           <td>----------</td>
                           <td>**********</td>
                           <td>
-                            <button class="btn-mas" type="button" data-bs-toggle="modal" data-bs-target="#Modalvermas">ver más...</button>
+                            <div class="btn-mas" type="button" data-bs-toggle="modal" data-bs-target="#Modalvermas">ver más...</div>
                           </td>
                           <td><i class="material-icons btn-modificar" data-bs-toggle="modal" data-bs-target="#Modalmodifica"> &#xE254;</i><i class="material-icons btn-delete" data-bs-toggle="modal" data-bs-target="#Modaldeletee"> &#xE872;</i></td>
                         </tr>
@@ -100,7 +100,7 @@
                           <td>----------</td>
                           <td>**********</td>
                           <td> 
-                            <button class="btn-mas" type="button" data-bs-toggle="modal" data-bs-target="#Modalvermas">ver más... </button>
+                            <div class="btn-mas" type="button" data-bs-toggle="modal" data-bs-target="#Modalvermas">ver más... </div>
                           </td>
                           <td><i class="material-icons btn-modificar" data-bs-toggle="modal" data-bs-target="#Modalmodifica"> &#xE254;</i><i class="material-icons btn-delete" data-bs-toggle="modal" data-bs-target="#Modaldeletee"> &#xE872;</i></td>
                         </tr>
@@ -171,7 +171,7 @@
           </div>
         </div>
       </div>
-      <div class="modal fade modal fade" id="Modalvermas" tabindex="-1" aria-labelledby="modalvermasLabel">
+      <div class="modal-lg fade modal fade" id="Modalvermas" tabindex="-1" aria-labelledby="modalvermasLabel">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -255,7 +255,7 @@
           </div>
         </div>
       </div>
-      <div class="modal fade modal fade" id="Modalmodifica" tabindex="-1" aria-labelledby="modalmodificaLabel">
+      <div class="modal-lg fade modal fade" id="Modalmodifica" tabindex="-1" aria-labelledby="modalmodificaLabel">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -333,8 +333,9 @@
               </label>
             </div>
             <div class="modal-footer"><a href="control-clientes.html">
-                <button type="submit">Guardar</button>
-                <button data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button></a></div>
+                <div class="btn-guardar" type="submit">Guardar</div></a>
+              <div class="btn-cancelar" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </div>
+            </div>
           </div>
         </div>
       </div>
