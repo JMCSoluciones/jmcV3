@@ -231,7 +231,6 @@ header {
   }
   
 } 
-
 .formulario{
   .titulo{
     margin: 20px 00;
@@ -3832,9 +3831,11 @@ header {
       }
       .btn-modificar{
         color: yellow !important;
+        cursor: pointer;
       }
       .btn-delete{
         color: red !important;
+        cursor: pointer;
       }
     }
       &__body{
@@ -3850,7 +3851,7 @@ header {
           }
         }
       }
-    }
+  }
   .btn-exit{
     background-color: @color-secondary;
     margin: 20px;
@@ -3970,8 +3971,75 @@ header {
       }
     }
   }
-  #modalvermas{
+  #Modalvermas{
     width: 100%;
+    .modal-body{
+      label{
+        margin: 10px;
+        display: block;
+        font-weight: @font-semibold;
+        font-size: @font-size-md ;
+      }
+      input{
+        border: 1px solid gray;
+        border-radius: 10px;
+        justify-content: end;
+        text-align: center;
+        width: 80%;
+      }
+    }
+    .modal-footer{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      .btn-deletee{
+        background: @color-red;
+        padding: 8px 10px;
+        color: @color-white;
+      }
+
+      .btn-historial{
+        background-color: @color-orange;
+        padding: 8px 10px;
+      }
+    }
+  }
+  #Modalmodifica{
+    .modal-body{
+      label{
+        margin: 10px;
+        display: block;
+        font-weight: @font-semibold;
+        font-size: @font-size-md ;
+      }
+      input{
+        border: 1px solid gray;
+        border-radius: 10px;
+        justify-content: end;
+        text-align: center;
+        width: 80%;
+      }
+    }
+    .modal-footer{
+      display: flex;
+      justify-content: space-evenly;
+      a{
+        .btn-guardar{
+          background-color: @color-green;
+          padding: 5px 10px;
+          border-radius: 5px;
+          color: @color-white;
+        }
+      }
+      .btn-cancelar{
+        background-color: @color-white;
+        border: 1px solid @color-orange;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: @color-orange;
+        font-weight: @font-semibold;
+      }
+    }
   }
 }
 .barraFlotante {
