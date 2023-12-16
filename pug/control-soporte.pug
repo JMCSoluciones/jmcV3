@@ -37,7 +37,7 @@ block content
                                                 td ----------
                                                 td **********
                                                 td
-                                                    button.btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más...
+                                                    .btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más...
                                                 td
                                                     i.material-icons.btn-modificar(data-bs-toggle='modal' data-bs-target='#Modalmodifica')  &#xE254;
                                                     i.material-icons.btn-delete(data-bs-toggle='modal' data-bs-target='#Modaldeletee')  &#xE872;
@@ -47,7 +47,7 @@ block content
                                                 td ----------
                                                 td **********
                                                 td 
-                                                    button.btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más... 
+                                                    .btn-mas(type='button' data-bs-toggle='modal' data-bs-target='#Modalvermas') ver más... 
                                                 td
                                                     i.material-icons.btn-modifica(data-bs-toggle='modal' data-bs-target='#Modalmodifica')  &#xE254;
                                                     i.material-icons.btn-deletee(data-bs-toggle='modal' data-bs-target='#Modaldeletee')  &#xE872;
@@ -100,8 +100,9 @@ block content
                     .modal-footer
                         .botones  
                             a(href="control-soporte.html") 
-                                button.btn-gr(type='button' data-bs-toggle='modal' data-bs-target='#Modalgr') Guardar
-                                button.btn-cr(type='button' data-bs-toggle='modal' data-bs-target='#Modalcr') Cancelar
+                                button.btn.btn-guardar(type="submit") Guardar
+                            a(href="control-soporte.html") 
+                                button.btn.btn-cancelar(type="submit") Cancelar
         #Modalvermas.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalvermasLabel')
             .modal-dialog.modal-dialog-centered
                 .modal-content
@@ -122,7 +123,7 @@ block content
                             button.btn.btn-deletee(type="submit" data-bs-toggle='modal' data-bs-target='#Modaleliminar') Eliminar
                         a(href="tickets-cliente.html") 
                             button.btn.btn-historial(type="submit") Historial
-        #Modalmodifica.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodificaLabel')
+        #Modalmodifica.modal-lg.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmodificaLabel')
                 .modal-dialog.modal-dialog-centered
                     .modal-content
                         .modal-header
@@ -154,9 +155,9 @@ block content
                                 .btn.btn-adj(type="submit") Adjuntar
                                 label(for="staff") Staff 
                         .modal-footer
-                            a(href="control-soporte.html")
-                                button.btn-gr(type='button' data-bs-toggle='modal' data-bs-target='#Modalgr') Guardar
-                                button.btn-cr(type='button' data-bs-toggle='modal' data-bs-target='#Modalcr') Cancelar
+                            a(href="control-clientes.html")
+                                button(type='submit') Guardar
+                                button(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
         #Modaldeletee.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
                 .modal-dialog.modal-dialog-centered
                     .modal-content
