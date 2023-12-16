@@ -73,7 +73,7 @@ block content
                 li Actualización en línea via Internet a las últimas mejoras de la versión. 
                 li Registro de perfiles de usuario para un acceso seguro a la información.
                 li Disponible en la modalidad de 1 usuario 99 empresas y licencias de usuarios adicionales. 
-            #tienda-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='tienda-tab' tabindex='0')
+            #tienda-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='tienda-tab' tabindex='0')
               .desarrollo__imagenes 
                 img(src="/Images/mercado_libre.png", alt="Mercado Libre")
                 img(src="/Images/Claro-Shop.png", alt="Claro Shop")  
@@ -90,5 +90,5 @@ block content
                 .desarrollo__informacion-resumen 
                   img(src="/Images/Icons/resumen.svg", alt="resumen de publicaciones de productos")
                   p Conoce el resumen de publicaciones de productos y ventas generadas.  
-      a(href="formulario.html")#masinfo Mas informacion 
-
+    .boton#infobtn  
+      button.btn.btn-info(onclick='info()')#info ?
