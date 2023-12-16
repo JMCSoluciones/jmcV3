@@ -754,11 +754,11 @@ header .menu-top__link img {
   margin: 0;
   font-size: 1.6rem;
 }
-.index .boton {
+.boton#infobtn {
   position: relative;
   z-index: 2;
 }
-.index .boton .btn-info {
+.boton#infobtn .btn-info {
   position: fixed;
   border-radius: 30px;
   bottom: 20px;
@@ -1396,16 +1396,6 @@ header .menu-top__link img {
   padding: 0px 10px;
   color: #666666d9;
 }
-.sae #masinfo {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
-}
 .coi h1 {
   text-align: center;
   font-size: 2.3rem;
@@ -1472,16 +1462,6 @@ header .menu-top__link img {
   margin-left: 25px;
   padding: 0px 10px;
   color: #666666d9;
-}
-.coi #masinfo {
-  background-color: #17acc9;
-  border-radius: 50px;
-  width: 100px;
-  text-align: center;
-  padding: 5px;
-  margin: 20px;
-  left: 150px;
-  position: relative;
 }
 .banco h1 {
   text-align: center;
