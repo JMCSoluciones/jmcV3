@@ -245,7 +245,7 @@
             <div class="modal-body">
               <form id="forgotPasswordForm" onsubmit="submitForm(event)"></form>
               <label for="text">Desea eliminar?</label>
-              <button class="btn btn-danger" type="button">Eliminar</button>
+              <button class="btn btn-deletee" type="submit" data-bs-toggle="modal" data-bs-target="#Modaleliminar">Eliminar</button>
             </div>
           </div>
         </div>
@@ -279,6 +279,36 @@
               <div class="botones"> <a href="control-clientes.html"> 
                   <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modaleliminar" tabindex="-1" aria-labelledby="modaleliminarLabel">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modaleliminar"> </h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Eliminado!</h5>
+            </div>
+            <div class="modal-footer"><a href="control-pagos.html"> 
+                <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal fade" id="Modalvermas" tabindex="-1" aria-labelledby="modalvermasLabel">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modaleliminar"> </h5>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Eliminado!</h5>
+            </div>
+            <div class="modal-footer"><a href="control-pagos.html"> 
+                <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
           </div>
         </div>
       </div>
