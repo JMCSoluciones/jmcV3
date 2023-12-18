@@ -84,7 +84,7 @@
                           <td>
                             <button class="btn-mas" type="button" data-bs-toggle="modal" data-bs-target="#Modalvermas">ver más... </button>
                           </td>
-                          <td><i class="material-icons btn-modificar" data-bs-toggle="modal" data-bs-target="#Modalcambia"> &#xE254;</i><i class="material-icons btn-delete" data-bs-toggle="modal" data-bs-target="#Modalelimina"> &#xE872;</i></td>
+                          <td><i class="material-icons btn-cambia" data-bs-toggle="modal" data-bs-target="#Modalcambia"> &#xE254;</i><i class="material-icons btn-delete" data-bs-toggle="modal" data-bs-target="#Modalelimina"> &#xE872;</i></td>
                         </tr>
                         <tr> 
                           <td>02</td>
@@ -305,10 +305,56 @@
               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <h5>Eliminado!</h5>
+              <div class="info__header">
+                <h3>Contrato</h3>
+                <div class="info__agregar__contrato">
+                  <div class="info__agregar__contrato-tipo"></div>
+                  <label for="tipo">Tipo </label>
+                  <input type="text" id="txtDate"/>
+                  <div class="info__agregar__contrato-fecha"></div>
+                  <label for="fechaContrato">Fecha</label>
+                  <input type="text" id="txtDate"/>
+                  <div class="info__agregar__contrato-id"> </div>
+                  <label for="id">Id  </label>
+                  <input type="text" id="txtDate"/>
+                </div>
+                <h3>Servicio</h3>
+                <div class="info__vigencia">
+                  <div class="info__vigencia-name"> </div>
+                  <label for="name" id="txtName">Nombre
+                    <input type="text" id="txtDate"/>
+                  </label>
+                  <div class="info__vigencia-date"></div>
+                  <label for="vigencia" id="txtVigencia">Vigencia 
+                    <input type="text" id="txtDate"/>
+                  </label>
+                </div>
+                <label for="concepto">Concepto 
+                  <input type="text" id="txtDate"/>
+                </label>
+                <label for="total">Total a pagar 
+                  <input type="text" id="txtDate"/>
+                </label>
+                <label for="staff">Staff 
+                  <input type="text" id="txtDate"/>
+                </label>
+                <div class="info__archivos"> 
+                  <div class="info__archivos-pdf"></div>
+                  <label for="pdf">PDF 
+                    <input type="file" id="pdf"/>
+                  </label>
+                  <div class="btn btn-subir" type="submit" id="subirPdf">Subir</div>
+                  <div class="info__archivos-xml"></div>
+                  <label for="pdf">XML
+                    <input type="file" id="xml"/>
+                  </label>
+                </div>
+              </div>
             </div>
-            <div class="modal-footer"><a href="control-pagos.html"> 
-                <button class="btn btn-secondary" id="mGuardar" type="button" data-bs-dismiss="modal">Aceptar</button></a></div>
+            <div class="modal-footer">
+              <button class="btn-modi" type="button" data-bs-toggle="modal" data-bs-target="#Modalcambia">Modificar</button>
+              <button class="btn-del" type="button" data-bs-toggle="modal" data-bs-target="#Modal elimina">Eliminar </button>
+            </div>
           </div>
         </div>
       </div>
