@@ -69,13 +69,17 @@
                       <td>01</td>
                       <td>27 Enero 2024</td>
                       <td>Josue Martinez</td>
-                      <td> <a href="detalles-ticket.html">Ver mas...</a></td>
+                      <td> 
+                        <button class="btn-ve" type="button" data-bs-toggle="modal" data-bs-target="#Modalverticket">ver más...</button>
+                      </td>
                     </tr>
                     <tr> 
                       <td>02</td>
                       <td>27 Enero 2024</td>
                       <td>Josue Martinez</td>
-                      <td> <a href="detalles-ticket.html">Ver mas ...</a></td>
+                      <td> 
+                        <button class="btn-ve" type="button" data-bs-toggle="modal" data-bs-target="#Modalve">ver más...</button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -92,7 +96,30 @@
                 </ul>
               </nav>
             </div><a href="inicioAdmin.html"> 
-              <button class="btn btn-exit" type="submit" id="salir">Salir</button></a>
+              <button class="btn btn-exit" type="submit" id="salir">Salir  </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal fade" id="Modalverticket" tabindex="-1" aria-labelledby="modalveLabel">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Información del contrato</h2>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
+              <div class="modal-body"> 
+                <div class="datos__info"> </div>
+                <label for="id">Id Contrato </label>
+                <label for="servicio">Servicio </label>
+                <label for="fContrato">Fecha de contrato</label>
+                <label for="fRenovacion">Fecha de renovacion</label>
+                <label for="status">status</label>
+              </div>
+              <div class="modal-footer">
+                <button class="btn-modi" type="button" data-bs-toggle="modal" data-bs-target="#Modalmodi">Modificar</button>
+                <button class="btn-del" type="button" data-bs-toggle="modal" data-bs-target="#Modaldel">Eliminar</button>
+              </div>
+            </button>
           </div>
         </div>
       </div>

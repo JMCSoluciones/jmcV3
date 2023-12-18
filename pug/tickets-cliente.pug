@@ -21,13 +21,13 @@ block content
                     td 27 Enero 2024
                     td Josue Martinez
                     td 
-                      a(href="detalles-ticket.html") Ver mas...
+                      button.btn-ve(type='button' data-bs-toggle='modal' data-bs-target='#Modalverticket') ver más...
                   tr 
                     td 02
                     td 27 Enero 2024
                     td Josue Martinez
                     td 
-                      a(href="detalles-ticket.html") Ver mas ...
+                      button.btn-ve(type='button' data-bs-toggle='modal' data-bs-target='#Modalve') ver más...
           .content__contratos__tabs__item__footer
             nav(aria-label='...')
               ul.pagination
@@ -42,4 +42,20 @@ block content
                 li.page-item
                 a.page-link(href='#') Next   
           a(href="inicioAdmin.html") 
-            button.btn.btn-exit(type="submit")#salir Salir
+            button.btn.btn-exit(type="submit")#salir Salir  
+  #Modalverticket.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalveLabel')
+    .modal-dialog.modal-dialog-centered
+      .modal-content
+        .modal-header
+          h2 Información del contrato
+          button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+            .modal-body 
+              .datos__info 
+              label(for="id") Id Contrato 
+              label(for="servicio") Servicio 
+              label(for="fContrato") Fecha de contrato
+              label(for="fRenovacion") Fecha de renovacion
+              label(for="status") status
+            .modal-footer
+                button.btn-modi(type='button' data-bs-toggle='modal' data-bs-target='#Modalmodi') Modificar
+                button.btn-del(type='button' data-bs-toggle='modal' data-bs-target='#Modaldel') Eliminar
