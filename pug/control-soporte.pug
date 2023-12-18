@@ -155,9 +155,9 @@ block content
                                 .btn.btn-adj(type="submit") Adjuntar
                                 label(for="staff") Staff 
                         .modal-footer
-                            a(href="control-clientes.html")
-                                button(type='submit') Guardar
-                                button(data-bs-target='#exampleModalToggle' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                            a(href="control-soporte.html")
+                                button.btn-gr(type='button' data-bs-toggle='modal' data-bs-target='#Modalgr') Guardar
+                                button.btn-cr(type='button' data-bs-toggle='modal' data-bs-target='#Modalcr') Cancelar
         #Modaldeletee.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modaldelateLabel')
                 .modal-dialog.modal-dialog-centered
                     .modal-content
@@ -188,7 +188,7 @@ block content
                     .modal-body
                         h5 Guardado!
                     .modal-footer
-                        a(href="control-clientes.html") 
+                        a(href="control-soporte.html") 
                             button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
         #Modalcr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalcrLabel')
             .modal-dialog.modal-dialog-centered
@@ -200,5 +200,5 @@ block content
                         h5 Cancelado!
                     .modal-footer
                         .botones  
-                            a(href="control-clientes.html") 
+                            a(href="control-soporte.html") 
                                 button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
