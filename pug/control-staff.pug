@@ -14,7 +14,7 @@ block content
                         img.staff(src="/Images/Icons/staff.svg", alt="ajustes de staff") 
             .container__controlstaff__administrador__title
                 h2 Control de staff
-                button.btn.btn-staff(type='button' data-bs-toggle='modal' data-bs-target='#Modalstaff' ) add 
+                button.btn.btn-staff(type='button' data-bs-toggle='modal' data-bs-target='#Modalstaff' ) Nuevo 
             table.table.table-striped.table-hover
                 thead
                    tr
@@ -127,42 +127,42 @@ block content
                         h5 Cancelado!
                     .modal-footer
                         .botones  
-                            a(href="control-staff.html")
-                        	    button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar
+                        	a(href="control-staff.html")    
+                    			button.btn.btn-secondary#mGuardar(type="button" data-bs-dismiss="modal") Aceptar    
 	#Modalmr.modal.fade(class="modal fade" tabindex='-1' aria-labelledby='modalmrLabel')
 		.modal-dialog.modal-dialog-centered
-    	    .modal-content
-    	        .modal-header
-    	                h1#Modagitlmodi Modificar Staff
-    	                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-    	        .modal-body
-    	            .staff
-    	                label(for='Nombre') Id 
-    	                    input.form-staff(type='text' placeholder='' aria-label='')
-                    .staff  
-                        label(for='Nombre') Departamento
-                            select#autoSizingSelect.form-select
-                                option(selected='')  
-                                option(value='1') Uno
-                                option(value='2') Dos
-                                option(value='3') Tres
-                    .staff
-                            label(for='nombre') Nombre
-                            input.form-staff(type='text' placeholder='Ingrese su nombre' aria-label='')
-                    .staff
-                            label(for='Nombre') Departamento
-                        select#autoSizingSelect.form-dep
-                        option(selected='')  Seleccione departamento
-                        option(value='1') Uno
-                        option(value='2') Dos
-                        option(value='3') Tres
-                    .staff
-                        label(for='concepto') Correo Electrónico
-                        input.form-staff(type='email', name='concepto', placeholder='Ingrese su correo')
-                    .staff
-                        label(for='total') Password
-                        input.form-staff(type='password', name='contraseña', placeholder='Ingrese password') 
-                .modal-footer
-                    a(href="control-contratos.html")
-                            button.btn-guardar(type='button' data-bs-toggle='modal' data-bs-target='#Modalguardar') Guardar
-                            button.btn-cancelar(type='button' data-bs-toggle='modal' data-bs-target='#Modalcancelar') Cancelar                     
+			.modal-content
+				.modal-header
+						h1#Modagitlmodi Modificar Staff
+						button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					.staff
+						label(for='Nombre') Id 
+							input.form-staff(type='text' placeholder='' aria-label='')
+					.staff  
+						label(for='Nombre') Departamento
+							select#autoSizingSelect.form-select
+								option(selected='')  
+								option(value='1') Uno
+								option(value='2') Dos
+								option(value='3') Tres
+					.staff
+							label(for='nombre') Nombre
+							input.form-staff(type='text' placeholder='Ingrese su nombre' aria-label='')
+					.staff
+							label(for='Nombre') Departamento
+						select#autoSizingSelect.form-dep
+						option(selected='')  Seleccione departamento
+						option(value='1') Uno
+						option(value='2') Dos
+						option(value='3') Tres
+					.staff
+						label(for='concepto') Correo Electrónico
+						input.form-staff(type='email', name='concepto', placeholder='Ingrese su correo')
+					.staff
+						label(for='total') Password
+						input.form-staff(type='password', name='contraseña', placeholder='Ingrese password') 
+				.modal-footer
+					a(href="control-contratos.html")
+							button.btn-guardar(type='button' data-bs-toggle='modal' data-bs-target='#Modalguardar') Guardar
+							button.btn-cancelar(type='button' data-bs-toggle='modal' data-bs-target='#Modalcancelar') Cancelar                     
