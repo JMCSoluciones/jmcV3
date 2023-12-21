@@ -17,40 +17,38 @@ button.btn.btn-link.newBtnElement(type="button" data-bs-toggle="modal" data-bs-t
                                     option(value="semestral") Semestral 
                                     option(value="anual") Anual 
                             .form-floating.mb-3
-                                input.form-control.form-control-lg(placeholder="Nombre del servicio" type="text" name="nom_servicio"  required readonly)
+                                input.form-control.form-control-lg(placeholder="Nombre del servicio" type="text" name="nom_servicio"  required )
                                 label.form-label(for="nom_servicio") Nombre del servicio
                             .form-floating.mb-3
-                                input.form-control.form-control-lg(placeholder="Vigencia del servicio" type="date" name="vig_servicio" maxlength="10" required readonly)
+                                input.form-control.form-control-lg(placeholder="Vigencia del servicio" type="date" name="vig_servicio" maxlength="10" required )
                                 label.form-label(for="vig_servicio") Vigencia del servicio  
                             .form-floating.mb-3
-                                input.form-control.form-control-lg(placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required readonly) 
+                                input.form-control.form-control-lg(placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required ) 
                                 label.form-label(for="descripcion") Descripcion   
                             .form-floating.mb-3
-                                input.form-control.form-control-lg(placeholder="Total a pagar" type="text" name="total" maxlength="15" readonly)
+                                input.form-control.form-control-lg(placeholder="Total a pagar" type="text" name="total" maxlength="15" )
                                 label.form-label(for="total") Total a pagar
                             .form-floating.mb-3
-                                input.form-control.form-control-lg(placeholder="Staff" type="text" name="staff" maxlength="15" required readonly)
+                                input.form-control.form-control-lg(placeholder="Staff" type="text" name="staff" maxlength="15" required )
                                 label.form-label(for="staff") Staff
                             .form-floating.mb-3
-                                input.form-control.form-control-lg( type="file" name="pdf" readonly)
+                                input.form-control.form-control-lg( type="file" name="pdf" )
                                 label.form-label(for="pdf") PDF
                             .form-floating.mb-3
-                                input.form-control.form-control-lg( type="file" name="xml" readonly)
+                                input.form-control.form-control-lg( type="file" name="xml" )
                                 label.form-label(for="xml") XML
                             
                     .modal-body__buttons 
                         button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
-//
-                      button.btn.btn-success(data-bs-target='#modalPago' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                        button.btn.btn-warning(data-bs-target='#modalPago' data-bs-toggle='modal' data-bs-dismiss='modal') Modificar
     #modalPago.modal.fade(aria-hidden='true' aria-labelledby='modalPago' tabindex='-1')
         .modal-dialog.modal-dialog-centered
             .modal-content
                 .modal-header
-                    h3#modalPago.modal-title Nuevo Pago 
+                    h3#modalPago.modal-title Modificar Pago 
                     button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                 .modal-body
-                    | Pago agregado!
+                    | Pago Modificado!
                 .modal-footer
-                    button.btn.btn-primary(data-bs-target='#modalPago' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
-                    button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
+                    button.btn.btn-primary(type="button" data-bs-dismiss="modal") Aceptar
                        
