@@ -1,0 +1,55 @@
+button.btn.btn-secondary.newBtnElement(type="button" data-bs-toggle="modal" data-bs-target="#modalNvoCliente") Nuevo
+.modal-cliente
+    #modalNvoCliente.modal(aria-hidden='true' aria-labelledby='modalNvoCliente-gralLabel' tabindex='-1')
+        .modal-dialog.modal-lg.modal-dialog-scrollable
+            .modal-content
+                .modal-header
+                    h2#modalNvoClienteLabel.modal-title Añadir nuevo #[strong Cliente]
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .content-form
+                        form(action = "")
+                            .form-floating.mb-3  
+                                input.form-control.form-control-lg(placeholder="RFC" type="text" name="rfc" maxlength="13")
+                                label.form-label(for="rfc") RFC
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Nombre" type="text" name="nombre" maxlength="80" required)  
+                                label.form-label(for="nombre") Nombre
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Direccion" type="text" name="direccion" maxlength="100" required)
+                                label.form-label(for="direccion") Direccion  
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Estado" type="text" name="estado" maxlength="50" required) 
+                                label.form-label(for="estado") Estado   
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Codigo Postal" type="text" name="cp" maxlength="5" required)
+                                label.form-label(for="cp") Código Postal
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Regimen Fiscal" type="text" name="rf" maxlength="45")
+                                label.form-label(for="rf") Régimen Fiscal 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="telefono" type="text" name="telefono" maxlength="10" required)
+                                label.form-label(for="telefono") Télefono 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Nombre de contacto" type="text" name="nom_contacto" maxlength="50" required)
+                                label.form-label(for="nom_contacto") Nombre de contacto
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Correo electronico" type="email" name="correo" maxlength="50" required)
+                                label.form-label(for="correo") Correo Electronico  
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Contraseña" type="password" name="password" maxlength="12" required)
+                                label.form-label(for="password") Contraseña
+                    .modal-body__buttons 
+                        button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                        button.btn.btn-success(data-bs-target='#modalCliente' data-bs-toggle='modal' data-bs-dismiss='modal') Guardar
+    #modalCliente.modal.fade(aria-hidden='true' aria-labelledby='modalCliente' tabindex='-1')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h3#modalCliente.modal-title Nuevo cliente 
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    | Cliente creado!
+                .modal-footer
+                    button.btn.btn-primary(data-bs-target='#modalCliente' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                    button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar

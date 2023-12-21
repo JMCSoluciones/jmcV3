@@ -1,0 +1,54 @@
+.modal-pago
+    #modalModificarPago.modal(aria-hidden='true' aria-labelledby='modalModificarPagoLabel' tabindex='-1')
+        .modal-dialog.modal-lg.modal-dialog-scrollable
+            .modal-content
+                .modal-header
+                    h2#modalModificarPagoLabel.modal-title Modificar #[strong Pago]
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .content-form
+                        form(action = "")
+                            .form-floating.mb-3  
+                                label(for='tipo') Tipo de contrato:
+                                select#opcionesSelect.form-select
+                                    option(value="no") 
+                                    option(value="mensual") Mensual
+                                    option(value="semestral") Semestral 
+                                    option(value="anual") Anual 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Nombre del servicio" type="text" name="nom_servicio"  required readonly)
+                                label.form-label(for="nom_servicio") Nombre del servicio
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Vigencia del servicio" type="date" name="vig_servicio" maxlength="10" required readonly)
+                                label.form-label(for="vig_servicio") Vigencia del servicio  
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required readonly) 
+                                label.form-label(for="descripcion") Descripcion   
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Total a pagar" type="text" name="total" maxlength="15" readonly)
+                                label.form-label(for="total") Total a pagar
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Staff" type="text" name="staff" maxlength="15" required readonly)
+                                label.form-label(for="staff") Staff
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg( type="file" name="pdf" readonly)
+                                label.form-label(for="pdf") PDF
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg( type="file" name="xml" readonly)
+                                label.form-label(for="xml") XML
+                            
+                    .modal-body__buttons 
+                      button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                      button.btn.btn-success(data-bs-target='#modalModificar' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+    #modalModificar.modal.fade(aria-hidden='true' aria-labelledby='modalModificar' tabindex='-1')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h3#modalModificar.modal-title Modificar Pago 
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    | Pago guardado!
+                .modal-footer
+                    button.btn.btn-primary(data-bs-target='#modalModificar' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                    button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
+                       

@@ -1,0 +1,74 @@
+button.btn.btn-secondary.newBtnElement(type="button" data-bs-toggle="modal" data-bs-target="#modalNvoTicket") Nuevo
+.modal-soporte
+    #modalNvoTicket.modal(aria-hidden='true' aria-labelledby='modalNvoTicketLabel' tabindex='-1')
+        .modal-dialog.modal-lg.modal-dialog-scrollable
+            .modal-content
+                .modal-header
+                    h2#modalNvoTicketLabel.modal-title Añadir nuevo #[strong Equipo]
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .content-form
+                        form(action = "")
+                            .form-floating.mb-3  
+                                label(for='tipo') Tipo de equipo:
+                                select#opcionesSelect.form-select
+                                    option(value="no") 
+                                    option(value="ao") All in One 
+                                    option(value="pc") Escritorio 
+                                    option(value="lap") Laptop 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Marca del equipo" type="text" name="marca" maxlength="50" required)  
+                                label.form-label(for="marca") Marca
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Memoria RAM" type="text" name="ram" maxlength="10" required)
+                                label.form-label(for="ram") RAM  
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Procesador" type="text" name="procesador" maxlength="50" required) 
+                                label.form-label(for="procesador") Procesador   
+                            .form-floating.mb-3
+                                label(for='tipo') Tipo de Disco Duro:
+                                select#opcionesSelect.form-select
+                                    option(value="no") 
+                                    option(value="hdd") HDD
+                                    option(value="ssd") SSD
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Uso del disco duro" type="text" name="uso" maxlength="15")
+                                label.form-label(for="uso") Uso del disco duro
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="ip local" type="text" name="ip" maxlength="15" required)
+                                label.form-label(for="ip") Ip local 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Direccion anydesk" type="text" name="anydesk" maxlength="12" required)
+                                label.form-label(for="anydesk") Direccion Anydesk
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Nombre de usuario" type="text" name="nom_usuario" maxlength="50" required)
+                                label.form-label(for="nom_usuario") Nombre de  usuario del equipo 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Antivirus" type="text" name="nom_antivirus" maxlength="20" required)
+                                label.form-label(for="nom_antivirus") Nombre del antivirus 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Vigencia del Antivirus" type="month" name="vig_antivirus" maxlength="20" required)
+                                label.form-label(for="vig_antivirus") Vigencia del antivirus
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Paqueteria Office" type="text" name="office" maxlength="30" required)
+                                label.form-label(for="office") Paqueteria Office 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Vigencia Office" type="month" name="vig_office" maxlength="20" required)
+                                label.form-label(for="vig_office") Vigencia de la Paqueteria Office
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Descripcion" type="text" name="descripcion" maxlength="600")
+                                label.form-label(for="descripcion") Descripcion
+                    .modal-body__buttons 
+                        button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                        button.btn.btn-success(data-bs-target='#modalTicket' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+    #modalTicket.modal.fade(aria-hidden='true' aria-labelledby='modalTicket' tabindex='-1')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h3#modalTicket.modal-title Nuevo Ticket 
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    | Ticket creado!
+                .modal-footer
+                    button.btn.btn-primary(data-bs-target='#modalTicket' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                    button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar

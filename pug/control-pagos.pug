@@ -3,13 +3,12 @@ block content
     include control-menuAdmin.pug
     .content__CtrlPagos
         h3.title Control de pagos
+        include modal-nuevo-pago.pug
+        include modal-modificar-pago.pug
         .content__CtrlPagos__tabs
             #myTabContent.tab-content
                 #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
-                    .content__CtrlPagos__tabs__item
-                        .content__CtrlPagos__tabs__item__header#usuario-header
-                            a(href="nuevo-pago.html") 
-                                button.btn.btn-nuevo(type="submit")#nuevo Nuevo
+                    .content__CtrlPagos__tabs__item                            
                         .content__CtrlPagos__tabs__item__body
                             .table-wrapper.content__CtrlPagos__tabs__item__body__table
                                 table#myTable.display(cellspacing='0' width='100%')
@@ -26,9 +25,9 @@ block content
                                             td Josue Martinez
                                             td Aspel
                                             td
-                                                a(href="ver-pago.html") ver más... 
+                                                include modal-detalle-pago.pug
                                             td
-                                                a.edit(href="#editProductoModal" data-toggle='modal')
+                                                a.edit(href=" #modalModificarPago" data-bs-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
                                                 a.delete(href='#deleteProductoModal' data-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
@@ -37,15 +36,15 @@ block content
                                             td cliente 2
                                             td AWS
                                             td 
-                                                a(href="ver-pago.html") ver más... 
+                                                include modal-detalle-pago.pug 
                                             td
-                                                a.edit(href="#editProductoModal" data-toggle='modal')
+                                                a.edit(href=" #modalModificarPago" data-bs-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
                                                 a.delete(href='#deleteProductoModal' data-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;   
         button.btn.btn-exit(onclick='paginaInicio()')#salir Salir
 
-  script(src="../js/inicio.js")
+    script(src="../js/inicio.js")
     script.
         $(document).ready( function () {
         $('#myTable').DataTable();
