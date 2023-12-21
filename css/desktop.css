@@ -1662,7 +1662,7 @@ header nav.menu .menu__links .menu__item .menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 0;
+  bottom: 0 !important;
   width: 100%;
 }
 .footer__box__body {
@@ -1793,30 +1793,28 @@ header nav.menu .menu__links .menu__item .menu__link {
   margin: 15px;
 }
 .login {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 50px auto 150px auto;
-  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1110px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.login__container {
-  width: 150px;
-  margin: 0px auto;
-  height: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 20px auto;
+  padding: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  width: 500px;
+}
+.login__container {
+  width: 550px;
+  margin: 0px;
+  height: auto;
 }
 .login__container img {
   width: 100px;
@@ -1827,33 +1825,43 @@ header nav.menu .menu__links .menu__item .menu__link {
   margin: auto;
 }
 .login__container h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #666666d9;
   text-align: center;
   font-weight: 600;
-}
-.login__item {
-  margin: 0 auto !important;
-  max-width: 1110px ;
+  margin-bottom: 4.5rem;
+  border-bottom: 4px solid orange;
+  width: 50%;
+  margin-left: 130px;
 }
 .login__item img {
-  display: none;
+  width: 30px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 550px;
+  margin: 0px 0px 15px;
+  padding-top: 5px;
 }
 .login__item label {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #666666d9;
   line-height: 20px;
-  text-align: center;
+  text-align: left;
 }
 .login__item input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 500px;
-  padding: 7px;
-  margin-bottom: 10px;
-  font-size: 1.6rem;
+  width: 355px;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
   text-align: center;
+  border: none;
+  border-bottom: 2px solid #000000;
 }
 .login__item .g-recaptcha {
   margin-bottom: 10px;
@@ -1861,30 +1869,20 @@ header nav.menu .menu__links .menu__item .menu__link {
   display: -ms-flexbox;
   display: flex;
 }
-.login__item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.login__item a button {
-  width: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.login__item button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: orange;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  width: 100%;
+  left: 0px;
   position: relative;
-  padding: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
 }
-.login__item a button:hover {
+.login__item button:hover {
   background-color: #2980b9;
 }
 .login__remember .form-check {
@@ -1894,6 +1892,8 @@ header nav.menu .menu__links .menu__item .menu__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: -15px;
+  margin-left: 120px;
 }
 .login__remember .form-check input {
   display: block;
@@ -1909,11 +1909,19 @@ header nav.menu .menu__links .menu__item .menu__link {
   line-height: 20px;
   text-align: center;
 }
-.login .col a {
+.login .forgot a {
   font-size: 1.4rem;
-  color: #666666d9;
+  color: #000000 !important;
   line-height: 20px;
-  text-align: center;
+  text-align: right;
+}
+.login .forgot .btn.btn-primary {
+  border: none;
+  background-color: #ffffff;
+  margin-top: -20px;
+  margin-left: -20px;
+  font-size: 1.4rem;
+  color: #000000;
 }
 .nvoTicket h2 {
   margin: 10px 10px;

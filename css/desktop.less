@@ -1402,8 +1402,7 @@ header {
 .footer {
   &__box {
     display: flex;
-    
-    bottom: 0;
+    bottom: 0 !important;
     width: 100%;
     &__body {
       background: rgb(2, 0, 36);
@@ -1511,101 +1510,120 @@ header {
   }
 }
 .login{
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto 150px auto; 
-  padding: 50px; 
-  flex-direction: column;  
-  max-width: 1110px;
   display: flex;
-&__container {
-  width: 150px;
-  margin: 0px auto;  
-  height: auto;
+  flex-direction: column;
   align-items: center;
-  
-  img{
-    width:100px;
+  margin: 20px auto;
+  padding: 60px;
+  border-radius: 10px; 
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  width: 500px;
+  &__container {
+    width: 550px;
+    margin: 0px;  
     height: auto;
-    display: flex; 
-    margin:auto;
-  }
-  h1 {
-    font-size: 2.5rem;
-    color:@color-text; 
-    text-align: center; 
-    font-weight: @font-semibold;
-  }
-}
-&__item{
-  margin: 0 auto !important;
-  max-width: 1110px ;
-  img{
-    display: none; 
-  }
-  label {
-  font-size: 2rem;
-  color: @color-text;
-  line-height: 20px;
-  text-align: center;
-}
-  input {
-    display: flex;
-    width: 500px;
-    padding: 7px;
-    margin-bottom: 10px; 
-    font-size: @font-size-md;
-    text-align: center;
-      }
-  .g-recaptcha {
-    margin-bottom: 10px;
-    display: flex;
-  }
-  a{
-    display: flex;
-    justify-content: center;
-    
-    button {
-      width: 250px; 
-      display: flex;
-      position:relative;
-      padding: 10px;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
+    img{
+      width: 100px;
+      height: auto;
+      display: flex; 
+      margin:auto;
     }
-    button:hover {
-      background-color: #2980b9;
-  } 
-  }
-  }
-&__remember{
-  .form-check{
-    display: flex;
-    align-items: center;
-    input{
-      display: block;
-      padding: 5px;
-      margin: 10px; 
-      align-items: center;
-    }
-    label{
-      font-size:@font-size-sm;
-      color: @color-text;
-      line-height: 20px;
-      text-align: center;
+    h1 {
+      font-size: @font-size-xl;
+      color:@color-text; 
+      text-align: center; 
+      font-weight: @font-semibold;
+      margin-bottom: 4.5rem;
+      border-bottom: 4px solid @color-orange;
+      width: 50%;
+      margin-left: 130px;
     }
   }
-}
-  .col{
-  a{
-    font-size:@font-size-sm;
+  &__item{
+    img{
+      width: 30px;
+      height: auto;
+      display: flex; 
+      position: absolute;
+      left: 550px;
+      margin: 0px 0px 15px;
+      padding-top: 5px;
+    }
+    label {
+    font-size: @font-size-lg;
     color: @color-text;
     line-height: 20px;
-    text-align: center;
+    text-align: left;
+    }
+    input {
+      display: flex;
+      width: 355px;
+      padding: 12px;
+      margin-bottom: 18px; 
+      font-size: @font-size-sm;
+      text-align: center;
+      border: none;
+      border-bottom: 2px solid @color-black;
+        }
+    .g-recaptcha {
+      margin-bottom: 10px;
+      display: flex;
+    }
+      button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color:@color-orange;
+        color:@color-white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: @font-size-lg;
+        width: 100%; 
+        left: 0px;
+        position:relative;
+      }
+      button:hover {
+        background-color: #2980b9;
+    } 
+    }
+  &__remember{
+    .form-check{
+      display: flex;
+      align-items: center;
+      margin-bottom: -15px;
+      margin-left: 120px;
+      input{
+        display: block;
+        padding: 5px;
+        margin: 10px; 
+        align-items: center;
+      }
+      label{
+        font-size:@font-size-sm;
+        color: @color-text;
+        line-height: 20px;
+        text-align: center;
+      }
+    }
+  }
+    .forgot{
+    a{
+      font-size:@font-size-sm;
+      color: @color-black !important;
+      line-height: 20px;
+      text-align: right;
+    }
+    .btn.btn-primary{
+      border: none;
+      background-color:@color-white;
+      margin-top: -20px;
+      margin-left: -20px;
+      font-size: @font-size-sm;
+      color: @color-black;
+    }
   }
 }
-} 
 .nvoTicket{
   h2{
     margin: 10px 10px;
