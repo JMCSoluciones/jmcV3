@@ -329,65 +329,66 @@
                                           </select>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Uso del disco duro" type="text" name="uso" maxlength="15" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Uso del disco duro" type="text" name="uso" maxlength="15"/>
                                           <label class="form-label" for="uso">Uso del disco duro</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="ip local" type="text" name="ip" maxlength="15" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="ip local" type="text" name="ip" maxlength="15" required="required"/>
                                           <label class="form-label" for="ip">Ip local </label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Direccion anydesk" type="text" name="anydesk" maxlength="12" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Direccion anydesk" type="text" name="anydesk" maxlength="12" required="required"/>
                                           <label class="form-label" for="anydesk">Direccion Anydesk</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Nombre de usuario" type="text" name="nom_usuario" maxlength="50" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Nombre de usuario" type="text" name="nom_usuario" maxlength="50" required="required"/>
                                           <label class="form-label" for="nom_usuario">Nombre de  usuario del equipo </label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Antivirus" type="text" name="nom_antivirus" maxlength="20" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Antivirus" type="text" name="nom_antivirus" maxlength="20" required="required"/>
                                           <label class="form-label" for="nom_antivirus">Nombre del antivirus </label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Vigencia del Antivirus" type="month" name="vig_antivirus" maxlength="20" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Vigencia del Antivirus" type="month" name="vig_antivirus" maxlength="20" required="required"/>
                                           <label class="form-label" for="vig_antivirus">Vigencia del antivirus</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Paqueteria Office" type="text" name="office" maxlength="30" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Paqueteria Office" type="text" name="office" maxlength="30" required="required"/>
                                           <label class="form-label" for="office">Paqueteria Office </label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Vigencia Office" type="month" name="vig_office" maxlength="20" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Vigencia Office" type="month" name="vig_office" maxlength="20" required="required"/>
                                           <label class="form-label" for="vig_office">Vigencia de la Paqueteria Office</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600"/>
                                           <label class="form-label" for="descripcion">Descripcion</label>
                                         </div>
                                       </form>
                                     </div>
                                     <div class="modal-body__buttons"> 
                                       <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                                      <button class="btn btn-warning" data-bs-target="#modalModTick" data-bs-toggle="modal" data-bs-dismiss="modal">Modificar</button>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="modal fade" id="modalModTick" aria-hidden="true" aria-labelledby="modalModTick" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h3 class="modal-title" id="modalDetalleT">Modificar </h3>
+                                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">Ticket modificado!</div>
+                                  <div class="modal-footer">
+                                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <!--                      button.btn.btn-success(data-bs-target='#modalDetalleT' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
-                          #modalDetalleT.modal.fade(aria-hidden='true' aria-labelledby='modalDetalleT' tabindex='-1')
-                              .modal-dialog.modal-dialog-centered
-                                  .modal-content
-                                      .modal-header
-                                          h3#modalDetalleT.modal-title Modificar 
-                                          button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                      .modal-body
-                                          | Ticket modificado!
-                                      .modal-footer
-                                          button.btn.btn-primary(data-bs-target='#modalDetalleT' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
-                                          button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
-                          -->
-                          <!---->
                         </td>
                         <td><a class="edit" href="#modalModificarTicket" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
                       </tr>
@@ -439,65 +440,66 @@
                                           </select>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Uso del disco duro" type="text" name="uso" maxlength="15" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Uso del disco duro" type="text" name="uso" maxlength="15"/>
                                           <label class="form-label" for="uso">Uso del disco duro</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="ip local" type="text" name="ip" maxlength="15" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="ip local" type="text" name="ip" maxlength="15" required="required"/>
                                           <label class="form-label" for="ip">Ip local </label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Direccion anydesk" type="text" name="anydesk" maxlength="12" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Direccion anydesk" type="text" name="anydesk" maxlength="12" required="required"/>
                                           <label class="form-label" for="anydesk">Direccion Anydesk</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Nombre de usuario" type="text" name="nom_usuario" maxlength="50" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Nombre de usuario" type="text" name="nom_usuario" maxlength="50" required="required"/>
                                           <label class="form-label" for="nom_usuario">Nombre de  usuario del equipo </label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Antivirus" type="text" name="nom_antivirus" maxlength="20" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Antivirus" type="text" name="nom_antivirus" maxlength="20" required="required"/>
                                           <label class="form-label" for="nom_antivirus">Nombre del antivirus </label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Vigencia del Antivirus" type="month" name="vig_antivirus" maxlength="20" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Vigencia del Antivirus" type="month" name="vig_antivirus" maxlength="20" required="required"/>
                                           <label class="form-label" for="vig_antivirus">Vigencia del antivirus</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Paqueteria Office" type="text" name="office" maxlength="30" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Paqueteria Office" type="text" name="office" maxlength="30" required="required"/>
                                           <label class="form-label" for="office">Paqueteria Office </label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Vigencia Office" type="month" name="vig_office" maxlength="20" required="required" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Vigencia Office" type="month" name="vig_office" maxlength="20" required="required"/>
                                           <label class="form-label" for="vig_office">Vigencia de la Paqueteria Office</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                          <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600" readonly="readonly"/>
+                                          <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600"/>
                                           <label class="form-label" for="descripcion">Descripcion</label>
                                         </div>
                                       </form>
                                     </div>
                                     <div class="modal-body__buttons"> 
                                       <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                                      <button class="btn btn-warning" data-bs-target="#modalModTick" data-bs-toggle="modal" data-bs-dismiss="modal">Modificar</button>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
+                            <div class="modal fade" id="modalModTick" aria-hidden="true" aria-labelledby="modalModTick" tabindex="-1">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h3 class="modal-title" id="modalDetalleT">Modificar </h3>
+                                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">Ticket modificado!</div>
+                                  <div class="modal-footer">
+                                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <!--                      button.btn.btn-success(data-bs-target='#modalDetalleT' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
-                          #modalDetalleT.modal.fade(aria-hidden='true' aria-labelledby='modalDetalleT' tabindex='-1')
-                              .modal-dialog.modal-dialog-centered
-                                  .modal-content
-                                      .modal-header
-                                          h3#modalDetalleT.modal-title Modificar 
-                                          button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                      .modal-body
-                                          | Ticket modificado!
-                                      .modal-footer
-                                          button.btn.btn-primary(data-bs-target='#modalDetalleT' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
-                                          button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
-                          -->
-                          <!---->
                         </td>
                         <td><a class="edit" href="#modalModificarTicket" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
                       </tr>
