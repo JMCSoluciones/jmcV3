@@ -27,29 +27,28 @@ button.btn.btn-link.newBtnElement(type="button" data-bs-toggle="modal" data-bs-t
                                     option(value="bimestral") Bimestral 
                                     option(value="anual") Anual 
                             .form-floating.mb-3
-                                input.form-control.form-control-lg(placeholder="Costo" type="text" name="costo" maxlength="20" required readonly)  
+                                input.form-control.form-control-lg(placeholder="Costo" type="text" name="costo" maxlength="20" required )  
                                 label.form-label(for="costo") Costo
                             .form-floating.mb-3
-                                input.form-control.form-control-lg(placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required readonly)
+                                input.form-control.form-control-lg(placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required )
                                 label.form-label(for="descripcion") Descripcion  
                             .form-floating.mb-3
-                                input.form-control.form-control-lg(placeholder="Fecha de contrato" type="date" name="fecha_contrato" required readonly) 
+                                input.form-control.form-control-lg(placeholder="Fecha de contrato" type="date" name="fecha_contrato" required ) 
                                 label.form-label(for="fecha_contrato") Fecha del contrato  
                             .form-floating.mb-3
-                                input.form-control.form-control-lg(placeholder="Vigencia de contrato" type="date" name="vigencia_contrato" required readonly) 
+                                input.form-control.form-control-lg(placeholder="Vigencia de contrato" type="date" name="vigencia_contrato" required ) 
                                 label.form-label(for="vigencia_contrato") Vigencia del contrato  
                             
                     .modal-body__buttons 
                         button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
-//                        button.btn.btn-success(data-bs-target='#modalDetCont' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
-    #modalDetCont.modal.fade(aria-hidden='true' aria-labelledby='modalDetCont' tabindex='-1')
+                        button.btn.btn-warning(data-bs-target='#modalContModificar' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+    #modalContModificar.modal.fade(aria-hidden='true' aria-labelledby='modalContModificar' tabindex='-1')
         .modal-dialog.modal-dialog-centered
             .modal-content
                 .modal-header
-                    h3#modalDetCont.modal-title Nuevo Contrato
+                    h3#modalContModificar.modal-title Modificar cliente 
                     button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                 .modal-body
-                    | Contrato creado!
+                    | Contrato modificado!
                 .modal-footer
-                    button.btn.btn-primary(data-bs-target='#modalDetCont' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
-                    button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
+                    button.btn.btn-primary(type="button" data-bs-dismiss="modal") Aceptar

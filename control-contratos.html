@@ -267,44 +267,46 @@
                                         </select>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control form-control-lg" placeholder="Costo" type="text" name="costo" maxlength="20" required="required" readonly="readonly"/>
+                                        <input class="form-control form-control-lg" placeholder="Costo" type="text" name="costo" maxlength="20" required="required"/>
                                         <label class="form-label" for="costo">Costo</label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required="required" readonly="readonly"/>
+                                        <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required="required"/>
                                         <label class="form-label" for="descripcion">Descripcion  </label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control form-control-lg" placeholder="Fecha de contrato" type="date" name="fecha_contrato" required="required" readonly="readonly"/>
+                                        <input class="form-control form-control-lg" placeholder="Fecha de contrato" type="date" name="fecha_contrato" required="required"/>
                                         <label class="form-label" for="fecha_contrato">Fecha del contrato  </label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control form-control-lg" placeholder="Vigencia de contrato" type="date" name="vigencia_contrato" required="required" readonly="readonly"/>
+                                        <input class="form-control form-control-lg" placeholder="Vigencia de contrato" type="date" name="vigencia_contrato" required="required"/>
                                         <label class="form-label" for="vigencia_contrato">Vigencia del contrato  </label>
                                       </div>
                                     </form>
                                   </div>
                                   <div class="modal-body__buttons"> 
                                     <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                                    <button class="btn btn-warning" data-bs-target="#modalContModificar" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
+                          <div class="modal fade" id="modalContModificar" aria-hidden="true" aria-labelledby="modalContModificar" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h3 class="modal-title" id="modalContModificar">Modificar cliente </h3>
+                                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">Contrato modificado!</div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Aceptar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <!--                        button.btn.btn-success(data-bs-target='#modalDetCont' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
-                        #modalDetCont.modal.fade(aria-hidden='true' aria-labelledby='modalDetCont' tabindex='-1')
-                            .modal-dialog.modal-dialog-centered
-                                .modal-content
-                                    .modal-header
-                                        h3#modalDetCont.modal-title Nuevo Contrato
-                                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                    .modal-body
-                                        | Contrato creado!
-                                    .modal-footer
-                                        button.btn.btn-primary(data-bs-target='#modalDetCont' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
-                                        button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
-                        -->
                       </td>
                       <td><a class="edit" href="#modalModificarContrato" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
                     </tr>
@@ -349,44 +351,46 @@
                                         </select>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control form-control-lg" placeholder="Costo" type="text" name="costo" maxlength="20" required="required" readonly="readonly"/>
+                                        <input class="form-control form-control-lg" placeholder="Costo" type="text" name="costo" maxlength="20" required="required"/>
                                         <label class="form-label" for="costo">Costo</label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required="required" readonly="readonly"/>
+                                        <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required="required"/>
                                         <label class="form-label" for="descripcion">Descripcion  </label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control form-control-lg" placeholder="Fecha de contrato" type="date" name="fecha_contrato" required="required" readonly="readonly"/>
+                                        <input class="form-control form-control-lg" placeholder="Fecha de contrato" type="date" name="fecha_contrato" required="required"/>
                                         <label class="form-label" for="fecha_contrato">Fecha del contrato  </label>
                                       </div>
                                       <div class="form-floating mb-3">
-                                        <input class="form-control form-control-lg" placeholder="Vigencia de contrato" type="date" name="vigencia_contrato" required="required" readonly="readonly"/>
+                                        <input class="form-control form-control-lg" placeholder="Vigencia de contrato" type="date" name="vigencia_contrato" required="required"/>
                                         <label class="form-label" for="vigencia_contrato">Vigencia del contrato  </label>
                                       </div>
                                     </form>
                                   </div>
                                   <div class="modal-body__buttons"> 
                                     <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+                                    <button class="btn btn-warning" data-bs-target="#modalContModificar" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
+                          <div class="modal fade" id="modalContModificar" aria-hidden="true" aria-labelledby="modalContModificar" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h3 class="modal-title" id="modalContModificar">Modificar cliente </h3>
+                                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">Contrato modificado!</div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Aceptar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <!--                        button.btn.btn-success(data-bs-target='#modalDetCont' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
-                        #modalDetCont.modal.fade(aria-hidden='true' aria-labelledby='modalDetCont' tabindex='-1')
-                            .modal-dialog.modal-dialog-centered
-                                .modal-content
-                                    .modal-header
-                                        h3#modalDetCont.modal-title Nuevo Contrato
-                                        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-                                    .modal-body
-                                        | Contrato creado!
-                                    .modal-footer
-                                        button.btn.btn-primary(data-bs-target='#modalDetCont' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
-                                        button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
-                        -->
                       </td>
                       <td><a class="edit" href="#modalModificarContrato" data-bs-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a><a class="delete" href="#deleteProductoModal" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a></td>
                     </tr>
