@@ -59,42 +59,46 @@ header .menu-top__link img {
   top: 0;
 }
 .login {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  border-radius: 15px 15px 15px 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0px;
-  padding: 20px;
-  background-position: center ;
-  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px auto;
+  padding: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 .login__container {
-  width: 350px;
+  width: 550px;
   margin: 0px;
   height: auto;
 }
 .login__container img {
-  width: 50px;
+  width: 100px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+  position: relative;
 }
 .login__container h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #666666d9;
   text-align: center;
   font-weight: 600;
+  margin-bottom: 4.5rem;
+  border-bottom: 4px solid orange;
+  width: 30%;
+  margin-left: 190px;
 }
 .login__item img {
   width: 30px;
@@ -103,25 +107,27 @@ header .menu-top__link img {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  left: 25px;
+  left: 10px;
   margin: 0px 0px 15px;
   padding-top: 5px;
 }
 .login__item label {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #666666d9;
   line-height: 20px;
-  text-align: center;
+  text-align: left;
 }
 .login__item input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  padding: 7px;
-  margin-bottom: 10px;
-  font-size: 1.6rem;
+  width: 275px;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
   text-align: center;
+  border: none;
+  border-bottom: 2px solid #000000;
 }
 .login__item .g-recaptcha {
   margin-bottom: 10px;
@@ -131,17 +137,16 @@ header .menu-top__link img {
 }
 .login__item button {
   margin-top: 20px;
-  background-color: #17acc9;
+  margin-bottom: 20px;
+  background-color: orange;
   color: #ffffff;
   border: none;
-  border-radius: 100px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 1.8rem;
-  width: 40%;
-  left: 80px;
+  width: 100%;
+  left: 0px;
   position: relative;
-  text-align: center;
-  padding: 10px 20px;
 }
 .login__item button:hover {
   background-color: #2980b9;
@@ -153,6 +158,8 @@ header .menu-top__link img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: -15px;
+  margin-left: 120px;
 }
 .login__remember .form-check input {
   display: block;
@@ -168,11 +175,19 @@ header .menu-top__link img {
   line-height: 20px;
   text-align: center;
 }
-.login .col a {
+.login .forgot a {
   font-size: 1.4rem;
-  color: #666666d9;
+  color: #000000 !important;
   line-height: 20px;
-  text-align: center;
+  text-align: right;
+}
+.login .forgot .btn.btn-primary {
+  border: none;
+  background-color: #ffffff;
+  margin-top: -20px;
+  margin-left: -20px;
+  font-size: 1.4rem;
+  color: #000000;
 }
 .formulario .titulo {
   margin: 20px 00;
@@ -754,11 +769,8 @@ header .menu-top__link img {
   margin: 0;
   font-size: 1.6rem;
 }
-.boton#infobtn {
-  position: relative;
+.btn#infobtn {
   z-index: 2;
-}
-.boton#infobtn .btn-info {
   position: fixed;
   border-radius: 30px;
   bottom: 20px;
@@ -2542,6 +2554,12 @@ header .menu-top__link img {
   color: #666666d9;
   font-size: 1.4rem;
 }
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+}
 .footer__box__body {
   position: relative;
   background: #020024;
@@ -2751,20 +2769,13 @@ header .menu-top__link img {
   max-width: 1110px;
   margin: 5px auto;
   padding: 20px;
-  height: 90vh;
 }
 .content__CtrlClientes h3 {
   font-size: 1.8rem;
+  text-align: center;
 }
-.content__CtrlClientes a .btn-nuevo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background-color: gray;
-  color: #ffffff;
+.content__CtrlClientes__tabs {
+  margin: 40px 0;
 }
 .content__CtrlClientes__tabs__item__body {
   margin: 20px 0;
@@ -4113,16 +4124,8 @@ header .menu-top__link img {
 .ctrlSoporte a {
   color: #666666d9 !important;
 }
-.ctrlSoporte .btn-nuevo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background-color: gray;
-  color: #ffffff;
-  margin: 10px;
+.ctrlSoporte__tabs {
+  margin: 30px 0;
 }
 .ctrlSoporte__tabs__item__header {
   display: -webkit-box;
@@ -4157,7 +4160,7 @@ header .menu-top__link img {
 }
 .ctrlSoporte .btn-exit {
   background-color: #ffd331;
-  margin: 20px;
+  margin: 30px 0px;
   width: 80px;
 }
 .nvoTicket h2 {
