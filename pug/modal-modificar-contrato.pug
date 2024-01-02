@@ -40,15 +40,15 @@
                             
                     .modal-body__buttons 
                         button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
-                        button.btn.btn-success(data-bs-target='#modalEditarCont' data-bs-toggle='modal' data-bs-dismiss='modal') Enviar
+                        button.btn.btn-success(data-bs-target='#modalEditarCont' data-bs-toggle='modal' data-bs-dismiss='modal') Guardar
     #modalEditarCont.modal.fade(aria-hidden='true' aria-labelledby='modalEditarCont' tabindex='-1')
         .modal-dialog.modal-dialog-centered
             .modal-content
                 .modal-header
-                    h3#modalEditarCont.modal-title Nuevo Contrato
+                    h3#modalEditarCont.modal-title Editar Contrato
                     button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                 .modal-body
-                    | Contrato creado!
+                    | Contrato modificado!
                 .modal-footer
                     button.btn.btn-primary(data-bs-target='#modalEditarCont' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
                     button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar
