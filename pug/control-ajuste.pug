@@ -2,6 +2,7 @@ extend ../components/template-admin.pug
 block content
     include control-menuAdmin.pug
     .container__controlajuste 
+        include modal-modificar-servicio.pug
         .container__controlajuste__administrador
             .container__controlajuste__administrador-wrapper
                 .container__controlajuste__administrador__title
@@ -14,7 +15,7 @@ block content
                             img.staff(src="/Images/Icons/staff.svg", alt="ajustes de staff") 
                 .container__controlajuste__administrador__title
                     h2 Control de servicios
-                    a.btn.btn-success(href="nuevo-servicio.html" ) Nuevo 
+                include modal-nuevo-servicio.pug
                 .container__controlajuste__administrador__table
                     table#myTable.display(cellspacing='0' width='100%')                  
                         thead      
@@ -32,10 +33,11 @@ block content
                                 td --------
                                 td 3000 
                                 td
-                                    a(href="info-servicio.html")  Ver Más...    
+                                    include modal-detalle-servicio.pug   
                                 td
-                                    a.edit(href="#editProductoModal" data-toggle='modal')
+                                    a.edit(href="#modalModificarServicio" data-bs-toggle='modal')
                                         i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
+
                                     a.delete(href='#deleteProductoModal' data-toggle='modal')
                                         i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
                             tr
@@ -44,9 +46,9 @@ block content
                                 td ********
                                 td 8000
                                 td    
-                                    a(href="info-servicio.html")  Ver Más...   
+                                    include modal-detalle-servicio.pug 
                                 td
-                                    a.edit(href="#editProductoModal" data-toggle='modal')
+                                    a.edit(href="#modalModificarServicio" data-bs-toggle='modal')
                                         i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
                                     a.delete(href='#deleteProductoModal' data-toggle='modal')
                                         i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;

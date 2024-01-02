@@ -23,15 +23,15 @@ block content
                     td Hp
                     td Josue Martinez
                     td
-                      a(href="detalle-equipo-cliente.html") ver más... 
+                      include modal-detalle-equipo-cliente.pug
                   tr 
                     td 02
                     td Lenovo
                     td Josue Martinez
                     td 
-                      a(href="detalle-equipo-cliente.html") ver más... 
+                      include modal-detalle-equipo-cliente.pug
     script(src="../js/regresar.js")
     script.
       $(document).ready( function () {
-      $('#myTable').DataTable();
+        $('#myTable').DataTable();
       } );    
