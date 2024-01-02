@@ -1,0 +1,76 @@
+
+<div class="modal-contrato">
+  <div class="modal" id="modalModificarContrato" aria-hidden="true" aria-labelledby="modalModificarContratoLabel" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalModificarContratoLabel">Detalles del <strong>Contrato</strong></h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="content-form">
+            <form action="">
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Cliente" type="text" name="cliente" maxlength="80" required="required"/>
+                <label class="form-label" for="cliente">Cliente</label>
+              </div>
+              <div class="form-floating mb-3"> 
+                <label for="tipo">Servicio:</label>
+                <select class="form-select" id="opcionesSelect">
+                  <option value="no"> </option>
+                  <option value="aws">AWS</option>
+                  <option value="aspel">ASPEL </option>
+                  <option value="hosting">HOSTING </option>
+                </select>
+              </div>
+              <div class="form-floating mb-3"> 
+                <label for="plan">Plan:</label>
+                <select class="form-select" id="opcionesSelect">
+                  <option value="no"> </option>
+                  <option value="mensual">Mensual</option>
+                  <option value="bimestral">Bimestral </option>
+                  <option value="anual">Anual </option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Costo" type="text" name="costo" maxlength="20" required="required"/>
+                <label class="form-label" for="costo">Costo</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required="required"/>
+                <label class="form-label" for="descripcion">Descripcion  </label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Fecha de contrato" type="date" name="fecha_contrato" required="required"/>
+                <label class="form-label" for="fecha_contrato">Fecha del contrato  </label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Vigencia de contrato" type="date" name="vigencia_contrato" required="required"/>
+                <label class="form-label" for="vigencia_contrato">Vigencia del contrato  </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-body__buttons"> 
+            <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+            <button class="btn btn-success" data-bs-target="#modalEditarCont" data-bs-toggle="modal" data-bs-dismiss="modal">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalEditarCont" aria-hidden="true" aria-labelledby="modalEditarCont" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalEditarCont">Editar Contrato</h3>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Contrato modificado!</div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#modalEditarCont" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button>
+          <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

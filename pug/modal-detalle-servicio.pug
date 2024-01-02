@@ -1,0 +1,49 @@
+button.btn.btn-link.newBtnElement(type="button" data-bs-toggle="modal" data-bs-target="#modalDetalleServicio") Ver mas ...
+.modal-servicio
+    #modalDetalleServicio.modal(aria-hidden='true' aria-labelledby='modalDetalleServicioLabel' tabindex='-1')
+        .modal-dialog.modal-lg.modal-dialog-scrollable
+            .modal-content
+                .modal-header
+                    h2#modalDetalleServicioLabel.modal-title Detalle del #[strong Servicio]
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .content-form
+                        form(action = "")
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Nombre del servicio" type="text" name="nom_servicio"  required)
+                                label.form-label(for="nom_servicio") Nombre del servicio
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Costo servicio" type="text" name="costo"  required)
+                                label.form-label(for="costo") Costo del servicio
+                            .form-floating.mb-3  
+                                label(for='tipo') Moneda:
+                                select#opcionesSelect.form-select
+                                    option(value="no") 
+                                    option(value="dolar") Dolar
+                                    option(value="peso_mex") Peso Mexicano 
+                            .form-floating.mb-3  
+                                label(for='tipo') Plan
+                                select#opcionesSelect.form-select
+                                    option(value="no") 
+                                    option(value="mensual") Mensual
+                                    option(value="semestral") Semestral 
+                                    option(value="anual") Anual   
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required) 
+                                label.form-label(for="descripcion") Descripcion   
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Total a pagar" type="text" name="total" maxlength="15")
+                                label.form-label(for="total") Total a pagar
+                    .modal-body__buttons 
+                        button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                        button.btn.btn-warning(data-bs-target='#modalModServicio' data-bs-toggle='modal' data-bs-dismiss='modal') Modificar
+    #modalModServicio.modal.fade(aria-hidden='true' aria-labelledby='modalModServicio' tabindex='-1')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h3#modalModServicio.modal-title Modificar Servicio 
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    | Servicio modificado!
+                .modal-footer
+                    button.btn.btn-primary(type="button" data-bs-dismiss="modal") Aceptar

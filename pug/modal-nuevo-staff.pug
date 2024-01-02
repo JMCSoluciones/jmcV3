@@ -1,0 +1,42 @@
+button.btn.btn-secondary.newBtnElement(type="button" data-bs-toggle="modal" data-bs-target="#modalNvoStaff") Nuevo
+.modal-staff
+    #modalNvoStaff.modal(aria-hidden='true' aria-labelledby='modalNvoStaffLabel' tabindex='-1')
+        .modal-dialog.modal-lg.modal-dialog-scrollable
+            .modal-content
+                .modal-header
+                    h2#modalNvoStaffLabel.modal-title Añadir nuevo #[strong Staff]
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .content-form
+                        form(action = "")
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Nombre del staff" type="text" name="nom_staff" maxleng="80" required)
+                                label.form-label(for="nom_servicio") Nombre
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Correo electronico" type="text" name="correo"  required)
+                                label.form-label(for="correo") Correo electronico
+                            .form-floating.mb-3  
+                                label(for='tipo') Departamento:
+                                select#opcionesSelect.form-select
+                                    option(value="no") 
+                                    option(value="uno") Uno
+                                    option(value="dos") Dos   
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Contraseña" type="text" name="Contraseña" maxlength="12" required) 
+                                label.form-label(for="password") Contraseña 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder=" Confirmar Contraseña" type="text" name="conf_contrasena" maxlength="12" required) 
+                                label.form-label(for="password_confirm") Confirmar contraseña 
+                    .modal-body__buttons 
+                        button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                        button.btn.btn-success(data-bs-target='#modalNvoStaffDos' data-bs-toggle='modal' data-bs-dismiss='modal') Guardar
+    #modalNvoStaffDos.modal.fade(aria-hidden='true' aria-labelledby='modalNvoStaffDos' tabindex='-1')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h3#modalNvoStaffDos.modal-title Nuevo Staff 
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    | Staff agregado!
+                .modal-footer
+                    button.btn.btn-primary(type="button" data-bs-dismiss="modal") Aceptar

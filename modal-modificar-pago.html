@@ -1,0 +1,75 @@
+
+<div class="modal-pago">
+  <div class="modal" id="modalModificarPago" aria-hidden="true" aria-labelledby="modalModificarPagoLabel" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalModificarPagoLabel">Modificar <strong>Pago</strong></h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="content-form">
+            <form action="">
+              <div class="form-floating mb-3"> 
+                <label for="tipo">Tipo de contrato:</label>
+                <select class="form-select" id="opcionesSelect">
+                  <option value="no"> </option>
+                  <option value="mensual">Mensual</option>
+                  <option value="semestral">Semestral </option>
+                  <option value="anual">Anual </option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Nombre del servicio" type="text" name="nom_servicio" required="required" readonly="readonly"/>
+                <label class="form-label" for="nom_servicio">Nombre del servicio</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Vigencia del servicio" type="date" name="vig_servicio" maxlength="10" required="required" readonly="readonly"/>
+                <label class="form-label" for="vig_servicio">Vigencia del servicio  </label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required="required" readonly="readonly"/>
+                <label class="form-label" for="descripcion">Descripcion   </label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Total a pagar" type="text" name="total" maxlength="15" readonly="readonly"/>
+                <label class="form-label" for="total">Total a pagar</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Staff" type="text" name="staff" maxlength="15" required="required" readonly="readonly"/>
+                <label class="form-label" for="staff">Staff</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" type="file" name="pdf" readonly="readonly"/>
+                <label class="form-label" for="pdf">PDF</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" type="file" name="xml" readonly="readonly"/>
+                <label class="form-label" for="xml">XML</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-body__buttons"> 
+            <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+            <button class="btn btn-success" data-bs-target="#modalModificar" data-bs-toggle="modal" data-bs-dismiss="modal">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalModificar" aria-hidden="true" aria-labelledby="modalModificar" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalModificar">Modificar Pago </h3>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Pago guardado!</div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#modalModificar" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button>
+          <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

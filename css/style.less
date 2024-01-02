@@ -29,6 +29,12 @@ header {
       text-decoration: none;
       color: @color-white;
       font-weight: @font-semibold;
+      ul{
+        li{
+          color: #0397d6;
+        }
+      }
+
       img {
         width: 25px;
         height: auto;
@@ -38,30 +44,35 @@ header {
   }
 }
 .login{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    border-radius: 15px 15px 15px 15px;
-    justify-content: center;
-    align-items: center;
-    margin: 0px; 
-    padding: 20px; 
-    background-position: center ;
-    background-repeat: no-repeat;
-    flex-direction: column;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  padding: 60px;
+  border-radius: 10px; 
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
   &__container {
-    width: 350px;
+    width: 550px;
     margin: 0px;  
     height: auto;
     img{
-      width: 50px;
+      width: 100px;
       height: auto;
       display: flex; 
       margin:auto;
+      position: relative;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: @font-size-xl;
       color:@color-text; 
       text-align: center; 
       font-weight: @font-semibold;
+      margin-bottom: 4.5rem;
+      border-bottom: 4px solid @color-orange;
+      width: 30%;
+      margin-left: 190px;
     }
   }
   &__item{
@@ -70,23 +81,25 @@ header {
       height: auto;
       display: flex; 
       position: absolute;
-      left: 25px;
+      left: 10px;
       margin: 0px 0px 15px;
       padding-top: 5px;
     }
     label {
-    font-size: 2rem;
+    font-size: @font-size-lg;
     color: @color-text;
     line-height: 20px;
-    text-align: center;
-  }
+    text-align: left;
+    }
     input {
       display: flex;
-      width: 100%;
-      padding: 7px;
-      margin-bottom: 10px; 
-      font-size: @font-size-md;
+      width: 275px;
+      padding: 12px;
+      margin-bottom: 18px; 
+      font-size: @font-size-sm;
       text-align: center;
+      border: none;
+      border-bottom: 2px solid @color-black;
         }
     .g-recaptcha {
       margin-bottom: 10px;
@@ -94,17 +107,16 @@ header {
     }
       button {
         margin-top: 20px;
-        background-color:@color-primary;
+        margin-bottom: 20px;
+        background-color:@color-orange;
         color:@color-white;
         border: none;
-        border-radius: 100px;
+        border-radius: 5px;
         cursor: pointer;
-        font-size: 1.8rem;
-        width: 40%; 
-        left: 80px;
+        font-size: @font-size-lg;
+        width: 100%; 
+        left: 0px;
         position:relative;
-        text-align: center;
-        padding: 10px 20px;
       }
       button:hover {
         background-color: #2980b9;
@@ -114,6 +126,8 @@ header {
     .form-check{
       display: flex;
       align-items: center;
+      margin-bottom: -15px;
+      margin-left: 120px;
       input{
         display: block;
         padding: 5px;
@@ -128,12 +142,20 @@ header {
       }
     }
   }
-    .col{
+    .forgot{
     a{
       font-size:@font-size-sm;
-      color: @color-text;
+      color: @color-black !important;
       line-height: 20px;
-      text-align: center;
+      text-align: right;
+    }
+    .btn.btn-primary{
+      border: none;
+      background-color:@color-white;
+      margin-top: -20px;
+      margin-left: -20px;
+      font-size: @font-size-sm;
+      color: @color-black;
     }
   }
 }  
@@ -167,9 +189,6 @@ header {
   }
 }
 .index{
-  .content {
-    margin: 20px 0;
-  }
   .desarrollo {
     &__soluciones {
       max-width: 100%;
@@ -653,23 +672,20 @@ header {
       }
     }
   }
-  .boton{
-    position: relative;
-    z-index: 2;
-    .btn-info{
-      position: fixed;
-      border-radius: 30px;
-      bottom: 20px;
-      right: 5px;
-      font-size: 3rem;
-      padding: 5px 20px;
-      color: @color-white;
-      font-weight: @font-bold;
-      box-shadow: 3px 3px 3px #888888;
-      border: 1px solid rgba(128, 128, 128, 0.363);
-    }
-  }
 }
+.btn#infobtn{
+  z-index: 2;
+  position: fixed;
+  border-radius: 30px;
+  bottom: 20px;
+  right: 5px;
+  font-size: 3rem;
+  padding: 5px 20px;
+  color: @color-white;
+  font-weight: @font-bold;
+  box-shadow: 3px 3px 3px #888888;
+  border: 1px solid rgba(128, 128, 128, 0.363);
+  }
 .sWeb{
   .desarrollo{
     &__dominios {
@@ -1191,16 +1207,6 @@ header {
       }
     }
   }
-  #masinfo{
-    background-color: @color-primary;
-    border-radius: 50px;
-    width: 100px;
-    text-align: center;
-    padding: 5px;
-    margin: 20px;
-    left: 150px;
-    position: relative;
-  }
 }
 .coi {
   h1{
@@ -1255,16 +1261,6 @@ header {
         }
       }
     }
-  }
-  #masinfo{
-    background-color: @color-primary;
-    border-radius: 50px;
-    width: 100px;
-    text-align: center;
-    padding: 5px;
-    margin: 20px;
-    left: 150px;
-    position: relative;
   }
 }
 .banco {
@@ -2237,6 +2233,8 @@ header {
   }
 }
 .footer {
+  display: flex;
+  bottom: 0;
   &__box {
     &__body {
       position: relative;
@@ -2404,23 +2402,18 @@ header {
   max-width: 1110px;
   margin: 5px auto;
   padding: 20px;
-  height: 90vh;
   h3{
     font-size: @font-size-lg;
-  }
-  a{
-    .btn-nuevo{
-      display: flex;
-      justify-content: flex-end;
-      background-color: gray;
-      color: @color-white;
-    }
+    text-align: center;
   }
   &__tabs{
+    margin: 40px 0;
+    
     &__item{
       &__body{
         margin:20px 0;
         overflow: auto;
+        
       }
       .btn-dark{
         margin: 3px;
@@ -2938,121 +2931,6 @@ header {
   }
   a{
     color: gray !important;
-  }
-  .botones{
-    display: flex;
-    margin: 30px 15px;
-    justify-content: center;
-    &__contratos{
-      border: 1px solid gray;
-      border-radius: 10px;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      flex-direction: column  ;
-      padding: 10px 0;
-      align-items: center;
-      justify-content: center;
-      a{
-        color: @color-text;
-        p{
-          font-size: 1.2rem;
-          display: flex;
-        }
-        img{
-          width: 50px;
-          display: flex;
-        }
-      }
-    }
-    &__pagos{
-      border: 1px solid gray;
-      border-radius: 10px;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      flex-direction: column  ;
-      padding: 10px 0;
-      align-items: center;
-      justify-content: center;
-      a{
-        color: @color-text;
-        p{
-          font-size: 1.2rem;
-          display: flex;
-        }
-        img{
-          width: auto;
-          height: 40px;
-          display: flex;
-        }
-      }
-    }
-    &__ticket{
-      border: 1px solid gray;
-      border-radius: 10px;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      a{
-        color: @color-text;
-        p{
-          font-size: 1.2rem;
-          display: flex;
-        }
-        img{
-          height: 45px;
-          width: 35px;
-          display: flex;
-        }
-      }
-    }
-    &__imprimir{
-      border: 1px solid gray;
-      border-radius: 10px;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      flex-direction: column  ;
-      padding: 10px 0;
-      align-items: center;
-      justify-content: center;
-      a{
-        p{
-          font-size: 1.2rem;
-          display: flex;
-        }
-        img{
-          width: 35px;
-          display: flex;
-        }
-      }
-    }
-    &__equipos{
-      border: 1px solid gray;
-      border-radius: 10px;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      flex-direction: column  ;
-      padding: 10px 0;
-      align-items: center;
-      justify-content: center;
-      a{
-        color: @color-text;
-        p{
-          font-size: 1.2rem;
-          display: flex;
-        }
-        img{
-          width: 40px;
-          display: flex;
-        }
-      }
-    }
   }
   .acciones{
     display: flex;
@@ -3617,14 +3495,8 @@ header {
   a{
     color: @color-text !important;
   }
-  .btn-nuevo{
-    display: flex;
-    justify-content: flex-end;
-    background-color: gray;
-    color: @color-white;
-    margin: 10px;
-  }
   &__tabs{
+    margin: 30px 0;
     &__item{
       &__header{
         display: flex;
@@ -3657,7 +3529,7 @@ header {
   }
   .btn-exit{
     background-color: @color-secondary;
-    margin: 20px;
+    margin: 30px 0px;
     width: 80px;
   }
 }
@@ -3784,46 +3656,48 @@ header {
   }
 }
 .inicio_cliente { 
-  padding: 10px;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-  max-width: 5000px;
-  margin: 0 auto;
-  box-shadow: rgba(50, 50, 93, 0.237) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  border-radius: 0px 0px 10px 10px;
-  &__box{
-      border-radius: 20px;
-      display: flex;
-      justify-content: space-around;
-      align-self: center;
-      width: 100%;
-      max-width: 500px;
-      margin: 0 4px;
-     &__item{
-      background-color: @color-white;
-      border-radius: 10px;
-      width: 90px;
-      padding: 5px;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-      a{
-          color: @color-text !important;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          font-size: 1.2rem;
-          img{
-              width: 30px;
-              height: auto;
-          }
-      }
-     }
-     &__item:hover{
-      background-color: @color-secondary;
-      scale: 1.1;
-      transition: .4s;
-     }
-  }
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    width: 100vw;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.237) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 0px 0px 10px 10px;
+    &__box{
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 4px;
+       &__item{
+        background-color: @color-white;
+        border-radius: 10px;
+        width: 90px;
+        padding: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        a{
+            color: @color-text !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.2rem;
+            img{
+                width: 30px;
+                height: auto;
+            }
+        }
+       }
+       &__item:hover{
+        background-color: @color-secondary;
+        scale: 1.1;
+        transition: .4s;
+       }
+    }
+  
 }
 .contratosCliente{
   padding: 10px;

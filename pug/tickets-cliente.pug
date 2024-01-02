@@ -21,17 +21,17 @@ block content
                     td 27 Enero 2024
                     td Josue Martinez
                     td 
-                      a(href="detalles-ticket.html") Ver mas...
+                      include modal-detalle-ticket-cliente.pug 
                   tr 
                     td 02
                     td 27 Enero 2024
                     td Josue Martinez
                     td 
-                      a(href="detalles-ticket.html") Ver mas ...
+                      include modal-detalle-ticket-cliente.pug 
           button.btn.btn-exit(onclick='paginaInicio()')#salir Salir
 
       script(src="../js/inicio.js")
       script.
         $(document).ready( function () {
-        $('#myTable').DataTable();
+          $('#myTable').DataTable();
         } );

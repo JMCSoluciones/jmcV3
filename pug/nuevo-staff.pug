@@ -1,6 +1,14 @@
-extend ../components/template.pug
+extend ../components/template-admin.pug
 block content
     include control-menuAdmin.pug
+    .agregarStaff   
+        .info 
+            h2 Añadir Nuevo Staff
+            .info__id 
+                label(for="id") Id 
+            .info__nombre 
+                label(for="nombre") Nombre 
+                input(type="text", name="nombre")  
     .content__nuevostaff__administrador 
         .content__nuevostaff__administrador__container
             h1 Añadir Nuevo Staff

@@ -3,8 +3,8 @@ block content
     include control-menuAdmin.pug
     .content__CtrlClientes
         h3.title Control de clientes
-        a(href="registrar-nuevo.html") 
-          button.btn.btn-nuevo(type="submit")#nuevo Nuevo
+        include modal-modificar-cliente.pug
+        include modal-nuevo-cliente.pug
         .content__CtrlClientes__tabs
             #myTabContent.tab-content
                 #usuario-tab-pane.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='usuario-tab', tabindex='0') 
@@ -25,22 +25,23 @@ block content
                                             td Josue Martinez
                                             td josue@jmcsoluciones.com
                                             td
-                                                a(href="ver-cliente.html") ver más... 
+                                                include modal-detalle-cliente.pug 
                                             td
-                                                a.edit(href="modificar-cliente.html")
+                                                a.edit(href="#modalModificarCliente" data-bs-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                                                a.delete(href='#deleteProductoModal' data-toggle='modal')
+
+                                                a.delete(href='#deleteProductoModal' data-bs-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
                                         tr 
                                             td 02
                                             td cliente 2
                                             td 23/octubre/2023
                                             td 
-                                                a(href="ver-cliente.html") ver más... 
+                                                include modal-detalle-cliente.pug 
                                             td
-                                                a.edit(href="modificar-cliente.html")
+                                                a.edit(href="#modalModificarCliente" data-bs-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Edit') &#xE254;
-                                                a.delete(href='#modalModificar' data-toggle='modal')
+                                                a.delete(href='#modalModificar' data-bs-toggle='modal')
                                                     i.material-icons(data-toggle='tooltip' title='Delete') &#xE872;
                        
                 button.btn.btn-exit(onclick='paginaInicio()')#salir Salir
@@ -49,3 +50,4 @@ block content
         $('#myTable').DataTable();
         } );
     script(src="../js/inicio.js")
+        

@@ -1,0 +1,54 @@
+.modal-contrato
+    #modalModificarContrato.modal(aria-hidden='true' aria-labelledby='modalModificarContratoLabel' tabindex='-1')
+        .modal-dialog.modal-lg.modal-dialog-scrollable
+            .modal-content
+                .modal-header
+                    h2#modalModificarContratoLabel.modal-title Detalles del #[strong Contrato]
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .content-form
+                        form(action = "")
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Cliente" type="text" name="cliente" maxlength="80" required )  
+                                label.form-label(for="cliente") Cliente
+                            .form-floating.mb-3  
+                                label(for='tipo') Servicio:
+                                select#opcionesSelect.form-select
+                                    option(value="no") 
+                                    option(value="aws") AWS
+                                    option(value="aspel") ASPEL 
+                                    option(value="hosting") HOSTING 
+                            .form-floating.mb-3  
+                                label(for='plan') Plan:
+                                select#opcionesSelect.form-select
+                                    option(value="no") 
+                                    option(value="mensual") Mensual
+                                    option(value="bimestral") Bimestral 
+                                    option(value="anual") Anual 
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Costo" type="text" name="costo" maxlength="20" required )  
+                                label.form-label(for="costo") Costo
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required )
+                                label.form-label(for="descripcion") Descripcion  
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Fecha de contrato" type="date" name="fecha_contrato" required ) 
+                                label.form-label(for="fecha_contrato") Fecha del contrato  
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Vigencia de contrato" type="date" name="vigencia_contrato" required ) 
+                                label.form-label(for="vigencia_contrato") Vigencia del contrato  
+                            
+                    .modal-body__buttons 
+                        button.btn.btn-danger( data-bs-dismiss='modal' aria-label='Close') Cancelar
+                        button.btn.btn-success(data-bs-target='#modalEditarCont' data-bs-toggle='modal' data-bs-dismiss='modal') Guardar
+    #modalEditarCont.modal.fade(aria-hidden='true' aria-labelledby='modalEditarCont' tabindex='-1')
+        .modal-dialog.modal-dialog-centered
+            .modal-content
+                .modal-header
+                    h3#modalEditarCont.modal-title Editar Contrato
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    | Contrato modificado!
+                .modal-footer
+                    button.btn.btn-primary(data-bs-target='#modalEditarCont' data-bs-toggle='modal' data-bs-dismiss='modal') Cancelar 
+                    button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Aceptar

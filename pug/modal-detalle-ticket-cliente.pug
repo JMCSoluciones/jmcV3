@@ -1,0 +1,31 @@
+button.btn.btn-link.newBtnElement(type="button" data-bs-toggle="modal" data-bs-target="#modalDetalleTicketCliente") Ver mas ...
+.modal-ticket-cliente
+    #modalDetalleTicketCliente.modal(aria-hidden='true' aria-labelledby='#modalDetalleTicketClienteLabel' tabindex='-1')
+        .modal-dialog.modal-lg.modal-dialog-scrollable
+            .modal-content
+                .modal-header
+                    h2#modalDetalleTicketClienteLabel.modal-title Informacion del #[strong Ticket]
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body
+                    .content-form
+                        form(action = "")
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Fecha del tecket" type="date" name="fecha_ticket"  required readonly)
+                                label.form-label(for="fecha_ticket") Fecha
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="Nombre del cliente" type="text" name="nombre" maxlength="80" required readonly)
+                                label.form-label(for="nombre") Nombre
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="RFC" type="text" name="rfc" maxlength="13" required readonly) 
+                                label.form-label(for="rfc") RFC   
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="contacto" type="text" name="nom_contacto" maxlength="50" required readonly)
+                                label.form-label(for="contacto") Contacto
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="asunto del ticket" type="text" name="mensaje" maxlength="600" required readonly)
+                                label.form-label(for="mensaje") Asunto
+                            .form-floating.mb-3
+                                input.form-control.form-control-lg(placeholder="archivo del ticket" type="file" name="archivo" required readonly)
+                                label.form-label(for="archivo") Archivo
+                    .modal-body__buttons 
+                        button.btn.btn-success( data-bs-dismiss='modal' aria-label='Close') Aceptar
