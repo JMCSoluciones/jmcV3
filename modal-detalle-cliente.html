@@ -1,10 +1,11 @@
 
-<div class="modal-modificar-cliente">
-  <div class="modal" id="modalModificarCliente" aria-hidden="true" aria-labelledby="modalModificarClienteLabel" tabindex="-1">
+<button class="btn btn-link newBtnElement" type="button" data-bs-toggle="modal" data-bs-target="#modalDetalleCliente">Ver mas ...</button>
+<div class="modal-detalle-cliente">
+  <div class="modal" id="modalDetalleCliente" aria-hidden="true" aria-labelledby="modalDetalleCliente-gralLabel" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title" id="modalModificarClienteLabel">Modificar <strong>Cliente</strong></h2>
+          <h2 class="modal-title" id="modalDetalleClienteLabel">Informacion del <strong>Cliente</strong></h2>
           <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -46,35 +47,26 @@
                 <input class="form-control form-control-lg" placeholder="Correo electronico" type="email" name="correo" maxlength="50" required="required"/>
                 <label class="form-label" for="correo">Correo Electronico  </label>
               </div>
-              <div class="form-floating mb-3">
-                <input class="form-control form-control-lg" placeholder="Contraseña" type="password" name="password" maxlength="12" required="required"/>
-                <label class="form-label" for="password">Contraseña</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input class="form-control form-control-lg" placeholder="Confirmar Contraseña" type="password" name="passwordConfirm" maxlength="12" required="required"/>
-                <label class="form-label" for="password">Confirmar contraseña</label>
-              </div>
             </form>
           </div>
           <div class="modal-body__buttons"> 
             <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
-            <button class="btn btn-success" data-bs-target="#modalModificarCliente2" data-bs-toggle="modal" data-bs-dismiss="modal">Guardar</button>
+            <button class="btn btn-warning" data-bs-target="#modalMensajeModificar" data-bs-toggle="modal" data-bs-dismiss="modal">Modificar</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="modalModificarCliente2" aria-hidden="true" aria-labelledby="modalModificarCliente2" tabindex="-1">
+  <div class="modal fade" id="modalMensajeModificar" aria-hidden="true" aria-labelledby="modalMensajeModificar" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title" id="modalModificarCliente2">Modificar</h3>
+          <h3 class="modal-title" id="modalMensajeModificar">Modificar cliente </h3>
           <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">Modificacion Completa!</div>
+        <div class="modal-body">Cliente modificado!</div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#modalModificarCliente2" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button>
-          <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
+          <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Aceptar</button>
         </div>
       </div>
     </div>

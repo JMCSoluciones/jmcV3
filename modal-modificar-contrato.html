@@ -1,11 +1,10 @@
 
-<button class="btn btn-secondary newBtnElement" type="button" data-bs-toggle="modal" data-bs-target="#modalNvoContrato">Nuevo</button>
 <div class="modal-contrato">
-  <div class="modal" id="modalNvoContrato" aria-hidden="true" aria-labelledby="modalNvoContratoLabel" tabindex="-1">
+  <div class="modal" id="modalModificarContrato" aria-hidden="true" aria-labelledby="modalModificarContratoLabel" tabindex="-1">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h2 class="modal-title" id="modalNvoContratoLabel">Añadir nuevo <strong>Contrato</strong></h2>
+          <h2 class="modal-title" id="modalModificarContratoLabel">Detalles del <strong>Contrato</strong></h2>
           <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -53,22 +52,22 @@
           </div>
           <div class="modal-body__buttons"> 
             <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
-            <button class="btn btn-success" data-bs-target="#modalContrato" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
+            <button class="btn btn-success" data-bs-target="#modalEditarCont" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="modal fade" id="modalContrato" aria-hidden="true" aria-labelledby="modalContrato" tabindex="-1">
+  <div class="modal fade" id="modalEditarCont" aria-hidden="true" aria-labelledby="modalEditarCont" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title" id="modalContrato">Nuevo Contrato</h3>
+          <h3 class="modal-title" id="modalEditarCont">Nuevo Contrato</h3>
           <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">Contrato creado!</div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#modalContrato" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button>
+          <button class="btn btn-primary" data-bs-target="#modalEditarCont" data-bs-toggle="modal" data-bs-dismiss="modal">Cancelar </button>
           <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Aceptar</button>
         </div>
       </div>

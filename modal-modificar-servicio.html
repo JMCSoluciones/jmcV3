@@ -1,0 +1,70 @@
+
+<div class="modal-servicio">
+  <div class="modal" id="modalModificarServicio" aria-hidden="true" aria-labelledby="modalModificarServicioLabel" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalModificarServicioLabel">Modificar del <strong>Servicio</strong></h2>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="content-form">
+            <form action="">
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Nombre del servicio" type="text" name="nom_servicio" required="required"/>
+                <label class="form-label" for="nom_servicio">Nombre del servicio</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Costo servicio" type="text" name="costo" required="required"/>
+                <label class="form-label" for="costo">Costo del servicio</label>
+              </div>
+              <div class="form-floating mb-3"> 
+                <label for="tipo">Moneda:</label>
+                <select class="form-select" id="opcionesSelect">
+                  <option value="no"> </option>
+                  <option value="dolar">Dolar</option>
+                  <option value="peso_mex">Peso Mexicano </option>
+                </select>
+              </div>
+              <div class="form-floating mb-3"> 
+                <label for="tipo">Plan</label>
+                <select class="form-select" id="opcionesSelect">
+                  <option value="no"> </option>
+                  <option value="mensual">Mensual</option>
+                  <option value="semestral">Semestral </option>
+                  <option value="anual">Anual   </option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Descripcion" type="text" name="descripcion" maxlength="600" required="required"/>
+                <label class="form-label" for="descripcion">Descripcion   </label>
+              </div>
+              <div class="form-floating mb-3">
+                <input class="form-control form-control-lg" placeholder="Total a pagar" type="text" name="total" maxlength="15"/>
+                <label class="form-label" for="total">Total a pagar</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-body__buttons"> 
+            <button class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+            <button class="btn btn-warning" data-bs-target="#modalServicioModificado" data-bs-toggle="modal" data-bs-dismiss="modal">Modificar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalServicioModificado" aria-hidden="true" aria-labelledby="modalServicioModificado" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalServicioModificado">Modificar Servicio </h3>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">Servicio modificado!</div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" type="button" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
